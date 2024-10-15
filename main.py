@@ -4,8 +4,8 @@ st.title(':tomato: Analiza sentymentu recenzji filmowych na podstawie recenzji u
 st.markdown(
     """
     <div style="text-align: center;">
-        <h2>Wyrównany tekst do środka</h2>
-        <p>To jest przykładowy tekst wyśrodkowany na stronie.</p>
+        <>:tomato<>
+        <h2>Analiza sentymentu recenzji filmowych na podstawie recenzji uzytkowników strony Rotten Tomatoes</h2>
     </div>
     """, 
     unsafe_allow_html=True
