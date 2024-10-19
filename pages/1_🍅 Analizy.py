@@ -28,7 +28,8 @@ fig.update_traces(textfont_size=20)
 st.plotly_chart(fig, use_container_width=True)
 
 
-wordcloud = WordCloud(width=800, height=400, background_color='black', colormap='plasma').generate(dane2)
+n_reviews = " ".join(dane2['review'].astype(str).tolist())
+wordcloud = WordCloud(width=800, height=400, background_color='black', colormap='plasma').generate(n_reviews)
 
 plt.figure(figsize=(10, 5))
 plt.imshow(wordcloud, interpolation='bilinear')
