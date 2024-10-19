@@ -1,6 +1,4 @@
 import streamlit as st
-from st_pages import Page, Section, show_pages
-
 show_pages(
     [   Page("wstep.py", "Strona główna"),
         Page("pages/page_1.py", "idk"),
