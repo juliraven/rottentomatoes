@@ -14,7 +14,7 @@ dane4 = pd.read_csv('dane4.csv')
 sentiment_counts = dane1['sentiment'].value_counts().reset_index()
 sentiment_counts.columns = ['sentiment', 'count']
 
-custom_colors = ['lightseagreen', 'indianred', 'lightblue']  
+custom_colors = ['lime', 'indianred', 'lightblue']  
 
 fig = px.pie(sentiment_counts, 
              values='count', 
