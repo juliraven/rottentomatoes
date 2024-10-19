@@ -14,12 +14,16 @@ dane4 = pd.read_csv('dane4.csv')
 sentiment_counts = dane1['sentiment'].value_counts().reset_index()
 sentiment_counts.columns = ['sentiment', 'count']
 
+custom_colors = ['green', 'blue', 'red']  
+
 fig = px.pie(sentiment_counts, 
              values='count', 
              names='sentiment', 
              title='Podział recenzji wg sentymentu',
              width=800,  
-             height=500)
+             height=500,
+             color_discrete_sequence=custom_colors)
+
 
 st.plotly_chart(fig, use_container_width=True)
 
