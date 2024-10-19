@@ -5,7 +5,7 @@ import plotly.graph_objects as go
 import matplotlib.pyplot as plt
 import plotly.express as px
 
-dane = pd.read_csv('dane1.csv', header=1)
+dane = pd.read_csv('dane1.csv')
 
 sentiment_counts = dane['sentiment'].value_counts().reset_index()
 sentiment_counts.columns = ['sentiment', 'count']
