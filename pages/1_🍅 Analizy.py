@@ -15,5 +15,5 @@ fig = px.pie(sentiment_counts,
              names='sentiment', 
              title='Podział recenzji wg sentymentu')
 
-st.plotly_chart(fig, use_container_width=True)
+st.plotly_chart(fig)
 
