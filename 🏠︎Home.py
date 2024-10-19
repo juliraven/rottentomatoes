@@ -17,3 +17,5 @@ st.markdown(
     """, 
     unsafe_allow_html=True
 )
+
+st.image('tomato.png', use_column_width=True)
