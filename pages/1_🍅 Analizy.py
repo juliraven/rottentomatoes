@@ -13,7 +13,9 @@ sentiment_counts.columns = ['sentiment', 'count']
 fig = px.pie(sentiment_counts, 
              values='count', 
              names='sentiment', 
-             title='Podział recenzji wg sentymentu')
+             title='Podział recenzji wg sentymentu',
+             width=800,  
+             height=500)
 
 st.plotly_chart(fig, use_container_width=True)
 
