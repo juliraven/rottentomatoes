@@ -24,7 +24,7 @@ fig = px.pie(sentiment_counts,
              height=500,
              color_discrete_sequence=custom_colors)
 
-
+fig.update_traces(textfont_size=20)
 st.plotly_chart(fig, use_container_width=True)
 
 
