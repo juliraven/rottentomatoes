@@ -32,7 +32,6 @@ st.markdown('###')
 tab1, tab2 = st.tabs(["Wykresy", "Ranking"])
 
 with tab1:
-
     st.markdown('### Chmury słów dla recenzji o danym sentymencie')
     c1, c2, c3 = st.columns((2,2,2))
     c1.image("negatywne.png", caption="Chmura słów dla recenzji o negatywnym sentymencie")
@@ -96,6 +95,7 @@ with tab1:
     b2.markdown('### Podział recenzji wg typu dla wybranego gatunku')
     b2.plotly_chart(fig3, use_container_width=True)
 
+
 with tab2:
     st.markdown('### Ranking filmów')
     
@@ -112,7 +112,7 @@ with tab2:
     df = load_data(file1, file2)
     df['original_release_date'] = pd.to_datetime(df['original_release_date'])
     
-    st.sidebar.header('Opcje filtrowania')
+st.sidebar.header('Opcje filtrowania')
 
     date_filter = st.sidebar.slider(
     'Wybierz zakres dat (rok premiery) :',
