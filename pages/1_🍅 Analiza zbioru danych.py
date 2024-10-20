@@ -26,8 +26,12 @@ st.plotly_chart(fig, use_container_width=True)
 
 
 st.write('Chmura słów dla recenzji o negatywnym sentymencie')
+st.image("negatywne.png", caption="Word Cloud for Selected Movie Reviews")
+
+st.write('Chmura słów dla recenzji o pozytywnym sentymencie')
+st.image("pozytywne.png", caption="Word Cloud for Selected Movie Reviews")
 
 st.write('Chmura słów dla recenzji o negutralnym sentymencie')
-
+st.image("neutralne.png", caption="Word Cloud for Selected Movie Reviews")
 
 
