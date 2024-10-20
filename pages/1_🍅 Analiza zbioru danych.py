@@ -6,11 +6,6 @@ import plotly.graph_objects as go
 import matplotlib.pyplot as plt
 import plotly.express as px
 
-dane1 = pd.read_csv('dane1.csv')
-dane2 = pd.read_csv('dane2.csv')
-dane3 = pd.read_csv('dane3.csv')
-dane4 = pd.read_csv('dane4.csv')
-
 
 st.markdown(
     """
@@ -32,7 +27,11 @@ st.markdown('###')
 tab1, tab2 = st.tabs(["Wykresy", "Ranking"])
 
 with tab1:
-    st.sidebar.header('costam')
+    dane1 = pd.read_csv('dane1.csv')
+    dane2 = pd.read_csv('dane2.csv')
+    dane3 = pd.read_csv('dane3.csv')
+    dane4 = pd.read_csv('dane4.csv')
+    
     st.markdown('### Chmury słów dla recenzji o danym sentymencie')
     c1, c2, c3 = st.columns((2,2,2))
     c1.image("negatywne.png", caption="Chmura słów dla recenzji o negatywnym sentymencie")
