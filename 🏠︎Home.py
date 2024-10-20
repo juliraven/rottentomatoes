@@ -12,12 +12,12 @@ st.markdown(
     
     <div style="text-align: center;">
         <h1 class="emoji-top">🍅 🍅 🍅</h1> 
-        <h2>Analiza sentymentu recenzji filmowych na podstawie recenzji użytkowników strony</h2>
+        <h2>Analiza sentymentu recenzji filmowych na podstawie recenzji użytkowników strony Rotten Tomatoes</h2>
     </div>
     """, 
     unsafe_allow_html=True
 )
 
-st.image('tomato.png', use_column_width=True)
+st.markdown('opis')
 
 st.sidebar.image('tomato.png', width=300)
