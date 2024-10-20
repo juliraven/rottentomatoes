@@ -24,7 +24,7 @@ st.markdown(
 
 st.markdown('###')
 
-tab2, tab1 = st.tabs(["Wykresy", "Ranking"])
+tab1, tab2 = st.tabs(["Wykresy", "Ranking"])
 
 with tab1:
     dane1 = pd.read_csv('dane1.csv')
