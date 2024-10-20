@@ -140,11 +140,16 @@ with tab2:
                  (df['sentiment'].isin(sentiment_filter))]
 
     sorted_df = filtered_df.sort_values(by=['tomatometer_rating', 'audience_rating'], ascending=False)
-    
-    st.subheader(f'Top 10 filmów (znaleziono : {len(sorted_df)})')
-    top_10 = sorted_df.head(10) 
-    st.dataframe(top_10[['movie_title', 'original_release_date', 'tomatometer_rating', 'audience_rating', 'sentiment']])
 
+    top_10 = sorted_df.head(10) 
+
+    unique_movies = top_10.drop_duplicates(subset=['movie_title'], keep='first')
+
+    if len(unique_movies) > 10:
+        unique_movies = unique_movies.head(10)
+
+    st.subheader(f'Top {len(unique_movies)} filmów (znaleziono: {len(sorted_df)})')
+    st.dataframe(unique_movies[['movie_title', 'original_release_date', 'tomatometer_rating', 'audience_rating', 'sentiment']])
 
 
 
