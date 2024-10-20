@@ -157,8 +157,25 @@ with tab2:
     'tomatometer_rating': 'Ocena Krytyków',
     'audience_rating': 'Ocena Widowni',
     })
-    
-    st.dataframe(sorted_df, use_container_width=True)
+
+    max_tomatometer = sorted_df['Ocena Krytyków'].max()
+    max_audience = sorted_df['Ocena Widowni'].max()
+
+    def create_bar(value, max_value, color):
+        bar_length = (value / max_value) * 100 
+        return f"<div style='width: 100%; background-color: #e0e0e0;'><div style='width: {bar_length}%; background-color: {color}; height: 10px;'></div></div>"
+
+    html_table = "<table style='width:100%; border-collapse: collapse;'>"
+    html_table += "<tr><th>Tytuł Filmu</th><th>Data Premiery</th><th>Ocena Krytyków</th><th>Ocena Widowni</th><th>Tomatometer</th><th>Audience</th></tr>"
+
+    for index, row in sorted_df.iterrows():
+        tomatometer_bar = create_bar(row['Ocena Krytyków'], max_tomatometer, 'green')
+        audience_bar = create_bar(row['Ocena Widowni'], max_audience, 'blue')
+        html_table += f"<tr><td>{row['Tytuł Filmu']}</td><td>{row['Data Premiery']}</td><td>{row['Ocena Krytyków']}</td><td>{row['Ocena Widowni']}</td><td>{tomatometer_bar}</td><td>{audience_bar}</td></tr>"
+
+    html_table += "</table>"
+
+    st.markdown(html_table, unsafe_allow_html=True)
 
 
 
