@@ -46,8 +46,8 @@ b1.plotly_chart(fig, use_container_width=True)
 custom_colors1 = ['red', 'rgb(61,94,47)']  
 
 fig1 = px.pie(dane4, 
-             values='index', 
-             names='review_type', 
+             values='review_type', 
+             names='index', 
              width=800,  
              height=500,
              color_discrete_sequence=custom_colors1)
