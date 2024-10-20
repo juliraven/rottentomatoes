@@ -110,6 +110,7 @@ with tab2:
 
     df = load_data(file1, file2)
     df['original_release_date'] = pd.to_datetime(df['original_release_date'])
+    df
 
     st.sidebar.header('Opcje filtrowania')
 
