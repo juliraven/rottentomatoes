@@ -28,7 +28,7 @@ st.markdown(
 
 st.markdown('###')
 
-tab1, tab2, tab3 = st.tabs(["Wykresy", "Ranking"])
+tab1, tab2 = st.tabs(["Wykresy", "Ranking"])
 
 with tab1:
 
