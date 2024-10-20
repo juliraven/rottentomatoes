@@ -149,8 +149,8 @@ with tab2:
     }
     ).reset_index()
 
-    sorted_df['Ocena Krytyków'] = sorted_df['tomatometer_rating'].round().astype(int)
-    sorted_df['Ocena Widowni'] = sorted_df['audience_rating'].round().astype(int)
+    aggregated_df['Ocena Krytyków'] = aggregated_df['tomatometer_rating'].round().astype(int)
+    aggregated_df['Ocena Widowni'] = aggregated_df['audience_rating'].round().astype(int)
 
     sorted_df = aggregated_df.sort_values(by=['audience_rating', 'tomatometer_rating'], ascending=False)
     sorted_df['original_release_date']=sorted_df['original_release_date'].astype(str).str[:10]
