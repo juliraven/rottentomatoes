@@ -97,6 +97,19 @@ with tab1:
 
 with tab2:
     st.markdown('### Rozkład sentymentu w czasie dla wybranego filmu')
+    
+    def load_data(file1, file2):
+        df1 = pd.read_csv(file1)
+        df2 = pd.read_csv(file2)
+    
+        df = pd.concat([df1, df2], ignore_index=True)
+        return df
+
+    file1 = 'dane5_1.csv'
+    file2 = 'dane5_2.csv'
+
+    dane5 = load_data(file1, file2)
+    st.dataframe(dane)
 
 
 
