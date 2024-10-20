@@ -9,6 +9,7 @@ import plotly.express as px
 dane1 = pd.read_csv('dane1.csv')
 dane2 = pd.read_csv('dane2.csv')
 dane3 = pd.read_csv('dane3.csv')
+dane4 = pd.read_csv('dane4.csv')
 
 st.markdown(
     """
@@ -42,19 +43,30 @@ fig.update_traces(textfont_size=20)
 b1.markdown('### Podział recenzji wg sentymentu')
 b1.plotly_chart(fig, use_container_width=True)
 
-b1.markdown('### Udział procentowy typów recenzji dla wybranego gatunku')
-gatunki = dane2['genres'].unique()
-wybierz_gatunek = st.selectbox('Wybierz gatunek :', gatunki)
-filtered_df = dane2[dane2['genres'] == wybierz_gatunek]
-
 custom_colors1 = ['red', 'rgb(61,94,47)']  
 
-fig1 = px.pie(filtered_df, values='count', names='review_type', color='review_type',
+fig1 = px.pie(dane4, 
+             values='index', 
+             names='review_type', 
              width=800,  
              height=500,
              color_discrete_sequence=custom_colors1)
+
 fig1.update_traces(textfont_size=20)
-b1.plotly_chart(fig1, use_container_width=True)
+b2.markdown('### Podział recenzji wg typu')
+b2.plotly_chart(fig1, use_container_width=True)
+
+b1.markdown('### Udział procentowy typów recenzji dla wybranego gatunku')
+gatunki = dane2['genres'].unique()
+wybierz_gatunek = b1.selectbox('Wybierz gatunek :', gatunki)
+filtered_df = dane2[dane2['genres'] == wybierz_gatunek]
+
+fig2 = px.pie(filtered_df, values='count', names='review_type', color='review_type',
+             width=800,  
+             height=500,
+             color_discrete_sequence=custom_colors1)
+fig2.update_traces(textfont_size=20)
+b1.plotly_chart(fig2, use_container_width=True)
 
 st.markdown('### Chmury słów dla recenzji o danym sentymencie')
 c1, c2, c3 = st.columns((2,2,2))
