@@ -18,6 +18,6 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-st.markdown('opis')
-
 st.sidebar.image('tomato.png', width=300)
+
+st.markdown('<span style="font-size: 24px">Strona ta poświęcona jest </span>', unsafe_allow_html=True)
