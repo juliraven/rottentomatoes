@@ -139,17 +139,11 @@ with tab2:
                  (df['audience_rating'].between(audience_filter[0], audience_filter[1])) &
                  (df['sentiment'].isin(sentiment_filter))]
 
-    st.subheader(f'Filmy (znaleziono : {len(filtered_df)})')
-    st.dataframe(filtered_df[['movie_title', 'original_release_date', 'tomatometer_rating', 'audience_rating', 'sentiment']].sort_values(by='sentiment', ascending=False))
-
-
-    avg_sentiment = filtered_df['sentiment'].mean()
-    avg_tomatometer = filtered_df['tomatometer_rating'].mean()
-    avg_audience = filtered_df['audience_rating'].mean()
-
-    st.write(f'Średni sentyment filmów : {avg_sentiment:.2f}')
-    st.write(f'Średnia ocena krytyków (Tomatometer) : {avg_tomatometer:.2f}')
-    st.write(f'Średnia ocena widowni : {avg_audience:.2f}')
+    sorted_df = filtered_df.sort_values(by=['tomatometer_rating', 'audience_rating'], ascending=False)
+    
+    st.subheader(f'Top 10 filmów (znaleziono : {len(sorted_df)})')
+    top_10 = sorted_df.head(10) 
+    st.dataframe(top_10[['movie_title', 'original_release_date', 'tomatometer_rating', 'audience_rating', 'sentiment']])
 
 
 
