@@ -17,7 +17,7 @@ st.markdown(
     </style>
     
     <div style="text-align: left;">
-        <h2>Analiza zbioru danych</h2>
+        <h2>🍅 Analiza zbioru danych</h2>
     </div>
     """, 
     unsafe_allow_html=True
