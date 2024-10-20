@@ -36,10 +36,10 @@ fig = px.pie(sentiment_counts,
              color_discrete_sequence=custom_colors)
 
 fig.update_traces(textfont_size=20)
-st.title('Podział recenzji wg sentymentu')
+st.write('Podział recenzji wg sentymentu')
 st.plotly_chart(fig, use_container_width=True)
 
-st.title('Chmury słów dla recenzji o danym sentymencie')
+st.write('Chmury słów dla recenzji o danym sentymencie')
 c1, c2, c3 = st.columns((2,2,2))
 
 c1.image("negatywne.png", caption="Chmura słów dla recenzji o negatywnym sentymencie")
