@@ -56,9 +56,8 @@ fig1.update_traces(textfont_size=20)
 b2.markdown('### Podział recenzji wg typu')
 b2.plotly_chart(fig1, use_container_width=True)
 
-
 gatunki = dane2['genres'].unique()
-wybierz_gatunek = b1.selectbox('Wybierz gatunek :', gatunki)
+wybierz_gatunek = st.selectbox('Wybierz gatunek :', gatunki)
 filtered_df = dane2[dane2['genres'] == wybierz_gatunek]
 filtered_df1 = dane3[dane3['sentiment'] == wybierz_gatunek]
 
