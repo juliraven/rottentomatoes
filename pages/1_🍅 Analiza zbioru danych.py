@@ -8,6 +8,21 @@ import plotly.express as px
 
 dane1 = pd.read_csv('dane1.csv')
 
+st.markdown(
+    """
+    <style>
+    .emoji-top {
+        margin-top: -20px; /* Zmniejszenie marginesu górnego */
+    }
+    </style>
+    
+    <div style="text-align: center;">
+        <h2>Analiza zbioru danych</h2>
+    </div>
+    """, 
+    unsafe_allow_html=True
+)
+
 sentiment_counts = dane1['sentiment'].value_counts().reset_index()
 sentiment_counts.columns = ['sentiment', 'count']
 
