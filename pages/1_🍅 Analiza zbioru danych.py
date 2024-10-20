@@ -96,6 +96,7 @@ with tab1:
     b2.plotly_chart(fig3, use_container_width=True)
 
 
+
 with tab2:
     st.markdown('### Ranking filmów')
     
