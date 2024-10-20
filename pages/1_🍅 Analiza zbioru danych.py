@@ -110,6 +110,7 @@ with tab2:
     file1 = 'dane5_1.csv'
     file2 = 'dane5_2.csv'
 
+
     df = load_data(file1, file2)
     df['original_release_date'] = pd.to_datetime(df['original_release_date'])
     
