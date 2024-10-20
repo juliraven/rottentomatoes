@@ -28,7 +28,7 @@ st.markdown(
 
 st.markdown('###')
 
-tab1, tab2 = st.tabs(["Wykresy", "Ranking"])
+tab1, tab2 = st.tabs(["Wykresy", "Rozkład sentymentu w czasie"])
 
 with tab1:
 
@@ -96,7 +96,7 @@ with tab1:
     b2.plotly_chart(fig3, use_container_width=True)
 
 with tab2:
-    st.markdown('### Ranking filmów')
+    st.markdown('### Rozkład sentymentu w czasie dla wybranego filmu')
 
 
 
