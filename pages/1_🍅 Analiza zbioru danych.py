@@ -26,6 +26,8 @@ st.markdown(
     unsafe_allow_html=True
 )
 
+st.markdown('###')
+
 st.markdown('### Chmury słów dla recenzji o danym sentymencie')
 c1, c2, c3 = st.columns((2,2,2))
 c1.image("negatywne.png", caption="Chmura słów dla recenzji o negatywnym sentymencie")
