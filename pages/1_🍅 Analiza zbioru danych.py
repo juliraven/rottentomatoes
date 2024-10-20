@@ -7,8 +7,6 @@ import matplotlib.pyplot as plt
 import plotly.express as px
 
 dane1 = pd.read_csv('dane1.csv')
-dane2 = pd.read_csv('dane2.csv')
-dane4 = pd.read_csv('dane4.csv')
 
 sentiment_counts = dane1['sentiment'].value_counts().reset_index()
 sentiment_counts.columns = ['sentiment', 'count']
@@ -27,23 +25,9 @@ fig.update_traces(textfont_size=20)
 st.plotly_chart(fig, use_container_width=True)
 
 
-n_reviews = " ".join(dane2['review'].astype(str).tolist())
-wordcloud = WordCloud(width=800, height=400, background_color='black', colormap='plasma').generate(n_reviews)
-
-plt.figure(figsize=(10, 5))
-plt.imshow(wordcloud, interpolation='bilinear')
-plt.axis("off")
 st.write('Chmura słów dla recenzji o negatywnym sentymencie')
-st.pyplot(plt)
 
-
-ne_reviews = " ".join(dane4['review'].astype(str).tolist())
-wordcloud = WordCloud(width=800, height=400, background_color='black', colormap='plasma').generate(n_reviews)
-
-plt.figure(figsize=(10, 5))
-plt.imshow(wordcloud, interpolation='bilinear')
-plt.axis("off")
 st.write('Chmura słów dla recenzji o negutralnym sentymencie')
-st.pyplot(plt)
+
 
 
