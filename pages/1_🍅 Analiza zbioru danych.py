@@ -112,7 +112,7 @@ with tab2:
     df = load_data(file1, file2)
     df['original_release_date'] = pd.to_datetime(df['original_release_date'])
     
-        st.sidebar.header('Opcje filtrowania')
+    st.sidebar.header('Opcje filtrowania')
 
     date_filter = st.sidebar.slider(
     'Wybierz zakres dat (rok premiery) :',
