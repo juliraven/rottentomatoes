@@ -52,7 +52,7 @@ fig1 = px.pie(filtered_df, values='count', names='review_type', color='review_ty
              height=500,
              color_discrete_sequence=custom_colors1)
 fig1.update_traces(textfont_size=20)
-st.plotly_chart(fig1)
+st.plotly_chart(fig1, use_container_width=True)
 
 st.markdown('### Chmury słów dla recenzji o danym sentymencie')
 c1, c2, c3 = st.columns((2,2,2))
