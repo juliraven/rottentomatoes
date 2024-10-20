@@ -3,6 +3,24 @@ from st_pages import add_page_title, get_nav_from_toml
 
 st.set_page_config(page_title="Analiza Sentymentu")
 
+# Tworzenie zakładek
+tab1, tab2, tab3 = st.tabs(["Home", "Analysis", "Settings"])
+
+# Treść zakładki "Home"
+with tab1:
+    st.header("Home")
+    st.write("This is the home page.")
+
+# Treść zakładki "Analysis"
+with tab2:
+    st.header("Analysis")
+    st.write("This is the analysis page.")
+
+# Treść zakładki "Settings"
+with tab3:
+    st.header("Settings")
+    st.write("This is the settings page.")
+
 st.markdown(
     """
     <style>
