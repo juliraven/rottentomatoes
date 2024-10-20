@@ -28,7 +28,7 @@ st.markdown(
 
 st.markdown('###')
 
-tab1, tab2 = st.tabs(["Wykresy", "Rozkład sentymentu w czasie"])
+tab1, tab2 = st.tabs(["Wykresy", "Ranking"])
 
 with tab1:
 
@@ -96,7 +96,7 @@ with tab1:
     b2.plotly_chart(fig3, use_container_width=True)
 
 with tab2:
-    st.markdown('### Rozkład sentymentu w czasie dla wybranego filmu')
+    st.markdown('### Ranking filmów według sentymentu')
     
     def load_data(file1, file2):
         df1 = pd.read_csv(file1)
@@ -108,21 +108,47 @@ with tab2:
     file1 = 'dane5_1.csv'
     file2 = 'dane5_2.csv'
 
-    dane5 = load_data(file1, file2)
+    df = load_data(file1, file2)
 
-    selected_movie = st.selectbox('Wybierz film do analizy sentymentu w czasie :', dane5['movie_title'].unique())
+    st.sidebar.header('Opcje filtrowania')
 
-    movie_reviews = dane5[dane5['movie_title'] == selected_movie]
-    
-    st.subheader(f'Analiza sentymentu w czasie dla filmu : {selected_movie}')
-    
-    fig, ax = plt.subplots()
-    ax.plot(movie_reviews['review_date'], movie_reviews['sentiment'], marker='o', linestyle='-', color='b')
-    ax.set_xlabel('Data recenzji')
-    ax.set_ylabel('Sentyment (1=positive, 0=neutral, -1=negative)')
-    ax.set_title(f'Sentyment w czasie dla {selected_movie}')
-    
-    st.pyplot(fig)
+    date_filter = st.sidebar.slider(
+    'Wybierz zakres dat (rok premiery)',
+    min_value=df['original_release_date'].min().date(),
+    max_value=df['original_release_date'].max().date(),
+    value=(df['original_release_date'].min().date(), df['original_release_date'].max().date())
+    )
+
+    tomatometer_filter = st.sidebar.slider('Wybierz ocenę krytyków (Tomatometer) :', 
+                                       int(df['tomatometer_rating'].min()), 
+                                       int(df['tomatometer_rating'].max()), 
+                                       (int(df['tomatometer_rating'].min()), int(df['tomatometer_rating'].max())))
+
+
+    audience_filter = st.sidebar.slider('Wybierz ocenę widowni :', 
+                                    int(df['audience_rating'].min()), 
+                                    int(df['audience_rating'].max()), 
+                                    (int(df['audience_rating'].min()), int(df['audience_rating'].max())))
+
+    sentiment_filter = st.sidebar.multiselect('Wybierz sentyment :', options=df['sentiment'].unique(), default=df['sentiment'].unique())
+
+
+    filtered_df = df[(df['original_release_date'].between(pd.to_datetime(date_filter[0]), pd.to_datetime(date_filter[1]))) &
+                 (df['tomatometer_rating'].between(tomatometer_filter[0], tomatometer_filter[1])) &
+                 (df['audience_rating'].between(audience_filter[0], audience_filter[1])) &
+                 (df['sentiment'].isin(sentiment_filter))]
+
+    st.subheader(f'Filmy (znaleziono : {len(filtered_df)})')
+    st.dataframe(filtered_df[['movie_title', 'original_release_date', 'tomatometer_rating', 'audience_rating', 'sentiment']].sort_values(by='sentiment_score', ascending=False))
+
+
+    avg_sentiment = filtered_df['sentiment_score'].mean()
+    avg_tomatometer = filtered_df['tomatometer_rating'].mean()
+    avg_audience = filtered_df['audience_rating'].mean()
+
+    st.write(f'Średni sentyment filmów : {avg_sentiment:.2f}')
+    st.write(f'Średnia ocena krytyków (Tomatometer) : {avg_tomatometer:.2f}')
+    st.write(f'Średnia ocena widowni : {avg_audience:.2f}')
 
 
 
