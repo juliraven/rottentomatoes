@@ -140,10 +140,10 @@ with tab2:
                  (df['sentiment'].isin(sentiment_filter))]
 
     st.subheader(f'Filmy (znaleziono : {len(filtered_df)})')
-    st.dataframe(filtered_df[['movie_title', 'original_release_date', 'tomatometer_rating', 'audience_rating', 'sentiment']].sort_values(by='sentiment_score', ascending=False))
+    st.dataframe(filtered_df[['movie_title', 'original_release_date', 'tomatometer_rating', 'audience_rating', 'sentiment']].sort_values(by='sentiment', ascending=False))
 
 
-    avg_sentiment = filtered_df['sentiment_score'].mean()
+    avg_sentiment = filtered_df['sentiment'].mean()
     avg_tomatometer = filtered_df['tomatometer_rating'].mean()
     avg_audience = filtered_df['audience_rating'].mean()
 
