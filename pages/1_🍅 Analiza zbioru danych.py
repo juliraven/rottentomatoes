@@ -45,7 +45,7 @@ gatunki = dane2['genres'].unique()
 wybierz_gatunek = st.selectbox('Wybierz gatunek :', gatunki)
 filtered_df = dane2[dane2['genres'] == wybierz_gatunek]
 
-custom_colors1 = ['red', 'darkgreen']  
+custom_colors1 = ['red', 'rgb(61,94,47)']  
 
 fig1 = px.pie(filtered_df, values='count', names='review_type', color='review_type',
              width=800,  
