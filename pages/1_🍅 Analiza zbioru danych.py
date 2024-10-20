@@ -49,9 +49,8 @@ color_map = {
     'rotten': '#4CAF50', 
     'fresh': '#F44336'  
 }
-fig1 = px.bar(filtered_df, x='review_type', y='count', color='review_type', barmode='group',
-             color_discrete_map=color_map,
-             labels={'count': 'Liczba recenzji', 'review_type': 'Typ recenzji'})
+fig1 = px.bar(filtered_df, x='review_type', y='count', color='review_type',
+             color_discrete_map=color_map)
 st.plotly_chart(fig1)
 
 st.markdown('### Chmury słów dla recenzji o danym sentymencie')
