@@ -40,10 +40,18 @@ fig.update_traces(textfont_size=20)
 st.markdown('### Podział recenzji wg sentymentu')
 st.plotly_chart(fig, use_container_width=True)
 
-st.markdown('### Liczba recenzji według gatunku i typu recenzji')
-fig1 = px.bar(dane2, x='genres', y='count', color='review_type', barmode='group',
-             labels={'count': 'Liczba recenzji', 'genres': 'Gatunki', 'review_type': 'Typ recenzji'})
+st.markdown('### Liczba recenzji z podziałem na typ dla wybranego gatunku')
+gatunki = dane2['genres'].unique()
+wybierz_gatunek = st.selectbox('Wybierz gatunek :', gatunki)
+filtered_df = dane2[dane2['genres'] == wybierz_gatunek]
 
+color_map = {
+    'rotten': '#4CAF50', 
+    'fresh': '#F44336'  
+}
+fig1 = px.bar(filtered_df, x='review_type', y='count', color='review_type', barmode='group',
+             color_discrete_map=color_map,
+             labels={'count': 'Liczba recenzji', 'review_type': 'Typ recenzji'}
 st.plotly_chart(fig1)
 
 st.markdown('### Chmury słów dla recenzji o danym sentymencie')
