@@ -59,7 +59,7 @@ a2.plotly_chart(fig1, use_container_width=True)
 gatunki = dane2['genres'].unique()
 wybierz_gatunek = st.selectbox('Wybierz gatunek :', gatunki)
 filtered_df = dane2[dane2['genres'] == wybierz_gatunek]
-filtered_df1 = dane3[dane3['sentiment'] == wybierz_gatunek]
+filtered_df1 = dane3[dane3['genres'] == wybierz_gatunek]
 b1, b2 = st.columns((2,2))
 
 fig2 = px.pie(filtered_df1, values='count', names='sentiment', color='sentiment',
@@ -68,7 +68,7 @@ fig2 = px.pie(filtered_df1, values='count', names='sentiment', color='sentiment'
              color_discrete_sequence=custom_colors)
 
 fig2.update_traces(textfont_size=20)
-b1.markdown('### Udział procentowy sentymentów dla wybranego gatunku')
+b1.markdown('### Podział recenzji wg sentymentu dla wybranego gatunku')
 b1.plotly_chart(fig2, use_container_width=True)
 
 fig3 = px.pie(filtered_df, values='count', names='review_type', color='review_type',
@@ -77,7 +77,7 @@ fig3 = px.pie(filtered_df, values='count', names='review_type', color='review_ty
              color_discrete_sequence=custom_colors1)
 
 fig3.update_traces(textfont_size=20)
-b2.markdown('### Udział procentowy typów recenzji dla wybranego gatunku')
+b2.markdown('### Podział recenzji wg typu dla wybranego gatunku')
 b2.plotly_chart(fig3, use_container_width=True)
 
 st.markdown('### Chmury słów dla recenzji o danym sentymencie')
