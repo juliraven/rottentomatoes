@@ -96,7 +96,7 @@ with tab1:
     b2.plotly_chart(fig3, use_container_width=True)
 
 with tab2:
-    st.markdown('### Ranking filmów według sentymentu')
+    st.markdown('### Ranking filmów')
     
     def load_data(file1, file2):
         df1 = pd.read_csv(file1)
@@ -110,7 +110,6 @@ with tab2:
 
     df = load_data(file1, file2)
     df['original_release_date'] = pd.to_datetime(df['original_release_date'])
-    df
 
     st.sidebar.header('Opcje filtrowania')
 
@@ -152,8 +151,8 @@ with tab2:
     sorted_df = aggregated_df.sort_values(by=['audience_rating', 'tomatometer_rating'], ascending=False)
 
     top_10 = sorted_df.head(10) 
-    st.subheader(f'Top {len(top_10)} filmów (znaleziono: {len(sorted_df)})')
-    st.dataframe(top_10[['movie_title', 'original_release_date', 'tomatometer_rating', 'audience_rating']])
+    st.subheader(f'Top {len(top_10)} filmów')
+    st.dataframe(top_10[['movie_title', 'original_release_date.astype(str).str[:10]', 'tomatometer_rating', 'audience_rating']])
 
 
 
