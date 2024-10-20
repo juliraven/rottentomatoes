@@ -2,7 +2,3 @@
 base="dark"
 secondaryBackgroundColor="#580707"
 
-[[pages]]
-path = "1_🍅 Analiza zbioru danych.py"
-name = "Analiza zbioru danych"
-icon = "🍅"
