@@ -45,7 +45,13 @@ gatunki = dane2['genres'].unique()
 wybierz_gatunek = st.selectbox('Wybierz gatunek :', gatunki)
 filtered_df = dane2[dane2['genres'] == wybierz_gatunek]
 
-fig1 = px.pie(filtered_df, values='count', names='review_type', color='review_type')
+custom_colors1 = ['forestgreen', 'indianred']  
+
+fig1 = px.pie(filtered_df, values='count', names='review_type', color='review_type',
+             width=800,  
+             height=500,
+             color_discrete_sequence=custom_colors1)
+fig1.update_traces(textfont_size=20)
 st.plotly_chart(fig1)
 
 st.markdown('### Chmury słów dla recenzji o danym sentymencie')
