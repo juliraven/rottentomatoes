@@ -40,7 +40,7 @@ fig.update_traces(textfont_size=20)
 st.markdown('### Podział recenzji wg sentymentu')
 st.plotly_chart(fig, use_container_width=True)
 
-st.markdown('### Liczba recenzji z podziałem na typ dla wybranego gatunku')
+st.markdown('### Udział procentowy typów recenzji dla wybranego gatunku')
 gatunki = dane2['genres'].unique()
 wybierz_gatunek = st.selectbox('Wybierz gatunek :', gatunki)
 filtered_df = dane2[dane2['genres'] == wybierz_gatunek]
