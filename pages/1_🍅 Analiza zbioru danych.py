@@ -51,7 +51,7 @@ color_map = {
 }
 fig1 = px.bar(filtered_df, x='review_type', y='count', color='review_type', barmode='group',
              color_discrete_map=color_map,
-             labels={'count': 'Liczba recenzji', 'review_type': 'Typ recenzji'}
+             labels={'count': 'Liczba recenzji', 'review_type': 'Typ recenzji'})
 st.plotly_chart(fig1)
 
 st.markdown('### Chmury słów dla recenzji o danym sentymencie')
