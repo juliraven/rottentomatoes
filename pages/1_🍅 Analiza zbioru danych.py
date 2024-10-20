@@ -26,7 +26,7 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-b1, b2 = st.columns((2,2))
+a1, a2 = st.columns((2,2))
 sentiment_counts = dane1['sentiment'].value_counts().reset_index()
 sentiment_counts.columns = ['sentiment', 'count']
 
@@ -40,8 +40,8 @@ fig = px.pie(sentiment_counts,
              color_discrete_sequence=custom_colors)
 
 fig.update_traces(textfont_size=20)
-b1.markdown('### Podział recenzji wg sentymentu')
-b1.plotly_chart(fig, use_container_width=True)
+a1.markdown('### Podział recenzji wg sentymentu')
+a1.plotly_chart(fig, use_container_width=True)
 
 custom_colors1 = ['red', 'rgb(61,94,47)']  
 
@@ -53,13 +53,14 @@ fig1 = px.pie(dane4,
              color_discrete_sequence=custom_colors1)
 
 fig1.update_traces(textfont_size=20)
-b2.markdown('### Podział recenzji wg typu')
-b2.plotly_chart(fig1, use_container_width=True)
+a2.markdown('### Podział recenzji wg typu')
+a2.plotly_chart(fig1, use_container_width=True)
 
 gatunki = dane2['genres'].unique()
 wybierz_gatunek = st.selectbox('Wybierz gatunek :', gatunki)
 filtered_df = dane2[dane2['genres'] == wybierz_gatunek]
 filtered_df1 = dane3[dane3['sentiment'] == wybierz_gatunek]
+b1, b2 = st.columns((2,2))
 
 fig2 = px.pie(filtered_df1, values='count', names='sentiment', color='sentiment',
              width=800,  
