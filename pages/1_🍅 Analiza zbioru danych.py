@@ -24,14 +24,8 @@ fig = px.pie(sentiment_counts,
 fig.update_traces(textfont_size=20)
 st.plotly_chart(fig, use_container_width=True)
 
-
-st.write('Chmura słów dla recenzji o negatywnym sentymencie')
-st.image("negatywne.png", caption="Word Cloud for Selected Movie Reviews")
-
-st.write('Chmura słów dla recenzji o pozytywnym sentymencie')
-st.image("pozytywne.png", caption="Word Cloud for Selected Movie Reviews")
-
-st.write('Chmura słów dla recenzji o negutralnym sentymencie')
-st.image("neutralne.png", caption="Word Cloud for Selected Movie Reviews")
+st.image("negatywne.png", caption="Chmura słów dla recenzji o negatywnym sentymencie")
+st.image("pozytywne.png", caption="Chmura słów dla recenzji o pozytywnym sentymencie")
+st.image("neutralne.png", caption="Chmura słów dla recenzji o negutralnym sentymencie")
 
 
