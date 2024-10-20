@@ -139,17 +139,21 @@ with tab2:
                  (df['audience_rating'].between(audience_filter[0], audience_filter[1])) &
                  (df['sentiment'].isin(sentiment_filter))]
 
-    sorted_df = filtered_df.sort_values(by=['tomatometer_rating', 'audience_rating'], ascending=False)
+
+    aggregated_df = filtered_df.groupby('movie_title').agg(
+    {
+        'original_release_date': 'first',  # Zachowujemy datę premiery
+        'tomatometer_rating': 'mean',       # Średnia ocena krytyków
+        'audience_rating': 'mean'         # Średnia ocena widowni
+    }
+    ).reset_index()
+
+    sorted_df = aggregated_df.sort_values(by=['audience_rating', 'tomatometer_rating'], ascending=False)
 
     top_10 = sorted_df.head(10) 
+    st.subheader(f'Top {len(top_10)} filmów (znaleziono: {len(sorted_df)})')
+    st.dataframe(top_10[['movie_title', 'original_release_date', 'tomatometer_rating', 'audience_rating', 'sentiment']])
 
-    unique_movies = top_10.drop_duplicates(subset=['movie_title'], keep='first')
-
-    if len(unique_movies) > 10:
-        unique_movies = unique_movies.head(10)
-
-    st.subheader(f'Top {len(unique_movies)} filmów (znaleziono: {len(sorted_df)})')
-    st.dataframe(unique_movies[['movie_title', 'original_release_date', 'tomatometer_rating', 'audience_rating', 'sentiment']])
 
 
 
