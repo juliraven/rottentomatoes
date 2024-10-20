@@ -21,17 +21,3 @@ st.markdown(
 
 st.image('tomato.png', use_column_width=True)
 
-
-
-
-sections = st.sidebar.toggle("Sections", value=True, key="use_sections")
-
-nav = get_nav_from_toml(
-    ".streamlit/pages_sections.toml" if sections else ".streamlit/pages.toml"
-)
-
-pg = st.navigation(nav)
-
-add_page_title(pg)
-
-pg.run()
