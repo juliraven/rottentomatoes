@@ -45,3 +45,5 @@ plt.imshow(wordcloud, interpolation='bilinear')
 plt.axis("off")
 st.write('Chmura słów dla recenzji o negutralnym sentymencie')
 st.pyplot(plt)
+
+
