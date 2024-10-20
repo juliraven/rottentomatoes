@@ -110,6 +110,7 @@ with tab2:
 
     dane5 = load_data(file1, file2)
     st.dataframe(dane5)
+    st.write(dane5.shape)
 
 
 
