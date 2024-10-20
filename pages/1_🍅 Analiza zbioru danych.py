@@ -11,11 +11,6 @@ dane2 = pd.read_csv('dane2.csv')
 dane3 = pd.read_csv('dane3.csv')
 dane4 = pd.read_csv('dane4.csv')
 
-if 'selected_tab' not in st.session_state:
-    st.session_state.selected_tab = 0  
-
-def change_tab(tab_index):
-    st.session_state.selected_tab = tab_index
 
 st.markdown(
     """
@@ -165,10 +160,6 @@ with tab2:
     
     st.dataframe(sorted_df)
 
-
-if st.session_state.selected_tab == 1:
-    st.sidebar.header('Opcje sidebaru')
-    st.sidebar.write('Dostosuj swoje ustawienia tutaj.')
 
 
 
