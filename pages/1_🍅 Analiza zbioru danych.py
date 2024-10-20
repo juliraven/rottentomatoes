@@ -173,7 +173,7 @@ with tab2:
     html_table += "<tr><th>Tytuł Filmu</th><th>Data Premiery</th><th>Ocena Krytyków</th><th>Ocena Widowni</th><th>Tomatometer</th><th>Audience</th></tr>"
 
     for index, row in sorted_df.iterrows():
-        tomatometer_bar = create_bar(row['Ocena Krytyków'], max_tomatometer, 'pink')
+        tomatometer_bar = create_bar(row['Ocena Krytyków'], max_tomatometer, 'green')
         audience_bar = create_bar(row['Ocena Widowni'], max_audience, 'blue')
         html_table += f"<tr><td>{row['Tytuł Filmu']}</td><td>{row['Data Premiery']}</td><td>{row['Ocena Krytyków']}</td><td>{row['Ocena Widowni']}</td><td>{tomatometer_bar}</td><td>{audience_bar}</td></tr>"
 
