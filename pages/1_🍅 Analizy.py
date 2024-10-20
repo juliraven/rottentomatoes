@@ -38,4 +38,11 @@ st.write('Chmura słów dla recenzji o negatywnym sentymencie')
 st.pyplot(plt)
 
 
+ne_reviews = " ".join(dane4['review'].astype(str).tolist())
+wordcloud = WordCloud(width=800, height=400, background_color='black', colormap='plasma').generate(n_reviews)
 
+plt.figure(figsize=(10, 5))
+plt.imshow(wordcloud, interpolation='bilinear')
+plt.axis("off")
+st.write('Chmura słów dla recenzji o negutralnym sentymencie')
+st.pyplot(plt)
