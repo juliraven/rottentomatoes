@@ -27,6 +27,6 @@ st.plotly_chart(fig, use_container_width=True)
 st.title('Chmury słów dla recenzji o danym sentymencie')
 st.image("negatywne.png", caption="Chmura słów dla recenzji o negatywnym sentymencie")
 st.image("pozytywne.png", caption="Chmura słów dla recenzji o pozytywnym sentymencie")
-st.image("neutralne.png", caption="Chmura słów dla recenzji o negutralnym sentymencie")
+st.image("neutralne.png", caption="Chmura słów dla recenzji o neutralnym sentymencie")
 
 
