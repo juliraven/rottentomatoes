@@ -1,0 +1,2134 @@
+genres,review_type,count
+Action & Adventure,Fresh,6333
+Action & Adventure,Rotten,7815
+"Action & Adventure, Animation",Fresh,230
+"Action & Adventure, Animation",Rotten,127
+"Action & Adventure, Animation, Anime & Manga, Art House & International",Fresh,16
+"Action & Adventure, Animation, Anime & Manga, Art House & International",Rotten,4
+"Action & Adventure, Animation, Anime & Manga, Art House & International, Science Fiction & Fantasy",Fresh,63
+"Action & Adventure, Animation, Anime & Manga, Art House & International, Science Fiction & Fantasy",Rotten,37
+"Action & Adventure, Animation, Anime & Manga, Drama",Fresh,14
+"Action & Adventure, Animation, Anime & Manga, Drama",Rotten,3
+"Action & Adventure, Animation, Anime & Manga, Science Fiction & Fantasy",Fresh,25
+"Action & Adventure, Animation, Anime & Manga, Science Fiction & Fantasy",Rotten,7
+"Action & Adventure, Animation, Art House & International",Fresh,216
+"Action & Adventure, Animation, Art House & International",Rotten,22
+"Action & Adventure, Animation, Art House & International, Comedy",Fresh,14
+"Action & Adventure, Animation, Art House & International, Comedy",Rotten,25
+"Action & Adventure, Animation, Art House & International, Comedy, Science Fiction & Fantasy",Fresh,11
+"Action & Adventure, Animation, Art House & International, Drama",Fresh,2
+"Action & Adventure, Animation, Art House & International, Drama",Rotten,15
+"Action & Adventure, Animation, Art House & International, Drama, Science Fiction & Fantasy",Rotten,6
+"Action & Adventure, Animation, Art House & International, Horror, Science Fiction & Fantasy",Fresh,18
+"Action & Adventure, Animation, Art House & International, Horror, Science Fiction & Fantasy",Rotten,4
+"Action & Adventure, Animation, Art House & International, Kids & Family",Fresh,98
+"Action & Adventure, Animation, Art House & International, Kids & Family",Rotten,38
+"Action & Adventure, Animation, Art House & International, Kids & Family, Science Fiction & Fantasy",Fresh,156
+"Action & Adventure, Animation, Art House & International, Kids & Family, Science Fiction & Fantasy",Rotten,42
+"Action & Adventure, Animation, Art House & International, Science Fiction & Fantasy",Fresh,3
+"Action & Adventure, Animation, Art House & International, Science Fiction & Fantasy",Rotten,18
+"Action & Adventure, Animation, Classics, Comedy, Kids & Family",Fresh,7
+"Action & Adventure, Animation, Classics, Comedy, Kids & Family",Rotten,3
+"Action & Adventure, Animation, Classics, Comedy, Kids & Family, Musical & Performing Arts",Fresh,6
+"Action & Adventure, Animation, Classics, Comedy, Kids & Family, Musical & Performing Arts",Rotten,3
+"Action & Adventure, Animation, Comedy",Fresh,1687
+"Action & Adventure, Animation, Comedy",Rotten,725
+"Action & Adventure, Animation, Comedy, Cult Movies, Kids & Family, Musical & Performing Arts, Science Fiction & Fantasy",Fresh,47
+"Action & Adventure, Animation, Comedy, Cult Movies, Kids & Family, Musical & Performing Arts, Science Fiction & Fantasy",Rotten,3
+"Action & Adventure, Animation, Comedy, Documentary, Kids & Family",Fresh,79
+"Action & Adventure, Animation, Comedy, Documentary, Kids & Family",Rotten,61
+"Action & Adventure, Animation, Comedy, Drama",Fresh,11
+"Action & Adventure, Animation, Comedy, Drama",Rotten,2
+"Action & Adventure, Animation, Comedy, Drama, Kids & Family",Fresh,168
+"Action & Adventure, Animation, Comedy, Drama, Kids & Family",Rotten,36
+"Action & Adventure, Animation, Comedy, Drama, Kids & Family, Musical & Performing Arts",Fresh,8
+"Action & Adventure, Animation, Comedy, Drama, Kids & Family, Musical & Performing Arts",Rotten,5
+"Action & Adventure, Animation, Comedy, Drama, Kids & Family, Science Fiction & Fantasy",Fresh,196
+"Action & Adventure, Animation, Comedy, Drama, Kids & Family, Science Fiction & Fantasy",Rotten,72
+"Action & Adventure, Animation, Comedy, Horror, Mystery & Suspense",Fresh,2
+"Action & Adventure, Animation, Comedy, Horror, Mystery & Suspense",Rotten,3
+"Action & Adventure, Animation, Comedy, Kids & Family",Fresh,4684
+"Action & Adventure, Animation, Comedy, Kids & Family",Rotten,2260
+"Action & Adventure, Animation, Comedy, Kids & Family, Musical & Performing Arts",Fresh,62
+"Action & Adventure, Animation, Comedy, Kids & Family, Musical & Performing Arts",Rotten,2
+"Action & Adventure, Animation, Comedy, Kids & Family, Musical & Performing Arts, Romance",Fresh,70
+"Action & Adventure, Animation, Comedy, Kids & Family, Musical & Performing Arts, Romance",Rotten,55
+"Action & Adventure, Animation, Comedy, Kids & Family, Musical & Performing Arts, Science Fiction & Fantasy",Fresh,6
+"Action & Adventure, Animation, Comedy, Kids & Family, Musical & Performing Arts, Science Fiction & Fantasy",Rotten,1
+"Action & Adventure, Animation, Comedy, Kids & Family, Mystery & Suspense",Fresh,49
+"Action & Adventure, Animation, Comedy, Kids & Family, Mystery & Suspense",Rotten,2
+"Action & Adventure, Animation, Comedy, Kids & Family, Science Fiction & Fantasy",Fresh,927
+"Action & Adventure, Animation, Comedy, Kids & Family, Science Fiction & Fantasy",Rotten,511
+"Action & Adventure, Animation, Comedy, Musical & Performing Arts",Fresh,23
+"Action & Adventure, Animation, Comedy, Musical & Performing Arts",Rotten,63
+"Action & Adventure, Animation, Comedy, Science Fiction & Fantasy",Fresh,95
+"Action & Adventure, Animation, Comedy, Science Fiction & Fantasy",Rotten,147
+"Action & Adventure, Animation, Cult Movies, Science Fiction & Fantasy",Fresh,2
+"Action & Adventure, Animation, Cult Movies, Science Fiction & Fantasy",Rotten,2
+"Action & Adventure, Animation, Drama",Fresh,424
+"Action & Adventure, Animation, Drama",Rotten,314
+"Action & Adventure, Animation, Drama, Kids & Family",Fresh,81
+"Action & Adventure, Animation, Drama, Kids & Family",Rotten,52
+"Action & Adventure, Animation, Drama, Kids & Family, Musical & Performing Arts",Fresh,113
+"Action & Adventure, Animation, Drama, Kids & Family, Musical & Performing Arts",Rotten,8
+"Action & Adventure, Animation, Drama, Kids & Family, Science Fiction & Fantasy",Fresh,202
+"Action & Adventure, Animation, Drama, Kids & Family, Science Fiction & Fantasy",Rotten,16
+"Action & Adventure, Animation, Drama, Mystery & Suspense, Science Fiction & Fantasy",Fresh,37
+"Action & Adventure, Animation, Drama, Mystery & Suspense, Science Fiction & Fantasy",Rotten,5
+"Action & Adventure, Animation, Drama, Science Fiction & Fantasy",Fresh,371
+"Action & Adventure, Animation, Drama, Science Fiction & Fantasy",Rotten,198
+"Action & Adventure, Animation, Drama, Science Fiction & Fantasy, Special Interest",Fresh,9
+"Action & Adventure, Animation, Drama, Science Fiction & Fantasy, Special Interest",Rotten,2
+"Action & Adventure, Animation, Horror, Kids & Family",Fresh,2
+"Action & Adventure, Animation, Horror, Kids & Family",Rotten,6
+"Action & Adventure, Animation, Horror, Mystery & Suspense, Science Fiction & Fantasy",Fresh,12
+"Action & Adventure, Animation, Horror, Mystery & Suspense, Science Fiction & Fantasy",Rotten,70
+"Action & Adventure, Animation, Kids & Family",Fresh,3004
+"Action & Adventure, Animation, Kids & Family",Rotten,733
+"Action & Adventure, Animation, Kids & Family, Musical & Performing Arts",Fresh,3
+"Action & Adventure, Animation, Kids & Family, Musical & Performing Arts",Rotten,2
+"Action & Adventure, Animation, Kids & Family, Musical & Performing Arts, Romance",Fresh,41
+"Action & Adventure, Animation, Kids & Family, Musical & Performing Arts, Romance",Rotten,15
+"Action & Adventure, Animation, Kids & Family, Musical & Performing Arts, Science Fiction & Fantasy",Fresh,2
+"Action & Adventure, Animation, Kids & Family, Musical & Performing Arts, Science Fiction & Fantasy",Rotten,12
+"Action & Adventure, Animation, Kids & Family, Mystery & Suspense",Fresh,23
+"Action & Adventure, Animation, Kids & Family, Mystery & Suspense",Rotten,5
+"Action & Adventure, Animation, Kids & Family, Mystery & Suspense, Romance",Fresh,17
+"Action & Adventure, Animation, Kids & Family, Mystery & Suspense, Romance",Rotten,1
+"Action & Adventure, Animation, Kids & Family, Romance",Fresh,114
+"Action & Adventure, Animation, Kids & Family, Romance",Rotten,134
+"Action & Adventure, Animation, Kids & Family, Science Fiction & Fantasy",Fresh,2217
+"Action & Adventure, Animation, Kids & Family, Science Fiction & Fantasy",Rotten,617
+"Action & Adventure, Animation, Kids & Family, Science Fiction & Fantasy, Special Interest",Fresh,6
+"Action & Adventure, Animation, Kids & Family, Science Fiction & Fantasy, Special Interest",Rotten,2
+"Action & Adventure, Animation, Kids & Family, Science Fiction & Fantasy, Television",Fresh,22
+"Action & Adventure, Animation, Kids & Family, Science Fiction & Fantasy, Television",Rotten,39
+"Action & Adventure, Animation, Kids & Family, Special Interest",Fresh,9
+"Action & Adventure, Animation, Kids & Family, Special Interest",Rotten,18
+"Action & Adventure, Animation, Kids & Family, Western",Fresh,4
+"Action & Adventure, Animation, Kids & Family, Western",Rotten,3
+"Action & Adventure, Animation, Musical & Performing Arts, Mystery & Suspense, Science Fiction & Fantasy",Fresh,74
+"Action & Adventure, Animation, Musical & Performing Arts, Mystery & Suspense, Science Fiction & Fantasy",Rotten,74
+"Action & Adventure, Animation, Science Fiction & Fantasy",Fresh,895
+"Action & Adventure, Animation, Science Fiction & Fantasy",Rotten,464
+"Action & Adventure, Anime & Manga, Art House & International, Classics, Horror, Science Fiction & Fantasy",Fresh,6
+"Action & Adventure, Anime & Manga, Art House & International, Classics, Horror, Science Fiction & Fantasy",Rotten,2
+"Action & Adventure, Anime & Manga, Science Fiction & Fantasy",Fresh,56
+"Action & Adventure, Anime & Manga, Science Fiction & Fantasy",Rotten,2
+"Action & Adventure, Art House & International",Fresh,912
+"Action & Adventure, Art House & International",Rotten,297
+"Action & Adventure, Art House & International, Classics",Fresh,5
+"Action & Adventure, Art House & International, Classics, Comedy",Fresh,14
+"Action & Adventure, Art House & International, Classics, Comedy, Cult Movies, Horror, Science Fiction & Fantasy",Fresh,8
+"Action & Adventure, Art House & International, Classics, Comedy, Cult Movies, Horror, Science Fiction & Fantasy",Rotten,6
+"Action & Adventure, Art House & International, Classics, Comedy, Documentary, Drama",Fresh,5
+"Action & Adventure, Art House & International, Classics, Comedy, Documentary, Drama",Rotten,1
+"Action & Adventure, Art House & International, Classics, Drama",Fresh,804
+"Action & Adventure, Art House & International, Classics, Drama",Rotten,88
+"Action & Adventure, Art House & International, Classics, Drama, Kids & Family",Fresh,27
+"Action & Adventure, Art House & International, Classics, Drama, Kids & Family",Rotten,1
+"Action & Adventure, Art House & International, Classics, Drama, Mystery & Suspense",Fresh,109
+"Action & Adventure, Art House & International, Classics, Drama, Mystery & Suspense",Rotten,17
+"Action & Adventure, Art House & International, Classics, Drama, Romance",Fresh,63
+"Action & Adventure, Art House & International, Classics, Drama, Romance",Rotten,45
+"Action & Adventure, Art House & International, Classics, Drama, Science Fiction & Fantasy",Fresh,210
+"Action & Adventure, Art House & International, Classics, Drama, Science Fiction & Fantasy",Rotten,12
+"Action & Adventure, Art House & International, Classics, Kids & Family, Science Fiction & Fantasy",Rotten,3
+"Action & Adventure, Art House & International, Classics, Mystery & Suspense",Fresh,7
+"Action & Adventure, Art House & International, Classics, Mystery & Suspense",Rotten,9
+"Action & Adventure, Art House & International, Classics, Science Fiction & Fantasy",Fresh,20
+"Action & Adventure, Art House & International, Classics, Science Fiction & Fantasy",Rotten,2
+"Action & Adventure, Art House & International, Classics, Western",Fresh,88
+"Action & Adventure, Art House & International, Classics, Western",Rotten,29
+"Action & Adventure, Art House & International, Comedy",Fresh,593
+"Action & Adventure, Art House & International, Comedy",Rotten,155
+"Action & Adventure, Art House & International, Comedy, Cult Movies, Drama",Fresh,260
+"Action & Adventure, Art House & International, Comedy, Cult Movies, Drama",Rotten,126
+"Action & Adventure, Art House & International, Comedy, Cult Movies, Horror, Science Fiction & Fantasy",Rotten,3
+"Action & Adventure, Art House & International, Comedy, Documentary, Drama",Fresh,7
+"Action & Adventure, Art House & International, Comedy, Documentary, Drama",Rotten,6
+"Action & Adventure, Art House & International, Comedy, Drama",Fresh,88
+"Action & Adventure, Art House & International, Comedy, Drama",Rotten,70
+"Action & Adventure, Art House & International, Comedy, Drama, Gay & Lesbian",Fresh,2
+"Action & Adventure, Art House & International, Comedy, Drama, Gay & Lesbian",Rotten,2
+"Action & Adventure, Art House & International, Comedy, Drama, Horror",Fresh,162
+"Action & Adventure, Art House & International, Comedy, Drama, Horror",Rotten,23
+"Action & Adventure, Art House & International, Comedy, Drama, Kids & Family",Fresh,5
+"Action & Adventure, Art House & International, Comedy, Drama, Kids & Family",Rotten,1
+"Action & Adventure, Art House & International, Comedy, Drama, Musical & Performing Arts",Fresh,4
+"Action & Adventure, Art House & International, Comedy, Drama, Musical & Performing Arts",Rotten,4
+"Action & Adventure, Art House & International, Comedy, Drama, Musical & Performing Arts, Romance",Fresh,9
+"Action & Adventure, Art House & International, Comedy, Drama, Musical & Performing Arts, Romance",Rotten,2
+"Action & Adventure, Art House & International, Comedy, Drama, Mystery & Suspense",Fresh,223
+"Action & Adventure, Art House & International, Comedy, Drama, Mystery & Suspense",Rotten,182
+"Action & Adventure, Art House & International, Comedy, Drama, Mystery & Suspense, Science Fiction & Fantasy",Fresh,188
+"Action & Adventure, Art House & International, Comedy, Drama, Mystery & Suspense, Science Fiction & Fantasy",Rotten,22
+"Action & Adventure, Art House & International, Comedy, Drama, Romance",Fresh,188
+"Action & Adventure, Art House & International, Comedy, Drama, Romance",Rotten,26
+"Action & Adventure, Art House & International, Comedy, Drama, Science Fiction & Fantasy",Fresh,1
+"Action & Adventure, Art House & International, Comedy, Drama, Science Fiction & Fantasy",Rotten,4
+"Action & Adventure, Art House & International, Comedy, Horror",Fresh,105
+"Action & Adventure, Art House & International, Comedy, Horror",Rotten,44
+"Action & Adventure, Art House & International, Comedy, Kids & Family",Fresh,1
+"Action & Adventure, Art House & International, Comedy, Kids & Family",Rotten,2
+"Action & Adventure, Art House & International, Comedy, Musical & Performing Arts, Mystery & Suspense, Romance",Fresh,38
+"Action & Adventure, Art House & International, Comedy, Musical & Performing Arts, Mystery & Suspense, Romance",Rotten,4
+"Action & Adventure, Art House & International, Comedy, Mystery & Suspense",Fresh,60
+"Action & Adventure, Art House & International, Comedy, Mystery & Suspense",Rotten,16
+"Action & Adventure, Art House & International, Comedy, Mystery & Suspense, Science Fiction & Fantasy",Fresh,9
+"Action & Adventure, Art House & International, Comedy, Mystery & Suspense, Science Fiction & Fantasy",Rotten,7
+"Action & Adventure, Art House & International, Comedy, Romance",Fresh,37
+"Action & Adventure, Art House & International, Comedy, Romance",Rotten,7
+"Action & Adventure, Art House & International, Comedy, Science Fiction & Fantasy",Fresh,1
+"Action & Adventure, Art House & International, Comedy, Science Fiction & Fantasy",Rotten,4
+"Action & Adventure, Art House & International, Comedy, Special Interest",Fresh,2
+"Action & Adventure, Art House & International, Comedy, Special Interest",Rotten,23
+"Action & Adventure, Art House & International, Cult Movies, Drama",Fresh,6
+"Action & Adventure, Art House & International, Cult Movies, Drama",Rotten,1
+"Action & Adventure, Art House & International, Cult Movies, Science Fiction & Fantasy",Fresh,3
+"Action & Adventure, Art House & International, Cult Movies, Science Fiction & Fantasy",Rotten,3
+"Action & Adventure, Art House & International, Documentary, Drama, Science Fiction & Fantasy, Special Interest",Fresh,9
+"Action & Adventure, Art House & International, Documentary, Drama, Science Fiction & Fantasy, Special Interest",Rotten,29
+"Action & Adventure, Art House & International, Documentary, Drama, Special Interest",Fresh,21
+"Action & Adventure, Art House & International, Documentary, Drama, Special Interest",Rotten,3
+"Action & Adventure, Art House & International, Documentary, Horror",Fresh,4
+"Action & Adventure, Art House & International, Documentary, Horror",Rotten,1
+"Action & Adventure, Art House & International, Documentary, Special Interest",Fresh,11
+"Action & Adventure, Art House & International, Documentary, Special Interest",Rotten,4
+"Action & Adventure, Art House & International, Documentary, Television",Fresh,8
+"Action & Adventure, Art House & International, Documentary, Television",Rotten,24
+"Action & Adventure, Art House & International, Drama",Fresh,2907
+"Action & Adventure, Art House & International, Drama",Rotten,951
+"Action & Adventure, Art House & International, Drama, Faith & Spirituality",Fresh,3
+"Action & Adventure, Art House & International, Drama, Faith & Spirituality",Rotten,1
+"Action & Adventure, Art House & International, Drama, Horror",Fresh,9
+"Action & Adventure, Art House & International, Drama, Horror",Rotten,15
+"Action & Adventure, Art House & International, Drama, Horror, Science Fiction & Fantasy",Fresh,100
+"Action & Adventure, Art House & International, Drama, Horror, Science Fiction & Fantasy",Rotten,62
+"Action & Adventure, Art House & International, Drama, Kids & Family",Fresh,9
+"Action & Adventure, Art House & International, Drama, Kids & Family",Rotten,2
+"Action & Adventure, Art House & International, Drama, Mystery & Suspense",Fresh,1092
+"Action & Adventure, Art House & International, Drama, Mystery & Suspense",Rotten,332
+"Action & Adventure, Art House & International, Drama, Mystery & Suspense, Romance",Fresh,136
+"Action & Adventure, Art House & International, Drama, Mystery & Suspense, Romance",Rotten,80
+"Action & Adventure, Art House & International, Drama, Mystery & Suspense, Science Fiction & Fantasy",Fresh,40
+"Action & Adventure, Art House & International, Drama, Mystery & Suspense, Science Fiction & Fantasy",Rotten,1
+"Action & Adventure, Art House & International, Drama, Mystery & Suspense, Science Fiction & Fantasy, Special Interest",Fresh,46
+"Action & Adventure, Art House & International, Drama, Mystery & Suspense, Science Fiction & Fantasy, Special Interest",Rotten,6
+"Action & Adventure, Art House & International, Drama, Mystery & Suspense, Television",Fresh,7
+"Action & Adventure, Art House & International, Drama, Mystery & Suspense, Television",Rotten,3
+"Action & Adventure, Art House & International, Drama, Mystery & Suspense, Western",Fresh,108
+"Action & Adventure, Art House & International, Drama, Mystery & Suspense, Western",Rotten,28
+"Action & Adventure, Art House & International, Drama, Romance",Fresh,237
+"Action & Adventure, Art House & International, Drama, Romance",Rotten,53
+"Action & Adventure, Art House & International, Drama, Science Fiction & Fantasy",Fresh,373
+"Action & Adventure, Art House & International, Drama, Science Fiction & Fantasy",Rotten,189
+"Action & Adventure, Art House & International, Drama, Special Interest",Fresh,171
+"Action & Adventure, Art House & International, Drama, Special Interest",Rotten,72
+"Action & Adventure, Art House & International, Drama, Sports & Fitness",Fresh,27
+"Action & Adventure, Art House & International, Drama, Sports & Fitness",Rotten,1
+"Action & Adventure, Art House & International, Drama, Western",Fresh,4
+"Action & Adventure, Art House & International, Drama, Western",Rotten,8
+"Action & Adventure, Art House & International, Drama, Western, Romance",Fresh,46
+"Action & Adventure, Art House & International, Drama, Western, Romance",Rotten,14
+"Action & Adventure, Art House & International, Horror",Fresh,12
+"Action & Adventure, Art House & International, Horror",Rotten,10
+"Action & Adventure, Art House & International, Horror, Musical & Performing Arts, Mystery & Suspense",Fresh,3
+"Action & Adventure, Art House & International, Horror, Musical & Performing Arts, Mystery & Suspense",Rotten,2
+"Action & Adventure, Art House & International, Horror, Mystery & Suspense",Fresh,125
+"Action & Adventure, Art House & International, Horror, Mystery & Suspense",Rotten,21
+"Action & Adventure, Art House & International, Horror, Mystery & Suspense, Science Fiction & Fantasy",Fresh,6
+"Action & Adventure, Art House & International, Horror, Mystery & Suspense, Science Fiction & Fantasy",Rotten,5
+"Action & Adventure, Art House & International, Horror, Science Fiction & Fantasy",Fresh,144
+"Action & Adventure, Art House & International, Horror, Science Fiction & Fantasy",Rotten,89
+"Action & Adventure, Art House & International, Kids & Family",Fresh,20
+"Action & Adventure, Art House & International, Kids & Family",Rotten,3
+"Action & Adventure, Art House & International, Kids & Family, Science Fiction & Fantasy",Fresh,17
+"Action & Adventure, Art House & International, Kids & Family, Science Fiction & Fantasy",Rotten,6
+"Action & Adventure, Art House & International, Kids & Family, Science Fiction & Fantasy, Romance",Fresh,10
+"Action & Adventure, Art House & International, Kids & Family, Science Fiction & Fantasy, Romance",Rotten,34
+"Action & Adventure, Art House & International, Mystery & Suspense",Fresh,584
+"Action & Adventure, Art House & International, Mystery & Suspense",Rotten,261
+"Action & Adventure, Art House & International, Mystery & Suspense, Science Fiction & Fantasy",Fresh,72
+"Action & Adventure, Art House & International, Mystery & Suspense, Science Fiction & Fantasy",Rotten,23
+"Action & Adventure, Art House & International, Science Fiction & Fantasy",Fresh,306
+"Action & Adventure, Art House & International, Science Fiction & Fantasy",Rotten,83
+"Action & Adventure, Art House & International, Science Fiction & Fantasy, Romance",Fresh,10
+"Action & Adventure, Art House & International, Science Fiction & Fantasy, Romance",Rotten,4
+"Action & Adventure, Art House & International, Science Fiction & Fantasy, Special Interest, Western",Fresh,13
+"Action & Adventure, Art House & International, Science Fiction & Fantasy, Special Interest, Western",Rotten,29
+"Action & Adventure, Art House & International, Western",Fresh,54
+"Action & Adventure, Art House & International, Western",Rotten,19
+"Action & Adventure, Classics",Fresh,229
+"Action & Adventure, Classics",Rotten,113
+"Action & Adventure, Classics, Comedy",Fresh,116
+"Action & Adventure, Classics, Comedy",Rotten,32
+"Action & Adventure, Classics, Comedy, Cult Movies, Science Fiction & Fantasy",Fresh,1
+"Action & Adventure, Classics, Comedy, Cult Movies, Science Fiction & Fantasy",Rotten,1
+"Action & Adventure, Classics, Comedy, Documentary, Drama, Musical & Performing Arts",Fresh,9
+"Action & Adventure, Classics, Comedy, Documentary, Drama, Musical & Performing Arts",Rotten,1
+"Action & Adventure, Classics, Comedy, Drama",Fresh,156
+"Action & Adventure, Classics, Comedy, Drama",Rotten,37
+"Action & Adventure, Classics, Comedy, Drama, Kids & Family, Special Interest",Fresh,21
+"Action & Adventure, Classics, Comedy, Drama, Kids & Family, Special Interest",Rotten,1
+"Action & Adventure, Classics, Comedy, Drama, Musical & Performing Arts",Fresh,14
+"Action & Adventure, Classics, Comedy, Drama, Musical & Performing Arts",Rotten,2
+"Action & Adventure, Classics, Comedy, Drama, Musical & Performing Arts, Mystery & Suspense",Fresh,3
+"Action & Adventure, Classics, Comedy, Drama, Musical & Performing Arts, Mystery & Suspense",Rotten,1
+"Action & Adventure, Classics, Comedy, Drama, Musical & Performing Arts, Science Fiction & Fantasy, Romance",Fresh,3
+"Action & Adventure, Classics, Comedy, Drama, Musical & Performing Arts, Science Fiction & Fantasy, Romance",Rotten,8
+"Action & Adventure, Classics, Comedy, Drama, Musical & Performing Arts, Western, Romance",Fresh,6
+"Action & Adventure, Classics, Comedy, Drama, Musical & Performing Arts, Western, Romance",Rotten,2
+"Action & Adventure, Classics, Comedy, Drama, Mystery & Suspense",Fresh,61
+"Action & Adventure, Classics, Comedy, Drama, Mystery & Suspense",Rotten,18
+"Action & Adventure, Classics, Comedy, Drama, Mystery & Suspense, Romance",Fresh,46
+"Action & Adventure, Classics, Comedy, Drama, Mystery & Suspense, Romance",Rotten,6
+"Action & Adventure, Classics, Comedy, Drama, Romance",Fresh,68
+"Action & Adventure, Classics, Comedy, Drama, Romance",Rotten,8
+"Action & Adventure, Classics, Comedy, Horror",Fresh,8
+"Action & Adventure, Classics, Comedy, Horror",Rotten,9
+"Action & Adventure, Classics, Comedy, Kids & Family",Fresh,28
+"Action & Adventure, Classics, Comedy, Kids & Family",Rotten,3
+"Action & Adventure, Classics, Comedy, Kids & Family, Musical & Performing Arts, Science Fiction & Fantasy",Fresh,4
+"Action & Adventure, Classics, Comedy, Kids & Family, Musical & Performing Arts, Science Fiction & Fantasy",Rotten,12
+"Action & Adventure, Classics, Comedy, Kids & Family, Romance",Fresh,12
+"Action & Adventure, Classics, Comedy, Kids & Family, Romance",Rotten,3
+"Action & Adventure, Classics, Comedy, Kids & Family, Science Fiction & Fantasy",Fresh,53
+"Action & Adventure, Classics, Comedy, Kids & Family, Science Fiction & Fantasy",Rotten,8
+"Action & Adventure, Classics, Comedy, Musical & Performing Arts",Fresh,7
+"Action & Adventure, Classics, Comedy, Musical & Performing Arts",Rotten,1
+"Action & Adventure, Classics, Comedy, Musical & Performing Arts, Romance",Fresh,8
+"Action & Adventure, Classics, Comedy, Musical & Performing Arts, Romance",Rotten,1
+"Action & Adventure, Classics, Comedy, Mystery & Suspense",Fresh,22
+"Action & Adventure, Classics, Comedy, Mystery & Suspense",Rotten,8
+"Action & Adventure, Classics, Comedy, Romance",Fresh,23
+"Action & Adventure, Classics, Comedy, Romance",Rotten,6
+"Action & Adventure, Classics, Comedy, Science Fiction & Fantasy",Fresh,2
+"Action & Adventure, Classics, Comedy, Science Fiction & Fantasy",Rotten,1
+"Action & Adventure, Classics, Comedy, Western",Fresh,16
+"Action & Adventure, Classics, Comedy, Western",Rotten,7
+"Action & Adventure, Classics, Comedy, Western, Romance",Fresh,15
+"Action & Adventure, Classics, Comedy, Western, Romance",Rotten,2
+"Action & Adventure, Classics, Cult Movies",Fresh,14
+"Action & Adventure, Classics, Cult Movies",Rotten,12
+"Action & Adventure, Classics, Cult Movies, Drama",Fresh,20
+"Action & Adventure, Classics, Cult Movies, Drama",Rotten,9
+"Action & Adventure, Classics, Cult Movies, Drama, Mystery & Suspense",Fresh,45
+"Action & Adventure, Classics, Cult Movies, Drama, Mystery & Suspense",Rotten,1
+"Action & Adventure, Classics, Cult Movies, Drama, Special Interest",Fresh,7
+"Action & Adventure, Classics, Cult Movies, Drama, Special Interest",Rotten,3
+"Action & Adventure, Classics, Cult Movies, Horror, Science Fiction & Fantasy",Rotten,5
+"Action & Adventure, Classics, Documentary, Drama",Fresh,4
+"Action & Adventure, Classics, Documentary, Drama",Rotten,5
+"Action & Adventure, Classics, Drama",Fresh,1839
+"Action & Adventure, Classics, Drama",Rotten,994
+"Action & Adventure, Classics, Drama, Horror, Science Fiction & Fantasy",Fresh,5
+"Action & Adventure, Classics, Drama, Horror, Science Fiction & Fantasy",Rotten,2
+"Action & Adventure, Classics, Drama, Kids & Family",Fresh,57
+"Action & Adventure, Classics, Drama, Kids & Family",Rotten,4
+"Action & Adventure, Classics, Drama, Kids & Family, Television",Fresh,2
+"Action & Adventure, Classics, Drama, Kids & Family, Western",Fresh,21
+"Action & Adventure, Classics, Drama, Kids & Family, Western",Rotten,4
+"Action & Adventure, Classics, Drama, Musical & Performing Arts",Fresh,26
+"Action & Adventure, Classics, Drama, Musical & Performing Arts, Western",Fresh,43
+"Action & Adventure, Classics, Drama, Musical & Performing Arts, Western",Rotten,4
+"Action & Adventure, Classics, Drama, Mystery & Suspense",Fresh,301
+"Action & Adventure, Classics, Drama, Mystery & Suspense",Rotten,90
+"Action & Adventure, Classics, Drama, Mystery & Suspense, Romance",Fresh,98
+"Action & Adventure, Classics, Drama, Mystery & Suspense, Romance",Rotten,14
+"Action & Adventure, Classics, Drama, Mystery & Suspense, Science Fiction & Fantasy",Fresh,7
+"Action & Adventure, Classics, Drama, Mystery & Suspense, Science Fiction & Fantasy",Rotten,1
+"Action & Adventure, Classics, Drama, Mystery & Suspense, Western, Romance",Fresh,7
+"Action & Adventure, Classics, Drama, Mystery & Suspense, Western, Romance",Rotten,2
+"Action & Adventure, Classics, Drama, Romance",Fresh,176
+"Action & Adventure, Classics, Drama, Romance",Rotten,38
+"Action & Adventure, Classics, Drama, Science Fiction & Fantasy",Fresh,498
+"Action & Adventure, Classics, Drama, Science Fiction & Fantasy",Rotten,105
+"Action & Adventure, Classics, Drama, Science Fiction & Fantasy, Romance",Fresh,6
+"Action & Adventure, Classics, Drama, Science Fiction & Fantasy, Romance",Rotten,5
+"Action & Adventure, Classics, Drama, Special Interest",Fresh,15
+"Action & Adventure, Classics, Drama, Sports & Fitness",Rotten,1
+"Action & Adventure, Classics, Drama, Western",Fresh,325
+"Action & Adventure, Classics, Drama, Western",Rotten,44
+"Action & Adventure, Classics, Drama, Western, Romance",Fresh,17
+"Action & Adventure, Classics, Drama, Western, Romance",Rotten,5
+"Action & Adventure, Classics, Horror",Fresh,82
+"Action & Adventure, Classics, Horror",Rotten,26
+"Action & Adventure, Classics, Horror, Mystery & Suspense, Science Fiction & Fantasy, Western",Fresh,5
+"Action & Adventure, Classics, Horror, Mystery & Suspense, Science Fiction & Fantasy, Western",Rotten,1
+"Action & Adventure, Classics, Horror, Science Fiction & Fantasy",Fresh,34
+"Action & Adventure, Classics, Horror, Science Fiction & Fantasy",Rotten,7
+"Action & Adventure, Classics, Kids & Family",Fresh,9
+"Action & Adventure, Classics, Kids & Family, Romance",Fresh,7
+"Action & Adventure, Classics, Kids & Family, Science Fiction & Fantasy",Fresh,65
+"Action & Adventure, Classics, Kids & Family, Science Fiction & Fantasy",Rotten,4
+"Action & Adventure, Classics, Musical & Performing Arts",Fresh,1
+"Action & Adventure, Classics, Musical & Performing Arts",Rotten,3
+"Action & Adventure, Classics, Musical & Performing Arts, Science Fiction & Fantasy",Fresh,10
+"Action & Adventure, Classics, Musical & Performing Arts, Science Fiction & Fantasy",Rotten,13
+"Action & Adventure, Classics, Mystery & Suspense",Fresh,226
+"Action & Adventure, Classics, Mystery & Suspense",Rotten,25
+"Action & Adventure, Classics, Mystery & Suspense, Romance",Fresh,117
+"Action & Adventure, Classics, Mystery & Suspense, Romance",Rotten,98
+"Action & Adventure, Classics, Mystery & Suspense, Science Fiction & Fantasy",Fresh,26
+"Action & Adventure, Classics, Mystery & Suspense, Science Fiction & Fantasy",Rotten,15
+"Action & Adventure, Classics, Mystery & Suspense, Special Interest",Fresh,12
+"Action & Adventure, Classics, Mystery & Suspense, Special Interest",Rotten,5
+"Action & Adventure, Classics, Romance",Fresh,40
+"Action & Adventure, Classics, Science Fiction & Fantasy",Fresh,365
+"Action & Adventure, Classics, Science Fiction & Fantasy",Rotten,119
+"Action & Adventure, Classics, Science Fiction & Fantasy, Western",Fresh,22
+"Action & Adventure, Classics, Science Fiction & Fantasy, Western",Rotten,3
+"Action & Adventure, Classics, Western",Fresh,295
+"Action & Adventure, Classics, Western",Rotten,42
+"Action & Adventure, Classics, Western, Romance",Fresh,19
+"Action & Adventure, Classics, Western, Romance",Rotten,14
+"Action & Adventure, Comedy",Fresh,6911
+"Action & Adventure, Comedy",Rotten,8617
+"Action & Adventure, Comedy, Cult Movies",Fresh,12
+"Action & Adventure, Comedy, Cult Movies",Rotten,14
+"Action & Adventure, Comedy, Cult Movies, Drama, Musical & Performing Arts",Fresh,5
+"Action & Adventure, Comedy, Cult Movies, Mystery & Suspense",Fresh,14
+"Action & Adventure, Comedy, Cult Movies, Mystery & Suspense",Rotten,9
+"Action & Adventure, Comedy, Cult Movies, Western",Fresh,13
+"Action & Adventure, Comedy, Cult Movies, Western",Rotten,10
+"Action & Adventure, Comedy, Documentary",Fresh,82
+"Action & Adventure, Comedy, Documentary",Rotten,44
+"Action & Adventure, Comedy, Documentary, Musical & Performing Arts",Fresh,14
+"Action & Adventure, Comedy, Documentary, Musical & Performing Arts",Rotten,115
+"Action & Adventure, Comedy, Documentary, Sports & Fitness",Fresh,1
+"Action & Adventure, Comedy, Documentary, Sports & Fitness",Rotten,16
+"Action & Adventure, Comedy, Drama",Fresh,3459
+"Action & Adventure, Comedy, Drama",Rotten,3350
+"Action & Adventure, Comedy, Drama, Horror",Fresh,188
+"Action & Adventure, Comedy, Drama, Horror",Rotten,38
+"Action & Adventure, Comedy, Drama, Horror, Mystery & Suspense, Science Fiction & Fantasy, Romance",Fresh,9
+"Action & Adventure, Comedy, Drama, Horror, Mystery & Suspense, Science Fiction & Fantasy, Romance",Rotten,49
+"Action & Adventure, Comedy, Drama, Kids & Family",Fresh,106
+"Action & Adventure, Comedy, Drama, Kids & Family",Rotten,298
+"Action & Adventure, Comedy, Drama, Kids & Family, Mystery & Suspense",Fresh,6
+"Action & Adventure, Comedy, Drama, Kids & Family, Mystery & Suspense",Rotten,9
+"Action & Adventure, Comedy, Drama, Kids & Family, Mystery & Suspense, Science Fiction & Fantasy",Fresh,40
+"Action & Adventure, Comedy, Drama, Kids & Family, Mystery & Suspense, Science Fiction & Fantasy",Rotten,136
+"Action & Adventure, Comedy, Drama, Kids & Family, Science Fiction & Fantasy",Fresh,136
+"Action & Adventure, Comedy, Drama, Kids & Family, Science Fiction & Fantasy",Rotten,206
+"Action & Adventure, Comedy, Drama, Musical & Performing Arts",Fresh,15
+"Action & Adventure, Comedy, Drama, Musical & Performing Arts",Rotten,4
+"Action & Adventure, Comedy, Drama, Musical & Performing Arts, Romance",Fresh,1
+"Action & Adventure, Comedy, Drama, Musical & Performing Arts, Romance",Rotten,13
+"Action & Adventure, Comedy, Drama, Musical & Performing Arts, Romance, Gay & Lesbian",Fresh,15
+"Action & Adventure, Comedy, Drama, Musical & Performing Arts, Romance, Gay & Lesbian",Rotten,6
+"Action & Adventure, Comedy, Drama, Mystery & Suspense",Fresh,846
+"Action & Adventure, Comedy, Drama, Mystery & Suspense",Rotten,689
+"Action & Adventure, Comedy, Drama, Mystery & Suspense, Romance",Fresh,84
+"Action & Adventure, Comedy, Drama, Mystery & Suspense, Romance",Rotten,9
+"Action & Adventure, Comedy, Drama, Mystery & Suspense, Western",Fresh,6
+"Action & Adventure, Comedy, Drama, Mystery & Suspense, Western",Rotten,12
+"Action & Adventure, Comedy, Drama, Romance",Fresh,364
+"Action & Adventure, Comedy, Drama, Romance",Rotten,468
+"Action & Adventure, Comedy, Drama, Science Fiction & Fantasy",Fresh,349
+"Action & Adventure, Comedy, Drama, Science Fiction & Fantasy",Rotten,153
+"Action & Adventure, Comedy, Drama, Science Fiction & Fantasy, Romance",Fresh,20
+"Action & Adventure, Comedy, Drama, Science Fiction & Fantasy, Romance",Rotten,4
+"Action & Adventure, Comedy, Drama, Science Fiction & Fantasy, Television",Fresh,3
+"Action & Adventure, Comedy, Drama, Science Fiction & Fantasy, Television",Rotten,2
+"Action & Adventure, Comedy, Drama, Western",Fresh,4
+"Action & Adventure, Comedy, Drama, Western",Rotten,7
+"Action & Adventure, Comedy, Horror",Fresh,336
+"Action & Adventure, Comedy, Horror",Rotten,285
+"Action & Adventure, Comedy, Horror, Musical & Performing Arts",Fresh,6
+"Action & Adventure, Comedy, Horror, Mystery & Suspense",Fresh,55
+"Action & Adventure, Comedy, Horror, Mystery & Suspense",Rotten,65
+"Action & Adventure, Comedy, Horror, Romance",Fresh,6
+"Action & Adventure, Comedy, Horror, Romance",Rotten,9
+"Action & Adventure, Comedy, Horror, Science Fiction & Fantasy",Fresh,89
+"Action & Adventure, Comedy, Horror, Science Fiction & Fantasy",Rotten,76
+"Action & Adventure, Comedy, Horror, Science Fiction & Fantasy, Special Interest",Fresh,384
+"Action & Adventure, Comedy, Horror, Science Fiction & Fantasy, Special Interest",Rotten,36
+"Action & Adventure, Comedy, Horror, Television",Fresh,3
+"Action & Adventure, Comedy, Horror, Television",Rotten,8
+"Action & Adventure, Comedy, Kids & Family",Fresh,947
+"Action & Adventure, Comedy, Kids & Family",Rotten,1687
+"Action & Adventure, Comedy, Kids & Family, Musical & Performing Arts",Fresh,36
+"Action & Adventure, Comedy, Kids & Family, Musical & Performing Arts",Rotten,48
+"Action & Adventure, Comedy, Kids & Family, Musical & Performing Arts, Science Fiction & Fantasy",Fresh,19
+"Action & Adventure, Comedy, Kids & Family, Musical & Performing Arts, Science Fiction & Fantasy",Rotten,9
+"Action & Adventure, Comedy, Kids & Family, Mystery & Suspense",Fresh,535
+"Action & Adventure, Comedy, Kids & Family, Mystery & Suspense",Rotten,456
+"Action & Adventure, Comedy, Kids & Family, Mystery & Suspense, Science Fiction & Fantasy",Fresh,26
+"Action & Adventure, Comedy, Kids & Family, Mystery & Suspense, Science Fiction & Fantasy",Rotten,94
+"Action & Adventure, Comedy, Kids & Family, Romance",Fresh,76
+"Action & Adventure, Comedy, Kids & Family, Romance",Rotten,156
+"Action & Adventure, Comedy, Kids & Family, Science Fiction & Fantasy",Fresh,857
+"Action & Adventure, Comedy, Kids & Family, Science Fiction & Fantasy",Rotten,885
+"Action & Adventure, Comedy, Kids & Family, Science Fiction & Fantasy, Romance",Fresh,14
+"Action & Adventure, Comedy, Kids & Family, Science Fiction & Fantasy, Romance",Rotten,3
+"Action & Adventure, Comedy, Kids & Family, Science Fiction & Fantasy, Television",Fresh,2
+"Action & Adventure, Comedy, Kids & Family, Science Fiction & Fantasy, Television",Rotten,2
+"Action & Adventure, Comedy, Kids & Family, Special Interest",Fresh,39
+"Action & Adventure, Comedy, Kids & Family, Special Interest",Rotten,34
+"Action & Adventure, Comedy, Kids & Family, Television",Fresh,3
+"Action & Adventure, Comedy, Kids & Family, Television",Rotten,10
+"Action & Adventure, Comedy, Musical & Performing Arts",Fresh,8
+"Action & Adventure, Comedy, Musical & Performing Arts",Rotten,4
+"Action & Adventure, Comedy, Musical & Performing Arts, Science Fiction & Fantasy",Fresh,5
+"Action & Adventure, Comedy, Musical & Performing Arts, Science Fiction & Fantasy",Rotten,8
+"Action & Adventure, Comedy, Musical & Performing Arts, Science Fiction & Fantasy, Western",Fresh,18
+"Action & Adventure, Comedy, Musical & Performing Arts, Science Fiction & Fantasy, Western",Rotten,11
+"Action & Adventure, Comedy, Mystery & Suspense",Fresh,1118
+"Action & Adventure, Comedy, Mystery & Suspense",Rotten,1100
+"Action & Adventure, Comedy, Mystery & Suspense, Romance",Fresh,9
+"Action & Adventure, Comedy, Mystery & Suspense, Romance",Rotten,31
+"Action & Adventure, Comedy, Mystery & Suspense, Science Fiction & Fantasy",Fresh,597
+"Action & Adventure, Comedy, Mystery & Suspense, Science Fiction & Fantasy",Rotten,192
+"Action & Adventure, Comedy, Mystery & Suspense, Science Fiction & Fantasy, Television",Fresh,3
+"Action & Adventure, Comedy, Mystery & Suspense, Science Fiction & Fantasy, Television",Rotten,2
+"Action & Adventure, Comedy, Romance",Fresh,684
+"Action & Adventure, Comedy, Romance",Rotten,782
+"Action & Adventure, Comedy, Science Fiction & Fantasy",Fresh,3121
+"Action & Adventure, Comedy, Science Fiction & Fantasy",Rotten,2433
+"Action & Adventure, Comedy, Science Fiction & Fantasy, Romance",Fresh,5
+"Action & Adventure, Comedy, Science Fiction & Fantasy, Romance",Rotten,33
+"Action & Adventure, Comedy, Science Fiction & Fantasy, Special Interest",Fresh,20
+"Action & Adventure, Comedy, Science Fiction & Fantasy, Special Interest",Rotten,11
+"Action & Adventure, Comedy, Special Interest",Fresh,26
+"Action & Adventure, Comedy, Special Interest",Rotten,12
+"Action & Adventure, Comedy, Sports & Fitness",Fresh,131
+"Action & Adventure, Comedy, Sports & Fitness",Rotten,53
+"Action & Adventure, Comedy, Western",Fresh,277
+"Action & Adventure, Comedy, Western",Rotten,187
+"Action & Adventure, Cult Movies, Drama",Fresh,27
+"Action & Adventure, Cult Movies, Drama",Rotten,5
+"Action & Adventure, Cult Movies, Drama, Horror, Mystery & Suspense",Fresh,1
+"Action & Adventure, Cult Movies, Drama, Horror, Mystery & Suspense",Rotten,3
+"Action & Adventure, Cult Movies, Drama, Mystery & Suspense",Fresh,43
+"Action & Adventure, Cult Movies, Drama, Mystery & Suspense",Rotten,31
+"Action & Adventure, Cult Movies, Drama, Science Fiction & Fantasy",Fresh,6
+"Action & Adventure, Cult Movies, Drama, Science Fiction & Fantasy",Rotten,5
+"Action & Adventure, Cult Movies, Kids & Family, Science Fiction & Fantasy",Fresh,25
+"Action & Adventure, Cult Movies, Kids & Family, Science Fiction & Fantasy",Rotten,8
+"Action & Adventure, Cult Movies, Science Fiction & Fantasy",Fresh,146
+"Action & Adventure, Cult Movies, Science Fiction & Fantasy",Rotten,103
+"Action & Adventure, Cult Movies, Western",Fresh,15
+"Action & Adventure, Cult Movies, Western",Rotten,13
+"Action & Adventure, Documentary",Fresh,59
+"Action & Adventure, Documentary",Rotten,18
+"Action & Adventure, Documentary, Drama",Fresh,41
+"Action & Adventure, Documentary, Drama",Rotten,34
+"Action & Adventure, Documentary, Drama, Musical & Performing Arts",Fresh,5
+"Action & Adventure, Documentary, Drama, Musical & Performing Arts",Rotten,3
+"Action & Adventure, Documentary, Drama, Mystery & Suspense",Fresh,5
+"Action & Adventure, Documentary, Drama, Mystery & Suspense",Rotten,2
+"Action & Adventure, Documentary, Drama, Mystery & Suspense, Science Fiction & Fantasy",Fresh,2
+"Action & Adventure, Documentary, Drama, Mystery & Suspense, Science Fiction & Fantasy",Rotten,2
+"Action & Adventure, Documentary, Drama, Mystery & Suspense, Special Interest",Fresh,14
+"Action & Adventure, Documentary, Drama, Mystery & Suspense, Special Interest",Rotten,52
+"Action & Adventure, Documentary, Drama, Mystery & Suspense, Sports & Fitness",Fresh,18
+"Action & Adventure, Documentary, Drama, Mystery & Suspense, Sports & Fitness",Rotten,8
+"Action & Adventure, Documentary, Drama, Special Interest",Fresh,49
+"Action & Adventure, Documentary, Drama, Special Interest",Rotten,14
+"Action & Adventure, Documentary, Drama, Western",Fresh,30
+"Action & Adventure, Documentary, Drama, Western",Rotten,4
+"Action & Adventure, Documentary, Kids & Family",Fresh,2
+"Action & Adventure, Documentary, Kids & Family, Special Interest",Fresh,6
+"Action & Adventure, Documentary, Kids & Family, Special Interest",Rotten,2
+"Action & Adventure, Documentary, Mystery & Suspense",Fresh,57
+"Action & Adventure, Documentary, Mystery & Suspense",Rotten,16
+"Action & Adventure, Documentary, Mystery & Suspense, Special Interest",Fresh,72
+"Action & Adventure, Documentary, Mystery & Suspense, Special Interest",Rotten,12
+"Action & Adventure, Documentary, Science Fiction & Fantasy, Television",Fresh,1
+"Action & Adventure, Documentary, Science Fiction & Fantasy, Television",Rotten,1
+"Action & Adventure, Documentary, Special Interest",Fresh,162
+"Action & Adventure, Documentary, Special Interest",Rotten,30
+"Action & Adventure, Documentary, Special Interest, Sports & Fitness",Fresh,54
+"Action & Adventure, Documentary, Sports & Fitness",Fresh,84
+"Action & Adventure, Documentary, Sports & Fitness",Rotten,39
+"Action & Adventure, Documentary, Television, Sports & Fitness",Fresh,6
+"Action & Adventure, Documentary, Western",Fresh,5
+"Action & Adventure, Documentary, Western",Rotten,5
+"Action & Adventure, Drama",Fresh,19284
+"Action & Adventure, Drama",Rotten,12585
+"Action & Adventure, Drama, Horror",Fresh,185
+"Action & Adventure, Drama, Horror",Rotten,393
+"Action & Adventure, Drama, Horror, Kids & Family, Mystery & Suspense",Fresh,8
+"Action & Adventure, Drama, Horror, Kids & Family, Mystery & Suspense",Rotten,5
+"Action & Adventure, Drama, Horror, Mystery & Suspense",Fresh,521
+"Action & Adventure, Drama, Horror, Mystery & Suspense",Rotten,471
+"Action & Adventure, Drama, Horror, Mystery & Suspense, Science Fiction & Fantasy",Fresh,221
+"Action & Adventure, Drama, Horror, Mystery & Suspense, Science Fiction & Fantasy",Rotten,127
+"Action & Adventure, Drama, Horror, Science Fiction & Fantasy",Fresh,523
+"Action & Adventure, Drama, Horror, Science Fiction & Fantasy",Rotten,573
+"Action & Adventure, Drama, Horror, Western",Fresh,17
+"Action & Adventure, Drama, Horror, Western",Rotten,132
+"Action & Adventure, Drama, Kids & Family",Fresh,701
+"Action & Adventure, Drama, Kids & Family",Rotten,318
+"Action & Adventure, Drama, Kids & Family, Mystery & Suspense, Science Fiction & Fantasy",Fresh,830
+"Action & Adventure, Drama, Kids & Family, Mystery & Suspense, Science Fiction & Fantasy",Rotten,157
+"Action & Adventure, Drama, Kids & Family, Science Fiction & Fantasy",Fresh,614
+"Action & Adventure, Drama, Kids & Family, Science Fiction & Fantasy",Rotten,319
+"Action & Adventure, Drama, Musical & Performing Arts",Fresh,20
+"Action & Adventure, Drama, Musical & Performing Arts",Rotten,4
+"Action & Adventure, Drama, Musical & Performing Arts, Mystery & Suspense, Romance",Fresh,13
+"Action & Adventure, Drama, Musical & Performing Arts, Mystery & Suspense, Romance",Rotten,26
+"Action & Adventure, Drama, Musical & Performing Arts, Science Fiction & Fantasy",Fresh,19
+"Action & Adventure, Drama, Musical & Performing Arts, Science Fiction & Fantasy",Rotten,19
+"Action & Adventure, Drama, Mystery & Suspense",Fresh,16096
+"Action & Adventure, Drama, Mystery & Suspense",Rotten,11500
+"Action & Adventure, Drama, Mystery & Suspense, Romance",Fresh,495
+"Action & Adventure, Drama, Mystery & Suspense, Romance",Rotten,305
+"Action & Adventure, Drama, Mystery & Suspense, Science Fiction & Fantasy",Fresh,1189
+"Action & Adventure, Drama, Mystery & Suspense, Science Fiction & Fantasy",Rotten,1116
+"Action & Adventure, Drama, Mystery & Suspense, Science Fiction & Fantasy, Faith & Spirituality",Fresh,7
+"Action & Adventure, Drama, Mystery & Suspense, Science Fiction & Fantasy, Faith & Spirituality",Rotten,34
+"Action & Adventure, Drama, Mystery & Suspense, Science Fiction & Fantasy, Romance",Fresh,23
+"Action & Adventure, Drama, Mystery & Suspense, Science Fiction & Fantasy, Romance",Rotten,10
+"Action & Adventure, Drama, Mystery & Suspense, Special Interest",Fresh,1
+"Action & Adventure, Drama, Mystery & Suspense, Special Interest",Rotten,14
+"Action & Adventure, Drama, Mystery & Suspense, Television",Fresh,61
+"Action & Adventure, Drama, Mystery & Suspense, Television",Rotten,85
+"Action & Adventure, Drama, Mystery & Suspense, Western",Fresh,92
+"Action & Adventure, Drama, Mystery & Suspense, Western",Rotten,76
+"Action & Adventure, Drama, Romance",Fresh,1042
+"Action & Adventure, Drama, Romance",Rotten,946
+"Action & Adventure, Drama, Science Fiction & Fantasy",Fresh,15868
+"Action & Adventure, Drama, Science Fiction & Fantasy",Rotten,7329
+"Action & Adventure, Drama, Science Fiction & Fantasy, Romance",Fresh,390
+"Action & Adventure, Drama, Science Fiction & Fantasy, Romance",Rotten,500
+"Action & Adventure, Drama, Science Fiction & Fantasy, Television",Fresh,2
+"Action & Adventure, Drama, Science Fiction & Fantasy, Television",Rotten,3
+"Action & Adventure, Drama, Special Interest",Fresh,24
+"Action & Adventure, Drama, Special Interest",Rotten,64
+"Action & Adventure, Drama, Special Interest, Western",Fresh,90
+"Action & Adventure, Drama, Special Interest, Western",Rotten,69
+"Action & Adventure, Drama, Sports & Fitness",Fresh,352
+"Action & Adventure, Drama, Sports & Fitness",Rotten,175
+"Action & Adventure, Drama, Television",Fresh,5
+"Action & Adventure, Drama, Television",Rotten,2
+"Action & Adventure, Drama, Western",Fresh,1759
+"Action & Adventure, Drama, Western",Rotten,600
+"Action & Adventure, Drama, Western, Romance",Fresh,7
+"Action & Adventure, Drama, Western, Romance",Rotten,4
+"Action & Adventure, Horror",Fresh,595
+"Action & Adventure, Horror",Rotten,1076
+"Action & Adventure, Horror, Kids & Family, Science Fiction & Fantasy",Fresh,174
+"Action & Adventure, Horror, Kids & Family, Science Fiction & Fantasy",Rotten,199
+"Action & Adventure, Horror, Mystery & Suspense",Fresh,1252
+"Action & Adventure, Horror, Mystery & Suspense",Rotten,1347
+"Action & Adventure, Horror, Mystery & Suspense, Science Fiction & Fantasy",Fresh,395
+"Action & Adventure, Horror, Mystery & Suspense, Science Fiction & Fantasy",Rotten,763
+"Action & Adventure, Horror, Mystery & Suspense, Science Fiction & Fantasy, Western",Fresh,15
+"Action & Adventure, Horror, Mystery & Suspense, Science Fiction & Fantasy, Western",Rotten,85
+"Action & Adventure, Horror, Science Fiction & Fantasy",Fresh,1860
+"Action & Adventure, Horror, Science Fiction & Fantasy",Rotten,2401
+"Action & Adventure, Horror, Western",Fresh,85
+"Action & Adventure, Horror, Western",Rotten,9
+"Action & Adventure, Kids & Family",Fresh,707
+"Action & Adventure, Kids & Family",Rotten,362
+"Action & Adventure, Kids & Family, Mystery & Suspense",Fresh,282
+"Action & Adventure, Kids & Family, Mystery & Suspense",Rotten,175
+"Action & Adventure, Kids & Family, Mystery & Suspense, Science Fiction & Fantasy",Fresh,8
+"Action & Adventure, Kids & Family, Mystery & Suspense, Science Fiction & Fantasy",Rotten,6
+"Action & Adventure, Kids & Family, Science Fiction & Fantasy",Fresh,2302
+"Action & Adventure, Kids & Family, Science Fiction & Fantasy",Rotten,1886
+"Action & Adventure, Kids & Family, Science Fiction & Fantasy, Romance",Fresh,136
+"Action & Adventure, Kids & Family, Science Fiction & Fantasy, Romance",Rotten,8
+"Action & Adventure, Kids & Family, Science Fiction & Fantasy, Western",Fresh,9
+"Action & Adventure, Kids & Family, Science Fiction & Fantasy, Western",Rotten,5
+"Action & Adventure, Kids & Family, Television, Western",Fresh,3
+"Action & Adventure, Kids & Family, Western",Fresh,75
+"Action & Adventure, Kids & Family, Western",Rotten,171
+"Action & Adventure, Musical & Performing Arts, Mystery & Suspense",Rotten,3
+"Action & Adventure, Musical & Performing Arts, Science Fiction & Fantasy",Fresh,17
+"Action & Adventure, Musical & Performing Arts, Science Fiction & Fantasy",Rotten,62
+"Action & Adventure, Mystery & Suspense",Fresh,9741
+"Action & Adventure, Mystery & Suspense",Rotten,7531
+"Action & Adventure, Mystery & Suspense, Romance",Fresh,71
+"Action & Adventure, Mystery & Suspense, Romance",Rotten,144
+"Action & Adventure, Mystery & Suspense, Science Fiction & Fantasy",Fresh,5294
+"Action & Adventure, Mystery & Suspense, Science Fiction & Fantasy",Rotten,3897
+"Action & Adventure, Mystery & Suspense, Science Fiction & Fantasy, Television",Rotten,2
+"Action & Adventure, Mystery & Suspense, Special Interest",Fresh,2
+"Action & Adventure, Mystery & Suspense, Special Interest",Rotten,3
+"Action & Adventure, Mystery & Suspense, Western",Fresh,9
+"Action & Adventure, Mystery & Suspense, Western",Rotten,18
+"Action & Adventure, Romance",Fresh,302
+"Action & Adventure, Romance",Rotten,280
+"Action & Adventure, Science Fiction & Fantasy",Fresh,17357
+"Action & Adventure, Science Fiction & Fantasy",Rotten,11872
+"Action & Adventure, Science Fiction & Fantasy, Faith & Spirituality",Fresh,1
+"Action & Adventure, Science Fiction & Fantasy, Faith & Spirituality",Rotten,4
+"Action & Adventure, Science Fiction & Fantasy, Romance",Fresh,201
+"Action & Adventure, Science Fiction & Fantasy, Romance",Rotten,578
+"Action & Adventure, Science Fiction & Fantasy, Television",Fresh,12
+"Action & Adventure, Science Fiction & Fantasy, Television",Rotten,24
+"Action & Adventure, Science Fiction & Fantasy, Western",Fresh,113
+"Action & Adventure, Science Fiction & Fantasy, Western",Rotten,141
+"Action & Adventure, Special Interest",Fresh,1
+"Action & Adventure, Special Interest",Rotten,13
+"Action & Adventure, Television",Fresh,1
+"Action & Adventure, Television, Western",Fresh,1
+"Action & Adventure, Television, Western",Rotten,2
+"Action & Adventure, Western",Fresh,451
+"Action & Adventure, Western",Rotten,316
+Animation,Fresh,761
+Animation,Rotten,286
+"Animation, Anime & Manga, Art House & International, Comedy, Kids & Family",Fresh,35
+"Animation, Anime & Manga, Art House & International, Comedy, Kids & Family",Rotten,9
+"Animation, Anime & Manga, Art House & International, Drama",Fresh,36
+"Animation, Anime & Manga, Art House & International, Drama, Mystery & Suspense, Science Fiction & Fantasy",Fresh,12
+"Animation, Anime & Manga, Art House & International, Drama, Mystery & Suspense, Science Fiction & Fantasy",Rotten,9
+"Animation, Anime & Manga, Art House & International, Drama, Science Fiction & Fantasy",Fresh,12
+"Animation, Anime & Manga, Art House & International, Drama, Science Fiction & Fantasy",Rotten,6
+"Animation, Anime & Manga, Art House & International, Kids & Family",Fresh,75
+"Animation, Anime & Manga, Art House & International, Kids & Family",Rotten,8
+"Animation, Anime & Manga, Art House & International, Science Fiction & Fantasy",Fresh,43
+"Animation, Anime & Manga, Art House & International, Science Fiction & Fantasy",Rotten,2
+"Animation, Anime & Manga, Comedy, Romance",Fresh,54
+"Animation, Anime & Manga, Comedy, Romance",Rotten,4
+"Animation, Anime & Manga, Drama, Mystery & Suspense, Science Fiction & Fantasy",Fresh,63
+"Animation, Anime & Manga, Drama, Mystery & Suspense, Science Fiction & Fantasy",Rotten,35
+"Animation, Anime & Manga, Drama, Science Fiction & Fantasy",Fresh,8
+"Animation, Anime & Manga, Kids & Family, Science Fiction & Fantasy",Fresh,5
+"Animation, Anime & Manga, Kids & Family, Science Fiction & Fantasy",Rotten,28
+"Animation, Art House & International",Fresh,207
+"Animation, Art House & International",Rotten,15
+"Animation, Art House & International, Comedy",Fresh,61
+"Animation, Art House & International, Comedy",Rotten,42
+"Animation, Art House & International, Comedy, Drama",Fresh,258
+"Animation, Art House & International, Comedy, Drama",Rotten,21
+"Animation, Art House & International, Comedy, Drama, Kids & Family, Science Fiction & Fantasy",Fresh,11
+"Animation, Art House & International, Comedy, Drama, Kids & Family, Science Fiction & Fantasy",Rotten,2
+"Animation, Art House & International, Comedy, Drama, Science Fiction & Fantasy",Fresh,72
+"Animation, Art House & International, Comedy, Drama, Science Fiction & Fantasy",Rotten,20
+"Animation, Art House & International, Comedy, Kids & Family",Fresh,7
+"Animation, Art House & International, Comedy, Kids & Family",Rotten,12
+"Animation, Art House & International, Comedy, Kids & Family, Mystery & Suspense",Fresh,53
+"Animation, Art House & International, Comedy, Kids & Family, Mystery & Suspense",Rotten,11
+"Animation, Art House & International, Documentary",Fresh,42
+"Animation, Art House & International, Documentary",Rotten,3
+"Animation, Art House & International, Documentary, Special Interest",Fresh,144
+"Animation, Art House & International, Documentary, Special Interest",Rotten,6
+"Animation, Art House & International, Drama",Fresh,207
+"Animation, Art House & International, Drama",Rotten,24
+"Animation, Art House & International, Drama, Kids & Family",Fresh,74
+"Animation, Art House & International, Drama, Kids & Family",Rotten,12
+"Animation, Art House & International, Drama, Science Fiction & Fantasy",Fresh,141
+"Animation, Art House & International, Drama, Science Fiction & Fantasy",Rotten,72
+"Animation, Art House & International, Drama, Science Fiction & Fantasy, Romance",Fresh,13
+"Animation, Art House & International, Drama, Science Fiction & Fantasy, Romance",Rotten,10
+"Animation, Art House & International, Drama, Science Fiction & Fantasy, Special Interest",Fresh,4
+"Animation, Art House & International, Drama, Science Fiction & Fantasy, Special Interest",Rotten,1
+"Animation, Art House & International, Drama, Special Interest",Fresh,115
+"Animation, Art House & International, Drama, Special Interest",Rotten,28
+"Animation, Art House & International, Drama, Television, Romance",Fresh,15
+"Animation, Art House & International, Drama, Television, Romance",Rotten,2
+"Animation, Art House & International, Horror",Fresh,46
+"Animation, Art House & International, Horror, Science Fiction & Fantasy, Special Interest",Fresh,17
+"Animation, Art House & International, Kids & Family",Fresh,213
+"Animation, Art House & International, Kids & Family",Rotten,111
+"Animation, Art House & International, Kids & Family, Mystery & Suspense",Fresh,14
+"Animation, Art House & International, Kids & Family, Mystery & Suspense",Rotten,9
+"Animation, Art House & International, Kids & Family, Science Fiction & Fantasy",Fresh,75
+"Animation, Art House & International, Kids & Family, Science Fiction & Fantasy",Rotten,15
+"Animation, Art House & International, Mystery & Suspense",Fresh,11
+"Animation, Art House & International, Mystery & Suspense",Rotten,8
+"Animation, Art House & International, Science Fiction & Fantasy",Fresh,222
+"Animation, Art House & International, Science Fiction & Fantasy",Rotten,12
+"Animation, Classics, Comedy, Drama, Kids & Family",Fresh,7
+"Animation, Classics, Comedy, Drama, Kids & Family",Rotten,4
+"Animation, Classics, Comedy, Horror, Kids & Family",Fresh,6
+"Animation, Classics, Comedy, Horror, Kids & Family",Rotten,1
+"Animation, Classics, Comedy, Kids & Family",Fresh,10
+"Animation, Classics, Comedy, Kids & Family",Rotten,3
+"Animation, Classics, Comedy, Kids & Family, Musical & Performing Arts, Science Fiction & Fantasy",Fresh,2
+"Animation, Classics, Comedy, Kids & Family, Musical & Performing Arts, Science Fiction & Fantasy",Rotten,1
+"Animation, Classics, Comedy, Kids & Family, Musical & Performing Arts, Television",Fresh,16
+"Animation, Classics, Comedy, Kids & Family, Mystery & Suspense",Fresh,41
+"Animation, Classics, Comedy, Kids & Family, Science Fiction & Fantasy",Fresh,21
+"Animation, Classics, Comedy, Kids & Family, Science Fiction & Fantasy",Rotten,6
+"Animation, Classics, Comedy, Kids & Family, Special Interest",Fresh,16
+"Animation, Classics, Comedy, Kids & Family, Special Interest",Rotten,2
+"Animation, Classics, Kids & Family, Science Fiction & Fantasy",Fresh,158
+"Animation, Classics, Kids & Family, Science Fiction & Fantasy",Rotten,12
+"Animation, Classics, Kids & Family, Television",Fresh,15
+"Animation, Comedy",Fresh,2089
+"Animation, Comedy",Rotten,799
+"Animation, Comedy, Documentary, Drama, Special Interest, Romance",Fresh,4
+"Animation, Comedy, Documentary, Drama, Special Interest, Romance",Rotten,38
+"Animation, Comedy, Drama",Fresh,531
+"Animation, Comedy, Drama",Rotten,244
+"Animation, Comedy, Drama, Kids & Family",Fresh,94
+"Animation, Comedy, Drama, Kids & Family",Rotten,47
+"Animation, Comedy, Drama, Kids & Family, Musical & Performing Arts",Rotten,5
+"Animation, Comedy, Drama, Science Fiction & Fantasy",Fresh,4
+"Animation, Comedy, Drama, Science Fiction & Fantasy",Rotten,9
+"Animation, Comedy, Horror, Romance",Fresh,14
+"Animation, Comedy, Horror, Romance",Rotten,5
+"Animation, Comedy, Horror, Science Fiction & Fantasy",Fresh,193
+"Animation, Comedy, Horror, Science Fiction & Fantasy",Rotten,28
+"Animation, Comedy, Kids & Family",Fresh,5689
+"Animation, Comedy, Kids & Family",Rotten,2828
+"Animation, Comedy, Kids & Family, Faith & Spirituality",Fresh,36
+"Animation, Comedy, Kids & Family, Faith & Spirituality",Rotten,18
+"Animation, Comedy, Kids & Family, Musical & Performing Arts",Fresh,234
+"Animation, Comedy, Kids & Family, Musical & Performing Arts",Rotten,32
+"Animation, Comedy, Kids & Family, Musical & Performing Arts, Romance",Fresh,4
+"Animation, Comedy, Kids & Family, Musical & Performing Arts, Science Fiction & Fantasy, Romance",Fresh,168
+"Animation, Comedy, Kids & Family, Musical & Performing Arts, Science Fiction & Fantasy, Romance",Rotten,30
+"Animation, Comedy, Kids & Family, Musical & Performing Arts, Television",Fresh,54
+"Animation, Comedy, Kids & Family, Musical & Performing Arts, Television",Rotten,17
+"Animation, Comedy, Kids & Family, Science Fiction & Fantasy",Fresh,2044
+"Animation, Comedy, Kids & Family, Science Fiction & Fantasy",Rotten,608
+"Animation, Comedy, Kids & Family, Special Interest",Fresh,278
+"Animation, Comedy, Kids & Family, Special Interest",Rotten,189
+"Animation, Comedy, Musical & Performing Arts",Fresh,264
+"Animation, Comedy, Musical & Performing Arts",Rotten,102
+"Animation, Comedy, Musical & Performing Arts, Special Interest",Fresh,144
+"Animation, Comedy, Musical & Performing Arts, Special Interest",Rotten,38
+"Animation, Comedy, Science Fiction & Fantasy",Fresh,32
+"Animation, Comedy, Science Fiction & Fantasy",Rotten,92
+"Animation, Comedy, Science Fiction & Fantasy, Television",Fresh,4
+"Animation, Comedy, Science Fiction & Fantasy, Television",Rotten,1
+"Animation, Comedy, Special Interest",Fresh,31
+"Animation, Comedy, Special Interest",Rotten,7
+"Animation, Documentary",Fresh,116
+"Animation, Documentary",Rotten,1
+"Animation, Documentary, Kids & Family",Fresh,29
+"Animation, Documentary, Kids & Family",Rotten,7
+"Animation, Documentary, Kids & Family, Special Interest",Fresh,30
+"Animation, Documentary, Kids & Family, Special Interest",Rotten,3
+"Animation, Documentary, Special Interest",Fresh,55
+"Animation, Documentary, Special Interest",Rotten,6
+"Animation, Drama",Fresh,505
+"Animation, Drama",Rotten,54
+"Animation, Drama, Kids & Family",Fresh,622
+"Animation, Drama, Kids & Family",Rotten,258
+"Animation, Drama, Kids & Family, Musical & Performing Arts",Fresh,138
+"Animation, Drama, Kids & Family, Musical & Performing Arts",Rotten,36
+"Animation, Drama, Kids & Family, Musical & Performing Arts, Science Fiction & Fantasy, Romance",Fresh,109
+"Animation, Drama, Kids & Family, Musical & Performing Arts, Science Fiction & Fantasy, Romance",Rotten,7
+"Animation, Drama, Kids & Family, Mystery & Suspense",Fresh,33
+"Animation, Drama, Kids & Family, Mystery & Suspense",Rotten,3
+"Animation, Drama, Kids & Family, Science Fiction & Fantasy",Fresh,589
+"Animation, Drama, Kids & Family, Science Fiction & Fantasy",Rotten,134
+"Animation, Drama, Kids & Family, Science Fiction & Fantasy, Romance",Fresh,153
+"Animation, Drama, Kids & Family, Science Fiction & Fantasy, Romance",Rotten,24
+"Animation, Drama, Musical & Performing Arts",Fresh,7
+"Animation, Drama, Musical & Performing Arts",Rotten,2
+"Animation, Drama, Mystery & Suspense",Fresh,21
+"Animation, Drama, Mystery & Suspense",Rotten,31
+"Animation, Drama, Romance",Fresh,162
+"Animation, Drama, Romance",Rotten,5
+"Animation, Drama, Science Fiction & Fantasy",Fresh,79
+"Animation, Drama, Science Fiction & Fantasy",Rotten,8
+"Animation, Drama, Science Fiction & Fantasy, Special Interest",Fresh,10
+"Animation, Drama, Science Fiction & Fantasy, Special Interest",Rotten,1
+"Animation, Drama, Special Interest",Fresh,69
+"Animation, Drama, Special Interest",Rotten,40
+"Animation, Horror",Fresh,10
+"Animation, Horror",Rotten,5
+"Animation, Horror, Kids & Family",Fresh,6
+"Animation, Horror, Kids & Family",Rotten,21
+"Animation, Horror, Science Fiction & Fantasy",Fresh,75
+"Animation, Horror, Science Fiction & Fantasy",Rotten,13
+"Animation, Kids & Family",Fresh,1926
+"Animation, Kids & Family",Rotten,928
+"Animation, Kids & Family, Musical & Performing Arts",Fresh,133
+"Animation, Kids & Family, Musical & Performing Arts",Rotten,139
+"Animation, Kids & Family, Musical & Performing Arts, Science Fiction & Fantasy",Fresh,172
+"Animation, Kids & Family, Musical & Performing Arts, Science Fiction & Fantasy",Rotten,40
+"Animation, Kids & Family, Musical & Performing Arts, Science Fiction & Fantasy, Romance",Fresh,56
+"Animation, Kids & Family, Musical & Performing Arts, Science Fiction & Fantasy, Romance",Rotten,3
+"Animation, Kids & Family, Musical & Performing Arts, Television",Fresh,30
+"Animation, Kids & Family, Musical & Performing Arts, Television",Rotten,5
+"Animation, Kids & Family, Science Fiction & Fantasy",Fresh,1463
+"Animation, Kids & Family, Science Fiction & Fantasy",Rotten,641
+"Animation, Kids & Family, Science Fiction & Fantasy, Special Interest, Television",Fresh,6
+"Animation, Kids & Family, Science Fiction & Fantasy, Special Interest, Television",Rotten,2
+"Animation, Kids & Family, Television",Fresh,60
+"Animation, Kids & Family, Television",Rotten,34
+"Animation, Musical & Performing Arts",Fresh,6
+"Animation, Musical & Performing Arts",Rotten,10
+"Animation, Musical & Performing Arts, Romance",Fresh,64
+"Animation, Mystery & Suspense, Special Interest",Fresh,6
+"Animation, Mystery & Suspense, Special Interest",Rotten,8
+"Animation, Romance",Fresh,102
+"Animation, Romance",Rotten,22
+"Animation, Science Fiction & Fantasy",Fresh,193
+"Animation, Science Fiction & Fantasy",Rotten,157
+"Animation, Special Interest",Fresh,7
+"Animation, Special Interest",Rotten,11
+Art House & International,Fresh,52
+Art House & International,Rotten,23
+"Art House & International, Classics, Comedy",Fresh,4
+"Art House & International, Classics, Comedy",Rotten,12
+"Art House & International, Classics, Comedy, Drama",Fresh,42
+"Art House & International, Classics, Comedy, Drama",Rotten,10
+"Art House & International, Classics, Comedy, Drama, Musical & Performing Arts, Science Fiction & Fantasy, Romance",Fresh,34
+"Art House & International, Classics, Comedy, Drama, Musical & Performing Arts, Science Fiction & Fantasy, Romance",Rotten,4
+"Art House & International, Classics, Comedy, Drama, Mystery & Suspense",Fresh,16
+"Art House & International, Classics, Comedy, Drama, Romance",Fresh,52
+"Art House & International, Classics, Comedy, Drama, Romance",Rotten,13
+"Art House & International, Classics, Comedy, Drama, Science Fiction & Fantasy",Fresh,15
+"Art House & International, Classics, Comedy, Drama, Science Fiction & Fantasy",Rotten,2
+"Art House & International, Classics, Comedy, Gay & Lesbian",Fresh,10
+"Art House & International, Classics, Comedy, Gay & Lesbian",Rotten,4
+"Art House & International, Classics, Comedy, Horror, Science Fiction & Fantasy",Fresh,12
+"Art House & International, Classics, Comedy, Horror, Science Fiction & Fantasy",Rotten,10
+"Art House & International, Classics, Comedy, Musical & Performing Arts",Fresh,34
+"Art House & International, Classics, Comedy, Musical & Performing Arts",Rotten,9
+"Art House & International, Classics, Cult Movies, Horror",Fresh,2
+"Art House & International, Classics, Cult Movies, Horror",Rotten,4
+"Art House & International, Classics, Cult Movies, Horror, Mystery & Suspense",Fresh,53
+"Art House & International, Classics, Cult Movies, Horror, Mystery & Suspense",Rotten,1
+"Art House & International, Classics, Cult Movies, Horror, Science Fiction & Fantasy",Fresh,6
+"Art House & International, Classics, Cult Movies, Horror, Science Fiction & Fantasy",Rotten,2
+"Art House & International, Classics, Documentary, Special Interest",Fresh,46
+"Art House & International, Classics, Documentary, Special Interest",Rotten,5
+"Art House & International, Classics, Drama",Fresh,786
+"Art House & International, Classics, Drama",Rotten,113
+"Art House & International, Classics, Drama, Horror",Fresh,19
+"Art House & International, Classics, Drama, Horror",Rotten,9
+"Art House & International, Classics, Drama, Horror, Mystery & Suspense",Fresh,12
+"Art House & International, Classics, Drama, Horror, Mystery & Suspense",Rotten,1
+"Art House & International, Classics, Drama, Horror, Science Fiction & Fantasy",Fresh,7
+"Art House & International, Classics, Drama, Horror, Science Fiction & Fantasy",Rotten,3
+"Art House & International, Classics, Drama, Kids & Family, Mystery & Suspense",Fresh,6
+"Art House & International, Classics, Drama, Musical & Performing Arts",Fresh,44
+"Art House & International, Classics, Drama, Musical & Performing Arts",Rotten,5
+"Art House & International, Classics, Drama, Mystery & Suspense",Fresh,293
+"Art House & International, Classics, Drama, Mystery & Suspense",Rotten,32
+"Art House & International, Classics, Drama, Mystery & Suspense, Science Fiction & Fantasy",Fresh,26
+"Art House & International, Classics, Drama, Mystery & Suspense, Science Fiction & Fantasy",Rotten,4
+"Art House & International, Classics, Drama, Romance",Fresh,160
+"Art House & International, Classics, Drama, Romance",Rotten,55
+"Art House & International, Classics, Drama, Special Interest",Fresh,45
+"Art House & International, Classics, Drama, Special Interest",Rotten,6
+"Art House & International, Classics, Drama, Television",Fresh,63
+"Art House & International, Classics, Drama, Television",Rotten,5
+"Art House & International, Classics, Drama, Western",Fresh,2
+"Art House & International, Classics, Drama, Western",Rotten,2
+"Art House & International, Classics, Horror",Fresh,23
+"Art House & International, Classics, Horror",Rotten,8
+"Art House & International, Classics, Horror, Mystery & Suspense",Fresh,19
+"Art House & International, Classics, Horror, Mystery & Suspense",Rotten,8
+"Art House & International, Classics, Horror, Science Fiction & Fantasy",Fresh,117
+"Art House & International, Classics, Horror, Science Fiction & Fantasy",Rotten,6
+"Art House & International, Classics, Musical & Performing Arts, Romance",Fresh,36
+"Art House & International, Classics, Musical & Performing Arts, Romance",Rotten,1
+"Art House & International, Classics, Mystery & Suspense",Fresh,31
+"Art House & International, Classics, Mystery & Suspense",Rotten,4
+"Art House & International, Classics, Science Fiction & Fantasy",Fresh,2
+"Art House & International, Comedy",Fresh,2241
+"Art House & International, Comedy",Rotten,876
+"Art House & International, Comedy, Cult Movies, Drama, Mystery & Suspense",Fresh,20
+"Art House & International, Comedy, Cult Movies, Drama, Mystery & Suspense",Rotten,39
+"Art House & International, Comedy, Cult Movies, Musical & Performing Arts",Fresh,13
+"Art House & International, Comedy, Cult Movies, Musical & Performing Arts",Rotten,3
+"Art House & International, Comedy, Documentary, Drama",Fresh,84
+"Art House & International, Comedy, Documentary, Drama",Rotten,16
+"Art House & International, Comedy, Documentary, Drama, Kids & Family, Special Interest",Fresh,71
+"Art House & International, Comedy, Documentary, Drama, Kids & Family, Special Interest",Rotten,5
+"Art House & International, Comedy, Documentary, Drama, Musical & Performing Arts",Fresh,34
+"Art House & International, Comedy, Documentary, Drama, Musical & Performing Arts",Rotten,1
+"Art House & International, Comedy, Documentary, Drama, Special Interest",Fresh,74
+"Art House & International, Comedy, Documentary, Drama, Special Interest",Rotten,44
+"Art House & International, Comedy, Documentary, Drama, Special Interest, Faith & Spirituality",Fresh,15
+"Art House & International, Comedy, Documentary, Drama, Special Interest, Faith & Spirituality",Rotten,3
+"Art House & International, Comedy, Documentary, Special Interest, Television",Fresh,17
+"Art House & International, Comedy, Documentary, Special Interest, Television",Rotten,7
+"Art House & International, Comedy, Drama",Fresh,9352
+"Art House & International, Comedy, Drama",Rotten,2860
+"Art House & International, Comedy, Drama, Horror",Fresh,11
+"Art House & International, Comedy, Drama, Horror",Rotten,4
+"Art House & International, Comedy, Drama, Horror, Musical & Performing Arts",Fresh,17
+"Art House & International, Comedy, Drama, Horror, Musical & Performing Arts",Rotten,10
+"Art House & International, Comedy, Drama, Horror, Science Fiction & Fantasy",Fresh,2
+"Art House & International, Comedy, Drama, Horror, Science Fiction & Fantasy",Rotten,5
+"Art House & International, Comedy, Drama, Kids & Family",Fresh,15
+"Art House & International, Comedy, Drama, Kids & Family",Rotten,46
+"Art House & International, Comedy, Drama, Kids & Family, Musical & Performing Arts, Romance",Fresh,8
+"Art House & International, Comedy, Drama, Kids & Family, Romance",Fresh,2
+"Art House & International, Comedy, Drama, Kids & Family, Romance",Rotten,4
+"Art House & International, Comedy, Drama, Kids & Family, Science Fiction & Fantasy",Fresh,6
+"Art House & International, Comedy, Drama, Kids & Family, Science Fiction & Fantasy",Rotten,3
+"Art House & International, Comedy, Drama, Musical & Performing Arts",Fresh,265
+"Art House & International, Comedy, Drama, Musical & Performing Arts",Rotten,216
+"Art House & International, Comedy, Drama, Musical & Performing Arts, Romance",Fresh,39
+"Art House & International, Comedy, Drama, Musical & Performing Arts, Romance",Rotten,15
+"Art House & International, Comedy, Drama, Musical & Performing Arts, Science Fiction & Fantasy",Fresh,23
+"Art House & International, Comedy, Drama, Musical & Performing Arts, Science Fiction & Fantasy",Rotten,17
+"Art House & International, Comedy, Drama, Musical & Performing Arts, Special Interest",Fresh,4
+"Art House & International, Comedy, Drama, Musical & Performing Arts, Special Interest",Rotten,4
+"Art House & International, Comedy, Drama, Mystery & Suspense",Fresh,591
+"Art House & International, Comedy, Drama, Mystery & Suspense",Rotten,178
+"Art House & International, Comedy, Drama, Mystery & Suspense, Romance",Fresh,55
+"Art House & International, Comedy, Drama, Mystery & Suspense, Romance",Rotten,7
+"Art House & International, Comedy, Drama, Mystery & Suspense, Science Fiction & Fantasy",Fresh,21
+"Art House & International, Comedy, Drama, Mystery & Suspense, Science Fiction & Fantasy",Rotten,2
+"Art House & International, Comedy, Drama, Romance",Fresh,2171
+"Art House & International, Comedy, Drama, Romance",Rotten,759
+"Art House & International, Comedy, Drama, Romance, Gay & Lesbian",Fresh,23
+"Art House & International, Comedy, Drama, Romance, Gay & Lesbian",Rotten,4
+"Art House & International, Comedy, Drama, Romance, Sports & Fitness",Fresh,15
+"Art House & International, Comedy, Drama, Romance, Sports & Fitness",Rotten,16
+"Art House & International, Comedy, Drama, Science Fiction & Fantasy",Fresh,95
+"Art House & International, Comedy, Drama, Science Fiction & Fantasy",Rotten,57
+"Art House & International, Comedy, Drama, Science Fiction & Fantasy, Romance",Fresh,54
+"Art House & International, Comedy, Drama, Science Fiction & Fantasy, Romance",Rotten,14
+"Art House & International, Comedy, Drama, Science Fiction & Fantasy, Special Interest",Fresh,48
+"Art House & International, Comedy, Drama, Science Fiction & Fantasy, Special Interest",Rotten,1
+"Art House & International, Comedy, Drama, Special Interest",Fresh,375
+"Art House & International, Comedy, Drama, Special Interest",Rotten,173
+"Art House & International, Comedy, Drama, Sports & Fitness",Fresh,86
+"Art House & International, Comedy, Drama, Sports & Fitness",Rotten,22
+"Art House & International, Comedy, Drama, Television",Fresh,10
+"Art House & International, Comedy, Drama, Television",Rotten,35
+"Art House & International, Comedy, Drama, Television, Romance",Fresh,20
+"Art House & International, Comedy, Drama, Television, Romance",Rotten,6
+"Art House & International, Comedy, Gay & Lesbian",Rotten,2
+"Art House & International, Comedy, Horror",Fresh,254
+"Art House & International, Comedy, Horror",Rotten,136
+"Art House & International, Comedy, Horror, Mystery & Suspense",Fresh,18
+"Art House & International, Comedy, Horror, Mystery & Suspense",Rotten,16
+"Art House & International, Comedy, Horror, Science Fiction & Fantasy",Fresh,31
+"Art House & International, Comedy, Horror, Science Fiction & Fantasy",Rotten,9
+"Art House & International, Comedy, Horror, Science Fiction & Fantasy, Special Interest",Fresh,28
+"Art House & International, Comedy, Horror, Science Fiction & Fantasy, Special Interest",Rotten,3
+"Art House & International, Comedy, Kids & Family",Fresh,5
+"Art House & International, Comedy, Kids & Family, Science Fiction & Fantasy",Fresh,38
+"Art House & International, Comedy, Kids & Family, Science Fiction & Fantasy",Rotten,92
+"Art House & International, Comedy, Musical & Performing Arts",Fresh,77
+"Art House & International, Comedy, Musical & Performing Arts",Rotten,66
+"Art House & International, Comedy, Musical & Performing Arts, Romance",Fresh,87
+"Art House & International, Comedy, Musical & Performing Arts, Romance",Rotten,91
+"Art House & International, Comedy, Musical & Performing Arts, Science Fiction & Fantasy, Television, Romance",Fresh,16
+"Art House & International, Comedy, Musical & Performing Arts, Science Fiction & Fantasy, Television, Romance",Rotten,2
+"Art House & International, Comedy, Musical & Performing Arts, Sports & Fitness",Fresh,5
+"Art House & International, Comedy, Musical & Performing Arts, Sports & Fitness",Rotten,3
+"Art House & International, Comedy, Mystery & Suspense",Fresh,120
+"Art House & International, Comedy, Mystery & Suspense",Rotten,73
+"Art House & International, Comedy, Romance",Fresh,533
+"Art House & International, Comedy, Romance",Rotten,321
+"Art House & International, Comedy, Romance, Gay & Lesbian",Fresh,4
+"Art House & International, Comedy, Romance, Gay & Lesbian",Rotten,3
+"Art House & International, Comedy, Science Fiction & Fantasy",Fresh,151
+"Art House & International, Comedy, Science Fiction & Fantasy",Rotten,83
+"Art House & International, Comedy, Science Fiction & Fantasy, Gay & Lesbian",Fresh,4
+"Art House & International, Comedy, Science Fiction & Fantasy, Gay & Lesbian",Rotten,3
+"Art House & International, Comedy, Science Fiction & Fantasy, Romance",Fresh,108
+"Art House & International, Comedy, Science Fiction & Fantasy, Romance",Rotten,100
+"Art House & International, Comedy, Science Fiction & Fantasy, Special Interest",Fresh,86
+"Art House & International, Comedy, Science Fiction & Fantasy, Special Interest",Rotten,11
+"Art House & International, Comedy, Special Interest",Fresh,46
+"Art House & International, Comedy, Special Interest",Rotten,8
+"Art House & International, Comedy, Special Interest, Romance",Fresh,60
+"Art House & International, Comedy, Special Interest, Romance",Rotten,62
+"Art House & International, Comedy, Television, Romance",Fresh,36
+"Art House & International, Comedy, Television, Romance",Rotten,15
+"Art House & International, Comedy, Western",Fresh,5
+"Art House & International, Cult Movies, Drama",Fresh,13
+"Art House & International, Cult Movies, Drama",Rotten,17
+"Art House & International, Cult Movies, Drama, Horror, Musical & Performing Arts, Special Interest",Fresh,21
+"Art House & International, Cult Movies, Drama, Horror, Musical & Performing Arts, Special Interest",Rotten,15
+"Art House & International, Cult Movies, Drama, Mystery & Suspense",Fresh,60
+"Art House & International, Cult Movies, Drama, Mystery & Suspense",Rotten,8
+"Art House & International, Cult Movies, Drama, Special Interest",Fresh,31
+"Art House & International, Cult Movies, Drama, Special Interest",Rotten,18
+"Art House & International, Cult Movies, Horror",Fresh,13
+"Art House & International, Cult Movies, Horror",Rotten,7
+"Art House & International, Cult Movies, Horror, Mystery & Suspense",Fresh,3
+"Art House & International, Cult Movies, Horror, Mystery & Suspense",Rotten,5
+"Art House & International, Cult Movies, Horror, Science Fiction & Fantasy",Fresh,2
+"Art House & International, Cult Movies, Horror, Science Fiction & Fantasy",Rotten,7
+"Art House & International, Cult Movies, Horror, Special Interest",Fresh,8
+"Art House & International, Cult Movies, Horror, Special Interest",Rotten,2
+"Art House & International, Documentary",Fresh,1184
+"Art House & International, Documentary",Rotten,99
+"Art House & International, Documentary, Drama",Fresh,460
+"Art House & International, Documentary, Drama",Rotten,102
+"Art House & International, Documentary, Drama, Horror",Fresh,10
+"Art House & International, Documentary, Drama, Horror",Rotten,7
+"Art House & International, Documentary, Drama, Kids & Family",Fresh,15
+"Art House & International, Documentary, Drama, Kids & Family",Rotten,15
+"Art House & International, Documentary, Drama, Musical & Performing Arts",Fresh,83
+"Art House & International, Documentary, Drama, Musical & Performing Arts",Rotten,17
+"Art House & International, Documentary, Drama, Musical & Performing Arts, Mystery & Suspense, Special Interest",Fresh,10
+"Art House & International, Documentary, Drama, Musical & Performing Arts, Mystery & Suspense, Special Interest",Rotten,24
+"Art House & International, Documentary, Drama, Musical & Performing Arts, Special Interest",Fresh,69
+"Art House & International, Documentary, Drama, Musical & Performing Arts, Special Interest",Rotten,10
+"Art House & International, Documentary, Drama, Musical & Performing Arts, Special Interest, Television",Fresh,6
+"Art House & International, Documentary, Drama, Musical & Performing Arts, Special Interest, Television",Rotten,4
+"Art House & International, Documentary, Drama, Mystery & Suspense",Fresh,1
+"Art House & International, Documentary, Drama, Mystery & Suspense",Rotten,1
+"Art House & International, Documentary, Drama, Mystery & Suspense, Special Interest",Fresh,93
+"Art House & International, Documentary, Drama, Mystery & Suspense, Special Interest",Rotten,31
+"Art House & International, Documentary, Drama, Special Interest",Fresh,366
+"Art House & International, Documentary, Drama, Special Interest",Rotten,79
+"Art House & International, Documentary, Drama, Special Interest, Faith & Spirituality",Fresh,27
+"Art House & International, Documentary, Drama, Special Interest, Faith & Spirituality",Rotten,10
+"Art House & International, Documentary, Drama, Special Interest, Faith & Spirituality, Sports & Fitness",Fresh,29
+"Art House & International, Documentary, Drama, Special Interest, Faith & Spirituality, Sports & Fitness",Rotten,5
+"Art House & International, Documentary, Drama, Special Interest, Sports & Fitness",Fresh,8
+"Art House & International, Documentary, Drama, Special Interest, Sports & Fitness",Rotten,3
+"Art House & International, Documentary, Drama, Special Interest, Television",Fresh,6
+"Art House & International, Documentary, Drama, Special Interest, Television",Rotten,2
+"Art House & International, Documentary, Drama, Sports & Fitness",Fresh,35
+"Art House & International, Documentary, Drama, Sports & Fitness",Rotten,7
+"Art House & International, Documentary, Faith & Spirituality",Fresh,60
+"Art House & International, Documentary, Faith & Spirituality",Rotten,19
+"Art House & International, Documentary, Kids & Family",Fresh,30
+"Art House & International, Documentary, Kids & Family",Rotten,4
+"Art House & International, Documentary, Kids & Family, Science Fiction & Fantasy",Fresh,21
+"Art House & International, Documentary, Kids & Family, Science Fiction & Fantasy",Rotten,26
+"Art House & International, Documentary, Musical & Performing Arts",Fresh,456
+"Art House & International, Documentary, Musical & Performing Arts",Rotten,48
+"Art House & International, Documentary, Musical & Performing Arts, Special Interest",Fresh,374
+"Art House & International, Documentary, Musical & Performing Arts, Special Interest",Rotten,44
+"Art House & International, Documentary, Musical & Performing Arts, Special Interest, Television",Fresh,60
+"Art House & International, Documentary, Mystery & Suspense, Special Interest",Rotten,9
+"Art House & International, Documentary, Special Interest",Fresh,1136
+"Art House & International, Documentary, Special Interest",Rotten,170
+"Art House & International, Documentary, Special Interest, Faith & Spirituality",Fresh,7
+"Art House & International, Documentary, Special Interest, Faith & Spirituality",Rotten,1
+"Art House & International, Documentary, Special Interest, Sports & Fitness",Fresh,20
+"Art House & International, Documentary, Special Interest, Sports & Fitness",Rotten,3
+"Art House & International, Documentary, Special Interest, Television",Fresh,122
+"Art House & International, Documentary, Special Interest, Television",Rotten,10
+"Art House & International, Documentary, Sports & Fitness",Fresh,21
+"Art House & International, Documentary, Sports & Fitness",Rotten,2
+"Art House & International, Documentary, Television",Fresh,119
+"Art House & International, Documentary, Television",Rotten,8
+"Art House & International, Drama",Fresh,23327
+"Art House & International, Drama",Rotten,6100
+"Art House & International, Drama, Faith & Spirituality",Fresh,56
+"Art House & International, Drama, Faith & Spirituality",Rotten,46
+"Art House & International, Drama, Gay & Lesbian",Fresh,10
+"Art House & International, Drama, Gay & Lesbian",Rotten,5
+"Art House & International, Drama, Horror",Fresh,625
+"Art House & International, Drama, Horror",Rotten,272
+"Art House & International, Drama, Horror, Mystery & Suspense",Fresh,660
+"Art House & International, Drama, Horror, Mystery & Suspense",Rotten,350
+"Art House & International, Drama, Horror, Mystery & Suspense, Science Fiction & Fantasy",Fresh,251
+"Art House & International, Drama, Horror, Mystery & Suspense, Science Fiction & Fantasy",Rotten,90
+"Art House & International, Drama, Horror, Romance",Fresh,69
+"Art House & International, Drama, Horror, Romance",Rotten,25
+"Art House & International, Drama, Horror, Science Fiction & Fantasy",Fresh,71
+"Art House & International, Drama, Horror, Science Fiction & Fantasy",Rotten,79
+"Art House & International, Drama, Horror, Science Fiction & Fantasy, Romance",Fresh,114
+"Art House & International, Drama, Horror, Science Fiction & Fantasy, Romance",Rotten,43
+"Art House & International, Drama, Horror, Science Fiction & Fantasy, Special Interest",Fresh,68
+"Art House & International, Drama, Horror, Science Fiction & Fantasy, Special Interest",Rotten,8
+"Art House & International, Drama, Horror, Science Fiction & Fantasy, Special Interest, Romance",Fresh,24
+"Art House & International, Drama, Horror, Science Fiction & Fantasy, Special Interest, Romance",Rotten,3
+"Art House & International, Drama, Horror, Special Interest, Romance",Fresh,5
+"Art House & International, Drama, Horror, Special Interest, Romance",Rotten,1
+"Art House & International, Drama, Kids & Family",Fresh,234
+"Art House & International, Drama, Kids & Family",Rotten,22
+"Art House & International, Drama, Kids & Family, Science Fiction & Fantasy",Fresh,5
+"Art House & International, Drama, Kids & Family, Science Fiction & Fantasy",Rotten,7
+"Art House & International, Drama, Kids & Family, Science Fiction & Fantasy, Special Interest",Fresh,4
+"Art House & International, Drama, Kids & Family, Science Fiction & Fantasy, Special Interest",Rotten,2
+"Art House & International, Drama, Kids & Family, Sports & Fitness",Fresh,7
+"Art House & International, Drama, Kids & Family, Sports & Fitness",Rotten,11
+"Art House & International, Drama, Kids & Family, Western, Romance",Fresh,5
+"Art House & International, Drama, Kids & Family, Western, Romance",Rotten,1
+"Art House & International, Drama, Musical & Performing Arts",Fresh,738
+"Art House & International, Drama, Musical & Performing Arts",Rotten,172
+"Art House & International, Drama, Musical & Performing Arts, Mystery & Suspense",Fresh,24
+"Art House & International, Drama, Musical & Performing Arts, Mystery & Suspense",Rotten,3
+"Art House & International, Drama, Musical & Performing Arts, Romance",Fresh,98
+"Art House & International, Drama, Musical & Performing Arts, Romance",Rotten,44
+"Art House & International, Drama, Musical & Performing Arts, Science Fiction & Fantasy, Romance",Fresh,20
+"Art House & International, Drama, Musical & Performing Arts, Science Fiction & Fantasy, Romance",Rotten,5
+"Art House & International, Drama, Musical & Performing Arts, Special Interest",Fresh,4
+"Art House & International, Drama, Musical & Performing Arts, Special Interest",Rotten,1
+"Art House & International, Drama, Mystery & Suspense",Fresh,5437
+"Art House & International, Drama, Mystery & Suspense",Rotten,1688
+"Art House & International, Drama, Mystery & Suspense, Gay & Lesbian",Fresh,4
+"Art House & International, Drama, Mystery & Suspense, Gay & Lesbian",Rotten,7
+"Art House & International, Drama, Mystery & Suspense, Romance",Fresh,683
+"Art House & International, Drama, Mystery & Suspense, Romance",Rotten,199
+"Art House & International, Drama, Mystery & Suspense, Science Fiction & Fantasy",Fresh,301
+"Art House & International, Drama, Mystery & Suspense, Science Fiction & Fantasy",Rotten,63
+"Art House & International, Drama, Mystery & Suspense, Special Interest",Fresh,338
+"Art House & International, Drama, Mystery & Suspense, Special Interest",Rotten,92
+"Art House & International, Drama, Mystery & Suspense, Special Interest, Gay & Lesbian",Fresh,10
+"Art House & International, Drama, Mystery & Suspense, Special Interest, Gay & Lesbian",Rotten,2
+"Art House & International, Drama, Romance",Fresh,3432
+"Art House & International, Drama, Romance",Rotten,1113
+"Art House & International, Drama, Romance, Gay & Lesbian",Fresh,18
+"Art House & International, Drama, Romance, Gay & Lesbian",Rotten,1
+"Art House & International, Drama, Science Fiction & Fantasy",Fresh,248
+"Art House & International, Drama, Science Fiction & Fantasy",Rotten,86
+"Art House & International, Drama, Science Fiction & Fantasy, Romance",Fresh,64
+"Art House & International, Drama, Science Fiction & Fantasy, Romance",Rotten,11
+"Art House & International, Drama, Science Fiction & Fantasy, Special Interest",Fresh,20
+"Art House & International, Drama, Science Fiction & Fantasy, Special Interest",Rotten,4
+"Art House & International, Drama, Special Interest",Fresh,605
+"Art House & International, Drama, Special Interest",Rotten,265
+"Art House & International, Drama, Special Interest, Faith & Spirituality",Fresh,5
+"Art House & International, Drama, Special Interest, Faith & Spirituality",Rotten,2
+"Art House & International, Drama, Special Interest, Romance",Fresh,23
+"Art House & International, Drama, Special Interest, Romance",Rotten,57
+"Art House & International, Drama, Special Interest, Television",Fresh,6
+"Art House & International, Drama, Special Interest, Television",Rotten,1
+"Art House & International, Drama, Sports & Fitness",Fresh,59
+"Art House & International, Drama, Sports & Fitness",Rotten,14
+"Art House & International, Drama, Television",Fresh,198
+"Art House & International, Drama, Television",Rotten,22
+"Art House & International, Drama, Western",Fresh,31
+"Art House & International, Drama, Western",Rotten,26
+"Art House & International, Drama, Western, Romance",Fresh,3
+"Art House & International, Drama, Western, Romance",Rotten,10
+"Art House & International, Horror",Fresh,702
+"Art House & International, Horror",Rotten,304
+"Art House & International, Horror, Mystery & Suspense",Fresh,592
+"Art House & International, Horror, Mystery & Suspense",Rotten,288
+"Art House & International, Horror, Mystery & Suspense, Science Fiction & Fantasy",Fresh,8
+"Art House & International, Horror, Mystery & Suspense, Science Fiction & Fantasy",Rotten,6
+"Art House & International, Horror, Science Fiction & Fantasy",Fresh,120
+"Art House & International, Horror, Science Fiction & Fantasy",Rotten,21
+"Art House & International, Horror, Special Interest",Fresh,34
+"Art House & International, Horror, Special Interest",Rotten,4
+"Art House & International, Horror, Television",Fresh,6
+"Art House & International, Horror, Television",Rotten,2
+"Art House & International, Kids & Family, Science Fiction & Fantasy",Fresh,1
+"Art House & International, Kids & Family, Science Fiction & Fantasy",Rotten,4
+"Art House & International, Musical & Performing Arts",Fresh,1
+"Art House & International, Musical & Performing Arts, Romance",Fresh,19
+"Art House & International, Musical & Performing Arts, Romance",Rotten,19
+"Art House & International, Mystery & Suspense",Fresh,594
+"Art House & International, Mystery & Suspense",Rotten,220
+"Art House & International, Mystery & Suspense, Gay & Lesbian",Fresh,1
+"Art House & International, Mystery & Suspense, Gay & Lesbian",Rotten,10
+"Art House & International, Mystery & Suspense, Romance",Fresh,2
+"Art House & International, Mystery & Suspense, Romance",Rotten,20
+"Art House & International, Mystery & Suspense, Science Fiction & Fantasy",Fresh,41
+"Art House & International, Mystery & Suspense, Science Fiction & Fantasy",Rotten,44
+"Art House & International, Mystery & Suspense, Science Fiction & Fantasy, Romance",Fresh,123
+"Art House & International, Mystery & Suspense, Science Fiction & Fantasy, Romance",Rotten,4
+"Art House & International, Mystery & Suspense, Special Interest",Fresh,158
+"Art House & International, Mystery & Suspense, Special Interest",Rotten,74
+"Art House & International, Mystery & Suspense, Western",Fresh,32
+"Art House & International, Mystery & Suspense, Western",Rotten,44
+"Art House & International, Romance",Fresh,4
+"Art House & International, Romance",Rotten,3
+"Art House & International, Science Fiction & Fantasy",Fresh,82
+"Art House & International, Science Fiction & Fantasy",Rotten,33
+"Art House & International, Science Fiction & Fantasy, Romance",Fresh,4
+"Art House & International, Science Fiction & Fantasy, Romance",Rotten,7
+"Art House & International, Special Interest",Fresh,74
+"Art House & International, Special Interest",Rotten,13
+"Art House & International, Western",Fresh,17
+"Art House & International, Western",Rotten,24
+Classics,Fresh,41
+Classics,Rotten,8
+"Classics, Comedy",Fresh,721
+"Classics, Comedy",Rotten,168
+"Classics, Comedy, Cult Movies, Documentary, Drama",Fresh,4
+"Classics, Comedy, Cult Movies, Documentary, Drama",Rotten,1
+"Classics, Comedy, Cult Movies, Horror",Fresh,4
+"Classics, Comedy, Cult Movies, Horror, Musical & Performing Arts",Fresh,18
+"Classics, Comedy, Cult Movies, Horror, Musical & Performing Arts",Rotten,4
+"Classics, Comedy, Cult Movies, Horror, Musical & Performing Arts, Science Fiction & Fantasy",Fresh,46
+"Classics, Comedy, Cult Movies, Horror, Musical & Performing Arts, Science Fiction & Fantasy",Rotten,12
+"Classics, Comedy, Cult Movies, Horror, Mystery & Suspense",Fresh,9
+"Classics, Comedy, Cult Movies, Horror, Mystery & Suspense",Rotten,2
+"Classics, Comedy, Documentary, Musical & Performing Arts, Special Interest",Fresh,5
+"Classics, Comedy, Documentary, Musical & Performing Arts, Special Interest",Rotten,1
+"Classics, Comedy, Documentary, Sports & Fitness",Fresh,23
+"Classics, Comedy, Documentary, Sports & Fitness",Rotten,14
+"Classics, Comedy, Drama",Fresh,908
+"Classics, Comedy, Drama",Rotten,170
+"Classics, Comedy, Drama, Horror, Mystery & Suspense",Fresh,7
+"Classics, Comedy, Drama, Horror, Mystery & Suspense",Rotten,6
+"Classics, Comedy, Drama, Kids & Family",Fresh,5
+"Classics, Comedy, Drama, Kids & Family",Rotten,2
+"Classics, Comedy, Drama, Kids & Family, Musical & Performing Arts",Fresh,59
+"Classics, Comedy, Drama, Kids & Family, Musical & Performing Arts",Rotten,13
+"Classics, Comedy, Drama, Kids & Family, Musical & Performing Arts, Science Fiction & Fantasy",Fresh,33
+"Classics, Comedy, Drama, Kids & Family, Musical & Performing Arts, Science Fiction & Fantasy",Rotten,4
+"Classics, Comedy, Drama, Kids & Family, Romance",Fresh,24
+"Classics, Comedy, Drama, Kids & Family, Science Fiction & Fantasy",Fresh,4
+"Classics, Comedy, Drama, Kids & Family, Science Fiction & Fantasy",Rotten,1
+"Classics, Comedy, Drama, Musical & Performing Arts",Fresh,233
+"Classics, Comedy, Drama, Musical & Performing Arts",Rotten,33
+"Classics, Comedy, Drama, Musical & Performing Arts, Mystery & Suspense",Fresh,6
+"Classics, Comedy, Drama, Musical & Performing Arts, Mystery & Suspense",Rotten,4
+"Classics, Comedy, Drama, Musical & Performing Arts, Romance",Fresh,74
+"Classics, Comedy, Drama, Musical & Performing Arts, Romance",Rotten,21
+"Classics, Comedy, Drama, Musical & Performing Arts, Science Fiction & Fantasy",Fresh,18
+"Classics, Comedy, Drama, Musical & Performing Arts, Science Fiction & Fantasy",Rotten,4
+"Classics, Comedy, Drama, Musical & Performing Arts, Western",Fresh,32
+"Classics, Comedy, Drama, Musical & Performing Arts, Western",Rotten,2
+"Classics, Comedy, Drama, Mystery & Suspense",Fresh,88
+"Classics, Comedy, Drama, Mystery & Suspense",Rotten,16
+"Classics, Comedy, Drama, Mystery & Suspense, Romance",Fresh,30
+"Classics, Comedy, Drama, Mystery & Suspense, Romance",Rotten,5
+"Classics, Comedy, Drama, Mystery & Suspense, Science Fiction & Fantasy, Romance",Fresh,4
+"Classics, Comedy, Drama, Mystery & Suspense, Science Fiction & Fantasy, Romance",Rotten,1
+"Classics, Comedy, Drama, Mystery & Suspense, Special Interest, Romance",Fresh,42
+"Classics, Comedy, Drama, Mystery & Suspense, Special Interest, Romance",Rotten,3
+"Classics, Comedy, Drama, Romance",Fresh,892
+"Classics, Comedy, Drama, Romance",Rotten,131
+"Classics, Comedy, Drama, Science Fiction & Fantasy",Fresh,68
+"Classics, Comedy, Drama, Science Fiction & Fantasy",Rotten,13
+"Classics, Comedy, Drama, Science Fiction & Fantasy, Romance",Fresh,19
+"Classics, Comedy, Drama, Science Fiction & Fantasy, Romance",Rotten,3
+"Classics, Comedy, Drama, Science Fiction & Fantasy, Romance, Faith & Spirituality",Fresh,15
+"Classics, Comedy, Drama, Science Fiction & Fantasy, Romance, Faith & Spirituality",Rotten,3
+"Classics, Comedy, Drama, Special Interest",Fresh,27
+"Classics, Comedy, Drama, Special Interest",Rotten,1
+"Classics, Comedy, Drama, Sports & Fitness",Fresh,28
+"Classics, Comedy, Drama, Sports & Fitness",Rotten,3
+"Classics, Comedy, Drama, Western",Fresh,1
+"Classics, Comedy, Drama, Western",Rotten,3
+"Classics, Comedy, Drama, Western, Romance",Fresh,12
+"Classics, Comedy, Horror",Fresh,43
+"Classics, Comedy, Horror",Rotten,4
+"Classics, Comedy, Horror, Mystery & Suspense",Fresh,48
+"Classics, Comedy, Horror, Mystery & Suspense",Rotten,6
+"Classics, Comedy, Horror, Science Fiction & Fantasy",Fresh,109
+"Classics, Comedy, Horror, Science Fiction & Fantasy",Rotten,18
+"Classics, Comedy, Kids & Family",Fresh,39
+"Classics, Comedy, Kids & Family",Rotten,13
+"Classics, Comedy, Kids & Family, Musical & Performing Arts",Fresh,26
+"Classics, Comedy, Kids & Family, Musical & Performing Arts",Rotten,11
+"Classics, Comedy, Kids & Family, Musical & Performing Arts, Science Fiction & Fantasy",Fresh,41
+"Classics, Comedy, Kids & Family, Musical & Performing Arts, Science Fiction & Fantasy",Rotten,3
+"Classics, Comedy, Kids & Family, Mystery & Suspense",Fresh,4
+"Classics, Comedy, Kids & Family, Romance",Fresh,12
+"Classics, Comedy, Kids & Family, Romance",Rotten,1
+"Classics, Comedy, Kids & Family, Science Fiction & Fantasy",Fresh,23
+"Classics, Comedy, Kids & Family, Science Fiction & Fantasy",Rotten,30
+"Classics, Comedy, Kids & Family, Television",Fresh,2
+"Classics, Comedy, Kids & Family, Television",Rotten,1
+"Classics, Comedy, Kids & Family, Western",Fresh,3
+"Classics, Comedy, Kids & Family, Western",Rotten,3
+"Classics, Comedy, Musical & Performing Arts",Fresh,217
+"Classics, Comedy, Musical & Performing Arts",Rotten,40
+"Classics, Comedy, Musical & Performing Arts, Romance",Fresh,433
+"Classics, Comedy, Musical & Performing Arts, Romance",Rotten,45
+"Classics, Comedy, Musical & Performing Arts, Science Fiction & Fantasy",Fresh,1
+"Classics, Comedy, Musical & Performing Arts, Science Fiction & Fantasy",Rotten,4
+"Classics, Comedy, Musical & Performing Arts, Special Interest, Romance",Fresh,1
+"Classics, Comedy, Musical & Performing Arts, Special Interest, Romance",Rotten,2
+"Classics, Comedy, Musical & Performing Arts, Western",Fresh,24
+"Classics, Comedy, Musical & Performing Arts, Western",Rotten,3
+"Classics, Comedy, Musical & Performing Arts, Western, Romance",Fresh,16
+"Classics, Comedy, Musical & Performing Arts, Western, Romance",Rotten,10
+"Classics, Comedy, Mystery & Suspense",Fresh,73
+"Classics, Comedy, Mystery & Suspense",Rotten,15
+"Classics, Comedy, Romance",Fresh,662
+"Classics, Comedy, Romance",Rotten,89
+"Classics, Comedy, Science Fiction & Fantasy",Fresh,100
+"Classics, Comedy, Science Fiction & Fantasy",Rotten,5
+"Classics, Comedy, Science Fiction & Fantasy, Romance",Fresh,11
+"Classics, Comedy, Special Interest",Fresh,6
+"Classics, Comedy, Western",Fresh,101
+"Classics, Comedy, Western",Rotten,28
+"Classics, Cult Movies, Drama",Fresh,14
+"Classics, Cult Movies, Drama",Rotten,28
+"Classics, Cult Movies, Drama, Horror, Mystery & Suspense",Fresh,33
+"Classics, Cult Movies, Drama, Horror, Mystery & Suspense",Rotten,3
+"Classics, Cult Movies, Drama, Mystery & Suspense",Fresh,27
+"Classics, Cult Movies, Horror",Fresh,107
+"Classics, Cult Movies, Horror",Rotten,27
+"Classics, Cult Movies, Horror, Science Fiction & Fantasy",Fresh,43
+"Classics, Cult Movies, Horror, Science Fiction & Fantasy",Rotten,15
+"Classics, Documentary, Drama",Fresh,65
+"Classics, Documentary, Drama",Rotten,15
+"Classics, Documentary, Drama, Mystery & Suspense",Fresh,34
+"Classics, Documentary, Drama, Mystery & Suspense",Rotten,4
+"Classics, Documentary, Drama, Romance",Fresh,20
+"Classics, Documentary, Drama, Romance",Rotten,15
+"Classics, Documentary, Drama, Special Interest",Fresh,17
+"Classics, Documentary, Drama, Special Interest",Rotten,9
+"Classics, Documentary, Drama, Special Interest, Romance, Faith & Spirituality",Fresh,14
+"Classics, Documentary, Drama, Special Interest, Romance, Faith & Spirituality",Rotten,2
+"Classics, Documentary, Drama, Western",Fresh,8
+"Classics, Documentary, Horror, Special Interest",Fresh,13
+"Classics, Documentary, Musical & Performing Arts",Fresh,4
+"Classics, Documentary, Musical & Performing Arts, Special Interest, Television",Fresh,20
+"Classics, Documentary, Musical & Performing Arts, Special Interest, Television",Rotten,3
+"Classics, Documentary, Musical & Performing Arts, Television",Fresh,13
+"Classics, Documentary, Musical & Performing Arts, Television",Rotten,1
+"Classics, Documentary, Special Interest",Fresh,12
+"Classics, Documentary, Sports & Fitness",Fresh,4
+"Classics, Drama",Fresh,3608
+"Classics, Drama",Rotten,1193
+"Classics, Drama, Faith & Spirituality",Fresh,128
+"Classics, Drama, Faith & Spirituality",Rotten,53
+"Classics, Drama, Horror",Fresh,117
+"Classics, Drama, Horror",Rotten,29
+"Classics, Drama, Horror, Musical & Performing Arts, Mystery & Suspense, Special Interest",Fresh,6
+"Classics, Drama, Horror, Musical & Performing Arts, Mystery & Suspense, Special Interest",Rotten,1
+"Classics, Drama, Horror, Mystery & Suspense",Fresh,337
+"Classics, Drama, Horror, Mystery & Suspense",Rotten,50
+"Classics, Drama, Horror, Mystery & Suspense, Science Fiction & Fantasy",Fresh,59
+"Classics, Drama, Horror, Mystery & Suspense, Science Fiction & Fantasy",Rotten,15
+"Classics, Drama, Horror, Romance",Fresh,10
+"Classics, Drama, Horror, Romance",Rotten,2
+"Classics, Drama, Horror, Science Fiction & Fantasy",Fresh,56
+"Classics, Drama, Horror, Science Fiction & Fantasy",Rotten,23
+"Classics, Drama, Horror, Special Interest",Fresh,18
+"Classics, Drama, Horror, Special Interest",Rotten,2
+"Classics, Drama, Kids & Family",Fresh,47
+"Classics, Drama, Kids & Family",Rotten,7
+"Classics, Drama, Kids & Family, Musical & Performing Arts",Fresh,106
+"Classics, Drama, Kids & Family, Musical & Performing Arts",Rotten,24
+"Classics, Drama, Kids & Family, Musical & Performing Arts, Romance",Fresh,28
+"Classics, Drama, Kids & Family, Romance",Fresh,31
+"Classics, Drama, Kids & Family, Romance",Rotten,20
+"Classics, Drama, Kids & Family, Science Fiction & Fantasy",Fresh,77
+"Classics, Drama, Kids & Family, Science Fiction & Fantasy",Rotten,4
+"Classics, Drama, Kids & Family, Science Fiction & Fantasy, Special Interest, Romance",Fresh,35
+"Classics, Drama, Kids & Family, Science Fiction & Fantasy, Special Interest, Romance",Rotten,1
+"Classics, Drama, Musical & Performing Arts",Fresh,309
+"Classics, Drama, Musical & Performing Arts",Rotten,64
+"Classics, Drama, Musical & Performing Arts, Mystery & Suspense",Fresh,2
+"Classics, Drama, Musical & Performing Arts, Mystery & Suspense",Rotten,3
+"Classics, Drama, Musical & Performing Arts, Romance",Fresh,124
+"Classics, Drama, Musical & Performing Arts, Romance",Rotten,22
+"Classics, Drama, Musical & Performing Arts, Science Fiction & Fantasy",Fresh,18
+"Classics, Drama, Musical & Performing Arts, Science Fiction & Fantasy",Rotten,7
+"Classics, Drama, Musical & Performing Arts, Science Fiction & Fantasy, Romance",Fresh,6
+"Classics, Drama, Musical & Performing Arts, Science Fiction & Fantasy, Romance",Rotten,2
+"Classics, Drama, Musical & Performing Arts, Special Interest",Fresh,26
+"Classics, Drama, Musical & Performing Arts, Special Interest",Rotten,5
+"Classics, Drama, Musical & Performing Arts, Special Interest, Romance",Fresh,10
+"Classics, Drama, Musical & Performing Arts, Special Interest, Romance",Rotten,4
+"Classics, Drama, Musical & Performing Arts, Western",Fresh,5
+"Classics, Drama, Musical & Performing Arts, Western",Rotten,1
+"Classics, Drama, Mystery & Suspense",Fresh,2119
+"Classics, Drama, Mystery & Suspense",Rotten,235
+"Classics, Drama, Mystery & Suspense, Romance",Fresh,347
+"Classics, Drama, Mystery & Suspense, Romance",Rotten,18
+"Classics, Drama, Mystery & Suspense, Science Fiction & Fantasy",Fresh,126
+"Classics, Drama, Mystery & Suspense, Science Fiction & Fantasy",Rotten,30
+"Classics, Drama, Mystery & Suspense, Science Fiction & Fantasy, Romance",Fresh,20
+"Classics, Drama, Mystery & Suspense, Science Fiction & Fantasy, Romance",Rotten,10
+"Classics, Drama, Mystery & Suspense, Special Interest",Fresh,8
+"Classics, Drama, Romance",Fresh,1269
+"Classics, Drama, Romance",Rotten,303
+"Classics, Drama, Romance, Faith & Spirituality",Fresh,5
+"Classics, Drama, Romance, Faith & Spirituality",Rotten,1
+"Classics, Drama, Romance, Sports & Fitness",Fresh,12
+"Classics, Drama, Romance, Sports & Fitness",Rotten,2
+"Classics, Drama, Science Fiction & Fantasy",Fresh,70
+"Classics, Drama, Science Fiction & Fantasy",Rotten,9
+"Classics, Drama, Special Interest, Faith & Spirituality",Fresh,4
+"Classics, Drama, Special Interest, Faith & Spirituality",Rotten,8
+"Classics, Drama, Special Interest, Romance",Fresh,12
+"Classics, Drama, Special Interest, Romance",Rotten,1
+"Classics, Drama, Sports & Fitness",Fresh,7
+"Classics, Drama, Sports & Fitness",Rotten,1
+"Classics, Drama, Television",Fresh,5
+"Classics, Drama, Television",Rotten,1
+"Classics, Drama, Television, Romance",Fresh,33
+"Classics, Drama, Television, Romance",Rotten,8
+"Classics, Drama, Western",Fresh,197
+"Classics, Drama, Western",Rotten,58
+"Classics, Drama, Western, Romance",Fresh,46
+"Classics, Drama, Western, Romance",Rotten,3
+"Classics, Horror",Fresh,241
+"Classics, Horror",Rotten,68
+"Classics, Horror, Kids & Family, Mystery & Suspense",Fresh,3
+"Classics, Horror, Kids & Family, Mystery & Suspense",Rotten,2
+"Classics, Horror, Musical & Performing Arts, Science Fiction & Fantasy",Fresh,6
+"Classics, Horror, Musical & Performing Arts, Science Fiction & Fantasy",Rotten,3
+"Classics, Horror, Mystery & Suspense",Fresh,542
+"Classics, Horror, Mystery & Suspense",Rotten,79
+"Classics, Horror, Mystery & Suspense, Science Fiction & Fantasy",Fresh,66
+"Classics, Horror, Mystery & Suspense, Science Fiction & Fantasy",Rotten,30
+"Classics, Horror, Romance",Fresh,32
+"Classics, Horror, Romance",Rotten,5
+"Classics, Horror, Science Fiction & Fantasy",Fresh,183
+"Classics, Horror, Science Fiction & Fantasy",Rotten,42
+"Classics, Horror, Science Fiction & Fantasy, Special Interest",Fresh,35
+"Classics, Horror, Science Fiction & Fantasy, Special Interest",Rotten,1
+"Classics, Kids & Family",Fresh,10
+"Classics, Kids & Family, Musical & Performing Arts, Romance",Fresh,2
+"Classics, Kids & Family, Musical & Performing Arts, Romance",Rotten,1
+"Classics, Kids & Family, Musical & Performing Arts, Science Fiction & Fantasy",Fresh,113
+"Classics, Kids & Family, Musical & Performing Arts, Science Fiction & Fantasy",Rotten,2
+"Classics, Kids & Family, Musical & Performing Arts, Special Interest",Fresh,26
+"Classics, Kids & Family, Musical & Performing Arts, Special Interest",Rotten,8
+"Classics, Kids & Family, Science Fiction & Fantasy",Fresh,6
+"Classics, Kids & Family, Science Fiction & Fantasy",Rotten,2
+"Classics, Musical & Performing Arts",Fresh,18
+"Classics, Musical & Performing Arts",Rotten,9
+"Classics, Musical & Performing Arts, Romance",Fresh,143
+"Classics, Musical & Performing Arts, Romance",Rotten,20
+"Classics, Musical & Performing Arts, Special Interest, Western, Romance",Fresh,18
+"Classics, Musical & Performing Arts, Special Interest, Western, Romance",Rotten,3
+"Classics, Mystery & Suspense",Fresh,377
+"Classics, Mystery & Suspense",Rotten,36
+"Classics, Mystery & Suspense, Romance",Fresh,38
+"Classics, Mystery & Suspense, Romance",Rotten,2
+"Classics, Mystery & Suspense, Science Fiction & Fantasy",Fresh,73
+"Classics, Mystery & Suspense, Science Fiction & Fantasy",Rotten,13
+"Classics, Mystery & Suspense, Science Fiction & Fantasy, Western",Fresh,8
+"Classics, Mystery & Suspense, Science Fiction & Fantasy, Western",Rotten,2
+"Classics, Mystery & Suspense, Western",Fresh,6
+"Classics, Science Fiction & Fantasy",Fresh,243
+"Classics, Science Fiction & Fantasy",Rotten,55
+"Classics, Science Fiction & Fantasy, Romance",Fresh,14
+"Classics, Science Fiction & Fantasy, Special Interest, Television",Fresh,8
+"Classics, Science Fiction & Fantasy, Special Interest, Television",Rotten,9
+"Classics, Western",Fresh,282
+"Classics, Western",Rotten,33
+"Classics, Western, Romance",Fresh,3
+"Classics, Western, Romance",Rotten,1
+Comedy,Fresh,41052
+Comedy,Rotten,38929
+"Comedy, Cult Movies",Fresh,61
+"Comedy, Cult Movies",Rotten,25
+"Comedy, Cult Movies, Documentary, Drama, Musical & Performing Arts, Special Interest",Fresh,23
+"Comedy, Cult Movies, Drama",Fresh,87
+"Comedy, Cult Movies, Drama",Rotten,10
+"Comedy, Cult Movies, Drama, Mystery & Suspense, Science Fiction & Fantasy",Fresh,14
+"Comedy, Cult Movies, Drama, Mystery & Suspense, Science Fiction & Fantasy",Rotten,6
+"Comedy, Cult Movies, Drama, Science Fiction & Fantasy",Fresh,226
+"Comedy, Cult Movies, Drama, Science Fiction & Fantasy",Rotten,34
+"Comedy, Cult Movies, Horror",Fresh,7
+"Comedy, Cult Movies, Horror",Rotten,3
+"Comedy, Cult Movies, Horror, Mystery & Suspense, Science Fiction & Fantasy",Fresh,2
+"Comedy, Cult Movies, Horror, Mystery & Suspense, Science Fiction & Fantasy",Rotten,1
+"Comedy, Cult Movies, Horror, Science Fiction & Fantasy",Fresh,30
+"Comedy, Cult Movies, Horror, Science Fiction & Fantasy",Rotten,15
+"Comedy, Cult Movies, Mystery & Suspense, Science Fiction & Fantasy",Fresh,4
+"Comedy, Cult Movies, Mystery & Suspense, Science Fiction & Fantasy",Rotten,4
+"Comedy, Documentary",Fresh,551
+"Comedy, Documentary",Rotten,299
+"Comedy, Documentary, Drama",Fresh,19
+"Comedy, Documentary, Drama",Rotten,1
+"Comedy, Documentary, Drama, Kids & Family, Faith & Spirituality",Fresh,8
+"Comedy, Documentary, Drama, Kids & Family, Faith & Spirituality",Rotten,6
+"Comedy, Documentary, Drama, Musical & Performing Arts",Fresh,6
+"Comedy, Documentary, Drama, Musical & Performing Arts",Rotten,2
+"Comedy, Documentary, Drama, Romance",Fresh,26
+"Comedy, Documentary, Drama, Romance",Rotten,23
+"Comedy, Documentary, Drama, Romance, Gay & Lesbian",Fresh,2
+"Comedy, Documentary, Drama, Romance, Gay & Lesbian",Rotten,12
+"Comedy, Documentary, Drama, Special Interest",Fresh,116
+"Comedy, Documentary, Drama, Special Interest",Rotten,41
+"Comedy, Documentary, Drama, Special Interest, Romance",Fresh,81
+"Comedy, Documentary, Drama, Special Interest, Romance",Rotten,27
+"Comedy, Documentary, Drama, Television",Fresh,18
+"Comedy, Documentary, Faith & Spirituality",Fresh,204
+"Comedy, Documentary, Faith & Spirituality",Rotten,94
+"Comedy, Documentary, Horror",Fresh,24
+"Comedy, Documentary, Horror",Rotten,10
+"Comedy, Documentary, Kids & Family",Fresh,60
+"Comedy, Documentary, Kids & Family",Rotten,97
+"Comedy, Documentary, Kids & Family, Special Interest",Fresh,16
+"Comedy, Documentary, Kids & Family, Special Interest",Rotten,12
+"Comedy, Documentary, Musical & Performing Arts",Fresh,228
+"Comedy, Documentary, Musical & Performing Arts",Rotten,64
+"Comedy, Documentary, Musical & Performing Arts, Special Interest",Fresh,205
+"Comedy, Documentary, Musical & Performing Arts, Special Interest",Rotten,23
+"Comedy, Documentary, Science Fiction & Fantasy, Special Interest",Fresh,235
+"Comedy, Documentary, Science Fiction & Fantasy, Special Interest",Rotten,47
+"Comedy, Documentary, Special Interest",Fresh,571
+"Comedy, Documentary, Special Interest",Rotten,134
+"Comedy, Documentary, Special Interest, Sports & Fitness",Fresh,49
+"Comedy, Documentary, Special Interest, Sports & Fitness",Rotten,6
+"Comedy, Documentary, Special Interest, Television",Fresh,166
+"Comedy, Documentary, Special Interest, Television",Rotten,73
+"Comedy, Documentary, Special Interest, Television, Sports & Fitness",Fresh,31
+"Comedy, Documentary, Special Interest, Television, Sports & Fitness",Rotten,3
+"Comedy, Documentary, Television",Fresh,199
+"Comedy, Documentary, Television",Rotten,21
+"Comedy, Drama",Fresh,39738
+"Comedy, Drama",Rotten,20311
+"Comedy, Drama, Faith & Spirituality",Fresh,2
+"Comedy, Drama, Faith & Spirituality",Rotten,3
+"Comedy, Drama, Faith & Spirituality, Sports & Fitness",Fresh,2
+"Comedy, Drama, Faith & Spirituality, Sports & Fitness",Rotten,10
+"Comedy, Drama, Gay & Lesbian",Fresh,119
+"Comedy, Drama, Gay & Lesbian",Rotten,106
+"Comedy, Drama, Horror",Fresh,195
+"Comedy, Drama, Horror",Rotten,132
+"Comedy, Drama, Horror, Kids & Family",Fresh,17
+"Comedy, Drama, Horror, Kids & Family",Rotten,1
+"Comedy, Drama, Horror, Mystery & Suspense",Fresh,115
+"Comedy, Drama, Horror, Mystery & Suspense",Rotten,73
+"Comedy, Drama, Horror, Mystery & Suspense, Science Fiction & Fantasy",Fresh,47
+"Comedy, Drama, Horror, Mystery & Suspense, Science Fiction & Fantasy",Rotten,8
+"Comedy, Drama, Horror, Romance",Fresh,3
+"Comedy, Drama, Horror, Romance",Rotten,22
+"Comedy, Drama, Horror, Science Fiction & Fantasy",Fresh,23
+"Comedy, Drama, Horror, Science Fiction & Fantasy",Rotten,9
+"Comedy, Drama, Horror, Special Interest",Fresh,4
+"Comedy, Drama, Horror, Special Interest",Rotten,8
+"Comedy, Drama, Kids & Family",Fresh,1217
+"Comedy, Drama, Kids & Family",Rotten,1042
+"Comedy, Drama, Kids & Family, Musical & Performing Arts",Fresh,20
+"Comedy, Drama, Kids & Family, Musical & Performing Arts",Rotten,9
+"Comedy, Drama, Kids & Family, Musical & Performing Arts, Television",Fresh,6
+"Comedy, Drama, Kids & Family, Musical & Performing Arts, Television",Rotten,4
+"Comedy, Drama, Kids & Family, Mystery & Suspense",Fresh,3
+"Comedy, Drama, Kids & Family, Romance",Fresh,44
+"Comedy, Drama, Kids & Family, Romance",Rotten,95
+"Comedy, Drama, Kids & Family, Science Fiction & Fantasy",Fresh,395
+"Comedy, Drama, Kids & Family, Science Fiction & Fantasy",Rotten,288
+"Comedy, Drama, Kids & Family, Science Fiction & Fantasy, Television",Fresh,1
+"Comedy, Drama, Kids & Family, Science Fiction & Fantasy, Television",Rotten,3
+"Comedy, Drama, Kids & Family, Sports & Fitness",Fresh,124
+"Comedy, Drama, Kids & Family, Sports & Fitness",Rotten,77
+"Comedy, Drama, Kids & Family, Television",Fresh,6
+"Comedy, Drama, Kids & Family, Television",Rotten,6
+"Comedy, Drama, Musical & Performing Arts",Fresh,2948
+"Comedy, Drama, Musical & Performing Arts",Rotten,1440
+"Comedy, Drama, Musical & Performing Arts, Mystery & Suspense",Fresh,5
+"Comedy, Drama, Musical & Performing Arts, Mystery & Suspense",Rotten,5
+"Comedy, Drama, Musical & Performing Arts, Romance",Fresh,323
+"Comedy, Drama, Musical & Performing Arts, Romance",Rotten,300
+"Comedy, Drama, Musical & Performing Arts, Special Interest",Fresh,148
+"Comedy, Drama, Musical & Performing Arts, Special Interest",Rotten,48
+"Comedy, Drama, Mystery & Suspense",Fresh,3216
+"Comedy, Drama, Mystery & Suspense",Rotten,1975
+"Comedy, Drama, Mystery & Suspense, Romance",Fresh,67
+"Comedy, Drama, Mystery & Suspense, Romance",Rotten,54
+"Comedy, Drama, Mystery & Suspense, Science Fiction & Fantasy",Fresh,429
+"Comedy, Drama, Mystery & Suspense, Science Fiction & Fantasy",Rotten,396
+"Comedy, Drama, Mystery & Suspense, Science Fiction & Fantasy, Romance",Fresh,44
+"Comedy, Drama, Mystery & Suspense, Science Fiction & Fantasy, Romance",Rotten,14
+"Comedy, Drama, Mystery & Suspense, Sports & Fitness",Fresh,3
+"Comedy, Drama, Mystery & Suspense, Sports & Fitness",Rotten,3
+"Comedy, Drama, Romance",Fresh,12672
+"Comedy, Drama, Romance",Rotten,9104
+"Comedy, Drama, Romance, Gay & Lesbian",Fresh,103
+"Comedy, Drama, Romance, Gay & Lesbian",Rotten,99
+"Comedy, Drama, Romance, Gay & Lesbian, Sports & Fitness",Fresh,9
+"Comedy, Drama, Romance, Gay & Lesbian, Sports & Fitness",Rotten,4
+"Comedy, Drama, Science Fiction & Fantasy",Fresh,1383
+"Comedy, Drama, Science Fiction & Fantasy",Rotten,951
+"Comedy, Drama, Science Fiction & Fantasy, Gay & Lesbian",Fresh,13
+"Comedy, Drama, Science Fiction & Fantasy, Gay & Lesbian",Rotten,3
+"Comedy, Drama, Science Fiction & Fantasy, Romance",Fresh,594
+"Comedy, Drama, Science Fiction & Fantasy, Romance",Rotten,442
+"Comedy, Drama, Special Interest",Fresh,188
+"Comedy, Drama, Special Interest",Rotten,143
+"Comedy, Drama, Sports & Fitness",Fresh,584
+"Comedy, Drama, Sports & Fitness",Rotten,450
+"Comedy, Drama, Television",Fresh,69
+"Comedy, Drama, Television",Rotten,129
+"Comedy, Drama, Western",Fresh,6
+"Comedy, Drama, Western",Rotten,26
+"Comedy, Gay & Lesbian",Fresh,69
+"Comedy, Gay & Lesbian",Rotten,70
+"Comedy, Horror",Fresh,2295
+"Comedy, Horror",Rotten,1496
+"Comedy, Horror, Kids & Family",Fresh,62
+"Comedy, Horror, Kids & Family",Rotten,60
+"Comedy, Horror, Kids & Family, Mystery & Suspense",Fresh,31
+"Comedy, Horror, Kids & Family, Mystery & Suspense",Rotten,9
+"Comedy, Horror, Kids & Family, Mystery & Suspense, Science Fiction & Fantasy",Fresh,18
+"Comedy, Horror, Kids & Family, Mystery & Suspense, Science Fiction & Fantasy",Rotten,105
+"Comedy, Horror, Kids & Family, Science Fiction & Fantasy",Fresh,2
+"Comedy, Horror, Kids & Family, Science Fiction & Fantasy",Rotten,6
+"Comedy, Horror, Musical & Performing Arts",Fresh,132
+"Comedy, Horror, Musical & Performing Arts",Rotten,56
+"Comedy, Horror, Musical & Performing Arts, Science Fiction & Fantasy",Fresh,31
+"Comedy, Horror, Musical & Performing Arts, Science Fiction & Fantasy",Rotten,4
+"Comedy, Horror, Musical & Performing Arts, Television",Fresh,11
+"Comedy, Horror, Musical & Performing Arts, Television",Rotten,29
+"Comedy, Horror, Mystery & Suspense",Fresh,542
+"Comedy, Horror, Mystery & Suspense",Rotten,407
+"Comedy, Horror, Mystery & Suspense, Science Fiction & Fantasy",Fresh,174
+"Comedy, Horror, Mystery & Suspense, Science Fiction & Fantasy",Rotten,153
+"Comedy, Horror, Mystery & Suspense, Television",Fresh,8
+"Comedy, Horror, Mystery & Suspense, Television",Rotten,18
+"Comedy, Horror, Romance",Fresh,229
+"Comedy, Horror, Romance",Rotten,245
+"Comedy, Horror, Science Fiction & Fantasy",Fresh,967
+"Comedy, Horror, Science Fiction & Fantasy",Rotten,365
+"Comedy, Kids & Family",Fresh,2564
+"Comedy, Kids & Family",Rotten,4088
+"Comedy, Kids & Family, Musical & Performing Arts",Fresh,56
+"Comedy, Kids & Family, Musical & Performing Arts",Rotten,20
+"Comedy, Kids & Family, Musical & Performing Arts, Television",Fresh,5
+"Comedy, Kids & Family, Musical & Performing Arts, Television",Rotten,3
+"Comedy, Kids & Family, Musical & Performing Arts, Television, Romance",Fresh,9
+"Comedy, Kids & Family, Musical & Performing Arts, Television, Romance",Rotten,11
+"Comedy, Kids & Family, Romance",Fresh,228
+"Comedy, Kids & Family, Romance",Rotten,181
+"Comedy, Kids & Family, Science Fiction & Fantasy",Fresh,822
+"Comedy, Kids & Family, Science Fiction & Fantasy",Rotten,575
+"Comedy, Kids & Family, Science Fiction & Fantasy, Romance",Fresh,53
+"Comedy, Kids & Family, Science Fiction & Fantasy, Romance",Rotten,53
+"Comedy, Kids & Family, Special Interest",Fresh,177
+"Comedy, Kids & Family, Special Interest",Rotten,42
+"Comedy, Kids & Family, Television",Fresh,52
+"Comedy, Kids & Family, Television",Rotten,44
+"Comedy, Kids & Family, Western",Fresh,3
+"Comedy, Kids & Family, Western",Rotten,3
+"Comedy, Musical & Performing Arts",Fresh,1742
+"Comedy, Musical & Performing Arts",Rotten,879
+"Comedy, Musical & Performing Arts, Gay & Lesbian",Fresh,14
+"Comedy, Musical & Performing Arts, Gay & Lesbian",Rotten,4
+"Comedy, Musical & Performing Arts, Mystery & Suspense, Science Fiction & Fantasy",Fresh,98
+"Comedy, Musical & Performing Arts, Mystery & Suspense, Science Fiction & Fantasy",Rotten,127
+"Comedy, Musical & Performing Arts, Romance",Fresh,374
+"Comedy, Musical & Performing Arts, Romance",Rotten,283
+"Comedy, Musical & Performing Arts, Science Fiction & Fantasy",Fresh,56
+"Comedy, Musical & Performing Arts, Science Fiction & Fantasy",Rotten,12
+"Comedy, Musical & Performing Arts, Special Interest",Fresh,5
+"Comedy, Musical & Performing Arts, Special Interest",Rotten,2
+"Comedy, Musical & Performing Arts, Sports & Fitness",Fresh,12
+"Comedy, Musical & Performing Arts, Television",Fresh,6
+"Comedy, Musical & Performing Arts, Television, Romance",Fresh,6
+"Comedy, Musical & Performing Arts, Television, Romance",Rotten,56
+"Comedy, Musical & Performing Arts, Western",Fresh,4
+"Comedy, Musical & Performing Arts, Western",Rotten,14
+"Comedy, Mystery & Suspense",Fresh,1036
+"Comedy, Mystery & Suspense",Rotten,551
+"Comedy, Mystery & Suspense, Romance",Fresh,183
+"Comedy, Mystery & Suspense, Romance",Rotten,257
+"Comedy, Mystery & Suspense, Science Fiction & Fantasy",Fresh,53
+"Comedy, Mystery & Suspense, Science Fiction & Fantasy",Rotten,40
+"Comedy, Mystery & Suspense, Science Fiction & Fantasy, Romance",Fresh,99
+"Comedy, Mystery & Suspense, Science Fiction & Fantasy, Romance",Rotten,16
+"Comedy, Mystery & Suspense, Special Interest",Fresh,20
+"Comedy, Mystery & Suspense, Special Interest",Rotten,12
+"Comedy, Romance",Fresh,9152
+"Comedy, Romance",Rotten,8655
+"Comedy, Romance, Gay & Lesbian",Fresh,11
+"Comedy, Romance, Gay & Lesbian",Rotten,9
+"Comedy, Science Fiction & Fantasy",Fresh,1965
+"Comedy, Science Fiction & Fantasy",Rotten,1813
+"Comedy, Science Fiction & Fantasy, Romance",Fresh,416
+"Comedy, Science Fiction & Fantasy, Romance",Rotten,376
+"Comedy, Science Fiction & Fantasy, Romance, Sports & Fitness",Fresh,23
+"Comedy, Science Fiction & Fantasy, Romance, Sports & Fitness",Rotten,5
+"Comedy, Science Fiction & Fantasy, Special Interest",Fresh,81
+"Comedy, Science Fiction & Fantasy, Special Interest",Rotten,35
+"Comedy, Science Fiction & Fantasy, Special Interest, Romance",Fresh,68
+"Comedy, Science Fiction & Fantasy, Special Interest, Romance",Rotten,2
+"Comedy, Special Interest",Fresh,353
+"Comedy, Special Interest",Rotten,208
+"Comedy, Special Interest, Romance",Fresh,127
+"Comedy, Special Interest, Romance",Rotten,35
+"Comedy, Sports & Fitness",Fresh,262
+"Comedy, Sports & Fitness",Rotten,101
+"Comedy, Television",Fresh,114
+"Comedy, Television",Rotten,130
+"Comedy, Television, Romance",Fresh,84
+"Comedy, Television, Romance",Rotten,88
+"Comedy, Western",Fresh,127
+"Comedy, Western",Rotten,172
+"Cult Movies, Documentary, Special Interest, Television",Rotten,3
+"Cult Movies, Drama",Fresh,58
+"Cult Movies, Drama",Rotten,4
+"Cult Movies, Drama, Horror",Rotten,4
+"Cult Movies, Drama, Horror, Kids & Family, Musical & Performing Arts, Science Fiction & Fantasy, Romance",Rotten,6
+"Cult Movies, Drama, Mystery & Suspense",Fresh,2
+"Cult Movies, Drama, Mystery & Suspense",Rotten,4
+"Cult Movies, Horror",Fresh,56
+"Cult Movies, Horror",Rotten,19
+"Cult Movies, Horror, Mystery & Suspense",Fresh,24
+"Cult Movies, Horror, Mystery & Suspense",Rotten,20
+"Cult Movies, Horror, Science Fiction & Fantasy",Fresh,44
+"Cult Movies, Horror, Science Fiction & Fantasy",Rotten,21
+"Cult Movies, Horror, Western",Rotten,6
+"Cult Movies, Kids & Family, Science Fiction & Fantasy",Fresh,240
+"Cult Movies, Kids & Family, Science Fiction & Fantasy",Rotten,216
+"Cult Movies, Musical & Performing Arts",Fresh,1
+"Cult Movies, Musical & Performing Arts",Rotten,9
+"Cult Movies, Science Fiction & Fantasy",Fresh,326
+"Cult Movies, Science Fiction & Fantasy",Rotten,176
+Documentary,Fresh,17852
+Documentary,Rotten,2225
+"Documentary, Drama",Fresh,1222
+"Documentary, Drama",Rotten,573
+"Documentary, Drama, Horror",Fresh,19
+"Documentary, Drama, Horror",Rotten,10
+"Documentary, Drama, Kids & Family",Fresh,6
+"Documentary, Drama, Kids & Family",Rotten,20
+"Documentary, Drama, Kids & Family, Special Interest",Fresh,4
+"Documentary, Drama, Kids & Family, Special Interest",Rotten,1
+"Documentary, Drama, Kids & Family, Television",Fresh,10
+"Documentary, Drama, Musical & Performing Arts",Fresh,363
+"Documentary, Drama, Musical & Performing Arts",Rotten,48
+"Documentary, Drama, Musical & Performing Arts, Romance",Fresh,7
+"Documentary, Drama, Musical & Performing Arts, Romance",Rotten,5
+"Documentary, Drama, Musical & Performing Arts, Special Interest",Fresh,275
+"Documentary, Drama, Musical & Performing Arts, Special Interest",Rotten,79
+"Documentary, Drama, Musical & Performing Arts, Special Interest, Television",Fresh,41
+"Documentary, Drama, Musical & Performing Arts, Special Interest, Television",Rotten,1
+"Documentary, Drama, Musical & Performing Arts, Television",Fresh,4
+"Documentary, Drama, Musical & Performing Arts, Television",Rotten,4
+"Documentary, Drama, Mystery & Suspense",Fresh,33
+"Documentary, Drama, Mystery & Suspense",Rotten,54
+"Documentary, Drama, Mystery & Suspense, Special Interest",Fresh,2
+"Documentary, Drama, Mystery & Suspense, Special Interest",Rotten,2
+"Documentary, Drama, Romance",Fresh,17
+"Documentary, Drama, Romance",Rotten,1
+"Documentary, Drama, Science Fiction & Fantasy",Fresh,20
+"Documentary, Drama, Science Fiction & Fantasy",Rotten,12
+"Documentary, Drama, Science Fiction & Fantasy, Faith & Spirituality",Fresh,26
+"Documentary, Drama, Science Fiction & Fantasy, Faith & Spirituality",Rotten,46
+"Documentary, Drama, Special Interest",Fresh,1712
+"Documentary, Drama, Special Interest",Rotten,377
+"Documentary, Drama, Special Interest, Faith & Spirituality, Sports & Fitness",Fresh,8
+"Documentary, Drama, Special Interest, Faith & Spirituality, Sports & Fitness",Rotten,5
+"Documentary, Drama, Special Interest, Romance",Fresh,7
+"Documentary, Drama, Special Interest, Romance",Rotten,2
+"Documentary, Drama, Special Interest, Sports & Fitness",Fresh,47
+"Documentary, Drama, Special Interest, Sports & Fitness",Rotten,35
+"Documentary, Drama, Special Interest, Television",Fresh,105
+"Documentary, Drama, Special Interest, Television",Rotten,13
+"Documentary, Drama, Sports & Fitness",Fresh,18
+"Documentary, Drama, Sports & Fitness",Rotten,5
+"Documentary, Drama, Television",Fresh,35
+"Documentary, Drama, Television",Rotten,6
+"Documentary, Faith & Spirituality",Fresh,120
+"Documentary, Faith & Spirituality",Rotten,33
+"Documentary, Faith & Spirituality, Sports & Fitness",Fresh,17
+"Documentary, Faith & Spirituality, Sports & Fitness",Rotten,6
+"Documentary, Gay & Lesbian",Fresh,106
+"Documentary, Gay & Lesbian",Rotten,1
+"Documentary, Gay & Lesbian, Sports & Fitness",Fresh,11
+"Documentary, Horror",Fresh,60
+"Documentary, Horror",Rotten,28
+"Documentary, Horror, Musical & Performing Arts",Fresh,4
+"Documentary, Horror, Musical & Performing Arts",Rotten,3
+"Documentary, Horror, Mystery & Suspense, Science Fiction & Fantasy, Special Interest, Romance",Fresh,6
+"Documentary, Horror, Mystery & Suspense, Science Fiction & Fantasy, Special Interest, Romance",Rotten,2
+"Documentary, Horror, Mystery & Suspense, Special Interest",Fresh,3
+"Documentary, Horror, Mystery & Suspense, Special Interest",Rotten,3
+"Documentary, Horror, Special Interest, Romance",Fresh,19
+"Documentary, Horror, Special Interest, Romance",Rotten,5
+"Documentary, Horror, Special Interest, Television",Fresh,26
+"Documentary, Horror, Special Interest, Television",Rotten,4
+"Documentary, Horror, Television",Fresh,246
+"Documentary, Horror, Television",Rotten,16
+"Documentary, Kids & Family",Fresh,52
+"Documentary, Kids & Family",Rotten,65
+"Documentary, Kids & Family, Musical & Performing Arts",Fresh,32
+"Documentary, Kids & Family, Musical & Performing Arts",Rotten,13
+"Documentary, Kids & Family, Musical & Performing Arts, Science Fiction & Fantasy, Special Interest",Fresh,1
+"Documentary, Kids & Family, Musical & Performing Arts, Science Fiction & Fantasy, Special Interest",Rotten,3
+"Documentary, Kids & Family, Musical & Performing Arts, Special Interest",Fresh,112
+"Documentary, Kids & Family, Musical & Performing Arts, Special Interest",Rotten,29
+"Documentary, Kids & Family, Musical & Performing Arts, Television",Fresh,1
+"Documentary, Kids & Family, Romance",Fresh,20
+"Documentary, Kids & Family, Romance",Rotten,6
+"Documentary, Kids & Family, Special Interest",Fresh,33
+"Documentary, Kids & Family, Special Interest",Rotten,17
+"Documentary, Musical & Performing Arts",Fresh,5425
+"Documentary, Musical & Performing Arts",Rotten,1005
+"Documentary, Musical & Performing Arts, Faith & Spirituality",Fresh,86
+"Documentary, Musical & Performing Arts, Faith & Spirituality",Rotten,13
+"Documentary, Musical & Performing Arts, Mystery & Suspense",Fresh,53
+"Documentary, Musical & Performing Arts, Mystery & Suspense",Rotten,14
+"Documentary, Musical & Performing Arts, Science Fiction & Fantasy, Special Interest",Fresh,17
+"Documentary, Musical & Performing Arts, Science Fiction & Fantasy, Special Interest",Rotten,2
+"Documentary, Musical & Performing Arts, Special Interest",Fresh,2991
+"Documentary, Musical & Performing Arts, Special Interest",Rotten,588
+"Documentary, Musical & Performing Arts, Special Interest, Faith & Spirituality",Fresh,104
+"Documentary, Musical & Performing Arts, Special Interest, Faith & Spirituality",Rotten,13
+"Documentary, Musical & Performing Arts, Special Interest, Gay & Lesbian",Fresh,47
+"Documentary, Musical & Performing Arts, Special Interest, Gay & Lesbian",Rotten,4
+"Documentary, Musical & Performing Arts, Special Interest, Sports & Fitness",Fresh,32
+"Documentary, Musical & Performing Arts, Special Interest, Sports & Fitness",Rotten,7
+"Documentary, Musical & Performing Arts, Special Interest, Television",Fresh,209
+"Documentary, Musical & Performing Arts, Special Interest, Television",Rotten,70
+"Documentary, Musical & Performing Arts, Special Interest, Television, Gay & Lesbian",Fresh,18
+"Documentary, Musical & Performing Arts, Special Interest, Television, Gay & Lesbian",Rotten,1
+"Documentary, Musical & Performing Arts, Television",Fresh,348
+"Documentary, Musical & Performing Arts, Television",Rotten,44
+"Documentary, Mystery & Suspense",Fresh,150
+"Documentary, Mystery & Suspense",Rotten,27
+"Documentary, Mystery & Suspense, Special Interest",Fresh,85
+"Documentary, Mystery & Suspense, Special Interest",Rotten,71
+"Documentary, Mystery & Suspense, Special Interest, Sports & Fitness",Fresh,4
+"Documentary, Mystery & Suspense, Special Interest, Sports & Fitness",Rotten,1
+"Documentary, Romance",Fresh,26
+"Documentary, Romance",Rotten,8
+"Documentary, Science Fiction & Fantasy",Fresh,60
+"Documentary, Science Fiction & Fantasy",Rotten,1
+"Documentary, Science Fiction & Fantasy, Special Interest",Fresh,116
+"Documentary, Science Fiction & Fantasy, Special Interest",Rotten,3
+"Documentary, Science Fiction & Fantasy, Special Interest, Television",Fresh,13
+"Documentary, Science Fiction & Fantasy, Special Interest, Television",Rotten,1
+"Documentary, Special Interest",Fresh,16275
+"Documentary, Special Interest",Rotten,3102
+"Documentary, Special Interest, Faith & Spirituality",Fresh,278
+"Documentary, Special Interest, Faith & Spirituality",Rotten,53
+"Documentary, Special Interest, Gay & Lesbian",Fresh,98
+"Documentary, Special Interest, Gay & Lesbian",Rotten,8
+"Documentary, Special Interest, Romance",Fresh,53
+"Documentary, Special Interest, Romance",Rotten,6
+"Documentary, Special Interest, Sports & Fitness",Fresh,1443
+"Documentary, Special Interest, Sports & Fitness",Rotten,256
+"Documentary, Special Interest, Television",Fresh,537
+"Documentary, Special Interest, Television",Rotten,63
+"Documentary, Sports & Fitness",Fresh,1342
+"Documentary, Sports & Fitness",Rotten,307
+"Documentary, Television",Fresh,614
+"Documentary, Television",Rotten,101
+"Documentary, Television, Gay & Lesbian",Fresh,24
+"Documentary, Television, Gay & Lesbian",Rotten,1
+"Documentary, Television, Sports & Fitness",Fresh,51
+"Documentary, Television, Sports & Fitness",Rotten,18
+"Documentary, Western",Fresh,3
+"Documentary, Western",Rotten,5
+Drama,Fresh,100284
+Drama,Rotten,40309
+"Drama, Faith & Spirituality",Fresh,142
+"Drama, Faith & Spirituality",Rotten,266
+"Drama, Gay & Lesbian",Fresh,403
+"Drama, Gay & Lesbian",Rotten,95
+"Drama, Horror",Fresh,2383
+"Drama, Horror",Rotten,1721
+"Drama, Horror, Musical & Performing Arts, Mystery & Suspense",Fresh,21
+"Drama, Horror, Musical & Performing Arts, Mystery & Suspense",Rotten,4
+"Drama, Horror, Musical & Performing Arts, Mystery & Suspense, Science Fiction & Fantasy",Fresh,1
+"Drama, Horror, Musical & Performing Arts, Mystery & Suspense, Science Fiction & Fantasy",Rotten,4
+"Drama, Horror, Musical & Performing Arts, Romance",Fresh,1
+"Drama, Horror, Musical & Performing Arts, Romance",Rotten,1
+"Drama, Horror, Musical & Performing Arts, Special Interest, Romance",Fresh,53
+"Drama, Horror, Musical & Performing Arts, Special Interest, Romance",Rotten,107
+"Drama, Horror, Mystery & Suspense",Fresh,6007
+"Drama, Horror, Mystery & Suspense",Rotten,4391
+"Drama, Horror, Mystery & Suspense, Romance",Fresh,493
+"Drama, Horror, Mystery & Suspense, Romance",Rotten,346
+"Drama, Horror, Mystery & Suspense, Science Fiction & Fantasy",Fresh,411
+"Drama, Horror, Mystery & Suspense, Science Fiction & Fantasy",Rotten,688
+"Drama, Horror, Mystery & Suspense, Science Fiction & Fantasy, Television",Fresh,28
+"Drama, Horror, Mystery & Suspense, Science Fiction & Fantasy, Television",Rotten,8
+"Drama, Horror, Mystery & Suspense, Special Interest",Fresh,254
+"Drama, Horror, Mystery & Suspense, Special Interest",Rotten,76
+"Drama, Horror, Mystery & Suspense, Special Interest, Romance",Fresh,30
+"Drama, Horror, Mystery & Suspense, Special Interest, Romance",Rotten,4
+"Drama, Horror, Mystery & Suspense, Television",Fresh,25
+"Drama, Horror, Mystery & Suspense, Television",Rotten,12
+"Drama, Horror, Romance",Fresh,69
+"Drama, Horror, Romance",Rotten,7
+"Drama, Horror, Science Fiction & Fantasy",Fresh,905
+"Drama, Horror, Science Fiction & Fantasy",Rotten,385
+"Drama, Horror, Science Fiction & Fantasy, Romance",Fresh,228
+"Drama, Horror, Science Fiction & Fantasy, Romance",Rotten,41
+"Drama, Horror, Science Fiction & Fantasy, Television",Rotten,1
+"Drama, Horror, Special Interest",Fresh,48
+"Drama, Horror, Special Interest",Rotten,16
+"Drama, Horror, Television, Romance",Fresh,2
+"Drama, Horror, Television, Romance",Rotten,2
+"Drama, Horror, Western",Fresh,4
+"Drama, Horror, Western",Rotten,3
+"Drama, Kids & Family",Fresh,1425
+"Drama, Kids & Family",Rotten,899
+"Drama, Kids & Family, Faith & Spirituality",Fresh,6
+"Drama, Kids & Family, Faith & Spirituality",Rotten,16
+"Drama, Kids & Family, Musical & Performing Arts",Fresh,45
+"Drama, Kids & Family, Musical & Performing Arts",Rotten,115
+"Drama, Kids & Family, Musical & Performing Arts, Science Fiction & Fantasy",Fresh,10
+"Drama, Kids & Family, Musical & Performing Arts, Science Fiction & Fantasy",Rotten,5
+"Drama, Kids & Family, Musical & Performing Arts, Science Fiction & Fantasy, Romance",Fresh,66
+"Drama, Kids & Family, Musical & Performing Arts, Science Fiction & Fantasy, Romance",Rotten,43
+"Drama, Kids & Family, Mystery & Suspense",Fresh,17
+"Drama, Kids & Family, Mystery & Suspense",Rotten,8
+"Drama, Kids & Family, Romance",Fresh,43
+"Drama, Kids & Family, Romance",Rotten,110
+"Drama, Kids & Family, Science Fiction & Fantasy",Fresh,181
+"Drama, Kids & Family, Science Fiction & Fantasy",Rotten,110
+"Drama, Kids & Family, Science Fiction & Fantasy, Romance",Fresh,9
+"Drama, Kids & Family, Science Fiction & Fantasy, Romance",Rotten,5
+"Drama, Kids & Family, Science Fiction & Fantasy, Sports & Fitness",Fresh,42
+"Drama, Kids & Family, Science Fiction & Fantasy, Sports & Fitness",Rotten,7
+"Drama, Kids & Family, Special Interest",Fresh,5
+"Drama, Kids & Family, Special Interest",Rotten,14
+"Drama, Kids & Family, Sports & Fitness",Fresh,25
+"Drama, Kids & Family, Sports & Fitness",Rotten,19
+"Drama, Kids & Family, Television",Fresh,6
+"Drama, Kids & Family, Western",Fresh,2
+"Drama, Kids & Family, Western",Rotten,1
+"Drama, Musical & Performing Arts",Fresh,3445
+"Drama, Musical & Performing Arts",Rotten,2520
+"Drama, Musical & Performing Arts, Faith & Spirituality",Fresh,52
+"Drama, Musical & Performing Arts, Faith & Spirituality",Rotten,54
+"Drama, Musical & Performing Arts, Mystery & Suspense",Fresh,384
+"Drama, Musical & Performing Arts, Mystery & Suspense",Rotten,107
+"Drama, Musical & Performing Arts, Romance",Fresh,1484
+"Drama, Musical & Performing Arts, Romance",Rotten,1188
+"Drama, Musical & Performing Arts, Science Fiction & Fantasy",Fresh,54
+"Drama, Musical & Performing Arts, Science Fiction & Fantasy",Rotten,4
+"Drama, Musical & Performing Arts, Science Fiction & Fantasy, Romance",Fresh,266
+"Drama, Musical & Performing Arts, Science Fiction & Fantasy, Romance",Rotten,108
+"Drama, Musical & Performing Arts, Science Fiction & Fantasy, Special Interest",Fresh,3
+"Drama, Musical & Performing Arts, Science Fiction & Fantasy, Special Interest",Rotten,2
+"Drama, Musical & Performing Arts, Special Interest",Fresh,137
+"Drama, Musical & Performing Arts, Special Interest",Rotten,109
+"Drama, Mystery & Suspense",Fresh,31595
+"Drama, Mystery & Suspense",Rotten,19630
+"Drama, Mystery & Suspense, Gay & Lesbian",Fresh,40
+"Drama, Mystery & Suspense, Gay & Lesbian",Rotten,29
+"Drama, Mystery & Suspense, Romance",Fresh,1603
+"Drama, Mystery & Suspense, Romance",Rotten,1466
+"Drama, Mystery & Suspense, Science Fiction & Fantasy",Fresh,3303
+"Drama, Mystery & Suspense, Science Fiction & Fantasy",Rotten,2768
+"Drama, Mystery & Suspense, Science Fiction & Fantasy, Faith & Spirituality",Fresh,2
+"Drama, Mystery & Suspense, Science Fiction & Fantasy, Faith & Spirituality",Rotten,4
+"Drama, Mystery & Suspense, Science Fiction & Fantasy, Romance",Fresh,292
+"Drama, Mystery & Suspense, Science Fiction & Fantasy, Romance",Rotten,153
+"Drama, Mystery & Suspense, Special Interest",Fresh,389
+"Drama, Mystery & Suspense, Special Interest",Rotten,130
+"Drama, Mystery & Suspense, Sports & Fitness",Fresh,91
+"Drama, Mystery & Suspense, Sports & Fitness",Rotten,19
+"Drama, Mystery & Suspense, Television",Fresh,121
+"Drama, Mystery & Suspense, Television",Rotten,12
+"Drama, Mystery & Suspense, Western",Fresh,73
+"Drama, Mystery & Suspense, Western",Rotten,66
+"Drama, Mystery & Suspense, Western, Romance",Fresh,23
+"Drama, Mystery & Suspense, Western, Romance",Rotten,1
+"Drama, Romance",Fresh,13442
+"Drama, Romance",Rotten,8415
+"Drama, Romance, Gay & Lesbian",Fresh,26
+"Drama, Romance, Gay & Lesbian",Rotten,14
+"Drama, Romance, Sports & Fitness",Fresh,5
+"Drama, Romance, Sports & Fitness",Rotten,12
+"Drama, Science Fiction & Fantasy",Fresh,3560
+"Drama, Science Fiction & Fantasy",Rotten,2203
+"Drama, Science Fiction & Fantasy, Romance",Fresh,1536
+"Drama, Science Fiction & Fantasy, Romance",Rotten,909
+"Drama, Science Fiction & Fantasy, Special Interest",Fresh,176
+"Drama, Science Fiction & Fantasy, Special Interest",Rotten,15
+"Drama, Science Fiction & Fantasy, Special Interest, Romance",Fresh,262
+"Drama, Science Fiction & Fantasy, Special Interest, Romance",Rotten,15
+"Drama, Science Fiction & Fantasy, Sports & Fitness",Fresh,5
+"Drama, Science Fiction & Fantasy, Sports & Fitness",Rotten,8
+"Drama, Science Fiction & Fantasy, Western",Fresh,27
+"Drama, Science Fiction & Fantasy, Western",Rotten,11
+"Drama, Special Interest",Fresh,522
+"Drama, Special Interest",Rotten,473
+"Drama, Special Interest, Romance",Fresh,43
+"Drama, Special Interest, Romance",Rotten,253
+"Drama, Special Interest, Sports & Fitness",Fresh,4
+"Drama, Special Interest, Sports & Fitness",Rotten,1
+"Drama, Special Interest, Television",Fresh,20
+"Drama, Special Interest, Television",Rotten,20
+"Drama, Sports & Fitness",Fresh,1494
+"Drama, Sports & Fitness",Rotten,557
+"Drama, Television",Fresh,596
+"Drama, Television",Rotten,110
+"Drama, Television, Faith & Spirituality",Fresh,5
+"Drama, Television, Romance",Fresh,2
+"Drama, Television, Romance",Rotten,1
+"Drama, Western",Fresh,1057
+"Drama, Western",Rotten,345
+"Drama, Western, Romance",Fresh,162
+"Drama, Western, Romance",Rotten,112
+Horror,Fresh,10864
+Horror,Rotten,9488
+"Horror, Gay & Lesbian",Rotten,6
+"Horror, Kids & Family",Fresh,3
+"Horror, Kids & Family",Rotten,27
+"Horror, Kids & Family, Mystery & Suspense",Fresh,127
+"Horror, Kids & Family, Mystery & Suspense",Rotten,36
+"Horror, Kids & Family, Science Fiction & Fantasy",Fresh,34
+"Horror, Kids & Family, Science Fiction & Fantasy",Rotten,3
+"Horror, Musical & Performing Arts",Fresh,6
+"Horror, Musical & Performing Arts, Mystery & Suspense",Fresh,6
+"Horror, Musical & Performing Arts, Mystery & Suspense",Rotten,8
+"Horror, Musical & Performing Arts, Science Fiction & Fantasy",Fresh,48
+"Horror, Musical & Performing Arts, Science Fiction & Fantasy",Rotten,68
+"Horror, Mystery & Suspense",Fresh,10174
+"Horror, Mystery & Suspense",Rotten,9919
+"Horror, Mystery & Suspense, Romance",Fresh,323
+"Horror, Mystery & Suspense, Romance",Rotten,128
+"Horror, Mystery & Suspense, Science Fiction & Fantasy",Fresh,1723
+"Horror, Mystery & Suspense, Science Fiction & Fantasy",Rotten,1082
+"Horror, Mystery & Suspense, Science Fiction & Fantasy, Romance",Fresh,183
+"Horror, Mystery & Suspense, Science Fiction & Fantasy, Romance",Rotten,278
+"Horror, Mystery & Suspense, Special Interest",Fresh,40
+"Horror, Mystery & Suspense, Special Interest",Rotten,41
+"Horror, Mystery & Suspense, Television",Fresh,26
+"Horror, Mystery & Suspense, Television",Rotten,12
+"Horror, Mystery & Suspense, Western",Fresh,9
+"Horror, Mystery & Suspense, Western",Rotten,3
+"Horror, Mystery & Suspense, Western, Romance",Fresh,36
+"Horror, Mystery & Suspense, Western, Romance",Rotten,5
+"Horror, Romance",Fresh,21
+"Horror, Romance",Rotten,186
+"Horror, Science Fiction & Fantasy",Fresh,1872
+"Horror, Science Fiction & Fantasy",Rotten,970
+"Horror, Science Fiction & Fantasy, Romance",Fresh,120
+"Horror, Science Fiction & Fantasy, Romance",Rotten,36
+"Horror, Science Fiction & Fantasy, Television",Fresh,22
+"Horror, Science Fiction & Fantasy, Television",Rotten,28
+"Horror, Science Fiction & Fantasy, Western",Fresh,43
+"Horror, Science Fiction & Fantasy, Western",Rotten,230
+"Horror, Special Interest",Fresh,2
+"Horror, Special Interest",Rotten,3
+"Horror, Television",Fresh,4
+"Horror, Television",Rotten,7
+"Horror, Western",Fresh,18
+"Horror, Western",Rotten,17
+Kids & Family,Fresh,372
+Kids & Family,Rotten,120
+"Kids & Family, Musical & Performing Arts",Fresh,200
+"Kids & Family, Musical & Performing Arts",Rotten,155
+"Kids & Family, Musical & Performing Arts, Science Fiction & Fantasy",Fresh,13
+"Kids & Family, Musical & Performing Arts, Science Fiction & Fantasy",Rotten,7
+"Kids & Family, Musical & Performing Arts, Science Fiction & Fantasy, Romance",Fresh,2
+"Kids & Family, Musical & Performing Arts, Science Fiction & Fantasy, Romance",Rotten,6
+"Kids & Family, Musical & Performing Arts, Television",Fresh,11
+"Kids & Family, Musical & Performing Arts, Television",Rotten,4
+"Kids & Family, Mystery & Suspense",Fresh,211
+"Kids & Family, Mystery & Suspense",Rotten,40
+"Kids & Family, Mystery & Suspense, Science Fiction & Fantasy",Fresh,29
+"Kids & Family, Mystery & Suspense, Science Fiction & Fantasy",Rotten,7
+"Kids & Family, Romance",Fresh,11
+"Kids & Family, Romance",Rotten,45
+"Kids & Family, Science Fiction & Fantasy",Fresh,1380
+"Kids & Family, Science Fiction & Fantasy",Rotten,426
+"Kids & Family, Science Fiction & Fantasy, Romance",Fresh,206
+"Kids & Family, Science Fiction & Fantasy, Romance",Rotten,40
+"Kids & Family, Science Fiction & Fantasy, Television",Fresh,3
+"Kids & Family, Science Fiction & Fantasy, Television",Rotten,1
+Musical & Performing Arts,Fresh,294
+Musical & Performing Arts,Rotten,205
+"Musical & Performing Arts, Romance",Fresh,135
+"Musical & Performing Arts, Romance",Rotten,107
+"Musical & Performing Arts, Science Fiction & Fantasy",Fresh,18
+"Musical & Performing Arts, Science Fiction & Fantasy",Rotten,27
+"Musical & Performing Arts, Special Interest",Fresh,27
+"Musical & Performing Arts, Special Interest",Rotten,8
+"Musical & Performing Arts, Television",Fresh,33
+"Musical & Performing Arts, Television",Rotten,3
+Mystery & Suspense,Fresh,7377
+Mystery & Suspense,Rotten,6083
+"Mystery & Suspense, Romance",Fresh,39
+"Mystery & Suspense, Romance",Rotten,33
+"Mystery & Suspense, Science Fiction & Fantasy",Fresh,2580
+"Mystery & Suspense, Science Fiction & Fantasy",Rotten,2054
+"Mystery & Suspense, Science Fiction & Fantasy, Romance",Fresh,69
+"Mystery & Suspense, Science Fiction & Fantasy, Romance",Rotten,181
+"Mystery & Suspense, Science Fiction & Fantasy, Western",Fresh,111
+"Mystery & Suspense, Science Fiction & Fantasy, Western",Rotten,57
+"Mystery & Suspense, Special Interest",Fresh,128
+"Mystery & Suspense, Special Interest",Rotten,59
+"Mystery & Suspense, Television",Fresh,36
+"Mystery & Suspense, Television",Rotten,9
+"Mystery & Suspense, Western",Fresh,56
+"Mystery & Suspense, Western",Rotten,38
+Romance,Fresh,156
+Romance,Rotten,306
+Science Fiction & Fantasy,Fresh,2358
+Science Fiction & Fantasy,Rotten,1128
+"Science Fiction & Fantasy, Romance",Fresh,195
+"Science Fiction & Fantasy, Romance",Rotten,82
+"Science Fiction & Fantasy, Special Interest",Fresh,44
+"Science Fiction & Fantasy, Special Interest",Rotten,2
+"Science Fiction & Fantasy, Western",Fresh,86
+"Science Fiction & Fantasy, Western",Rotten,12
+Special Interest,Fresh,31
+Special Interest,Rotten,5
+Television,Fresh,24
+Television,Rotten,42
+Western,Fresh,359
+Western,Rotten,115
