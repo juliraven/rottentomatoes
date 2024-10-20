@@ -32,6 +32,7 @@ st.markdown('###')
 tab1, tab2 = st.tabs(["Wykresy", "Ranking"])
 
 with tab1:
+    st.sidebar.header('costam')
     st.markdown('### Chmury słów dla recenzji o danym sentymencie')
     c1, c2, c3 = st.columns((2,2,2))
     c1.image("negatywne.png", caption="Chmura słów dla recenzji o negatywnym sentymencie")
