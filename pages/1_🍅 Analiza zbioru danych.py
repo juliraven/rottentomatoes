@@ -109,8 +109,21 @@ with tab2:
     file2 = 'dane5_2.csv'
 
     dane5 = load_data(file1, file2)
-    st.dataframe(dane5)
-    st.write(dane5.shape)
+
+    selected_movie = st.selectbox('Wybierz film do analizy sentymentu w czasie :', dane5['movie_title'].unique())
+
+    movie_reviews = dane5[dane5['movie_title'] == selected_movie]
+    
+    st.subheader(f'Analiza sentymentu w czasie dla filmu : {selected_movie}')
+    
+    fig, ax = plt.subplots()
+    ax.plot(movie_reviews['review_date'], movie_reviews['sentiment'], marker='o', linestyle='-', color='b')
+    ax.set_xlabel('Data recenzji')
+    ax.set_ylabel('Sentyment (1=positive, 0=neutral, -1=negative)')
+    ax.set_title(f'Sentyment w czasie dla {selected_movie}')
+    
+    st.pyplot(fig)
+
 
 
 
