@@ -150,10 +150,14 @@ with tab2:
 
     sorted_df = aggregated_df.sort_values(by=['audience_rating', 'tomatometer_rating'], ascending=False)
     sorted_df['original_release_date']=sorted_df['original_release_date'].astype(str).str[:10]
-
-    top_10 = sorted_df.head(10) 
-    st.subheader(f'Top {len(top_10)} filmów')
-    st.dataframe(top_10[['movie_title', 'original_release_date', 'tomatometer_rating', 'audience_rating']])
+    sorted_df = sorted_df.rename(columns={
+    'movie_title': 'Tytuł Filmu',
+    'original_release_date': 'Data Premiery',
+    'tomatometer_rating': 'Ocena Krytyków',
+    'audience_rating': 'Ocena Widowni',
+    })
+    
+    st.dataframe(sorted_df, use_container_width=True)
 
 
 
