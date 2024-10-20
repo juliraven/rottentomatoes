@@ -157,7 +157,7 @@ with tab2:
     'audience_rating': 'Ocena Widowni',
     })
     
-    st.dataframe(sorted_df, use_container_width=True)
+    st.dataframe(sorted_df)
 
 
 
