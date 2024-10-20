@@ -109,7 +109,7 @@ with tab2:
     file2 = 'dane5_2.csv'
 
     dane5 = load_data(file1, file2)
-    st.dataframe(dane)
+    st.dataframe(dane5)
 
 
 
