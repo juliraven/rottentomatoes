@@ -152,7 +152,7 @@ with tab2:
 
     top_10 = sorted_df.head(10) 
     st.subheader(f'Top {len(top_10)} filmów (znaleziono: {len(sorted_df)})')
-    st.dataframe(top_10[['movie_title', 'original_release_date', 'tomatometer_rating', 'audience_rating', 'sentiment']])
+    st.dataframe(top_10[['movie_title', 'original_release_date', 'tomatometer_rating', 'audience_rating']])
 
 
 
