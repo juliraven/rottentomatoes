@@ -39,9 +39,11 @@ fig.update_traces(textfont_size=20)
 st.title('Podział recenzji wg sentymentu')
 st.plotly_chart(fig, use_container_width=True)
 
+c1, c2, c3 = st.columns((2,2,2))
+
 st.title('Chmury słów dla recenzji o danym sentymencie')
-st.image("negatywne.png", caption="Chmura słów dla recenzji o negatywnym sentymencie")
-st.image("pozytywne.png", caption="Chmura słów dla recenzji o pozytywnym sentymencie")
-st.image("neutralne.png", caption="Chmura słów dla recenzji o neutralnym sentymencie")
+c1.image("negatywne.png", caption="Chmura słów dla recenzji o negatywnym sentymencie")
+c2.image("pozytywne.png", caption="Chmura słów dla recenzji o pozytywnym sentymencie")
+c3.image("neutralne.png", caption="Chmura słów dla recenzji o neutralnym sentymencie")
 
 
