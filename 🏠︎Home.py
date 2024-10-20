@@ -20,3 +20,4 @@ st.markdown(
 
 st.image('tomato.png', use_column_width=True)
 
+st.sidebar.image('tomato.png', width=150)
