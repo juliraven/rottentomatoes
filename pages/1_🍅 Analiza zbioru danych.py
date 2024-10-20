@@ -149,6 +149,9 @@ with tab2:
     }
     ).reset_index()
 
+    sorted_df['Ocena Krytyków'] = sorted_df['tomatometer_rating'].round().astype(int)
+    sorted_df['Ocena Widowni'] = sorted_df['audience_rating'].round().astype(int)
+
     sorted_df = aggregated_df.sort_values(by=['audience_rating', 'tomatometer_rating'], ascending=False)
     sorted_df['original_release_date']=sorted_df['original_release_date'].astype(str).str[:10]
     sorted_df = sorted_df.rename(columns={
@@ -158,9 +161,6 @@ with tab2:
     'audience_rating': 'Ocena Widowni',
     })
     
-    # Zaokrąglanie ocen do najbliższej liczby całkowitej
-    sorted_df['Ocena Krytyków'] = sorted_df['tomatometer_rating'].round().astype(int)
-    sorted_df['Ocena Widowni'] = sorted_df['audience_rating'].round().astype(int)
 
     max_tomatometer = sorted_df['Ocena Krytyków'].max()
     max_audience = sorted_df['Ocena Widowni'].max()
