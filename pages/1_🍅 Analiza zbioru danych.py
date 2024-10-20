@@ -26,6 +26,12 @@ st.markdown(
     unsafe_allow_html=True
 )
 
+st.markdown('### Chmury słów dla recenzji o danym sentymencie')
+c1, c2, c3 = st.columns((2,2,2))
+c1.image("negatywne.png", caption="Chmura słów dla recenzji o negatywnym sentymencie")
+c2.image("pozytywne.png", caption="Chmura słów dla recenzji o pozytywnym sentymencie")
+c3.image("neutralne.png", caption="Chmura słów dla recenzji o neutralnym sentymencie")
+
 a1, a2 = st.columns((2,2))
 sentiment_counts = dane1['sentiment'].value_counts().reset_index()
 sentiment_counts.columns = ['sentiment', 'count']
@@ -80,11 +86,7 @@ fig3.update_traces(textfont_size=20)
 b2.markdown('### Podział recenzji wg typu dla wybranego gatunku')
 b2.plotly_chart(fig3, use_container_width=True)
 
-st.markdown('### Chmury słów dla recenzji o danym sentymencie')
-c1, c2, c3 = st.columns((2,2,2))
-c1.image("negatywne.png", caption="Chmura słów dla recenzji o negatywnym sentymencie")
-c2.image("pozytywne.png", caption="Chmura słów dla recenzji o pozytywnym sentymencie")
-c3.image("neutralne.png", caption="Chmura słów dla recenzji o neutralnym sentymencie")
+
 
 
 
