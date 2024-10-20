@@ -157,6 +157,10 @@ with tab2:
     'tomatometer_rating': 'Ocena Krytyków',
     'audience_rating': 'Ocena Widowni',
     })
+    
+    # Zaokrąglanie ocen do najbliższej liczby całkowitej
+    sorted_df['Ocena Krytyków'] = sorted_df['tomatometer_rating'].round().astype(int)
+    sorted_df['Ocena Widowni'] = sorted_df['audience_rating'].round().astype(int)
 
     max_tomatometer = sorted_df['Ocena Krytyków'].max()
     max_audience = sorted_df['Ocena Widowni'].max()
@@ -169,7 +173,7 @@ with tab2:
     html_table += "<tr><th>Tytuł Filmu</th><th>Data Premiery</th><th>Ocena Krytyków</th><th>Ocena Widowni</th><th>Tomatometer</th><th>Audience</th></tr>"
 
     for index, row in sorted_df.iterrows():
-        tomatometer_bar = create_bar(row['Ocena Krytyków'], max_tomatometer, 'green')
+        tomatometer_bar = create_bar(row['Ocena Krytyków'], max_tomatometer, 'pink')
         audience_bar = create_bar(row['Ocena Widowni'], max_audience, 'blue')
         html_table += f"<tr><td>{row['Tytuł Filmu']}</td><td>{row['Data Premiery']}</td><td>{row['Ocena Krytyków']}</td><td>{row['Ocena Widowni']}</td><td>{tomatometer_bar}</td><td>{audience_bar}</td></tr>"
 
