@@ -187,7 +187,7 @@ with tab3:
 
 
 if st.session_state.get('active_tab') != 'Ranking':
-    st.sidebar.empty()
+    st.sidebar.header.empty()
 
 
 
