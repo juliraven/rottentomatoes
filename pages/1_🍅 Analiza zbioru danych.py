@@ -154,8 +154,8 @@ aggregated_df = filtered_df.groupby('movie_title').agg(
 
 
 sorted_df = aggregated_df.sort_values(by=['audience_rating', 'tomatometer_rating'], ascending=False)
-    sorted_df['original_release_date']=sorted_df['original_release_date'].astype(str).str[:10]
-    sorted_df = sorted_df.rename(columns={
+sorted_df['original_release_date']=sorted_df['original_release_date'].astype(str).str[:10]
+sorted_df = sorted_df.rename(columns={
     'movie_title': 'Tytuł filmu',
     'original_release_date': 'Data premiery',
     'tomatometer_rating': 'Ocena krytyków',
