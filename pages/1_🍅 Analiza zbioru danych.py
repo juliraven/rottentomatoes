@@ -5,6 +5,7 @@ from wordcloud import WordCloud
 import plotly.graph_objects as go
 import matplotlib.pyplot as plt
 import plotly.express as px
+from streamlit_option_menu import option_menu
 
 st.markdown(
     """
@@ -21,11 +22,19 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-st.markdown('#####')
+st.markdown('###')
 
-tab1, tab2, tab3 = st.tabs(["Wykresy", "Ranking", "Liczba recenzji w czasie"])
+selected = option_menu(
+    menu_title=None,  
+    options=["Wykresy", "Ranking", "Liczba recenzji w czasie"],  
+    icons=["house", "gear", "envelope"],  # Ikony dla zakładek (opcjonalne)
+    menu_icon="cast", 
+    default_index=0, 
+    orientation="horizontal", 
+)
 
-with tab1:
+if selected == "Wykresy":
+    st.sidebar.empty() 
     dane1 = pd.read_csv('dane1.csv')
     dane2 = pd.read_csv('dane2.csv')
     dane3 = pd.read_csv('dane3.csv')
@@ -97,7 +106,7 @@ with tab1:
     b2.plotly_chart(fig3, use_container_width=True)
 
 
-with tab2 :
+elif selected == "Ranking":
     st.markdown('### Ranking filmów')
     
     def load_data(file1, file2):
@@ -178,7 +187,8 @@ with tab2 :
 
     st.markdown(html_table, unsafe_allow_html=True)
 
-with tab3:
+elif selected == "Liczba recenzji w czasie":
+    st.sidebar.empty() 
     st.markdown('### Rozkład liczby recenzji w czasie w podziale na ')
 
 
