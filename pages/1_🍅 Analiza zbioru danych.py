@@ -99,7 +99,6 @@ with tab1:
 
 
 
-
 tab2.markdown('### Ranking filmów')
     
 def load_data(file1, file2):
@@ -115,8 +114,9 @@ file2 = 'dane5_2.csv'
 
 df = load_data(file1, file2)
 df['original_release_date'] = pd.to_datetime(df['original_release_date'])
-    
-tab2.sidebar.header('Opcje filtrowania')
+
+with tab2 :
+    st.sidebar.header('Opcje filtrowania')
 
 date_filter = tab2.sidebar.slider(
     'Wybierz zakres dat (rok premiery) :',
