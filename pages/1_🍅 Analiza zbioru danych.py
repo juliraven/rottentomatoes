@@ -25,6 +25,10 @@ st.markdown('#####')
 
 tab1, tab2, tab3 = st.tabs(["Wykresy", "Ranking", "Liczba recenzji w czasie"])
 
+if st.session_state.get('active_tab') == 'Ranking':
+    with st.sidebar:
+        st.write("This is the sidebar for Tab 2")
+
 with tab1:
     dane1 = pd.read_csv('dane1.csv')
     dane2 = pd.read_csv('dane2.csv')
