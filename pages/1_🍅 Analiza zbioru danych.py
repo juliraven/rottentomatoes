@@ -206,7 +206,7 @@ elif selected == "Liczba recenzji w czasie":
              color_discrete_map={
             'Positive': 'lightgreen',
             'Neutral': 'lightskyblue',
-            'Negative': 'red'})
+            'Negative': 'indianred'})
 
     fig4.update_layout(
     xaxis=dict(
