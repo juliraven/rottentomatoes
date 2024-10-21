@@ -109,6 +109,7 @@ if selected == "Wykresy":
 
 
 elif selected == "Ranking filmów":
+    st.markdown('######')
     st.markdown('### Ranking filmów')
     
     def load_data(file1, file2):
