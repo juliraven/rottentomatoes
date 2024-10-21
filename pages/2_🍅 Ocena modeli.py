@@ -22,19 +22,28 @@ st.markdown(
     unsafe_allow_html=True
 )
 
+from streamlit_option_menu import option_menu
 
-# Tworzenie menu z radio buttons
-page = st.radio("Go to", ["Page 1", "Page 2", "Page 3"])
+# Menu przypominające zakładki
+selected = option_menu(
+    menu_title=None,  # Tytuł menu, jeśli nie jest potrzebny, ustaw na None
+    options=["Tab 1", "Tab 2", "Tab 3"],  # Zakładki
+    icons=["house", "gear", "envelope"],  # Ikony dla zakładek (opcjonalne)
+    menu_icon="cast",  # Ikona menu (opcjonalne)
+    default_index=0,  # Domyślnie zaznaczona zakładka
+    orientation="horizontal",  # Układ poziomy (horizontal) lub pionowy (vertical)
+)
 
-# Warunkowe wyświetlanie treści
-if page == "Page 1":
-    st.write("This is Page 1")
-    st.sidebar.empty()  # Ukrycie sidebaru na stronie 1
-elif page == "Page 2":
-    st.write("This is Page 2")
+# Warunkowe wyświetlanie treści w zależności od aktywnej zakładki
+if selected == "Tab 1":
+    st.write("This is Tab 1")
+    st.sidebar.empty()  # Brak sidebaru dla Tab 1
+elif selected == "Tab 2":
+    st.write("This is Tab 2")
     with st.sidebar:
-        st.write("This is the sidebar for Page 2")  # Sidebar widoczny tylko na stronie 2
-elif page == "Page 3":
-    st.write("This is Page 3")
-    st.sidebar.empty()  # Ukrycie sidebaru na stronie 3
+        st.write("This is the sidebar for Tab 2")  # Sidebar tylko dla Tab 2
+elif selected == "Tab 3":
+    st.write("This is Tab 3")
+    st.sidebar.empty()  # Brak sidebaru dla Tab 3
+
 
