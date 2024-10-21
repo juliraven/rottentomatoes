@@ -21,7 +21,7 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-st.markdown('#')
+st.markdown('#####')
 
 tab1, tab2, tab3 = st.tabs(["Wykresy", "Ranking", "Liczba recenzji w czasie"])
 
