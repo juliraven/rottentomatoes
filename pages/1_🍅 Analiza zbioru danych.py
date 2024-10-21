@@ -25,11 +25,8 @@ st.markdown('#####')
 
 tab1, tab2, tab3 = st.tabs(["Wykresy", "Ranking", "Liczba recenzji w czasie"])
 
-if st.session_state.get('active_tab') == 'Ranking':
-    with st.sidebar:
-        st.write("This is the sidebar for Tab 2")
-
 with tab1:
+    st.session_state['active_tab'] = 'Wykresy'
     dane1 = pd.read_csv('dane1.csv')
     dane2 = pd.read_csv('dane2.csv')
     dane3 = pd.read_csv('dane3.csv')
@@ -103,6 +100,7 @@ with tab1:
 
 
 with tab2 :
+    st.session_state['active_tab'] = 'Ranking'
     st.markdown('### Ranking filmów')
     
     def load_data(file1, file2):
@@ -184,9 +182,12 @@ with tab2 :
     st.markdown(html_table, unsafe_allow_html=True)
 
 with tab3:
+    st.session_state['active_tab'] = 'Liczba recenzji w czasie'
     st.markdown('### Rozkład liczby recenzji w czasie w podziale na ')
 
 
+if st.session_state.get('active_tab') != 'Ranking':
+    st.sidebar.empty()
 
 
 
