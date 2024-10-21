@@ -192,7 +192,7 @@ elif selected == "Ranking filmów":
 
 elif selected == "Liczba recenzji w czasie":
     st.sidebar.empty() 
-    st.markdown('### Rozkład liczby recenzji w czasie w podziale na ')
+    st.markdown('### Rozkład liczby recenzji w czasie w podziale na sentyment')
 
     dane6 = pd.read_csv('dane6.csv')
 
@@ -201,7 +201,11 @@ elif selected == "Liczba recenzji w czasie":
              y='count', 
              color='sentiment',  
              barmode='group',
-             labels={'year': 'Rok', 'count': 'Liczba recenzji', 'sentiment': 'Sentyment'})
+             labels={'year': 'Rok', 'count': 'Liczba recenzji', 'sentiment': 'Sentyment'},
+             color_discrete_map={
+            'positive': 'green',
+            'neutral': 'blue',
+            'negative': 'red'})
     
     st.plotly_chart(fig4, use_container_width=True)
 
