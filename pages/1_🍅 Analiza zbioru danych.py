@@ -87,7 +87,7 @@ if selected == "Wykresy":
     filtered_df1 = dane3[dane3['genres'] == wybierz_gatunek]
     b1, b2 = st.columns((2,2))
 
-    custom_colors2 = ['indianred', 'deepskyblue', 'forestgreen'] 
+    custom_colors2 = ['indianred', 'lightskyblue', 'lightgreen'] 
 
     fig2 = px.pie(filtered_df1, values='count', names='sentiment', color='sentiment',
              width=800,  
