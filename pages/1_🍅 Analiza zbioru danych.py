@@ -201,7 +201,7 @@ elif selected == "Liczba recenzji w czasie":
              y='count', 
              color='sentiment',  
              barmode='group',
-             labels={'year': 'Rok', 'count': 'Liczba recenzji', 'sentiment': 'Sentyment'},
+             labels={'rok': 'Rok', 'count': 'Liczba recenzji', 'sentiment': 'Sentyment'},
              color_discrete_map={
             'positive': 'green',
             'neutral': 'yellow',
