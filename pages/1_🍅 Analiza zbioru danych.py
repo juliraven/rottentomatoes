@@ -26,8 +26,7 @@ st.markdown('###')
 
 selected = option_menu(
     menu_title=None,  
-    options=["Wykresy", "Ranking", "Liczba recenzji w czasie"],  
-    icons=["house", "gear", "envelope"],  # Ikony dla zakładek (opcjonalne)
+    options=["Wykresy", "Ranking filmów", "Liczba recenzji w czasie"], 
     menu_icon="cast", 
     default_index=0, 
     orientation="horizontal", 
@@ -106,7 +105,7 @@ if selected == "Wykresy":
     b2.plotly_chart(fig3, use_container_width=True)
 
 
-elif selected == "Ranking":
+elif selected == "Ranking filmów":
     st.markdown('### Ranking filmów')
     
     def load_data(file1, file2):
