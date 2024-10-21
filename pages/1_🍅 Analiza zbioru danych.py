@@ -26,7 +26,6 @@ st.markdown('#####')
 tab1, tab2, tab3 = st.tabs(["Wykresy", "Ranking", "Liczba recenzji w czasie"])
 
 with tab1:
-    st.session_state['active_tab'] = 'Wykresy'
     dane1 = pd.read_csv('dane1.csv')
     dane2 = pd.read_csv('dane2.csv')
     dane3 = pd.read_csv('dane3.csv')
@@ -98,9 +97,7 @@ with tab1:
     b2.plotly_chart(fig3, use_container_width=True)
 
 
-
 with tab2 :
-    st.session_state['active_tab'] = 'Ranking'
     st.markdown('### Ranking filmów')
     
     def load_data(file1, file2):
@@ -117,7 +114,8 @@ with tab2 :
     df = load_data(file1, file2)
     df['original_release_date'] = pd.to_datetime(df['original_release_date'])
 
-    st.sidebar.header('Opcje filtrowania')
+    f1, f2 = st.columns((2,2))
+    f1.sidebar.header('Opcje filtrowania')
 
     date_filter = st.sidebar.slider(
     'Wybierz zakres dat (rok premiery) :',
@@ -182,12 +180,8 @@ with tab2 :
     st.markdown(html_table, unsafe_allow_html=True)
 
 with tab3:
-    st.session_state['active_tab'] = 'Liczba recenzji w czasie'
     st.markdown('### Rozkład liczby recenzji w czasie w podziale na ')
 
-
-if st.session_state.get('active_tab') != 'Ranking':
-    st.sidebar.header.empty()
 
 
 
