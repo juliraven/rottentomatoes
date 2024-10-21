@@ -179,7 +179,7 @@ elif selected == "Ranking filmów":
         return f"<div style='width: 100%; background-color: #e0e0e0;'><div style='width: {bar_length}%; background-color: {color}; height: 10px;'></div></div>"
 
     html_table = "<table style='width:100%; border-collapse: collapse;'>"
-    html_table += "<tr><th>Tytuł filmu</th><th>Data Premiery</th><th>Ocena krytyków</th><th>Ocena widowni</th><th>Tomatometer</th><th>Audience</th></tr>"
+    html_table += "<tr><th>Tytuł filmu</th><th>Data premiery</th><th>Ocena krytyków</th><th>Ocena widowni</th><th>Tomatometer</th><th>Audience</th></tr>"
 
     for index, row in sorted_df.iterrows():
         tomatometer_bar = create_bar(row['Ocena krytyków'], max_tomatometer, 'magenta')
@@ -192,6 +192,7 @@ elif selected == "Ranking filmów":
 
 elif selected == "Liczba recenzji w czasie":
     st.sidebar.empty() 
+    st.markdown('######')
     st.markdown('### Rozkład liczby recenzji w czasie w podziale na sentyment')
 
     dane6 = pd.read_csv('dane6.csv')
@@ -217,6 +218,38 @@ elif selected == "Liczba recenzji w czasie":
     )
     
     st.plotly_chart(fig4, use_container_width=True)
+
+    st.markdown('######')
+    st.markdown('### Rozkład liczby recenzji w czasie w podziale na typ recenzji')
+
+    dane7 = pd.read_csv('dane7.csv')
+
+    fig5 = px.bar(dane6, 
+             x='rok', 
+             y='count', 
+             color='review_type',  
+             barmode='group',
+             labels={'rok': 'Rok', 'count': 'Liczba recenzji', 'review_type': 'Typ recenzji'},
+             color_discrete_map={
+            'Rotten': 'rgb(61,94,47)',
+            'Fresh': 'red'})
+
+    fig5.update_layout(
+    xaxis=dict(
+        tickmode='linear', 
+        tick0=1999,        
+        dtick=1,           
+        tickformat='d'    
+        )
+    )
+    
+    st.plotly_chart(fig5, use_container_width=True)
+
+
+
+
+
+
 
 
 
