@@ -77,7 +77,7 @@ with tab1:
     filtered_df1 = dane3[dane3['genres'] == wybierz_gatunek]
     b1, b2 = st.columns((2,2))
 
-    custom_colors2 = ['indianred', 'forestgreen', 'deepskyblue'] 
+    custom_colors2 = ['indianred', 'deepskyblue', 'forestgreen'] 
 
     fig2 = px.pie(filtered_df1, values='count', names='sentiment', color='sentiment',
              width=800,  
