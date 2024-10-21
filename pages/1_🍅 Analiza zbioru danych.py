@@ -6,7 +6,6 @@ import plotly.graph_objects as go
 import matplotlib.pyplot as plt
 import plotly.express as px
 
-
 st.markdown(
     """
     <style>
@@ -22,7 +21,7 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-st.markdown('###')
+st.markdown('#')
 
 tab1, tab2, tab3 = st.tabs(["Wykresy", "Ranking", "Liczba recenzji w czasie"])
 
