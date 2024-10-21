@@ -206,6 +206,15 @@ elif selected == "Liczba recenzji w czasie":
             'positive': 'green',
             'neutral': 'darkskyblue',
             'negative': 'red'})
+
+    fig4.update_layout(
+    xaxis=dict(
+        tickmode='linear', 
+        tick0=1999,        
+        dtick=1,           
+        tickformat='d'    
+        )
+    )
     
     st.plotly_chart(fig4, use_container_width=True)
 
