@@ -12,7 +12,8 @@ st.markdown(
     
     <div style="text-align: center;">
         <h1 class="emoji-top">🍅 🍅 🍅</h1> 
-        <h2>Analiza sentymentu na podstawie recenzji użytkowników strony Rotten Tomatoes</h2>
+        <h2>Analiza sentymentu na podstawie recenzji użytkowników strony</h2>
+        <h2>Rotten Tomatoes<h2>
     </div>
     """, 
     unsafe_allow_html=True
