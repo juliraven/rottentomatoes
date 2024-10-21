@@ -194,6 +194,17 @@ elif selected == "Liczba recenzji w czasie":
     st.sidebar.empty() 
     st.markdown('### Rozkład liczby recenzji w czasie w podziale na ')
 
+    dane6 = pd.read_csv('dane6.csv')
+
+    fig4 = px.bar(dane6, 
+             x='rok', 
+             y='count', 
+             color='sentiment',  
+             barmode='group',
+             labels={'year': 'Rok', 'count': 'Liczba recenzji', 'sentiment': 'Sentyment'})
+    
+    st.plotly_chart(fig4, use_container_width=True)
+
 
 
 
