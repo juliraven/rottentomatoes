@@ -79,7 +79,7 @@ if selected == "Wykresy":
     a2.markdown('### Podział recenzji wg typu')
     a2.plotly_chart(fig1, use_container_width=True)
     
-    st.markdown('#####')
+    st.markdown('######')
 
     gatunki = dane2['genres'].unique()
     wybierz_gatunek = st.selectbox('Wybierz gatunek :', gatunki)
