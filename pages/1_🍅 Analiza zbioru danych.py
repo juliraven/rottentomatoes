@@ -204,7 +204,7 @@ elif selected == "Liczba recenzji w czasie":
              labels={'year': 'Rok', 'count': 'Liczba recenzji', 'sentiment': 'Sentyment'},
              color_discrete_map={
             'positive': 'green',
-            'neutral': 'darkskyblue',
+            'neutral': 'yellow',
             'negative': 'red'})
 
     fig4.update_layout(
