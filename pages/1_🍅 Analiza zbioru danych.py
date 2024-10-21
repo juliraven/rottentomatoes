@@ -204,7 +204,7 @@ elif selected == "Liczba recenzji w czasie":
              labels={'year': 'Rok', 'count': 'Liczba recenzji', 'sentiment': 'Sentyment'},
              color_discrete_map={
             'positive': 'green',
-            'neutral': 'blue',
+            'neutral': 'darkskyblue',
             'negative': 'red'})
     
     st.plotly_chart(fig4, use_container_width=True)
