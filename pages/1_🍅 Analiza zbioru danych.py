@@ -118,7 +118,7 @@ with tab2 :
 
     st.sidebar.header('Opcje filtrowania')
 
-    date_filter = tab2.sidebar.slider(
+    date_filter = st.sidebar.slider(
     'Wybierz zakres dat (rok premiery) :',
     min_value=df['original_release_date'].min().date(),
     max_value=df['original_release_date'].max().date(),
