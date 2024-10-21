@@ -53,7 +53,7 @@ if selected == "Wykresy":
     sentiment_counts = dane1['sentiment'].value_counts().reset_index()
     sentiment_counts.columns = ['sentiment', 'count']
 
-    custom_colors = ['forestgreen', 'indianred', 'deepskyblue']  
+    custom_colors = ['lightgreen', 'indianred', 'lightskyblue']  
 
     fig = px.pie(sentiment_counts, 
              values='count', 
