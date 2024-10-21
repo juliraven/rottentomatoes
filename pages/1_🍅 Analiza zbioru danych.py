@@ -39,7 +39,7 @@ if selected == "Wykresy":
     dane3 = pd.read_csv('dane3.csv')
     dane4 = pd.read_csv('dane4.csv')
 
-    st.markdown('###')
+    st.markdown('######')
     
     st.markdown('### Chmury słów dla recenzji o danym sentymencie')
     c1, c2, c3 = st.columns((2,2,2))
