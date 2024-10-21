@@ -22,7 +22,9 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-page = st.selectbox("Choose a page", ["Page 1", "Page 2", "Page 3"])
+
+# Tworzenie menu z radio buttons
+page = st.radio("Go to", ["Page 1", "Page 2", "Page 3"])
 
 # Warunkowe wyświetlanie treści
 if page == "Page 1":
@@ -35,3 +37,4 @@ elif page == "Page 2":
 elif page == "Page 3":
     st.write("This is Page 3")
     st.sidebar.empty()  # Ukrycie sidebaru na stronie 3
+
