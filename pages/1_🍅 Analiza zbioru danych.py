@@ -224,7 +224,7 @@ elif selected == "Liczba recenzji w czasie":
 
     dane7 = pd.read_csv('dane7.csv')
 
-    fig5 = px.bar(dane6, 
+    fig5 = px.bar(dane7, 
              x='rok', 
              y='count', 
              color='review_type',  
