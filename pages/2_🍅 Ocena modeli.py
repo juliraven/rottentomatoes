@@ -3,7 +3,7 @@ import numpy as np
 import pandas as pd
 import plotly.graph_objects as go
 import plotly.express as px
-from sklearn.metrics import confusion_matrix, accuracy_score
+from sklearn.metrics import confusion_matrix, accuracy_score, classification report
 
 st.markdown(
     """
@@ -53,6 +53,10 @@ with tab1:
     st.subheader('Trafność :')
     c1, c2, c3, c4, c5, c6, c7, c8, c9, c10 = st.columns((2,2,2,2,2,2,2,2,2,2))
     c1.success(f'**{round(trafnosc * 100, 1)}%**')
+
+    st.subheader("Raport Klasyfikacji")
+    st.write(pd.DataFrame(report).transpose())
+
 
 with tab2:
 
