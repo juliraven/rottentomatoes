@@ -25,6 +25,10 @@ st.markdown('######')
 tab1, tab2 = st.tabs(["Naiwny klasyfikator Bayesa", "Regresja logistyczna"])
 
 with tab1:
+
+    st.markdown('######')
+    
+    st.markdown('### Macierz pomyłek')
     
     dane8 = pd.read_csv('dane8.csv')
 
@@ -40,8 +44,8 @@ with tab1:
     xaxis_title="Przewidywane",
     xaxis=dict(title='Przewidywane', title_standoff=50),
     yaxis=dict(title="Rzeczywiste", title_standoff=50))
-    
-    fig.update_layout(title="Macierz pomyłek", title_x=0.4)
+
+    st.markdown('###')
     st.plotly_chart(fig)
 
     
