@@ -33,13 +33,13 @@ with tab1:
     dane8 = pd.read_csv('dane8.csv')
 
     cm1 = confusion_matrix(dane8['y_test'], dane8['y_pred'])
-    TN, FP, FN, TP = cm.ravel() 
+    TN, FP, FN, TP = cm1.ravel() 
 
     trafnosc = accuracy_score(dane8['y_test'], dane8['y_pred'])
     czułość = TP / (TP + FN) 
     swoistość = TN / (TN + FP)
 
-    cm1 = confusion_matrix(dane8['y_test'], dane8['y_pred'], labels=['Negative', 'Neutral', 'Positive'])
+    cm = confusion_matrix(dane8['y_test'], dane8['y_pred'], labels=['Negative', 'Neutral', 'Positive'])
 
     fig = px.imshow(cm, labels=dict(x="Przewidywane", y="Rzeczywiste", color="Liczność"), 
                         x=['Negative', 'Neutral', 'Positive'], 
