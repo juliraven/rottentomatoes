@@ -3,7 +3,7 @@ import numpy as np
 import pandas as pd
 import plotly.graph_objects as go
 import plotly.express as px
-from sklearn.metrics import confusion_matrix, accuracy_score, precision_score, recall_score, f1_score
+from sklearn.metrics import confusion_matrix, accuracy_score
 
 st.markdown(
     """
@@ -32,12 +32,7 @@ with tab1:
     
     dane8 = pd.read_csv('dane8.csv')
 
-    cm1 = confusion_matrix(dane8['y_test'], dane8['y_pred'])
-    TN, FP, FN, TP = cm1.ravel() 
-
     trafnosc = accuracy_score(dane8['y_test'], dane8['y_pred'])
-    czułość = TP / (TP + FN) 
-    swoistość = TN / (TN + FP)
 
     cm = confusion_matrix(dane8['y_test'], dane8['y_pred'], labels=['Negative', 'Neutral', 'Positive'])
 
@@ -64,12 +59,7 @@ with tab2:
     
     dane9 = pd.read_csv('dane9.csv')
 
-    cm1 = confusion_matrix(dane9['y_test'], dane9['y_pred'])
-    TN, FP, FN, TP = cm1.ravel() 
-
     trafnosc = accuracy_score(dane9['y_test'], dane9['y_pred'])
-    czułość = TP / (TP + FN) 
-    swoistość = TN / (TN + FP)
 
     cm = confusion_matrix(dane9['y_test'], dane9['y_pred'], labels=['Negative', 'Neutral', 'Positive'])
 
