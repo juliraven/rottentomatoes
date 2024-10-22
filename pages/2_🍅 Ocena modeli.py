@@ -50,5 +50,26 @@ with tab1:
 
     
 with tab2:
-    st.write("bedzie vol2")
+
+    st.markdown('######')
+    
+    st.markdown('### Macierz pomyłek')
+    
+    dane9 = pd.read_csv('dane9.csv')
+
+    cm = confusion_matrix(dane9['y_test'], dane9['y_pred'], labels=['Negative', 'Neutral', 'Positive'])
+
+    fig1 = px.imshow(cm, labels=dict(x="Przewidywane", y="Rzeczywiste", color="Liczność"), 
+                        x=['Negative', 'Neutral', 'Positive'], 
+                        y=['Negative', 'Neutral', 'Positive'],
+                        text_auto=True, 
+                        color_continuous_scale='Reds')  
+    
+    fig1.update_layout(width=800, height=600,
+    xaxis_title="Przewidywane",
+    xaxis=dict(title='Przewidywane', title_standoff=50),
+    yaxis=dict(title="Rzeczywiste", title_standoff=50),
+    font=dict(size=16) )
+
+    st.plotly_chart(fig1)
 
