@@ -33,7 +33,7 @@ with tab1:
     dane8 = pd.read_csv('dane8.csv')
 
     trafnosc = accuracy_score(dane8['y_test'], dane8['y_pred'])
-    precyzja = precision_score(dane8['y_test'], dane8['y_pred'], pos_label=1)
+    precyzja = precision_score(dane8['y_test'], dane8['y_pred'])
 
     cm = confusion_matrix(dane8['y_test'], dane8['y_pred'])
     TN, FP, FN, TP = cm.ravel() 
@@ -67,7 +67,7 @@ with tab2:
     dane9 = pd.read_csv('dane9.csv')
 
     trafnosc = accuracy_score(dane9['y_test'], dane9['y_pred'])
-    precyzja = precision_score(dane9['y_test'], dane9['y_pred'], pos_label=1)
+    precyzja = precision_score(dane9['y_test'], dane9['y_pred'])
 
     cm = confusion_matrix(dane9['y_test'], dane9['y_pred'])
     TN, FP, FN, TP = cm.ravel() 
