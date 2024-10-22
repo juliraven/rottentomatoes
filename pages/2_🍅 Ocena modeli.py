@@ -21,7 +21,7 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-tab1, tab2, tab3 = st.tabs(["Naiwny klasyfikator Bayesa", "Regresja logistyczna"])
+tab1, tab2 = st.tabs(["Naiwny klasyfikator Bayesa", "Regresja logistyczna"])
 
 with tab1:
     st.write("bedzie")
