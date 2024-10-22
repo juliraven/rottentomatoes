@@ -36,7 +36,7 @@ with tab1:
                         text_auto=True, 
                         color_continuous_scale='Reds')  
     
-    fig.update_layout(
+    fig.update_layout(width=800, height=600,
     xaxis_title="Przewidywane",
     xaxis=dict(title='Przewidywane', title_standoff=50),
     yaxis=dict(title="Rzeczywiste", title_standoff=50))
