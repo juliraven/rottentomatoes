@@ -82,5 +82,5 @@ with tab2:
 
     st.subheader('Trafność :')
     c1, c2, c3, c4, c5, c6, c7, c8, c9, c10 = st.columns((2,2,2,2,2,2,2,2,2,2))
-    c1.success(f'**{trafnosc * 100}%**')
+    c1.success(f'**{round(trafnosc * 100, 0)}%**')
 
