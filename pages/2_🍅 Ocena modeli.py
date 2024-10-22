@@ -3,7 +3,7 @@ import numpy as np
 import pandas as pd
 import plotly.graph_objects as go
 import plotly.express as px
-from sklearn.metrics import confusion_matrix, accuracy_score, classification report
+from sklearn.metrics import confusion_matrix, accuracy_score, classification_report
 
 st.markdown(
     """
