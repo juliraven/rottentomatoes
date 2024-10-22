@@ -6,4 +6,4 @@ matplotlib
 wordcloud
 streamlit-option-menu
 seaborn
-sklearn.metrics
+scikit-learn
