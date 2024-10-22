@@ -34,9 +34,9 @@ with tab1:
                         x=['Negative', 'Neutral', 'Positive'], 
                         y=['Negative', 'Neutral', 'Positive'],
                         text_auto=True, 
-                        color_continuous_scale='Blues')  
+                        color_continuous_scale='Reds')  
     
-    fig.update_layout(title="Macierz pomyłek", title_x=0.5)
+    fig.update_layout(title="Macierz pomyłek", title_x=0.2)
     st.plotly_chart(fig)
 
     
