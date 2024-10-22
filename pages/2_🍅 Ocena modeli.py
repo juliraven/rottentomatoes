@@ -51,7 +51,7 @@ with tab1:
     st.plotly_chart(fig)
 
     st.subheader('Trafność :')
-    c1, c2, c3, c4, c5, c6 = st.columns((2,2,2,2,2,2))
+    c1, c2, c3, c4, c5, c6, c7, c8 = st.columns((2,2,2,2,2,2,2,2))
     c1.success(f'**{round(trafnosc * 100, 1)}%**')
 
 with tab2:
