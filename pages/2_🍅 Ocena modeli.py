@@ -91,6 +91,8 @@ with tab2:
     c1, c2, c3, c4, c5, c6, c7, c8, c9, c10 = st.columns((2,2,2,2,2,2,2,2,2,2))
     c1.success(f'**{round(trafnosc * 100, 0)}%**')
 
+    st.markdown('######')
+
     st.subheader("Raport klasyfikacji")
     report = classification_report(dane9['y_test'], dane9['y_pred'], output_dict=True)
     st.write(pd.DataFrame(report).transpose())
