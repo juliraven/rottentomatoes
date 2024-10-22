@@ -25,8 +25,7 @@ st.markdown('######')
 tab1, tab2 = st.tabs(["Naiwny klasyfikator Bayesa", "Regresja logistyczna"])
 
 with tab1:
-    st.markdown('### Macierz pomyłek')
-
+    
     dane8 = pd.read_csv('dane8.csv')
 
     cm = confusion_matrix(dane8['y_test'], dane8['y_pred'], labels=['Negative', 'Neutral', 'Positive'])
@@ -36,7 +35,8 @@ with tab1:
                         y=['Negative', 'Neutral', 'Positive'],
                         text_auto=True, 
                         color_continuous_scale='Blues')  
-
+    
+    fig.update_layout(title="Macierz pomyłek", title_x=0.5)
     st.plotly_chart(fig)
 
     
