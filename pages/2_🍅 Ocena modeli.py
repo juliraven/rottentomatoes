@@ -55,6 +55,7 @@ with tab1:
     c1.success(f'**{round(trafnosc * 100, 1)}%**')
 
     st.subheader("Raport Klasyfikacji")
+    report = classification_report(dane8['y_test'], dane8['y_pred'], output_dict=True)
     st.write(pd.DataFrame(report).transpose())
 
 
