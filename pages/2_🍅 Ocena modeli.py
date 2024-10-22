@@ -36,6 +36,10 @@ with tab1:
                         text_auto=True, 
                         color_continuous_scale='Reds')  
     
+    fig.update_layout(
+    xaxis_title="Przewidywane",
+    xaxis=dict(title='Przewidywane', title_standoff=20))
+    
     fig.update_layout(title="Macierz pomyłek", title_x=0.4)
     st.plotly_chart(fig)
 
