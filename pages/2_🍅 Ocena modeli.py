@@ -1,10 +1,9 @@
 import streamlit as st
 import numpy as np
 import pandas as pd
-from wordcloud import WordCloud
 import plotly.graph_objects as go
-import matplotlib.pyplot as plt
 import plotly.express as px
+from sklearn.metrics import confusion_matrix
 
 st.markdown(
     """
@@ -27,11 +26,6 @@ tab1, tab2 = st.tabs(["Naiwny klasyfikator Bayesa", "Regresja logistyczna"])
 
 with tab1:
     st.write("bedzie")
-    from sklearn.metrics import confusion_matrix
-
-    # Przykładowe dane (zamień na swoje y_test i y_pred)
-    y_test = np.array(['Negative', 'Positive', 'Positive', 'Negative', 'Positive'])
-    y_pred = np.array(['Negative', 'Positive', 'Negative', 'Negative', 'Positive'])
 
     # Tworzenie macierzy konfuzji
     cm = confusion_matrix(y_test, y_pred, labels=['Negative', 'Positive'])
