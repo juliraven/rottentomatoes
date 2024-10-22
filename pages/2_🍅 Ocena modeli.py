@@ -51,7 +51,7 @@ with tab1:
     st.plotly_chart(fig)
 
     st.subheader('Trafność :')
-    st.info(f'**Trafność : {round(trafnosc, 3)*100}+'%'**')
+    st.info(f'**Trafność: {round(trafnosc * 100, 3)}%**')
 
 with tab2:
 
