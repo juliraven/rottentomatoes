@@ -27,6 +27,25 @@ tab1, tab2 = st.tabs(["Naiwny klasyfikator Bayesa", "Regresja logistyczna"])
 
 with tab1:
     st.write("bedzie")
+    from sklearn.metrics import confusion_matrix
+
+    # Przykładowe dane (zamień na swoje y_test i y_pred)
+    y_test = np.array(['Negative', 'Positive', 'Positive', 'Negative', 'Positive'])
+    y_pred = np.array(['Negative', 'Positive', 'Negative', 'Negative', 'Positive'])
+
+    # Tworzenie macierzy konfuzji
+    cm = confusion_matrix(y_test, y_pred, labels=['Negative', 'Positive'])
+
+    # Tworzenie wykresu macierzy konfuzji w Plotly
+    fig = px.imshow(cm, 
+                labels=dict(x="Predicted", y="Actual", color="Count"), 
+                x=['Negative', 'Positive'], 
+                y=['Negative', 'Positive'],
+                text_auto=True,  # Wyświetla liczby w komórkach
+                color_continuous_scale='Blues')  # Paleta kolorów
+
+    fig.update_layout(title="Macierz konfuzji", title_x=0.5)  # Centrowanie tytułu
+    st.plotly_chart(fig)
 
 with tab2:
     st.write("bedzie vol2")
