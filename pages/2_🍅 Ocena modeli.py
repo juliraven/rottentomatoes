@@ -3,7 +3,7 @@ import numpy as np
 import pandas as pd
 import plotly.graph_objects as go
 import plotly.express as px
-from sklearn.metrics import confusion_matrix
+from sklearn.metrics import confusion_matrix, accuracy_score, precision_score, recall_score, f1_score
 
 st.markdown(
     """
@@ -32,6 +32,15 @@ with tab1:
     
     dane8 = pd.read_csv('dane8.csv')
 
+    trafnosc = accuracy_score(dane8['y_test'], dane8['y_pred'])
+    precyzja = precision_score(dane8['y_test'], dane8['y_pred'], pos_label=1)
+
+    cm = confusion_matrix(dane8['y_test'], dane8['y_pred'])
+    TN, FP, FN, TP = cm.ravel() 
+    
+    czułość = TP / (TP + FN) 
+    swoistość = TN / (TN + FP)
+
     cm = confusion_matrix(dane8['y_test'], dane8['y_pred'], labels=['Negative', 'Neutral', 'Positive'])
 
     fig = px.imshow(cm, labels=dict(x="Przewidywane", y="Rzeczywiste", color="Liczność"), 
@@ -56,6 +65,15 @@ with tab2:
     st.markdown('### Macierz pomyłek')
     
     dane9 = pd.read_csv('dane9.csv')
+
+    trafnosc = accuracy_score(dane9['y_test'], dane9['y_pred'])
+    precyzja = precision_score(dane9['y_test'], dane9['y_pred'], pos_label=1)
+
+    cm = confusion_matrix(dane9['y_test'], dane9['y_pred'])
+    TN, FP, FN, TP = cm.ravel() 
+    
+    czułość = TP / (TP + FN) 
+    swoistość = TN / (TN + FP)
 
     cm = confusion_matrix(dane9['y_test'], dane9['y_pred'], labels=['Negative', 'Neutral', 'Positive'])
 
