@@ -38,7 +38,7 @@ with tab1:
     
     fig.update_layout(
     xaxis_title="Przewidywane",
-    xaxis=dict(title='Przewidywane', title_standoff=20))
+    xaxis=dict(title='Przewidywane', title_standoff=50))
     
     fig.update_layout(title="Macierz pomyłek", title_x=0.4)
     st.plotly_chart(fig)
