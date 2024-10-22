@@ -5,3 +5,4 @@ plotly
 matplotlib
 wordcloud
 streamlit-option-menu
+seaborn
