@@ -43,9 +43,9 @@ with tab1:
     fig.update_layout(width=800, height=600,
     xaxis_title="Przewidywane",
     xaxis=dict(title='Przewidywane', title_standoff=50),
-    yaxis=dict(title="Rzeczywiste", title_standoff=50))
+    yaxis=dict(title="Rzeczywiste", title_standoff=50),
+    font=dict(size=16) )
 
-    st.markdown('######')
     st.plotly_chart(fig)
 
     
