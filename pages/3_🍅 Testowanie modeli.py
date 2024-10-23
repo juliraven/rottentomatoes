@@ -35,47 +35,45 @@ def clean_text(text):
     tokens = [word for word in tokens if word not in stop_words]  # usunięcie stopwords
     return ' '.join(tokens)  # połączenie tokenów
 
-def get_review_from_rotten_tomatoes(url):
-    try:
-        response = requests.get(url)
-        soup = BeautifulSoup(response.content, "html.parser")
-        review_content = soup.find("div", class_="the_review").get_text(strip=True)
-        return review_content
-    except Exception as e:
-        st.error(f"Error extracting review: {e}")
-        return None
-
 model = joblib.load("naive_bayes_model.pkl") 
 vectorizer = joblib.load("vectorizer.pkl")  
 
-st.sidebar.header("Menu")
-option = st.sidebar.selectbox("Wybierz stronę", ["Predict Sentiment"])
+# Funkcja do scrapowania recenzji ze strony Rotten Tomatoes
+def scrape_reviews(url):
+    response = requests.get(url)
+    soup = BeautifulSoup(response.content, 'html.parser')
+    
+    # Znajdź wszystkie recenzje krytyków (dostosuj selektor do struktury Rotten Tomatoes)
+    reviews_html = soup.find_all('div', class_='the_review')  # zmień selektor, jeśli potrzeba
+    reviews = [review.get_text(strip=True) for review in reviews_html]
+    
+    return reviews
 
-if option == "Predict Sentiment":
-    st.header("Predict the Sentiment of a Rotten Tomatoes Review")
+# Funkcja do przewidywania sentymentu dla recenzji
+def predict_sentiment(reviews):
+    cleaned_reviews = [clean_text(review) for review in reviews]
+    features = vectorizer.transform(cleaned_reviews)
+    predictions = model.predict(features)
+    return predictions
 
-    url = st.text_input("Enter the Rotten Tomatoes review URL:")
+# Interfejs użytkownika w Streamlit
+st.title("Sentiment Analysis for Rotten Tomatoes Reviews")
 
-    if st.button("Predict Sentiment"):
-        if url:
-            review = get_review_from_rotten_tomatoes(url)
-            if review:
-                st.write("Original Review:")
-                st.write(review)
+# Formularz do wprowadzenia linku przez użytkownika
+url = st.text_input("Enter Rotten Tomatoes reviews page URL", "https://www.rottentomatoes.com/m/terrifier_3/reviews")
 
-                clean_review = clean_text(review)
-                st.write("Cleaned Review:")
-                st.write(clean_review)
+# Po wprowadzeniu URL i kliknięciu przycisku pobierz recenzje
+if st.button('Fetch and Analyze Reviews'):
+    with st.spinner('Fetching reviews...'):
+        reviews = scrape_reviews(url)  # pobierz recenzje
+        if reviews:
+            st.write(f"Found {len(reviews)} reviews")
+            sentiments = predict_sentiment(reviews)  # przewiduj sentymenty
 
-                review_vector = vectorizer.transform([clean_review])
-                sentiment = model.predict(review_vector)[0]
-
-                st.write("Predicted Sentiment:")
-                if sentiment == 2:
-                    st.success("Positive")
-                elif sentiment == 1:
-                    st.info("Neutral")
-                else:
-                    st.error("Negative")
+            # Wyświetl każdą recenzję z jej przewidywanym sentymentem
+            for i, review in enumerate(reviews):
+                st.write(f"**Review {i+1}:** {review}")
+                st.write(f"Predicted Sentiment: {'Positive' if sentiments[i] == 1 else 'Negative' if sentiments[i] == -1 else 'Neutral'}")
+                st.write("---")
         else:
-            st.error("Please enter a valid URL.")
+            st.write("No reviews found on this page.")
