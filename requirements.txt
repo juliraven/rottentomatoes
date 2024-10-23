@@ -7,3 +7,7 @@ wordcloud
 streamlit-option-menu
 seaborn
 scikit-learn
+beautifulsoup4
+joblib
+nltk
+requests
