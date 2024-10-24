@@ -1,16 +1,23 @@
 import streamlit as st
 from selenium import webdriver
-from selenium.webdriver.edge.service import Service
-from selenium.webdriver.edge.options import Options
-from webdriver_manager.microsoft import EdgeChromiumDriverManager
+from selenium.webdriver.chrome.service import Service
+from selenium.webdriver.chrome.options import Options
+from webdriver_manager.chrome import ChromeDriverManager, ChromeType  # Import dla Chromium
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
-# Ustawienia Selenium z automatycznym pobraniem Edge WebDriver
-edge_options = Options()
-# edge_options.add_argument("--headless")  # Ustaw na True, aby uruchomić w trybie headless
-driver = webdriver.Edge(service=Service(EdgeChromiumDriverManager().install()), options=edge_options)
+# Ustawienia Selenium z automatycznym pobraniem Chromium WebDriver
+chrome_options = Options()
+# chrome_options.add_argument("--headless")  # Ustaw na True, aby uruchomić w trybie headless
+
+# Inicjalizacja WebDrivera Chromium
+driver = webdriver.Chrome(
+    service=Service(
+        ChromeDriverManager(chrome_type=ChromeType.CHROMIUM).install()
+    ),
+    options=chrome_options,
+)
 
 def scrape_reviews(url):
     driver.get(url)
@@ -52,4 +59,5 @@ if st.button("Skrapuj"):
 
 # Zakończ działanie przeglądarki po zakończeniu działania aplikacji
 driver.quit()
+
 
