@@ -1,13 +1,19 @@
 import streamlit as st
 import numpy as np
 import pandas as pd
-import requests
-from bs4 import BeautifulSoup
+import joblib
 import nltk
 import string
 from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize
-import joblib
+from selenium import webdriver
+from selenium.webdriver.edge.service import Service
+from selenium.webdriver.edge.options import Options
+from webdriver_manager.microsoft import EdgeChromiumDriverManager
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+
 
 st.markdown(
     """
@@ -38,16 +44,35 @@ def clean_text(text):
 model = joblib.load("naive_bayes_model.pkl") 
 vectorizer = joblib.load("vectorizer.pkl")  
 
-# Funkcja do scrapowania recenzji ze strony Rotten Tomatoes
 def scrape_reviews(url):
-    response = requests.get(url)
-    soup = BeautifulSoup(response.content, 'html.parser')
-    
-    # Znajdź wszystkie recenzje krytyków (dostosuj selektor do struktury Rotten Tomatoes)
-    reviews_html = soup.find_all('div', class_='the_review')  # zmień selektor, jeśli potrzeba
-    reviews = [review.get_text(strip=True) for review in reviews_html]
-    
-    return reviews
+    edge_options = Options()
+    driver = webdriver.Edge(service=Service(EdgeChromiumDriverManager().install()), options=edge_options)
+    driver.get(url)
+
+    try:
+        # Oczekiwanie na załadowanie elementów recenzji
+        WebDriverWait(driver, 10).until(
+            EC.presence_of_all_elements_located((By.CLASS_NAME, "review-text"))
+        )
+
+        # Znajdź wszystkie elementy zawierające recenzje
+        reviews_elements = driver.find_elements(By.CLASS_NAME, "review-text")
+
+        # Pobierz tekst recenzji
+        reviews = [review.text for review in reviews_elements]
+
+        # Sprawdź, czy recenzje zostały znalezione
+        if not reviews:
+            print("Nie znaleziono recenzji na stronie.")
+        return reviews
+
+    except Exception as e:
+        print(f"Wystąpił błąd: {str(e)}")  # Dodano str(e), aby uzyskać szczegółowy opis błędu
+        return []
+
+    finally:
+        # Zakończ działanie przeglądarki
+        driver.quit()
 
 # Funkcja do przewidywania sentymentu dla recenzji
 def predict_sentiment(reviews):
