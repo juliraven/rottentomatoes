@@ -6,6 +6,10 @@ from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+import logging
+
+# Konfiguracja logowania
+logging.basicConfig(level=logging.DEBUG)
 
 # Interfejs użytkownika w Streamlit
 st.title("Pobieranie recenzji z Rotten Tomatoes")
@@ -21,13 +25,14 @@ if st.button('Pobierz recenzje'):
         chrome_options.add_argument('--headless')  # Uruchom w trybie bezgłowym (opcjonalnie)
         chrome_options.add_argument('--no-sandbox')  # Dodaj, jeśli potrzebne
         chrome_options.add_argument('--disable-dev-shm-usage')  # Dodaj, jeśli potrzebne
+        chrome_options.add_argument('--disable-gpu')  # Dodaj, jeśli potrzebne
+        chrome_options.add_argument('--log-level=ALL')  # Umożliwia logowanie szczegółowych informacji
 
         # Inicjalizacja WebDriver
-        driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=chrome_options)
-
-        driver.get(url)
-
         try:
+            driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=chrome_options)
+            driver.get(url)
+
             # Oczekiwanie na załadowanie elementów recenzji
             WebDriverWait(driver, 10).until(
                 EC.presence_of_all_elements_located((By.CLASS_NAME, "review-text"))
@@ -48,7 +53,7 @@ if st.button('Pobierz recenzje'):
 
         except Exception as e:
             st.error(f"Wystąpił błąd: {str(e)}")
-
+            logging.error(f"Błąd WebDriver: {e}")
         finally:
             # Zakończ działanie przeglądarki
             driver.quit()
