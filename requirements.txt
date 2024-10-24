@@ -13,3 +13,4 @@ nltk
 requests
 seleniumbase
 webdriver-manager
+selenium.webdriver.edge.service
