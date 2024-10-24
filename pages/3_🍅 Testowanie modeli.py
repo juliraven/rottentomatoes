@@ -42,7 +42,7 @@ def predict_sentiment(reviews):
     predictions = model.predict(features)
     return predictions
 
-st.title("Analiza sentymentu dla recenzji użytkowników")
+st.markdown("### Analiza sentymentu dla recenzji użytkowników")
 
 user_review = st.text_area("Wprowadź swoją recenzję tutaj:", "Bardzo podobał mi się ten film!")
 
