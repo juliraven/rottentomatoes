@@ -23,7 +23,7 @@ st.markdown(
 )
 
 nltk.download('stopwords')
-nltk.download('punkt')
+nltk.download('punkt_tab')
 stop_words = set(stopwords.words('english'))
 
 def clean_text(text):
