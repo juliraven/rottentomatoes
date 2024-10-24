@@ -70,7 +70,7 @@ with tab2:
 
     st.markdown('######')
 
-    model = joblib.load(".pkl") 
+    model = joblib.load("logistic_regression_model.pkl") 
     vectorizer = joblib.load("vectorizer.pkl")  
 
     st.markdown("### Analiza sentymentu dla recenzji użytkowników")
