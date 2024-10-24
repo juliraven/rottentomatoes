@@ -1,34 +1,14 @@
 import streamlit as st
-import numpy as np
-import pandas as pd
-import joblib
-import nltk
-import string
-from nltk.corpus import stopwords
-from nltk.tokenize import word_tokenize
 from selenium import webdriver
-from selenium.webdriver.edge.service import Service
-from selenium.webdriver.edge.options import Options
-from webdriver_manager.microsoft import EdgeChromiumDriverManager
+from selenium.webdriver.chrome.service import Service
+from selenium.webdriver.chrome.options import Options
+from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
-
-st.markdown(
-    """
-    <style>
-    .emoji-top {
-        margin-top: -20px; /* Zmniejszenie marginesu górnego */
-    }
-    </style>
-    
-    <div style="text-align: left;">
-        <h1>🍅 Testowanie modeli</h1>
-    </div>
-    """, 
-    unsafe_allow_html=True
-)
+# Interfejs użytkownika w Streamlit
+st.title("Pobieranie recenzji z Rotten Tomatoes")
 
 # Przycisk do pobrania recenzji
 if st.button('Pobierz recenzje'):
@@ -36,12 +16,14 @@ if st.button('Pobierz recenzje'):
         # URL strony z recenzjami
         url = "https://www.rottentomatoes.com/m/terrifier_3/reviews"
 
-        # Ustawienia Selenium z automatycznym pobraniem Edge WebDriver
-        edge_options = Options()
-        edge_options.add_argument('--headless')  # Odkomentuj, jeśli chcesz uruchomić w trybie bezgłowym
+        # Ustawienia Selenium z automatycznym pobraniem Chrome WebDriver
+        chrome_options = Options()
+        chrome_options.add_argument('--headless')  # Uruchom w trybie bezgłowym (opcjonalnie)
+        chrome_options.add_argument('--no-sandbox')  # Dodaj, jeśli potrzebne
+        chrome_options.add_argument('--disable-dev-shm-usage')  # Dodaj, jeśli potrzebne
 
         # Inicjalizacja WebDriver
-        driver = webdriver.Edge(service=Service(EdgeChromiumDriverManager().install()), options=edge_options)
+        driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=chrome_options)
 
         driver.get(url)
 
