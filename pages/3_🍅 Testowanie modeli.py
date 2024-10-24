@@ -26,6 +26,8 @@ nltk.download('stopwords')
 nltk.download('punkt_tab')
 stop_words = set(stopwords.words('english'))
 
+st.markdown('######')
+
 def clean_text(text):
     text = text.lower()  # zamiana na małe litery
     text = ''.join([char for char in text if char not in string.punctuation])  # usunięcie znaków interpunkcyjnych
@@ -33,28 +35,34 @@ def clean_text(text):
     tokens = [word for word in tokens if word not in stop_words]  # usunięcie stopwords
     return ' '.join(tokens)  # połączenie tokenów w jeden tekst
 
-model = joblib.load("naive_bayes_model.pkl") 
-vectorizer = joblib.load("vectorizer.pkl")  
-
 def predict_sentiment(reviews):
     cleaned_reviews = [clean_text(review) for review in reviews]
     features = vectorizer.transform(cleaned_reviews)
     predictions = model.predict(features)
     return predictions
 
-st.markdown("### Analiza sentymentu dla recenzji użytkowników")
+tab1, tab2 = st.tabs(["Naiwny klasyfikator Bayesa", "Regresja logistyczna"])
 
-user_review = st.text_area("Wprowadź swoją recenzję tutaj:", "Bardzo podobał mi się ten film!")
+with tab1:
 
-if st.button('Analizuj recenzję'):
-    if user_review:
-        with st.spinner('Analizowanie recenzji...'):
-            reviews = [user_review]  
-            sentiments = predict_sentiment(reviews)  
+    st.markdown('######')
 
-            st.write(f"**Twoja recenzja :** {user_review}")
-            st.write(f"Przewidywany sentyment : {'Pozytywny' if sentiments[0] == 2 else 'Negatywny' if sentiments[0] == 0 else 'Neutralny'}")
-    else:
-        st.write("Proszę wprowadzić recenzję.")
+    model = joblib.load("naive_bayes_model.pkl") 
+    vectorizer = joblib.load("vectorizer.pkl")  
+
+    st.markdown("### Analiza sentymentu dla recenzji użytkowników")
+
+    user_review = st.text_area("Wprowadź swoją recenzję tutaj :",)
+
+    if st.button('Analizuj recenzję'):
+        if user_review:
+            with st.spinner('Analizowanie recenzji...'):
+                reviews = [user_review]  
+                sentiments = predict_sentiment(reviews)  
+
+                st.write(f"**Twoja recenzja :** {user_review}")
+                st.write(f"Przewidywany sentyment : {'Pozytywny' if sentiments[0] == 2 else 'Negatywny' if sentiments[0] == 0 else 'Neutralny'}")
+        else:
+            st.write("Proszę wprowadzić recenzję.")
 
 
