@@ -1,20 +1,60 @@
 import streamlit as st
-from selenium import webdriver
-from selenium.webdriver.chrome.service import Service
+import numpy as np
+import pandas as pd
+import joblib
+import nltk
+import string
+from nltk.corpus import stopwords
+from nltk.tokenize import word_tokenize
 
-# The Service class is used to start an instance of the Chrome WebDriver
-# The no-argument constructor means it will look for the WebDriver executable in the system's PATH
-service = Service()
+st.markdown(
+    """
+    <style>
+    .emoji-top {
+        margin-top: -20px; /* Zmniejszenie marginesu górnego */
+    }
+    </style>
+    
+    <div style="text-align: left;">
+        <h1>🍅 Testowanie modeli</h1>
+    </div>
+    """, 
+    unsafe_allow_html=True
+)
 
-# WebDriver.ChromeOptions() is used to set the preferences for the Chrome browser
-options = webdriver.ChromeOptions()
+nltk.download('stopwords')
+nltk.download('punkt')
+stop_words = set(stopwords.words('english'))
 
-# Here, we start an instance of the Chrome WebDriver with the defined options and service
-driver = webdriver.Chrome(service=service, options=options)
+def clean_text(text):
+    text = text.lower()  # zamiana na małe litery
+    text = ''.join([char for char in text if char not in string.punctuation])  # usunięcie znaków interpunkcyjnych
+    tokens = word_tokenize(text)  # tokenizacja
+    tokens = [word for word in tokens if word not in stop_words]  # usunięcie stopwords
+    return ' '.join(tokens)  # połączenie tokenów w jeden tekst
 
-# Your code for interacting with web pages goes here
+model = joblib.load("naive_bayes_model.pkl") 
+vectorizer = joblib.load("vectorizer.pkl")  
 
-# In the end, always close or quit the driver to ensure all system resources are freed up
-driver.quit()
+def predict_sentiment(reviews):
+    cleaned_reviews = [clean_text(review) for review in reviews]
+    features = vectorizer.transform(cleaned_reviews)
+    predictions = model.predict(features)
+    return predictions
+
+st.title("Analiza sentymentu dla recenzji użytkowników")
+
+user_review = st.text_area("Wprowadź swoją recenzję tutaj:", "Bardzo podobał mi się ten film!")
+
+if st.button('Analizuj recenzję'):
+    if user_review:
+        with st.spinner('Analizowanie recenzji...'):
+            reviews = [user_review]  
+            sentiments = predict_sentiment(reviews)  
+
+            st.write(f"**Twoja recenzja :** {user_review}")
+            st.write(f"Przewidywany sentyment : {'Pozytywny' if sentiments[0] == 2 else 'Negatywny' if sentiments[0] == 0 else 'Neutralny'}")
+    else:
+        st.write("Proszę wprowadzić recenzję.")
 
 
