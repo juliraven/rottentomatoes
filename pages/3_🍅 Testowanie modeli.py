@@ -98,7 +98,7 @@ if st.button('Fetch and Analyze Reviews'):
             # Wyświetl każdą recenzję z jej przewidywanym sentymentem
             for i, review in enumerate(reviews):
                 st.write(f"**Review {i+1}:** {review}")
-                st.write(f"Predicted Sentiment: {'Positive' if sentiments[i] == 1 else 'Negative' if sentiments[i] == -1 else 'Neutral'}")
+                st.write(f"Predicted Sentiment: {'Positive' if sentiments[i] == 2 else 'Negative' if sentiments[i] == 0 else 'Neutral'}")
                 st.write("---")
         else:
             st.write("No reviews found on this page.")
