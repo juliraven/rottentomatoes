@@ -28,8 +28,10 @@ if st.button('Pobierz recenzje'):
         chrome_options.add_argument('--disable-gpu')  # Dodaj, jeśli potrzebne
         chrome_options.add_argument('--log-level=ALL')  # Umożliwia logowanie szczegółowych informacji
 
-        # Inicjalizacja WebDriver
+        driver = None  # Zainicjalizuj driver jako None
+
         try:
+            # Inicjalizacja WebDriver
             driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=chrome_options)
             driver.get(url)
 
@@ -55,5 +57,7 @@ if st.button('Pobierz recenzje'):
             st.error(f"Wystąpił błąd: {str(e)}")
             logging.error(f"Błąd WebDriver: {e}")
         finally:
-            # Zakończ działanie przeglądarki
-            driver.quit()
+            # Zakończ działanie przeglądarki, jeśli driver został zainicjalizowany
+            if driver:
+                driver.quit()
+
