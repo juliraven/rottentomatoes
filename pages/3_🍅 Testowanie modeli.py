@@ -32,7 +32,7 @@ if st.button('Pobierz recenzje'):
 
         try:
             # Inicjalizacja WebDriver
-            driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=chrome_options)
+            driver = webdriver.Chrome(service=Service(ChromeDriverManager(version="114.0.5735.90").install()), options=chrome_options)
             driver.get(url)
 
             # Oczekiwanie na załadowanie elementów recenzji
