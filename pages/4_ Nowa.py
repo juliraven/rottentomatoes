@@ -7,11 +7,12 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
+# Ustawienia Selenium z automatycznym pobraniem Edge WebDriver
+edge_options = Options()
+edge_options.headless = False  # Ustaw na True, aby nie otwierać przeglądarki
+driver = webdriver.Edge(service=Service(EdgeChromiumDriverManager().install()), options=edge_options)
+
 def scrape_reviews(url):
-    # Ustawienia Selenium z automatycznym pobraniem Edge WebDriver
-    edge_options = Options()
-    driver = webdriver.Edge(service=Service(EdgeChromiumDriverManager().install()), options=edge_options)
-    
     driver.get(url)
     reviews = []
 
@@ -37,10 +38,6 @@ def scrape_reviews(url):
     except Exception as e:
         st.error(f"Wystąpił błąd: {str(e)}")  # Dodano str(e), aby uzyskać szczegółowy opis błędu
 
-    finally:
-        # Zakończ działanie przeglądarki
-        driver.quit()
-
 # Ustawienia aplikacji Streamlit
 st.title("Skrapowanie recenzji z Rotten Tomatoes")
 
@@ -52,3 +49,7 @@ if st.button("Skrapuj"):
         scrape_reviews(url)
     else:
         st.error("Proszę wprowadzić prawidłowy URL.")
+
+# Zakończ działanie przeglądarki po zakończeniu działania aplikacji
+driver.quit()
+
