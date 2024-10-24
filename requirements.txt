@@ -12,3 +12,4 @@ joblib
 nltk
 requests
 seleniumbase
+webdriver-manager
