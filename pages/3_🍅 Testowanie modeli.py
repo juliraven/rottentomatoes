@@ -66,3 +66,28 @@ with tab1:
             st.write("Proszę wprowadzić recenzję.")
 
 
+with tab2:
+
+    st.markdown('######')
+
+    model = joblib.load(".pkl") 
+    vectorizer = joblib.load("vectorizer.pkl")  
+
+    st.markdown("### Analiza sentymentu dla recenzji użytkowników")
+
+    user_review = st.text_area("Wprowadź swoją recenzję tutaj :",)
+
+    if st.button('Analizuj recenzję'):
+        if user_review:
+            with st.spinner('Analizowanie recenzji...'):
+                reviews = [user_review]  
+                sentiments = predict_sentiment(reviews)  
+
+                st.write(f"**Twoja recenzja :** {user_review}")
+                st.write(f"Przewidywany sentyment : {'Pozytywny' if sentiments[0] == 2 else 'Negatywny' if sentiments[0] == 0 else 'Neutralny'}")
+        else:
+            st.write("Proszę wprowadzić recenzję.")
+
+
+
+    
