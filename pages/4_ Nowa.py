@@ -9,7 +9,7 @@ from selenium.webdriver.support import expected_conditions as EC
 
 # Ustawienia Selenium z automatycznym pobraniem Edge WebDriver
 edge_options = Options()
-edge_options.headless = False  # Ustaw na True, aby nie otwierać przeglądarki
+# edge_options.add_argument("--headless")  # Ustaw na True, aby uruchomić w trybie headless
 driver = webdriver.Edge(service=Service(EdgeChromiumDriverManager().install()), options=edge_options)
 
 def scrape_reviews(url):
@@ -36,7 +36,7 @@ def scrape_reviews(url):
                 st.write(f"Recenzja {i}: {review}")
 
     except Exception as e:
-        st.error(f"Wystąpił błąd: {str(e)}")  # Dodano str(e), aby uzyskać szczegółowy opis błędu
+        st.error(f"Wystąpił błąd: {str(e)}")
 
 # Ustawienia aplikacji Streamlit
 st.title("Skrapowanie recenzji z Rotten Tomatoes")
