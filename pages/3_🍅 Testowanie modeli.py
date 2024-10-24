@@ -38,7 +38,7 @@ if st.button('Pobierz recenzje'):
 
         # Ustawienia Selenium z automatycznym pobraniem Edge WebDriver
         edge_options = Options()
-        # edge_options.add_argument('--headless')  # Odkomentuj, jeśli chcesz uruchomić w trybie bezgłowym
+        edge_options.add_argument('--headless')  # Odkomentuj, jeśli chcesz uruchomić w trybie bezgłowym
 
         # Inicjalizacja WebDriver
         driver = webdriver.Edge(service=Service(EdgeChromiumDriverManager().install()), options=edge_options)
