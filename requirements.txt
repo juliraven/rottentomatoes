@@ -11,3 +11,5 @@ beautifulsoup4
 joblib
 nltk
 requests
+string
+selenium 
