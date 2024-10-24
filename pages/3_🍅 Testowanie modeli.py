@@ -41,9 +41,15 @@ def predict_sentiment(reviews):
     predictions = model.predict(features)
     return predictions
 
-tab1, tab2 = st.tabs(["Naiwny klasyfikator Bayesa", "Regresja logistyczna"])
+selected = option_menu(
+    menu_title=None,  
+    options=["Naiwny klasyfikator Bayesa", "Regresja logistyczna"], 
+    menu_icon="cast", 
+    default_index=0, 
+    orientation="horizontal", 
+)
 
-with tab1:
+if selected=="Naiwny klasyfikator Bayesa":
 
     st.markdown('######')
 
@@ -66,7 +72,7 @@ with tab1:
             st.write("Proszę wprowadzić recenzję.")
 
 
-with tab2:
+if selected=="Regresja logistyczna":
 
     st.markdown('######')
 
