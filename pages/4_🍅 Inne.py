@@ -3,7 +3,7 @@ import pandas as pd
 import requests
 from bs4 import BeautifulSoup
 
-url = st.text_input("Podaj link do recenzji na RT :", "https://www.rottentomatoes.com/m/terrifier_3/reviews")
+url = st.text_input("Podaj link do recenzji na RT :",)
 
 if url:
     res = requests.get(url)
@@ -16,6 +16,7 @@ if url:
         review_texts = [review.get_text(strip=True) for review in reviews]
         
         if review_texts:
+            st.write("Recenzje dla filmu")
             reviews_df = pd.DataFrame(review_texts, columns=['review_content'])
             st.dataframe(reviews_df, use_container_width=True)
         else:
