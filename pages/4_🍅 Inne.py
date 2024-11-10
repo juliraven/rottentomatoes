@@ -5,13 +5,6 @@ from bs4 import BeautifulSoup
 
 url = st.text_input("Podaj link do recenzji na RT :",)
 
-import streamlit as st
-import pandas as pd
-import requests
-from bs4 import BeautifulSoup
-
-url = st.text_input("Podaj link do recenzji na Rotten Tomatoes",)
-
 if url:
     res = requests.get(url)
     
