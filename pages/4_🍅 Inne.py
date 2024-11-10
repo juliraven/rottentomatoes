@@ -32,18 +32,18 @@ def extract_movie_title(url):
 if url:
     movie_title, content_type = extract_movie_title_and_type(url)
     st.write(f"**Recenzje dla {content_type}:** {movie_title}")
+
+    res = requests.get(url)
     
     if res.status_code == 200:
         content = BeautifulSoup(res.content, 'html.parser')
-    
-        reviews = content.find_all('p', class_='review-text')
+        
+        reviews = content.find_all('div', class_='review-text')
         
         review_texts = [review.get_text(strip=True) for review in reviews]
-        
         if review_texts:
-            st.write("Recenzje dla filmu")
             reviews_df = pd.DataFrame(review_texts, columns=['review_content'])
-            st.dataframe(reviews_df, use_container_width=True)
+            st.dataframe(reviews_df)
         else:
             st.write("Nie znaleziono recenzji na tej stronie.")
     else:
