@@ -33,7 +33,8 @@ vectorizer = joblib.load("vectorizer.pkl")
 
 # Nowa funkcja do pobierania recenzji bez Selenium
 def scrape_reviews(url):
-    headers = {'User-Agent': 'Mozilla/5.0'}
+    headers = {
+    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.75 Safari/537.36'}
     response = requests.get(url, headers=headers)
     if response.status_code == 200:
         soup = BeautifulSoup(response.text, 'html.parser')
