@@ -20,7 +20,7 @@ if url:
         st.write(f"**Tytuł:** {title}")
         col1, col2 = st.columns([1, 2])
         if image_url:
-            col1.image(image_url, width=250)
+            col1.image(image_url, width=280)
         else:
             col1.write("Nie znaleziono obrazka.")
         
