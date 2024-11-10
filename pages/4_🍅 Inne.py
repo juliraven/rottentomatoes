@@ -18,17 +18,18 @@ if url:
         image_url = image_tag['src'] if image_tag else None
         
         st.write(f"**Tytuł:** {title}")
+        col1, col2 = st.columns([1, 2])
         if image_url:
-            st.image(image_url, caption="Obrazek", width=300)
+            col1.image(image_url, caption="Obrazek", width=300)
         else:
-            st.write("Nie znaleziono obrazka.")
+            col1.write("Nie znaleziono obrazka.")
         
         reviews = content.find_all('p', class_='review-text')
         
         review_texts = [review.get_text(strip=True) for review in reviews]
         if review_texts:
             reviews_df = pd.DataFrame(review_texts, columns=['review_content'])
-            st.dataframe(reviews_df)
+            col2.dataframe(reviews_df)
         else:
             st.write("Nie znaleziono recenzji na tej stronie.")
     else:
