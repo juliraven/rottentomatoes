@@ -1,11 +1,3 @@
-import streamlit as st
-import numpy as np
-import pandas as pd
-import joblib
-import nltk
-import string
-from nltk.corpus import stopwords
-from nltk.tokenize import word_tokenize
 from selenium import webdriver
 from selenium.webdriver.edge.service import Service
 from selenium.webdriver.edge.options import Options
