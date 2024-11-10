@@ -5,7 +5,7 @@ from bs4 import BeautifulSoup
 
 url = st.text_input("Podaj link do recenzji na RT :",)
 
-def extract_movie_title(url):
+def extract_movie_title_and_type(url):
     try:
         if '/m/' in url:
             # Dla filmów
