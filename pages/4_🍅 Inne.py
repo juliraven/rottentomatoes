@@ -5,34 +5,14 @@ from bs4 import BeautifulSoup
 
 url = st.text_input("Podaj link do recenzji na RT :",)
 
-def extract_movie_title_and_type(url):
-    try:
-        if '/m/' in url:
-            # Dla filmów
-            title_part = url.split('/m/')[1].split('/reviews')[0]
-            movie_title = title_part.replace('_', ' ').title()
-            return movie_title
-        elif '/tv/' in url:
-            # Dla seriali
-            parts = url.split('/tv/')[1].split('/')
-            title_part = parts[0]
-            season = parts[1] if len(parts) > 1 and parts[1].startswith('s') else None
-            movie_title = title_part.replace('_', ' ').title()
-            
-            # Jeśli sezon istnieje, dodaj go do tytułu
-            if season:
-                return f"{movie_title} (Season {season[1:]})"
-            else:
-                return movie_title
-        else:
-            return "Nieznany Tytuł"
-    except IndexError:
-        return "Nieznany Tytuł"
+import streamlit as st
+import pandas as pd
+import requests
+from bs4 import BeautifulSoup
+
+url = st.text_input("Podaj link do recenzji na Rotten Tomatoes",)
 
 if url:
-    movie_title, content_type = extract_movie_title_and_type(url)
-    st.write(f"**Recenzje dla {content_type}:** {movie_title}")
-
     res = requests.get(url)
     
     if res.status_code == 200:
@@ -48,3 +28,4 @@ if url:
             st.write("Nie znaleziono recenzji na tej stronie.")
     else:
         st.write("Nie udało się pobrać strony. Sprawdź, czy adres URL jest poprawny.")
+
