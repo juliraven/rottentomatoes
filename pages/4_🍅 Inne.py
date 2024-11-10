@@ -19,7 +19,7 @@ if url:
         
         st.write(f"**Tytuł:** {title}")
         if image_url:
-            st.image(image_url, caption="Obrazek", use_column_width=True)
+            st.image(image_url, caption="Obrazek", width=300)
         else:
             st.write("Nie znaleziono obrazka.")
         
