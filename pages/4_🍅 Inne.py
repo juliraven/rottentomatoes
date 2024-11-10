@@ -9,5 +9,6 @@ res = requests.get(url)
 
 content = BeautifulSoup(res.content, 'html.parser')
 
-quotes = content.find_all('div', class_='review-text')
-st.write(quotes)
+reviews = content.find_all('div', class_='review-text')
+
+revieww = [review.text for review in reviews]
