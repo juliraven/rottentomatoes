@@ -30,9 +30,8 @@ def extract_movie_title(url):
         return "Nieznany Tytuł"
 
 if url:
-    movie_title = extract_movie_title(url)
-    st.write(f"**Tytuł filmu:** {movie_title}")
-    res = requests.get(url)
+    movie_title, content_type = extract_movie_title_and_type(url)
+    st.write(f"**Recenzje dla {content_type}:** {movie_title}")
     
     if res.status_code == 200:
         content = BeautifulSoup(res.content, 'html.parser')
