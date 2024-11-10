@@ -42,7 +42,6 @@ def scrape_reviews_selenium(url):
         driver.quit()
 
 # Interfejs użytkownika w Streamlit
-st.title("Sentiment Analysis for Rotten Tomatoes Reviews")
 url = st.text_input("Enter Rotten Tomatoes reviews page URL", "https://www.rottentomatoes.com/m/terrifier_3/reviews")
 
 if st.button('Fetch and Analyze Reviews'):
