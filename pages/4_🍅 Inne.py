@@ -7,11 +7,25 @@ url = st.text_input("Podaj link do recenzji na RT :",)
 
 def extract_movie_title(url):
     try:
-        # Wyciągnij część między '/m/' a '/reviews'
-        title_part = url.split('/m/')[1].split('/reviews')[0]
-        # Zamień "_" na spacje i popraw format na tytułowy
-        movie_title = title_part.replace('_', ' ').title()
-        return movie_title
+        if '/m/' in url:
+            # Dla filmów
+            title_part = url.split('/m/')[1].split('/reviews')[0]
+            movie_title = title_part.replace('_', ' ').title()
+            return movie_title
+        elif '/tv/' in url:
+            # Dla seriali
+            parts = url.split('/tv/')[1].split('/')
+            title_part = parts[0]
+            season = parts[1] if len(parts) > 1 and parts[1].startswith('s') else None
+            show_title = title_part.replace('_', ' ').title()
+            
+            # Jeśli sezon istnieje, dodaj go do tytułu
+            if season:
+                return f"{show_title} (Season {season[1:]})"
+            else:
+                return show_title
+        else:
+            return "Nieznany Tytuł"
     except IndexError:
         return "Nieznany Tytuł"
 
