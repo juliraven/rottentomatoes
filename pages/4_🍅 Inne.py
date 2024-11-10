@@ -14,26 +14,12 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
-
-st.markdown(
-    """
-    <style>
-    .emoji-top {
-        margin-top: -20px; /* Zmniejszenie marginesu górnego */
-    }
-    </style>
-    
-    <div style="text-align: left;">
-        <h1>🍅 Testowanie modeli</h1>
-    </div>
-    """, 
-    unsafe_allow_html=True
-)
-
+# Inicjalizacja zasobów NLTK
 nltk.download('stopwords')
 nltk.download('punkt')
 stop_words = set(stopwords.words('english'))
 
+# Funkcja czyszcząca tekst
 def clean_text(text):
     text = text.lower()  # zamiana wszystkich liter na małe
     text = ''.join([char for char in text if char not in string.punctuation])  # usunięcie znaków interpunkcyjnych
@@ -41,40 +27,25 @@ def clean_text(text):
     tokens = [word for word in tokens if word not in stop_words]  # usunięcie stopwords
     return ' '.join(tokens)  # połączenie tokenów
 
+# Wczytanie modelu i wektoryzera
 model = joblib.load("naive_bayes_model.pkl") 
 vectorizer = joblib.load("vectorizer.pkl")  
 
+# Nowa funkcja do pobierania recenzji bez Selenium
 def scrape_reviews(url):
-    edge_options = Options()
-    driver = webdriver.Edge(service=Service(EdgeChromiumDriverManager().install()), options=edge_options)
-    driver.get(url)
-
-    try:
-        # Oczekiwanie na załadowanie elementów recenzji
-        WebDriverWait(driver, 10).until(
-            EC.presence_of_all_elements_located((By.CLASS_NAME, "review-text"))
-        )
-
-        # Znajdź wszystkie elementy zawierające recenzje
-        reviews_elements = driver.find_elements(By.CLASS_NAME, "review-text")
-
-        # Pobierz tekst recenzji
-        reviews = [review.text for review in reviews_elements]
-
-        # Sprawdź, czy recenzje zostały znalezione
-        if not reviews:
-            print("Nie znaleziono recenzji na stronie.")
+    headers = {'User-Agent': 'Mozilla/5.0'}
+    response = requests.get(url, headers=headers)
+    if response.status_code == 200:
+        soup = BeautifulSoup(response.text, 'html.parser')
+        # Dopasuj do struktury HTML Rotten Tomatoes
+        reviews_elements = soup.find_all(class_='review-text')
+        reviews = [review.get_text() for review in reviews_elements]
         return reviews
-
-    except Exception as e:
-        print(f"Wystąpił błąd: {str(e)}")  # Dodano str(e), aby uzyskać szczegółowy opis błędu
+    else:
+        st.write("Nie udało się pobrać strony. Sprawdź URL.")
         return []
 
-    finally:
-        # Zakończ działanie przeglądarki
-        driver.quit()
-
-# Funkcja do przewidywania sentymentu dla recenzji
+# Funkcja do przewidywania sentymentu
 def predict_sentiment(reviews):
     cleaned_reviews = [clean_text(review) for review in reviews]
     features = vectorizer.transform(cleaned_reviews)
@@ -102,4 +73,3 @@ if st.button('Fetch and Analyze Reviews'):
                 st.write("---")
         else:
             st.write("No reviews found on this page.")
-
