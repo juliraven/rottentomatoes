@@ -14,7 +14,7 @@ if url:
         title_tag = content.find('a', class_='sidebar-title')
         title = title_tag.get_text(strip=True) if title_tag else "Nie znaleziono tytułu"
         
-        image_tag = content.find('a', data-qa_='sidebar-poster-img')
+        image_tag = content.find('a', data-qa='sidebar-poster-img')
         image_url = image_tag['img src'] if image_tag else None
         
         st.write(f"**Tytuł:** {title}")
