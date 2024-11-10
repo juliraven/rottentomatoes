@@ -5,7 +5,19 @@ from bs4 import BeautifulSoup
 
 url = st.text_input("Podaj link do recenzji na RT :",)
 
+def extract_movie_title(url):
+    try:
+        # Wyciągnij część między '/m/' a '/reviews'
+        title_part = url.split('/m/')[1].split('/reviews')[0]
+        # Zamień "_" na spacje i popraw format na tytułowy
+        movie_title = title_part.replace('_', ' ').title()
+        return movie_title
+    except IndexError:
+        return "Nieznany Tytuł"
+
 if url:
+    movie_title = extract_movie_title(url)
+    st.write(f"**Tytuł filmu:** {movie_title}")
     res = requests.get(url)
     
     if res.status_code == 200:
