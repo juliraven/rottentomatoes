@@ -14,63 +14,53 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
-# Inicjalizacja zasobów NLTK
-nltk.download('stopwords')
-nltk.download('punkt')
-stop_words = set(stopwords.words('english'))
+# Funkcja do pobierania recenzji przy użyciu Selenium
+def scrape_reviews_selenium(url):
+    # Konfiguracja opcji przeglądarki w trybie headless
+    edge_options = Options()
+    edge_options.add_argument("--headless")
+    edge_options.add_argument("--disable-gpu")
 
-# Funkcja czyszcząca tekst
-def clean_text(text):
-    text = text.lower()  # zamiana wszystkich liter na małe
-    text = ''.join([char for char in text if char not in string.punctuation])  # usunięcie znaków interpunkcyjnych
-    tokens = word_tokenize(text)  # tokenizacja
-    tokens = [word for word in tokens if word not in stop_words]  # usunięcie stopwords
-    return ' '.join(tokens)  # połączenie tokenów
+    # Automatyczne pobranie najnowszej wersji Edge WebDriver
+    driver = webdriver.Edge(service=Service(EdgeChromiumDriverManager().install()), options=edge_options)
+    driver.get(url)
 
-# Wczytanie modelu i wektoryzera
-model = joblib.load("naive_bayes_model.pkl") 
-vectorizer = joblib.load("vectorizer.pkl")  
+    try:
+        # Oczekiwanie na załadowanie elementów recenzji
+        WebDriverWait(driver, 10).until(
+            EC.presence_of_all_elements_located((By.CLASS_NAME, "review-text"))
+        )
 
-# Nowa funkcja do pobierania recenzji bez Selenium
-def scrape_reviews(url):
-    headers = {
-    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.75 Safari/537.36'}
-    response = requests.get(url, headers=headers)
-    if response.status_code == 200:
-        soup = BeautifulSoup(response.text, 'html.parser')
-        # Dopasuj do struktury HTML Rotten Tomatoes
-        reviews_elements = soup.find_all(class_='review-text')
-        reviews = [review.get_text() for review in reviews_elements]
+        # Znajdź wszystkie elementy zawierające recenzje
+        reviews_elements = driver.find_elements(By.CLASS_NAME, "review-text")
+
+        # Pobierz tekst recenzji
+        reviews = [review.text for review in reviews_elements]
+
+        # Sprawdź, czy recenzje zostały znalezione
+        if not reviews:
+            st.write("Nie znaleziono recenzji na stronie.")
         return reviews
-    else:
-        st.write("Nie udało się pobrać strony. Sprawdź URL.")
+
+    except Exception as e:
+        st.write(f"Wystąpił błąd: {str(e)}")
         return []
 
-# Funkcja do przewidywania sentymentu
-def predict_sentiment(reviews):
-    cleaned_reviews = [clean_text(review) for review in reviews]
-    features = vectorizer.transform(cleaned_reviews)
-    predictions = model.predict(features)
-    return predictions
+    finally:
+        driver.quit()
 
 # Interfejs użytkownika w Streamlit
 st.title("Sentiment Analysis for Rotten Tomatoes Reviews")
-
-# Formularz do wprowadzenia linku przez użytkownika
 url = st.text_input("Enter Rotten Tomatoes reviews page URL", "https://www.rottentomatoes.com/m/terrifier_3/reviews")
 
-# Po wprowadzeniu URL i kliknięciu przycisku pobierz recenzje
 if st.button('Fetch and Analyze Reviews'):
     with st.spinner('Fetching reviews...'):
-        reviews = scrape_reviews(url)  # pobierz recenzje
+        reviews = scrape_reviews_selenium(url)
         if reviews:
             st.write(f"Found {len(reviews)} reviews")
-            sentiments = predict_sentiment(reviews)  # przewiduj sentymenty
-
-            # Wyświetl każdą recenzję z jej przewidywanym sentymentem
-            for i, review in enumerate(reviews):
-                st.write(f"**Review {i+1}:** {review}")
-                st.write(f"Predicted Sentiment: {'Positive' if sentiments[i] == 2 else 'Negative' if sentiments[i] == 0 else 'Neutral'}")
+            for i, review in enumerate(reviews, start=1):
+                st.write(f"**Review {i}:** {review}")
                 st.write("---")
         else:
             st.write("No reviews found on this page.")
+
