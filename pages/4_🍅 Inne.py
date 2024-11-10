@@ -16,7 +16,7 @@ if url:
         content = BeautifulSoup(res.content, 'html.parser')
         
         # Wyszukanie recenzji
-        reviews = content.find_all('div', class='review-text')
+        reviews = content.find_all('p', class_='review-text')
         
         # Wyodrębnienie tekstu recenzji
         review_texts = [review.get_text(strip=True) for review in reviews]
