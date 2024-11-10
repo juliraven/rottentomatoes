@@ -17,7 +17,6 @@ if url:
         
         if review_texts:
             reviews_df = pd.DataFrame(review_texts, columns=['review_content'])
-            st.write(f"Znaleziono {len(review_texts)} recenzji:")
             st.dataframe(reviews_df, use_container_width=True)
         else:
             st.write("Nie znaleziono recenzji na tej stronie.")
