@@ -111,7 +111,7 @@ elif selected == "Ranking filmów":
     st.markdown('######')
     st.markdown('### Ranking filmów')
 
-    df = pd.read('dane_r.csv')
+    df = pd.read_csv('dane_r.csv')
     df['original_release_date'] = pd.to_datetime(df['original_release_date'])
     
     st.sidebar.header('Opcje filtrowania')
