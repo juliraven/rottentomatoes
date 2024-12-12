@@ -50,7 +50,7 @@ with tab1:
 
     st.plotly_chart(fig)
 
-    tn, fp, fn, tp = confusion_matrix(y_test, y_pred).ravel()
+    tn, fp, fn, tp = confusion_matrix(dane['y_test'], dane['y_pred']).ravel()
     sensitivity = tp/(fn+tp)
     specificity = tn/(tn+fp)
     precision = tp/(fp+tp)
