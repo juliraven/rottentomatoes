@@ -110,19 +110,8 @@ if selected == "Wykresy":
 elif selected == "Ranking filmów":
     st.markdown('######')
     st.markdown('### Ranking filmów')
-    
-    def load_data(file1, file2):
-        df1 = pd.read_csv(file1)
-        df2 = pd.read_csv(file2)
-    
-        df = pd.concat([df1, df2], ignore_index=True)
-        return df
 
-    file1 = 'dane5_1.csv'
-    file2 = 'dane5_2.csv'
-
-
-    df = load_data(file1, file2)
+    df = pd.read('dane_r.csv')
     df['original_release_date'] = pd.to_datetime(df['original_release_date'])
     
     st.sidebar.header('Opcje filtrowania')
