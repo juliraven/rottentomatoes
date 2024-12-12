@@ -47,53 +47,36 @@ if selected == "Wykresy":
 
     dane = pd.read_csv('dane_c.csv')
 
-    fig4 = px.bar(dane, 
-              x='rok', 
-              y='count', 
-              color='sentiment',  
-              barmode='group',  
-              labels={'rok': 'Rok', 'count': 'Liczba recenzji', 'sentiment': 'Sentyment'},
-              color_discrete_map={1: 'lightgreen', 0: 'indianred'})  
+    colors = {0: 'indianred', 1: 'lightgreen'}
 
-    fig4.update_layout(
-    coloraxis_showscale=False)
-
-    fig4.update_layout(
-        xaxis=dict(
-        tickmode='linear', 
-        tick0=2000,        
-        dtick=1,           
-        tickformat='d'))
-
-
-    st.plotly_chart(fig4, use_container_width=True)
-
-    colors = {0: 'blue', 1: 'orange'}
-
-    # Tworzymy wykres słupkowy
     fig = go.Figure()
 
-    # Dodajemy słupki dla sentymentu 0 i 1
     for sentiment in dane['sentiment'].unique():
         sentiment_data = dane[dane['sentiment'] == sentiment]
         fig.add_trace(go.Bar(
         x=sentiment_data['rok'],
         y=sentiment_data['count'],
-        name=f'Sentiment {sentiment}',
-        marker_color=colors[sentiment]  # Ustalamy kolor
+        name=f'{sentiment}',
+        marker_color=colors[sentiment] 
         ))
 
-    # Dostosowanie layoutu wykresu
     fig.update_layout(
-    barmode='group',  # Grupy słupków (zamiast nakładających się)
+    barmode='group',  
     title='Liczebność sentymentów w poszczególnych latach',
     xaxis_title='Rok',
-    yaxis_title='Liczebność',
+    yaxis_title='Liczba recenzji',
     legend_title='Sentiment',
     template='plotly',
     )
 
-    # Wyświetlanie wykresu w aplikacji Streamlit
+    fig.update_layout(
+    xaxis=dict(
+        tickmode='linear', 
+        tick0=2000,        
+        dtick=1,           
+        tickformat='d'     
+    ))
+
     st.plotly_chart(fig)
     
     st.markdown('######')
