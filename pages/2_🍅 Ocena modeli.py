@@ -65,7 +65,7 @@ with tab1:
 
 
     with col2:
-        st.markdown('##')
+        st.markdown('#')
         st.markdown(f"<p style='color:{text_color}; font-size:{font_size};'>Trafność : {trafnosc_rounded}%</p>", unsafe_allow_html=True)
         st.markdown(f"<p style='color:{text_color}; font-size:{font_size};'>Czułość : {sensitivity_rounded}%</p>", unsafe_allow_html=True)
         st.markdown(f"<p style='color:{text_color}; font-size:{font_size};'>Specyficzność : {specificity_rounded}%</p>", unsafe_allow_html=True)
