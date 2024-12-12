@@ -34,7 +34,7 @@ with tab1:
 
     trafnosc = accuracy_score(dane['y_test'], dane['y_pred'])
 
-    cm = confusion_matrix(dane['y_test'], dane['y_pred'], labels=['Negatywne', 'Pozytywne'])
+    cm = confusion_matrix(dane['y_test'], dane['y_pred'], labels=[0,1])
 
     fig = px.imshow(cm, labels=dict(x="Przewidywane", y="Rzeczywiste", color="Liczność"), 
                         x=['Negatywne', 'Pozytywne'], 
