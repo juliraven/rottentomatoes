@@ -13,3 +13,6 @@ nltk
 requests
 seleniumbase
 webdriver-manager
+emoji
+langdetect
+Pillow
