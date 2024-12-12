@@ -187,15 +187,17 @@ if selected == "Naiwny klasyfikator Bayesa":
             review_texts = [review.get_text(strip=True) for review in reviews[:5]]
 
             if review_texts:
-                for review in review_texts:
-                    st.write(f"**Recenzja:**\n{review}")
-                    st.markdown("---") 
+                for i, review in enumerate(review_texts):
+                    st.write(f"**Recenzja {i + 1}:**\n{review}")
 
-                sentiments = predict_sentiment(review_texts)
-                for i, sentiment in enumerate(sentiments):
-                    sentiment_label = "Pozytywny" if sentiment == 1 else "Negatywny"
-                    sentiment_color = "green" if sentiment == 1 else "red"
-                    st.markdown(f"<h3>Przewidywany sentyment dla recenzji {i+1}: <span style='color: {sentiment_color};'>{sentiment_label}</span></h3>", unsafe_allow_html=True)
+                    sentiments = predict_sentiment([review])
+
+                    sentiment_label = "Pozytywny" if sentiments[0] == 1 else "Negatywny"
+                    sentiment_color = "green" if sentiments[0] == 1 else "red"
+
+                    st.markdown(f"<h4 style='color: {sentiment_color};'>Przewidywany sentyment: {sentiment_label}</h4>", unsafe_allow_html=True)
+
+                    st.markdown("---")
             else:
                 st.write("Nie znaleziono recenzji na tej stronie.")
         else:
