@@ -34,8 +34,7 @@ selected = option_menu(
 
 if selected == "Wykresy":
     st.sidebar.empty() 
-    dane1 = pd.read_csv('dane_s.csv')
-    dane2 = pd.read_csv('dane_g.csv')
+    dane1 = pd.read_csv('dane_g.csv')
 
     st.markdown('######')
     
@@ -43,30 +42,12 @@ if selected == "Wykresy":
     c1, c2 = st.columns((3,3))
     c1.image("negatywne.png", caption="Chmura słów dla recenzji o negatywnym sentymencie")
     c2.image("pozytywne.png", caption="Chmura słów dla recenzji o pozytywnym sentymencie")
-
-    st.markdown('###')
-
-    sentiment_counts = dane1['sentiment'].value_counts().reset_index()
-    sentiment_counts.columns = ['sentiment', 'count']
-
-    custom_colors = ['lightgreen', 'indianred']  
-
-    fig = px.pie(sentiment_counts, 
-             values='count', 
-             names='sentiment', 
-             width=800,  
-             height=500,
-             color_discrete_sequence=custom_colors)
-
-    fig.update_traces(textfont_size=20)
-    st.markdown('### Podział recenzji wg sentymentu')
-    st.plotly_chart(fig, use_container_width=True)
     
     st.markdown('######')
 
-    gatunki = dane2['genres'].unique()
+    gatunki = dane1['genres'].unique()
     wybierz_gatunek = st.selectbox('Wybierz gatunek :', gatunki)
-    filtered_df = dane2[dane2['genres'] == wybierz_gatunek]
+    filtered_df = dane1[dane1['genres'] == wybierz_gatunek]
 
     custom_colors2 = ['indianred', 'lightgreen'] 
 
