@@ -26,7 +26,7 @@ tab1, tab2 = st.tabs(["Naiwny klasyfikator Bayesa", "Sieć neuronowa"])
 
 with tab1:
 
-    st.markdown('#')
+    st.markdown('###')
 
     dane = pd.read_csv('dane_model1.csv')
 
