@@ -46,6 +46,7 @@ if selected == "Wykresy":
     st.markdown('### Rozkład liczby recenzji w czasie w podziale na sentyment')
 
     dane = pd.read_csv('dane_c.csv')
+    st.write((dane['sentiment'].unique()))
     dane['sentiment'] = dane['sentiment'].map({'Pozytywny': 1, 'Negatywny': 0})
 
     fig4 = px.bar(dane, 
