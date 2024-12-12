@@ -42,17 +42,11 @@ if selected == "Wykresy":
     st.markdown('######')
     
     st.markdown('### Chmury słów dla recenzji o danym sentymencie')
-    c1, c2, c3 = st.columns((2,2,2))
+    c1, c2 = st.columns((3,3))
     c1.image("negatywne.png", caption="Chmura słów dla recenzji o negatywnym sentymencie")
     c2.image("pozytywne.png", caption="Chmura słów dla recenzji o pozytywnym sentymencie")
-    c3.image("neutralne.png", caption="Chmura słów dla recenzji o neutralnym sentymencie")
 
     st.markdown('###')
-
-    uploaded_file = st.file_uploader("pozytywne", type="pdf")
-
-    if uploaded_file is not None:
-        st.markdown(f'<iframe src="data:application/pdf;base64,{uploaded_file.getvalue().decode("utf-8")}" width="100%" height="600"></iframe>', unsafe_allow_html=True)
 
     a1, a2 = st.columns((2,2))
     sentiment_counts = dane1['sentiment'].value_counts().reset_index()
