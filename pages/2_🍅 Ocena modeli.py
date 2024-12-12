@@ -55,6 +55,14 @@ with tab1:
     specificity = tn/(tn+fp)
     precision = tp/(fp+tp)
 
+    text_color = "#FF5733"  
+    font_size = "24px"      
+
+    st.markdown(f"<p style='color:{text_color}; font-size:{font_size};'>Trafność : {trafnosc*100:04.2f}%</p>", unsafe_allow_html=True)
+    st.markdown(f"<p style='color:{text_color}; font-size:{font_size};'>Czułość : {sensitivity*100:04.2f}%</p>", unsafe_allow_html=True)
+    st.markdown(f"<p style='color:{text_color}; font-size:{font_size};'>Specyficzność : {specificity*100:04.2f}%</p>", unsafe_allow_html=True)
+    st.markdown(f"<p style='color:{text_color}; font-size:{font_size};'>Precyzja : {precision*100:04.2f}%</p>", unsafe_allow_html=True)
+
     st.write('Trafność :', f"{trafnosc*100:04.2f}%")
     st.write('Czułość :', f"{sensitivity*100:04.2f}%")
     st.write('Specyficzność :', f"{specificity*100:04.2f}%")
