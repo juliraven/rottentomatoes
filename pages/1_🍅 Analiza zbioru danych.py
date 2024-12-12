@@ -139,10 +139,11 @@ elif selected == "Ranking filmów":
     sentiment_filter = st.sidebar.multiselect('Wybierz sentyment :', options=df['sentiment'].unique(), default=df['sentiment'].unique())
 
 
-    filtered_df = df[(df['original_release_date'].between(pd.to_datetime(date_filter[0]), pd.to_datetime(date_filter[1]))) &
-                 (df['tomatometer_rating'].between(tomatometer_filter[0], tomatometer_filter[1])) &
-                 (df['audience_rating'].between(audience_filter[0], audience_filter[1])) &
-                 (df['sentiment'].isin(sentiment_filter))]
+    filtered_df = df[
+    (df['original_release_date'].between(date_filter[0], date_filter[1])) &
+    (df['tomatometer_rating'].between(tomatometer_filter[0], tomatometer_filter[1])) &
+    (df['audience_rating'].between(audience_filter[0], audience_filter[1])) &
+    (df['sentiment'].isin(sentiment_filter))]
 
 
     aggregated_df = filtered_df.groupby('movie_title').agg(
