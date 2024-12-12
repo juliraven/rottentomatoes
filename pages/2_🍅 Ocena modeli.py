@@ -46,14 +46,14 @@ with tab1:
     col1, col2 = st.columns([3, 1])  
     
     with col1:
-        st.markdown('### Macierz pomyłek')
+        
         fig = px.imshow(cm, labels=dict(x="Przewidywane", y="Rzeczywiste", color="Liczność"), 
                     x=['Negatywne', 'Pozytywne'], 
                     y=['Negatywne', 'Pozytywne'],
                     text_auto=True, 
                     color_continuous_scale='Reds')  
     
-        fig.update_layout(width=600, height=600,
+        fig.update_layout(width=600, height=600, title="Macierz pomyłek")
                       xaxis_title="Przewidywane",
                       xaxis=dict(title='Przewidywane', title_standoff=50),
                       yaxis=dict(title="Rzeczywiste", title_standoff=50),
