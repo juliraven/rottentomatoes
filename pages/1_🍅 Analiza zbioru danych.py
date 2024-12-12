@@ -55,7 +55,7 @@ if selected == "Wykresy":
              barmode='group',
              labels={'rok': 'Rok', 'count': 'Liczba recenzji', 'sentiment': 'Sentyment'},
              color_discrete_map={
-            1: 'lightgreen',
+            1: 'green',
             0: 'indianred'})
 
     fig4.update_layout(
