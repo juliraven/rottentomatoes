@@ -118,7 +118,7 @@ elif selected == "Ranking filmów":
 
     date_filter = st.sidebar.slider(
     'Wybierz rok premiery :',
-    min_value=df['original_release_date'].dt.year..min().date(),
+    min_value=df['original_release_date'].dt.year.min().date(),
     max_value=df['original_release_date'].dt.year.max().date(),
     value=(df['original_release_date'].dt.year.min().date(), df['original_release_date'].dt.year.max().date())
     )
