@@ -22,7 +22,7 @@ st.markdown(
 
 st.markdown('######')
 
-tab1, tab2 = st.tabs(["Naiwny klasyfikator Bayesa", "Regresja logistyczna"])
+tab1, tab2 = st.tabs(["Naiwny klasyfikator Bayesa", "Sieć neuronowa"])
 
 with tab1:
 
@@ -67,32 +67,4 @@ with tab2:
     
     st.markdown('### Macierz pomyłek')
     
-    dane9 = pd.read_csv('dane9.csv')
-
-    trafnosc = accuracy_score(dane9['y_test'], dane9['y_pred'])
-
-    cm = confusion_matrix(dane9['y_test'], dane9['y_pred'], labels=['Negative', 'Neutral', 'Positive'])
-
-    fig1 = px.imshow(cm, labels=dict(x="Przewidywane", y="Rzeczywiste", color="Liczność"), 
-                        x=['Negative', 'Neutral', 'Positive'], 
-                        y=['Negative', 'Neutral', 'Positive'],
-                        text_auto=True, 
-                        color_continuous_scale='Reds')  
-    
-    fig1.update_layout(width=800, height=600,
-    xaxis_title="Przewidywane",
-    xaxis=dict(title='Przewidywane', title_standoff=50),
-    yaxis=dict(title="Rzeczywiste", title_standoff=50),
-    font=dict(size=16) )
-
-    st.plotly_chart(fig1)
-
-    st.subheader('Trafność')
-    c1, c2, c3, c4, c5, c6, c7, c8, c9, c10 = st.columns((2,2,2,2,2,2,2,2,2,2))
-    c1.success(f'**{round(trafnosc * 100, 0)}%**')
-
-    st.markdown('######')
-
-    st.subheader("Raport klasyfikacji")
-    report = classification_report(dane9['y_test'], dane9['y_pred'], output_dict=True)
-    st.write(pd.DataFrame(report).transpose())
+   
