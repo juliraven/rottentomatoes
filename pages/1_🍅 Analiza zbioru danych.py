@@ -189,7 +189,7 @@ elif selected == "Liczba recenzji w czasie":
     st.markdown('######')
     st.markdown('### Rozkład liczby recenzji w czasie w podziale na sentyment')
 
-    dane = pd.read_csv('dane_c.csv')
+    dane = pd.read_csv('dane_c.csv', index=False)
 
     fig4 = px.bar(dane, 
              x='rok', 
