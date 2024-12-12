@@ -72,6 +72,6 @@ with tab1:
         st.markdown(f"<p style='color:{text_color}; font-size:{font_size};'>Precyzja : {precision_rounded}%</p>", unsafe_allow_html=True)
 
 with tab2:
-    .st.write('bedzie')
+    st.write('bedzie')
     
    
