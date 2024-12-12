@@ -184,7 +184,7 @@ if selected == "Naiwny klasyfikator Bayesa":
                 col1.write("Nie znaleziono obrazka.")
 
             reviews = content.find_all('p', class_='review-text')
-            review_texts = [review.get_text(strip=True) for review in reviews]
+            review_texts = [review.get_text(strip=True) for review in reviews[:5]]
 
             if review_texts:
                 for review in review_texts:
