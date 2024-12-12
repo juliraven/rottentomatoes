@@ -34,7 +34,7 @@ selected = option_menu(
 
 if selected == "Wykresy":
     st.sidebar.empty() 
-    dane1 = pd.read_csv('dane1.csv')
+    dane1 = pd.read_csv('dane_s.csv')
     dane2 = pd.read_csv('dane_g.csv')
 
     st.markdown('######')
