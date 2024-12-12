@@ -46,8 +46,6 @@ if selected == "Wykresy":
     st.markdown('### Rozkład liczby recenzji w czasie w podziale na sentyment')
 
     dane = pd.read_csv('dane_c.csv')
-    st.write((dane['sentiment'].unique()))
-    dane['sentiment'] = dane['sentiment'].map({'Pozytywny': 1, 'Negatywny': 0})
 
     fig4 = px.bar(dane, 
              x='rok', 
@@ -56,8 +54,8 @@ if selected == "Wykresy":
              barmode='group',
              labels={'rok': 'Rok', 'count': 'Liczba recenzji', 'sentiment': 'Sentyment'},
              color_discrete_map={
-                "Pozytywny": 'lightgreen',
-                "Negatywny" : 'indianred'})
+                1: 'lightgreen',
+                0: 'indianred'})
 
     fig4.update_layout(
         xaxis=dict(
