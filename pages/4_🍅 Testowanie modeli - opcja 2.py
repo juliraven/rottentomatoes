@@ -2,7 +2,6 @@ import streamlit as st
 import pandas as pd
 import requests
 from bs4 import BeautifulSoup
-from urllib.parse import urljoin
 
 url = st.text_input("Podaj link do recenzji na RT :",)
 
@@ -17,13 +16,10 @@ if url:
         
         image_tag = content.find('rt-img', {'data-qa': 'sidebar-poster-img'}) 
         image_url = image_tag['src'] if image_tag else None
-
-        if image_url and not image_url.startswith('http'):
-            image_url = urljoin(url, image_url)
         
-        st.write(f"**Tytuł:** {title}")
         col1, col2 = st.columns([1, 2])
         if image_url:
+            col1.write(f"**Tytuł:** {title}")
             col1.image(image_url, width=280)
         else:
             col1.write("Nie znaleziono obrazka.")
