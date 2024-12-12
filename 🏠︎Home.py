@@ -21,5 +21,5 @@ st.markdown(
 st.sidebar.image('tomato.png', width=300)
 st.markdown('######')
 st.markdown('<span style="font-size: 24px">Strona ta poświęcona jest analizie sentymentu zbioru zawierającego recenzje filmów napisane przez krytyków na stronie Rotten Tomatoes. Znajdują się tutaj wizualizacje informacji zawartych w tym zbiorze, a także oceny modeli zbudowanych w oparciu o dane ze zbioru. Użytkownik ma również możliwość przetestowania działania modeli na dwa sposoby :</span>', unsafe_allow_html=True)
-st.markdown('<span style="font-size: 24px">- może wprowadzić własną recenzję i zobaczyć jej sentyment</span>', unsafe_allow_html=True)
+st.markdown('<span style="font-size: 24px">- może wprowadzić własną recenzję i zobaczyć przewidywany sentyment</span>', unsafe_allow_html=True)
 st.markdown('<span style="font-size: 24px">- może podać link do recenzji konkretnego filmu/serialu ze strony Rotten Tomatoes i zobaczyć jaki sentymenty przewiduje dla nich model.</span>', unsafe_allow_html=True)
