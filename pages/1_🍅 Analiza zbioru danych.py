@@ -35,9 +35,7 @@ selected = option_menu(
 if selected == "Wykresy":
     st.sidebar.empty() 
     dane1 = pd.read_csv('dane1.csv')
-    dane2 = pd.read_csv('dane2.csv')
-    dane3 = pd.read_csv('dane3.csv')
-    dane4 = pd.read_csv('dane4.csv')
+    dane2 = pd.read_csv('dane_g.csv')
 
     st.markdown('######')
     
@@ -69,11 +67,10 @@ if selected == "Wykresy":
     gatunki = dane2['genres'].unique()
     wybierz_gatunek = st.selectbox('Wybierz gatunek :', gatunki)
     filtered_df = dane2[dane2['genres'] == wybierz_gatunek]
-    filtered_df1 = dane3[dane3['genres'] == wybierz_gatunek]
 
     custom_colors2 = ['indianred', 'lightgreen'] 
 
-    fig2 = px.pie(filtered_df1, values='count', names='sentiment', color='sentiment',
+    fig2 = px.pie(filtered_df, values='count', names='sentiment', color='sentiment',
              width=800,  
              height=500,
              color_discrete_sequence=custom_colors2)
