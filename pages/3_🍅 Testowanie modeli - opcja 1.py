@@ -170,7 +170,7 @@ if selected == "Naiwny klasyfikator Bayesa":
                 reviews = [user_review]
                 sentiments = predict_sentiment(reviews)  
 
-                st.write(f"**Twoja recenzja :** {user_review}")
+                st.write(f"**Twoja recenzja:** {user_review}")
                 
                 sentiment_label = ""
                 sentiment_color = ""
