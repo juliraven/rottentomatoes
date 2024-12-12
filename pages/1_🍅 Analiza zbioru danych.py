@@ -213,31 +213,7 @@ elif selected == "Liczba recenzji w czasie":
     
     st.plotly_chart(fig4, use_container_width=True)
 
-    st.markdown('######')
-    st.markdown('### Rozkład liczby recenzji w czasie w podziale na typ recenzji')
 
-    dane7 = pd.read_csv('dane7.csv')
-
-    fig5 = px.bar(dane7, 
-             x='rok', 
-             y='count', 
-             color='review_type',  
-             barmode='group',
-             labels={'rok': 'Rok', 'count': 'Liczba recenzji', 'review_type': 'Typ recenzji'},
-             color_discrete_map={
-            'Rotten': 'rgb(61,94,47)',
-            'Fresh': 'red'})
-
-    fig5.update_layout(
-    xaxis=dict(
-        tickmode='linear', 
-        tick0=1999,        
-        dtick=1,           
-        tickformat='d'    
-        )
-    )
-    
-    st.plotly_chart(fig5, use_container_width=True)
 
 
 
