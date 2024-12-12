@@ -62,7 +62,6 @@ if selected == "Wykresy":
 
     fig.update_layout(
     barmode='group',  
-    title='Liczebność sentymentów w poszczególnych latach',
     xaxis_title='Rok',
     yaxis_title='Liczba recenzji',
     legend_title='Sentiment',
