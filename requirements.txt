@@ -17,3 +17,4 @@ webdriver-manager
 emoji
 langdetect
 Pillow
+dill
