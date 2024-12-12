@@ -26,6 +26,8 @@ tab1, tab2 = st.tabs(["Naiwny klasyfikator Bayesa", "Sieć neuronowa"])
 
 with tab1:
 
+    st.markdown('#')
+
     dane = pd.read_csv('dane_model1.csv')
 
     trafnosc = accuracy_score(dane['y_test'], dane['y_pred'])
