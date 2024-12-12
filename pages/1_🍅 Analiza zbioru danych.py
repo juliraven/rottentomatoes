@@ -49,6 +49,11 @@ if selected == "Wykresy":
 
     st.markdown('###')
 
+    uploaded_file = st.file_uploader("pozytywne", type="pdf")
+
+    if uploaded_file is not None:
+        st.markdown(f'<iframe src="data:application/pdf;base64,{uploaded_file.getvalue().decode("utf-8")}" width="100%" height="600"></iframe>', unsafe_allow_html=True)
+
     a1, a2 = st.columns((2,2))
     sentiment_counts = dane1['sentiment'].value_counts().reset_index()
     sentiment_counts.columns = ['sentiment', 'count']
