@@ -58,7 +58,7 @@ with tab1:
                       xaxis=dict(title='Przewidywane', title_standoff=50),
                       yaxis=dict(title="Rzeczywiste", title_standoff=50),
                       font=dict(size=16),
-                      margin=dict(t=50, b=0))
+                      margin=dict(t=0, b=0))
 
         st.plotly_chart(fig)
 
