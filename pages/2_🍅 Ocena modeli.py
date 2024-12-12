@@ -46,7 +46,7 @@ with tab1:
     col1, col2 = st.columns([2, 1])  
     
     with col1:
-        st.markdown("<h3 style='text-align: center; margin-bottom: -30px;'>Macierz pomyłek</h3>", unsafe_allow_html=True)
+        st.markdown("<h3 style='text-align: left; margin-left: -40px;'>Macierz pomyłek</h3>", unsafe_allow_html=True)
         fig = px.imshow(cm, labels=dict(x="Przewidywane", y="Rzeczywiste", color="Liczność"), 
                     x=['Negatywne', 'Pozytywne'], 
                     y=['Negatywne', 'Pozytywne'],
