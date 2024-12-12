@@ -34,7 +34,6 @@ selected = option_menu(
 
 if selected == "Wykresy":
     st.sidebar.empty() 
-    dane1 = pd.read_csv('dane_g.csv')
 
     st.markdown('######')
     
@@ -73,7 +72,7 @@ if selected == "Wykresy":
     st.plotly_chart(fig4, use_container_width=True)
     
     st.markdown('######')
-
+    dane1 = pd.read_csv('dane_g.csv')
     gatunki = dane1['genres'].unique()
     wybierz_gatunek = st.selectbox('Wybierz gatunek :', gatunki)
     filtered_df = dane1[dane1['genres'] == wybierz_gatunek]
