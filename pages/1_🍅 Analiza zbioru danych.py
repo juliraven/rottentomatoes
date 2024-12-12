@@ -189,7 +189,7 @@ elif selected == "Liczba recenzji w czasie":
     st.markdown('######')
     st.markdown('### Rozkład liczby recenzji w czasie w podziale na sentyment')
 
-    dane = pd.read_csv('dane_c.csv', index=False)
+    dane = pd.read_csv('dane_c.csv')
 
     fig4 = px.bar(dane, 
              x='rok', 
@@ -209,6 +209,8 @@ elif selected == "Liczba recenzji w czasie":
         tickformat='d'    
         )
     )
+
+    fig4.update_layout(barmode='group') 
     
     st.plotly_chart(fig4, use_container_width=True)
 
