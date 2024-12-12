@@ -175,7 +175,7 @@ elif selected == "Ranking filmów":
     for index, row in sorted_df.iterrows():
         tomatometer_bar = create_bar(row['Ocena krytyków'], max_tomatometer, 'magenta')
         audience_bar = create_bar(row['Ocena widowni'], max_audience, 'blue')
-        html_table += f"<tr><td>{row['Tytuł filmu']}</td><td>{row['Rok premiery']}</td><td>{row['Ocena krytyków']}</td><td>{row['Ocena widowni']}</td><td>{tomatometer_bar}</td><td>{audience_bar}</td></tr>"
+        html_table += f"<tr><td>{row['Tytuł filmu']}</td><td>{row['Data premiery']}</td><td>{row['Ocena krytyków']}</td><td>{row['Ocena widowni']}</td><td>{tomatometer_bar}</td><td>{audience_bar}</td></tr>"
 
     html_table += "</table>"
 
