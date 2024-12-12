@@ -48,11 +48,10 @@ if selected == "Wykresy":
 
     st.markdown('###')
 
-    a1, a2 = st.columns((2,2))
     sentiment_counts = dane1['sentiment'].value_counts().reset_index()
     sentiment_counts.columns = ['sentiment', 'count']
 
-    custom_colors = ['lightgreen', 'indianred', 'lightskyblue']  
+    custom_colors = ['lightgreen', 'indianred']  
 
     fig = px.pie(sentiment_counts, 
              values='count', 
@@ -62,21 +61,8 @@ if selected == "Wykresy":
              color_discrete_sequence=custom_colors)
 
     fig.update_traces(textfont_size=20)
-    a1.markdown('### Podział recenzji wg sentymentu')
-    a1.plotly_chart(fig, use_container_width=True)
-
-    custom_colors1 = ['red', 'rgb(61,94,47)']  
-
-    fig1 = px.pie(dane4, 
-             values='review_type', 
-             names='index', 
-             width=800,  
-             height=500,
-             color_discrete_sequence=custom_colors1)
-
-    fig1.update_traces(textfont_size=20)
-    a2.markdown('### Podział recenzji wg typu')
-    a2.plotly_chart(fig1, use_container_width=True)
+    st.markdown('### Podział recenzji wg sentymentu')
+    st.plotly_chart(fig, use_container_width=True)
     
     st.markdown('######')
 
@@ -84,9 +70,8 @@ if selected == "Wykresy":
     wybierz_gatunek = st.selectbox('Wybierz gatunek :', gatunki)
     filtered_df = dane2[dane2['genres'] == wybierz_gatunek]
     filtered_df1 = dane3[dane3['genres'] == wybierz_gatunek]
-    b1, b2 = st.columns((2,2))
 
-    custom_colors2 = ['indianred', 'lightskyblue', 'lightgreen'] 
+    custom_colors2 = ['indianred', 'lightgreen'] 
 
     fig2 = px.pie(filtered_df1, values='count', names='sentiment', color='sentiment',
              width=800,  
@@ -94,17 +79,8 @@ if selected == "Wykresy":
              color_discrete_sequence=custom_colors2)
 
     fig2.update_traces(textfont_size=20)
-    b1.markdown('### Podział recenzji wg sentymentu dla wybranego gatunku')
-    b1.plotly_chart(fig2, use_container_width=True)
-
-    fig3 = px.pie(filtered_df, values='count', names='review_type', color='review_type',
-             width=800,  
-             height=500,
-             color_discrete_sequence=custom_colors1)
-
-    fig3.update_traces(textfont_size=20)
-    b2.markdown('### Podział recenzji wg typu dla wybranego gatunku')
-    b2.plotly_chart(fig3, use_container_width=True)
+    st.markdown('### Podział recenzji wg sentymentu dla wybranego gatunku')
+    st.plotly_chart(fig2, use_container_width=True)
 
 
 elif selected == "Ranking filmów":
