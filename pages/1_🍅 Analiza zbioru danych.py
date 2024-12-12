@@ -47,28 +47,6 @@ if selected == "Wykresy":
 
     dane = pd.read_csv('dane_c.csv')
 
-    fig4 = px.bar(dane, 
-             x='rok', 
-             y='count', 
-             color='sentiment',  
-             barmode='group',
-             labels={'rok': 'Rok', 'count': 'Liczba recenzji', 'sentiment': 'Sentyment'},
-             color_discrete_map={
-                1: 'lightgreen',
-                0: 'indianred'})
-
-    fig4.update_layout(
-        xaxis=dict(
-        tickmode='linear', 
-        tick0=2000,        
-        dtick=1,           
-        tickformat='d'    
-        )
-    )
-
-    fig4.update_layout(barmode='group') 
-    
-    st.plotly_chart(fig4, use_container_width=True)
     
     st.markdown('######')
     dane1 = pd.read_csv('dane_g.csv')
