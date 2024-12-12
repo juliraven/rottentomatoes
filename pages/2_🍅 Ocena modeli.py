@@ -43,10 +43,11 @@ with tab1:
     specificity_rounded = round(specificity * 100)
     precision_rounded = round(precision * 100)
 
+    st.markdown('### Macierz pomyłek')
+
     col1, col2 = st.columns([3, 1])  
     
     with col1:
-        st.markdown('### Macierz pomyłek')
     
         fig = px.imshow(cm, labels=dict(x="Przewidywane", y="Rzeczywiste", color="Liczność"), 
                     x=['Negatywne', 'Pozytywne'], 
