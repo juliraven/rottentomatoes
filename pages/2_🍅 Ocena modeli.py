@@ -43,7 +43,7 @@ with tab1:
     specificity_rounded = round(specificity * 100)
     precision_rounded = round(precision * 100)
 
-    col1, col2 = st.columns([3, 1])  
+    col1, col2 = st.columns([1, 1])  
     
     with col1:
         st.markdown("<h3 style='text-align: center; margin-top: -10px;'>Macierz pomyłek</h3>", unsafe_allow_html=True)
