@@ -113,7 +113,8 @@ elif selected == "Ranking filmów":
 
     df = pd.read_csv('dane_r.csv')
     df['original_release_date'] = pd.to_datetime(df['original_release_date'])
-    df['original_release_date'] = df['original_release_date'].dt.year.astype(int)
+    df['original_release_date'] = df['original_release_date'].dt.year
+    df['original_release_date'] = df['original_release_date'].astype(int)
     
     st.sidebar.header('Opcje filtrowania')
 
