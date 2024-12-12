@@ -66,6 +66,9 @@ if selected == "Wykresy":
     yaxis_title='Liczba recenzji',
     legend_title='Sentiment',
     template='plotly',
+        margin=dict(
+        t=20,
+    )
     )
 
     fig.update_layout(
