@@ -189,9 +189,9 @@ elif selected == "Liczba recenzji w czasie":
     st.markdown('######')
     st.markdown('### Rozkład liczby recenzji w czasie w podziale na sentyment')
 
-    dane6 = pd.read_csv('dane6.csv')
+    dane = pd.read_csv('dane_c.csv')
 
-    fig4 = px.bar(dane6, 
+    fig4 = px.bar(dane, 
              x='rok', 
              y='count', 
              color='sentiment',  
@@ -199,7 +199,6 @@ elif selected == "Liczba recenzji w czasie":
              labels={'rok': 'Rok', 'count': 'Liczba recenzji', 'sentiment': 'Sentyment'},
              color_discrete_map={
             'Positive': 'lightgreen',
-            'Neutral': 'lightskyblue',
             'Negative': 'indianred'})
 
     fig4.update_layout(
