@@ -198,8 +198,8 @@ elif selected == "Liczba recenzji w czasie":
              barmode='stack',
              labels={'rok': 'Rok', 'count': 'Liczba recenzji', 'sentiment': 'Sentyment'},
              color_discrete_map={
-            '1': 'lightgreen',
-            '0': 'indianred'})
+            1: 'lightgreen',
+            0: 'indianred'})
 
     fig4.update_layout(
     xaxis=dict(
