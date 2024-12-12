@@ -28,8 +28,9 @@ if url:
         
         review_texts = [review.get_text(strip=True) for review in reviews]
         if review_texts:
-            reviews_df = pd.DataFrame(review_texts, columns=['review_content'])
-            col2.dataframe(reviews_df, use_container_width=True)
+            for review in review_texts:
+                st.write(f"**Recenzja:**\n{review}")
+                st.markdown("---")
         else:
             st.write("Nie znaleziono recenzji na tej stronie.")
     else:
