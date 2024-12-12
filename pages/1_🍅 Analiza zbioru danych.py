@@ -56,6 +56,9 @@ if selected == "Wykresy":
               color_discrete_map={1: 'lightgreen', 0: 'indianred'})  
 
     fig4.update_layout(
+    coloraxis_showscale=False)
+
+    fig4.update_layout(
         xaxis=dict(
         tickmode='linear', 
         tick0=2000,        
