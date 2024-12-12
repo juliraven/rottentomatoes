@@ -30,15 +30,15 @@ with tab1:
     
     st.markdown('### Macierz pomyłek')
     
-    dane8 = pd.read_csv('dane8.csv')
+    dane = pd.read_csv('dane_model1.csv')
 
-    trafnosc = accuracy_score(dane8['y_test'], dane8['y_pred'])
+    trafnosc = accuracy_score(dane['y_test'], dane['y_pred'])
 
-    cm = confusion_matrix(dane8['y_test'], dane8['y_pred'], labels=['Negative', 'Neutral', 'Positive'])
+    cm = confusion_matrix(dane['y_test'], dane['y_pred'], labels=['Negatywne', 'Pozytywne'])
 
     fig = px.imshow(cm, labels=dict(x="Przewidywane", y="Rzeczywiste", color="Liczność"), 
-                        x=['Negative', 'Neutral', 'Positive'], 
-                        y=['Negative', 'Neutral', 'Positive'],
+                        x=['Negatywne', 'Pozytywne'], 
+                        y=['Negatywne', 'Pozytywne'],
                         text_auto=True, 
                         color_continuous_scale='Reds')  
     
@@ -50,15 +50,22 @@ with tab1:
 
     st.plotly_chart(fig)
 
+    tn, fp, fn, tp = confusion_matrix(y_test, y_pred).ravel()
+    sensitivity = tp/(fn+tp)
+    specificity = tn/(tn+fp)
+    precision = tp/(fp+tp)
+    print('Czułość :', str('{:04.2f}'.format(sensitivity*100))+'%')
+    print('Specyficzność :', str('{:04.2f}'.format(specificity*100))+'%')
+    print('Prezycja :', str('{:04.2f}'.format(precision*100))+'%')
+
     st.subheader('Trafność')
     c1, c2, c3, c4, c5, c6, c7, c8, c9, c10 = st.columns((2,2,2,2,2,2,2,2,2,2))
     c1.success(f'**{round(trafnosc * 100, 1)}%**')
 
+
     st.markdown('######')
 
-    st.subheader("Raport klasyfikacji")
-    report = classification_report(dane8['y_test'], dane8['y_pred'], output_dict=True)
-    st.write(pd.DataFrame(report).transpose())
+    
 
 
 with tab2:
