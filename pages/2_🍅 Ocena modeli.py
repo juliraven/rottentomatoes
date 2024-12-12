@@ -43,7 +43,7 @@ with tab1:
     specificity_rounded = round(specificity * 100)
     precision_rounded = round(precision * 100)
 
-    col1, col2 = st.columns([1, 1])  
+    col1, col2 = st.columns([1.5, 1])  
     
     with col1:
         fig = px.imshow(cm, labels=dict(x="Przewidywane", y="Rzeczywiste", color="Liczność"), 
