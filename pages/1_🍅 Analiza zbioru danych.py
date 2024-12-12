@@ -52,7 +52,7 @@ if selected == "Wykresy":
              x='rok', 
              y='count', 
              color='sentiment',  
-             barmode='stack',
+             barmode='group',
              labels={'rok': 'Rok', 'count': 'Liczba recenzji', 'sentiment': 'Sentyment'},
              color_discrete_map={
             1: 'lightgreen',
