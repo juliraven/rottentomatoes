@@ -63,10 +63,10 @@ with tab1:
     specificity_rounded = round(specificity * 100)
     precision_rounded = round(precision * 100)
 
-    st.markdown(f"<p style='color:{text_color}; font-size:{font_size};'>Trafność : {trafnosc_rounded*100:04.2f}%</p>", unsafe_allow_html=True)
-    st.markdown(f"<p style='color:{text_color}; font-size:{font_size};'>Czułość : {sensitivity_rounded*100:04.2f}%</p>", unsafe_allow_html=True)
-    st.markdown(f"<p style='color:{text_color}; font-size:{font_size};'>Specyficzność : {specificity_rounded*100:04.2f}%</p>", unsafe_allow_html=True)
-    st.markdown(f"<p style='color:{text_color}; font-size:{font_size};'>Precyzja : {precision_rounded*100:04.2f}%</p>", unsafe_allow_html=True)
+    st.markdown(f"<p style='color:{text_color}; font-size:{font_size};'>Trafność : {trafnosc_rounded}%</p>", unsafe_allow_html=True)
+    st.markdown(f"<p style='color:{text_color}; font-size:{font_size};'>Czułość : {sensitivity_rounded}%</p>", unsafe_allow_html=True)
+    st.markdown(f"<p style='color:{text_color}; font-size:{font_size};'>Specyficzność : {specificity_rounded}%</p>", unsafe_allow_html=True)
+    st.markdown(f"<p style='color:{text_color}; font-size:{font_size};'>Precyzja : {precision_rounded}%</p>", unsafe_allow_html=True)
 
 
     st.markdown('######')
