@@ -158,6 +158,9 @@ elif selected == "Ranking filmów":
     'original_release_date': 'Data premiery',
     'tomatometer_rating': 'Ocena krytyków',
     'audience_rating': 'Ocena widowni'})
+    sorted_df = sorted_df.dropna(subset=['Ocena krytyków', 'Ocena widowni'])
+    sorted_df['Ocena krytyków'] = sorted_df['Ocena krytyków'].round(2)
+    sorted_df['Ocena widowni'] = sorted_df['Ocena widowni'].round(2)
     
     max_tomatometer = sorted_df['Ocena krytyków'].max()
     max_audience = sorted_df['Ocena widowni'].max()
