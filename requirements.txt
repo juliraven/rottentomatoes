@@ -18,3 +18,4 @@ emoji
 langdetect
 Pillow
 dill
+urljoin
