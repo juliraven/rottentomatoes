@@ -26,7 +26,7 @@ st.markdown('######')
 
 selected = option_menu(
     menu_title=None,  
-    options=["Wykresy", "Ranking filmów", "Liczba recenzji w czasie"], 
+    options=["Wykresy", "Ranking filmów"], 
     menu_icon="cast", 
     default_index=0, 
     orientation="horizontal", 
@@ -42,6 +42,34 @@ if selected == "Wykresy":
     c1, c2 = st.columns((3,3))
     c1.image("negatywne.png", caption="Chmura słów dla recenzji o negatywnym sentymencie")
     c2.image("pozytywne.png", caption="Chmura słów dla recenzji o pozytywnym sentymencie")
+
+    st.markdown('######')
+    st.markdown('### Rozkład liczby recenzji w czasie w podziale na sentyment')
+
+    dane = pd.read_csv('dane_c.csv')
+
+    fig4 = px.bar(dane, 
+             x='rok', 
+             y='count', 
+             color='sentiment',  
+             barmode='stack',
+             labels={'rok': 'Rok', 'count': 'Liczba recenzji', 'sentiment': 'Sentyment'},
+             color_discrete_map={
+            1: 'lightgreen',
+            0: 'indianred'})
+
+    fig4.update_layout(
+    xaxis=dict(
+        tickmode='linear', 
+        tick0=2000,        
+        dtick=1,           
+        tickformat='d'    
+        )
+    )
+
+    fig4.update_layout(barmode='group') 
+    
+    st.plotly_chart(fig4, use_container_width=True)
     
     st.markdown('######')
 
@@ -138,35 +166,7 @@ elif selected == "Ranking filmów":
 
     st.markdown(html_table, unsafe_allow_html=True)
 
-elif selected == "Liczba recenzji w czasie":
-    st.sidebar.empty() 
-    st.markdown('######')
-    st.markdown('### Rozkład liczby recenzji w czasie w podziale na sentyment')
-
-    dane = pd.read_csv('dane_c.csv')
-
-    fig4 = px.bar(dane, 
-             x='rok', 
-             y='count', 
-             color='sentiment',  
-             barmode='stack',
-             labels={'rok': 'Rok', 'count': 'Liczba recenzji', 'sentiment': 'Sentyment'},
-             color_discrete_map={
-            1: 'lightgreen',
-            0: 'indianred'})
-
-    fig4.update_layout(
-    xaxis=dict(
-        tickmode='linear', 
-        tick0=2000,        
-        dtick=1,           
-        tickformat='d'    
-        )
-    )
-
-    fig4.update_layout(barmode='group') 
-    
-    st.plotly_chart(fig4, use_container_width=True)
+   
 
 
 
