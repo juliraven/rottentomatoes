@@ -159,6 +159,9 @@ selected = option_menu(
 if selected == "Naiwny klasyfikator Bayesa":
     st.markdown('######')
 
+    model = joblib.load("naive_bayes_model.pkl") 
+    vectorizer = joblib.load("vectorizer.pkl") 
+
     url = st.text_input("Podaj link do recenzji na RT:")
 
     if url:
