@@ -112,15 +112,15 @@ elif selected == "Ranking filmów":
     st.markdown('### Ranking filmów')
 
     df = pd.read_csv('dane_r.csv')
-    df['original_release_date'] = pd.to_datetime(df['original_release_date'])
+    df['original_release_date'] = pd.to_datetime(df['original_release_date'].dt.year.astype(int))
     
     st.sidebar.header('Opcje filtrowania')
 
     date_filter = st.sidebar.slider(
     'Wybierz rok premiery :',
-    min_value=df['original_release_date'].dt.year.min().astype(int),
-    max_value=df['original_release_date'].dt.year.max().astype(int),
-    value=(df['original_release_date'].dt.year.min().astype(int), df['original_release_date'].dt.year.max().astype(int))
+    min_value=df['original_release_date'].min(),
+    max_value=df['original_release_date'].max(),
+    value=(df['original_release_date'].min(), df['original_release_date'].max())
     )
 
     tomatometer_filter = st.sidebar.slider('Wybierz ocenę krytyków (Tomatometer) :', 
