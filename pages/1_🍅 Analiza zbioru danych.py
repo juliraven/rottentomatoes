@@ -118,9 +118,9 @@ elif selected == "Ranking filmów":
 
     date_filter = st.sidebar.slider(
     'Wybierz rok premiery :',
-    min_value=df['original_release_date'].dt.year.min(),
-    max_value=df['original_release_date'].dt.year.max(),
-    value=(df['original_release_date'].dt.year.min(), df['original_release_date'].dt.year.max())
+    min_value=df['original_release_date'].dt.year.min().astype(int),
+    max_value=df['original_release_date'].dt.year.max().astype(int),
+    value=(df['original_release_date'].dt.year.min().astype(int), df['original_release_date'].dt.year.max().astype(int))
     )
 
     tomatometer_filter = st.sidebar.slider('Wybierz ocenę krytyków (Tomatometer) :', 
