@@ -158,7 +158,7 @@ elif selected == "Ranking filmów":
     sorted_df['original_release_date']=sorted_df['original_release_date'].astype(str).str[:10]
     sorted_df = sorted_df.rename(columns={
     'movie_title': 'Tytuł filmu',
-    'original_release_date': 'Data premiery',
+    'original_release_date': 'Rok premiery',
     'tomatometer_rating': 'Ocena krytyków',
     'audience_rating': 'Ocena widowni'})
     sorted_df = sorted_df.dropna(subset=['Ocena krytyków', 'Ocena widowni'])
@@ -173,12 +173,12 @@ elif selected == "Ranking filmów":
         return f"<div style='width: 100%; background-color: #e0e0e0;'><div style='width: {bar_length}%; background-color: {color}; height: 10px;'></div></div>"
 
     html_table = "<table style='width:100%; border-collapse: collapse;'>"
-    html_table += "<tr><th>Tytuł filmu</th><th>Data premiery</th><th>Ocena krytyków</th><th>Ocena widowni</th><th>Tomatometer</th><th>Audience</th></tr>"
+    html_table += "<tr><th>Tytuł filmu</th><th>Rok premiery</th><th>Ocena krytyków</th><th>Ocena widowni</th><th>Tomatometer</th><th>Audience</th></tr>"
 
     for index, row in sorted_df.iterrows():
         tomatometer_bar = create_bar(row['Ocena krytyków'], max_tomatometer, 'magenta')
         audience_bar = create_bar(row['Ocena widowni'], max_audience, 'blue')
-        html_table += f"<tr><td>{row['Tytuł filmu']}</td><td>{row['Data premiery']}</td><td>{row['Ocena krytyków']}</td><td>{row['Ocena widowni']}</td><td>{tomatometer_bar}</td><td>{audience_bar}</td></tr>"
+        html_table += f"<tr><td>{row['Tytuł filmu']}</td><td>{row['Rok premiery']}</td><td>{row['Ocena krytyków']}</td><td>{row['Ocena widowni']}</td><td>{tomatometer_bar}</td><td>{audience_bar}</td></tr>"
 
     html_table += "</table>"
 
