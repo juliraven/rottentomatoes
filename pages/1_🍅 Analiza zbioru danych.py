@@ -204,7 +204,7 @@ elif selected == "Liczba recenzji w czasie":
     fig4.update_layout(
     xaxis=dict(
         tickmode='linear', 
-        tick0=1999,        
+        tick0=2000,        
         dtick=1,           
         tickformat='d'    
         )
