@@ -44,7 +44,7 @@ def predict_sentiment(reviews):
 
 selected = option_menu(
     menu_title=None,  
-    options=["Naiwny klasyfikator Bayesa", "Regresja logistyczna"], 
+    options=["Naiwny klasyfikator Bayesa", "Sieć neuronowa"], 
     menu_icon="cast", 
     default_index=0, 
     orientation="horizontal", 
@@ -73,27 +73,11 @@ if selected=="Naiwny klasyfikator Bayesa":
             st.write("Proszę wprowadzić recenzję.")
 
 
-if selected=="Regresja logistyczna":
+if selected=="Sieć neuronowa":
 
     st.markdown('######')
 
-    model = joblib.load("logistic_regression_model.pkl") 
-    vectorizer = joblib.load("vectorizer.pkl")  
-
-    st.markdown("### Analiza sentymentu dla recenzji użytkowników")
-
-    user_review = st.text_area("Wprowadź swoją recenzję tutaj :",)
-
-    if st.button('Analizuj recenzję'):
-        if user_review:
-            with st.spinner('Analizowanie recenzji...'):
-                reviews = [user_review]  
-                sentiments = predict_sentiment(reviews)  
-
-                st.write(f"**Twoja recenzja :** {user_review}")
-                st.write(f"Przewidywany sentyment : {'Pozytywny' if sentiments[0] == 2 else 'Negatywny' if sentiments[0] == 0 else 'Neutralny'}")
-        else:
-            st.write("Proszę wprowadzić recenzję.")
+    
 
 
 
