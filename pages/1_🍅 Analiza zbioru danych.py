@@ -67,6 +67,34 @@ if selected == "Wykresy":
 
 
     st.plotly_chart(fig4, use_container_width=True)
+
+    colors = {0: 'blue', 1: 'orange'}
+
+    # Tworzymy wykres słupkowy
+    fig = go.Figure()
+
+    # Dodajemy słupki dla sentymentu 0 i 1
+    for sentiment in dane['sentiment'].unique():
+        sentiment_data = dane[dane['sentiment'] == sentiment]
+        fig.add_trace(go.Bar(
+        x=sentiment_data['rok'],
+        y=sentiment_data['count'],
+        name=f'Sentiment {sentiment}',
+        marker_color=colors[sentiment]  # Ustalamy kolor
+        ))
+
+    # Dostosowanie layoutu wykresu
+    fig.update_layout(
+    barmode='group',  # Grupy słupków (zamiast nakładających się)
+    title='Liczebność sentymentów w poszczególnych latach',
+    xaxis_title='Rok',
+    yaxis_title='Liczebność',
+    legend_title='Sentiment',
+    template='plotly',
+    )
+
+    # Wyświetlanie wykresu w aplikacji Streamlit
+    st.plotly_chart(fig)
     
     st.markdown('######')
     dane1 = pd.read_csv('dane_g.csv')
