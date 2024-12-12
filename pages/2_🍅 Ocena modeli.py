@@ -54,13 +54,11 @@ with tab1:
     sensitivity = tp/(fn+tp)
     specificity = tn/(tn+fp)
     precision = tp/(fp+tp)
-    print('Czułość :', str('{:04.2f}'.format(sensitivity*100))+'%')
-    print('Specyficzność :', str('{:04.2f}'.format(specificity*100))+'%')
-    print('Prezycja :', str('{:04.2f}'.format(precision*100))+'%')
 
-    st.subheader('Trafność')
-    c1, c2, c3, c4, c5, c6, c7, c8, c9, c10 = st.columns((2,2,2,2,2,2,2,2,2,2))
-    c1.success(f'**{round(trafnosc * 100, 1)}%**')
+    st.write('Trafność :', f"{trafnosc*100:04.2f}%")
+    st.write('Czułość :', f"{sensitivity*100:04.2f}%")
+    st.write('Specyficzność :', f"{specificity*100:04.2f}%")
+    st.write('Precyzja :', f"{precision*100:04.2f}%")
 
 
     st.markdown('######')
