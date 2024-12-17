@@ -10,7 +10,7 @@ scikit-learn
 beautifulsoup4
 joblib
 scikit-learn
-nltk==3.6.3
+nltk
 requests
 seleniumbase
 webdriver-manager
