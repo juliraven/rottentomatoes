@@ -196,7 +196,7 @@ if selected == "Sieć neuronowa":
         if not os.path.exists(output_path):
             gdown.download(url, output_path, quiet=False)
             
-    model_file_id = 1NGwus3PyhZRIgK-D3WyX6eCniJryUc3N
+    model_file_id = "1NGwus3PyhZRIgK-D3WyX6eCniJryUc3N"
     
     download_from_gdrive(model_file_id, "model3.keras")
 
