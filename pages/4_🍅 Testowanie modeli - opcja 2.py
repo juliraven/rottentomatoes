@@ -159,6 +159,8 @@ selected = option_menu(
 if selected == "Naiwny klasyfikator Bayesa":
     st.markdown('######')
 
+    st.markdown("### Analiza sentymentu dla recenzji pobranych z Rotten Tomatoes")
+    
     model = joblib.load("naive_bayes_model.pkl") 
     vectorizer = joblib.load("vectorizer.pkl") 
 
