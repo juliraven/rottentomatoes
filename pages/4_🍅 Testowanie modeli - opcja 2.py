@@ -164,14 +164,16 @@ if selected == "Naiwny klasyfikator Bayesa":
     model = joblib.load("naive_bayes_model.pkl") 
     vectorizer = joblib.load("vectorizer.pkl") 
 
+    url = st.text_input("Podaj link do recenzji na RT, np. https://www.rottentomatoes.com/tv/arcane_league_of_legends/s02/reviews:")
+
     st.markdown("""
     <style>
         .css-1v3fvcr {
-            width: 150px;  /* Zmieniamy szerokość suwaka */
+            margin-top: 0px;
+            margin-bottom: 0px;
         }
     </style>
     """, unsafe_allow_html=True)
-    url = st.text_input("Podaj link do recenzji na RT, np. https://www.rottentomatoes.com/tv/arcane_league_of_legends/s02/reviews:")
 
     number = st.slider("Wybierz liczbę recenzji do pobrania:", min_value=1, max_value=10, value=5)
 
@@ -187,12 +189,39 @@ if selected == "Naiwny klasyfikator Bayesa":
             image_tag = content.find('rt-img', {'data-qa': 'sidebar-poster-img'})
             image_url = image_tag['src'] if image_tag else None
 
-            st.write(f"**Tytuł:** {title}")
-            col1, col2 = st.columns([1, 2])
-            if image_url:
-                col1.image(image_url, width=280)
-            else:
-                col1.write("Nie znaleziono obrazka.")
+            col1, col2 = st.columns([1, 2])  # Pierwsza kolumna dla obrazka, druga dla tytułu i szczegółów
+
+            with col1:
+                if image_url:
+                    st.image(image_url, width=280)  # Wyświetlanie obrazka
+                else:
+                    st.write("Nie znaleziono obrazka.")
+
+            with col2:
+                st.markdown(f"**Tytuł:** {title}")  # Wyświetlanie tytułu
+
+                # Rozpoznanie, czy to film czy TV
+                if "movie" in url.lower():
+                    details_selector = 'sidebar-movie-details'
+                elif "tv" in url.lower():
+                    details_selector = 'sidebar-tv-details'
+                else:
+                    details_selector = None
+
+            # Pobieranie szczegółów (dynamiczne w zależności od URL)
+                if details_selector:
+                    info = content.find('ul', {'data-qa': details_selector})
+
+                # Sprawdzanie, czy udało się znaleźć szczegóły
+                    if info:
+                        details = [detail.get_text(strip=True) for detail in info.find_all('li')]
+                        st.write("**Szczegóły:**")
+                        for detail in details:
+                            st.write(f"- {detail}")
+                    else:
+                        st.write(f"Nie znaleziono szczegółów dla {details_selector}.")
+                else:
+                    st.write("Nie rozpoznano typu strony (film/TV).")
 
             reviews = content.find_all('p', class_='review-text')
             review_texts = [review.get_text(strip=True) for review in reviews[:number]]
@@ -205,14 +234,12 @@ if selected == "Naiwny klasyfikator Bayesa":
                     sentiment_color = "green" if sentiments[0] == 1 else "red"
 
                     st.markdown(f"""
-                    <div style="background-color:  #C75959; padding: 10px; border-radius: 5px; margin-bottom: 15px;">
+                    <div style="background-color:  #3F2929; padding: 10px; border-radius: 5px; margin-bottom: 15px;">
                         <h4>Recenzja {i + 1}:</h4>
                         <p>{review}</p>
                         <h4>Przewidywany sentyment: <span style="color: {sentiment_color};">{sentiment_label}</span></h4>
                     </div>
                     """, unsafe_allow_html=True)
-                    
-                    
 
                     st.markdown("---")
             else:
