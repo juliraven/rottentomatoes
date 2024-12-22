@@ -189,5 +189,39 @@ if selected == "Naiwny klasyfikator Bayesa":
 if selected == "Sieć neuronowa":
     st.markdown('######')
 
+    model = tf.keras.models.load_model("model3.keras")
+    tokenizer = joblib.load("tokenizer3.pkl") 
+
+    st.markdown("### Analiza sentymentu dla recenzji użytkowników")
+
+    user_review = st.text_area("Wprowadź swoją recenzję tutaj:")
+
+    max_length = 30 
+
+    if st.button('Analizuj recenzję'):
+        if user_review:
+            with st.spinner('Analizowanie recenzji...'):
+                reviews = [user_review]
+                sequence = tokenizer.texts_to_sequences([reviews])
+                padded_sequence = pad_sequences(sequence, maxlen=max_length)
+                prediction = model.predict(padded_sequence)
+                sentiments = prediction.argmax(axis=-1)
+
+                st.write(f"**Twoja recenzja:** {user_review}")
+                
+                sentiment_label = ""
+                sentiment_color = ""
+
+                if sentiments[0] == 1:  
+                    sentiment_label = "Pozytywny"
+                    sentiment_color = "green"
+                elif sentiments[0] == 0: 
+                    sentiment_label = "Negatywny"
+                    sentiment_color = "red"
+
+                st.markdown(f"<h3>Przewidywany sentyment: <span style='color: {sentiment_color};'>{sentiment_label}</span></h3>",unsafe_allow_html=True)
+        else:
+            st.write("Proszę wprowadzić recenzję.")
+
 
     
