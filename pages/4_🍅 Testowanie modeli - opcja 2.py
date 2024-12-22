@@ -202,10 +202,8 @@ if selected == "Naiwny klasyfikator Bayesa":
 
                 if "m" in url.lower():
                     details_selector = 'sidebar-movie-details'
-                elif "tv" in url.lower():
-                    details_selector = 'sidebar-tv-details'
                 else:
-                    details_selector = None
+                    details_selector = 'sidebar-tv-details'
 
                 if details_selector:
                     info = content.find('ul', {'data-qa': details_selector})
