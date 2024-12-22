@@ -189,11 +189,11 @@ if selected == "Naiwny klasyfikator Bayesa":
             image_tag = content.find('rt-img', {'data-qa': 'sidebar-poster-img'})
             image_url = image_tag['src'] if image_tag else None
 
-            col1, col2 = st.columns([1, 2])  # Pierwsza kolumna dla obrazka, druga dla tytułu i szczegółów
+            col1, col2 = st.columns([1, 2]) 
 
             with col1:
                 if image_url:
-                    st.image(image_url, width=280)  # Wyświetlanie obrazka
+                    st.image(image_url, width=280) 
                 else:
                     st.write("Nie znaleziono obrazka.")
 
@@ -231,7 +231,7 @@ if selected == "Naiwny klasyfikator Bayesa":
                     sentiment_color = "green" if sentiments[0] == 1 else "red"
 
                     st.markdown(f"""
-                    <div style="background-color:  #3F2929; padding: 10px; border-radius: 5px; margin-bottom: 15px;">
+                    <div style="background-color:  #390808; padding: 10px; border-radius: 5px; margin-bottom: 15px;">
                         <h4>Recenzja {i + 1}:</h4>
                         <p>{review}</p>
                         <h4>Przewidywany sentyment: <span style="color: {sentiment_color};">{sentiment_label}</span></h4>
