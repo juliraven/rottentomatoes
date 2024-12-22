@@ -76,7 +76,7 @@ with tab1:
 with tab2:
     st.markdown('###')
 
-    dane = pd.read_csv('dane_model2.csv')
+    dane = pd.read_csv('dane_model3.csv')
 
     trafnosc = accuracy_score(dane['y_test'], dane['y_pred'])
     cm = confusion_matrix(dane['y_test'], dane['y_pred'], labels=[0, 1])
