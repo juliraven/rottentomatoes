@@ -17,6 +17,7 @@ from nltk.corpus import wordnet
 from nltk import pos_tag
 from keras.preprocessing.sequence import pad_sequences
 import gdown
+import tensorflow as tf
 
 st.markdown(
     """
