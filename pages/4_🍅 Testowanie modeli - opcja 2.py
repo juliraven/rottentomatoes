@@ -198,21 +198,18 @@ if selected == "Naiwny klasyfikator Bayesa":
                     st.write("Nie znaleziono obrazka.")
 
             with col2:
-                st.markdown(f"**Tytuł:** {title}")  # Wyświetlanie tytułu
+                st.markdown(f"**Tytuł:** {title}") 
 
-                # Rozpoznanie, czy to film czy TV
-                if "movie" in url.lower():
+                if "m" in url.lower():
                     details_selector = 'sidebar-movie-details'
                 elif "tv" in url.lower():
                     details_selector = 'sidebar-tv-details'
                 else:
                     details_selector = None
 
-            # Pobieranie szczegółów (dynamiczne w zależności od URL)
                 if details_selector:
                     info = content.find('ul', {'data-qa': details_selector})
-
-                # Sprawdzanie, czy udało się znaleźć szczegóły
+                    
                     if info:
                         details = [detail.get_text(strip=True) for detail in info.find_all('li')]
                         st.write("**Szczegóły:**")
