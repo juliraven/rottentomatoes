@@ -164,11 +164,11 @@ if selected == "Naiwny klasyfikator Bayesa":
     model = joblib.load("naive_bayes_model.pkl") 
     vectorizer = joblib.load("vectorizer.pkl") 
 
-    st.markdown("### Analiza sentymentu dla recenzji użytkowników")
+    st.markdown("### Analiza sentymentu dla recenzji użytkownika")
 
     user_review = st.text_area("Wprowadź swoją recenzję tutaj:")
 
-    if st.button('Analizuj recenzję'):
+    if st.button('Analizuj ssentyment'):
         if user_review:
             with st.spinner('Analizowanie recenzji...'):
                 reviews = [user_review]
@@ -206,13 +206,13 @@ if selected == "Sieć neuronowa":
     model = tf.keras.models.load_model("model3.keras")
     tokenizer = joblib.load("tokenizer3.pkl") 
 
-    st.markdown("### Analiza sentymentu dla recenzji użytkowników")
+    st.markdown("### Analiza sentymentu dla recenzji użytkownika")
 
     user_review = st.text_area("Wprowadź swoją recenzję tutaj:")
 
     max_length = 30 
 
-    if st.button('Analizuj recenzję'):
+    if st.button('Analizuj sentyment'):
         if user_review:
             with st.spinner('Analizowanie recenzji...'):
                 reviews = [user_review]
