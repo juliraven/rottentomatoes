@@ -14,6 +14,7 @@ import emoji
 from langdetect import detect
 from nltk.corpus import wordnet
 from nltk import pos_tag
+from keras.preprocessing.sequence import pad_sequences
 
 st.markdown(
     """
@@ -188,6 +189,16 @@ if selected == "Naiwny klasyfikator Bayesa":
 
 if selected == "Sieć neuronowa":
     st.markdown('######')
+
+    # Funkcja do pobierania plików z Google Drive :
+    def download_from_gdrive(file_id, output_path):
+        url = f"https://drive.google.com/uc?id={file_id}"
+        if not os.path.exists(output_path):
+            gdown.download(url, output_path, quiet=False)
+            
+    model_file_id = 1NGwus3PyhZRIgK-D3WyX6eCniJryUc3N
+    
+    download_from_gdrive(model_file_id, "model3.keras")
 
     model = tf.keras.models.load_model("model3.keras")
     tokenizer = joblib.load("tokenizer3.pkl") 
