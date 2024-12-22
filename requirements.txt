@@ -19,3 +19,4 @@ langdetect
 Pillow
 dill
 urljoin
+gdown
