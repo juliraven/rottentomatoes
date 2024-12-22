@@ -194,8 +194,16 @@ if selected == "Naiwny klasyfikator Bayesa":
 
                     sentiment_label = "Pozytywny" if sentiments[0] == 1 else "Negatywny"
                     sentiment_color = "green" if sentiments[0] == 1 else "red"
+
+                    st.markdown(f"""
+                    <div style="background-color: red; padding: 10px; border-radius: 5px; margin-bottom: 15px;">
+                        <h4>Recenzja {i + 1}:</h4>
+                        <p>{review}</p>
+                        <h4>Przewidywany sentyment: <span style="color: {sentiment_color};">{sentiment_label}</span></h4>
+                    </div>
+                    """, unsafe_allow_html=True)
                     
-                    st.markdown(f"<h4>Przewidywany sentyment: <span style='color: {sentiment_color};'>{sentiment_label}</span></h4>",unsafe_allow_html=True)
+                    
 
                     st.markdown("---")
             else:
