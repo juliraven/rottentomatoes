@@ -188,15 +188,13 @@ if selected == "Naiwny klasyfikator Bayesa":
 
             if review_texts:
                 for i, review in enumerate(review_texts):
-                    st.write(f"**Recenzja {i + 1}:**\n{review}")
-
                     sentiments = predict_sentiment([review])
 
                     sentiment_label = "Pozytywny" if sentiments[0] == 1 else "Negatywny"
                     sentiment_color = "green" if sentiments[0] == 1 else "red"
 
                     st.markdown(f"""
-                    <div style="background-color: red; padding: 10px; border-radius: 5px; margin-bottom: 15px;">
+                    <div style="background-color:  #3498db; padding: 10px; border-radius: 5px; margin-bottom: 15px;">
                         <h4>Recenzja {i + 1}:</h4>
                         <p>{review}</p>
                         <h4>Przewidywany sentyment: <span style="color: {sentiment_color};">{sentiment_label}</span></h4>
