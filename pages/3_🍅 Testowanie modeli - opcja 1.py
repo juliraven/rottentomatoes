@@ -168,7 +168,7 @@ if selected == "Naiwny klasyfikator Bayesa":
 
     user_review = st.text_area("Wprowadź swoją recenzję tutaj:")
 
-    if st.button('Analizuj ssentyment'):
+    if st.button('Analizuj sentyment'):
         if user_review:
             with st.spinner('Analizowanie recenzji...'):
                 reviews = [user_review]
