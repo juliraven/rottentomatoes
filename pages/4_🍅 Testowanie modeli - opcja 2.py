@@ -200,10 +200,13 @@ if selected == "Naiwny klasyfikator Bayesa":
             with col2:
                 st.markdown(f"**Tytuł:** {title}") 
 
-                if "m" in url.lower():
+                if "https://www.rottentomatoes.com/m/" in url.lower():
                     details_selector = 'sidebar-movie-details'
-                else:
+                elif "https://www.rottentomatoes.com/tv/" in url.lower():
                     details_selector = 'sidebar-tv-details'
+                else:
+                    None
+
 
                 if details_selector:
                     info = content.find('ul', {'data-qa': details_selector})
