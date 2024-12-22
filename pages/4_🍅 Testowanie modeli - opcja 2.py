@@ -162,6 +162,13 @@ if selected == "Naiwny klasyfikator Bayesa":
     model = joblib.load("naive_bayes_model.pkl") 
     vectorizer = joblib.load("vectorizer.pkl") 
 
+    st.markdown("""
+    <style>
+        .css-1v3fvcr {
+            width: 150px;  /* Zmieniamy szerokość suwaka */
+        }
+    </style>
+    """, unsafe_allow_html=True)
     url = st.text_input("Podaj link do recenzji na RT, np. https://www.rottentomatoes.com/tv/arcane_league_of_legends/s02/reviews:")
 
     number = st.slider("Wybierz liczbę recenzji do pobrania:", min_value=1, max_value=10, value=5)
