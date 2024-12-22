@@ -4,6 +4,7 @@ import pandas as pd
 import joblib
 import nltk
 import string
+import os
 from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize
 from streamlit_option_menu import option_menu
@@ -16,6 +17,9 @@ from nltk.corpus import wordnet
 from nltk import pos_tag
 import requests
 from bs4 import BeautifulSoup
+from keras.preprocessing.sequence import pad_sequences
+import gdown
+import tensorflow as tf
 
 st.markdown(
     """
