@@ -162,7 +162,9 @@ if selected == "Naiwny klasyfikator Bayesa":
     model = joblib.load("naive_bayes_model.pkl") 
     vectorizer = joblib.load("vectorizer.pkl") 
 
-    url = st.text_input("Podaj link do recenzji na RT:")
+    url = st.text_input("Podaj link do recenzji na RT, np. https://www.rottentomatoes.com/tv/arcane_league_of_legends/s02/reviews:")
+
+    number = st.slider("Wybierz liczbę recenzji do pobrania:", min_value=1, max_value=10, value=5)
 
     if url:
         res = requests.get(url)
@@ -184,7 +186,7 @@ if selected == "Naiwny klasyfikator Bayesa":
                 col1.write("Nie znaleziono obrazka.")
 
             reviews = content.find_all('p', class_='review-text')
-            review_texts = [review.get_text(strip=True) for review in reviews[:5]]
+            review_texts = [review.get_text(strip=True) for review in reviews[:number]]
 
             if review_texts:
                 for i, review in enumerate(review_texts):
