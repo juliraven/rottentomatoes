@@ -204,7 +204,7 @@ if selected == "Sieć neuronowa":
     download_from_gdrive(model_file_id, "model.keras")
 
     model = tf.keras.models.load_model("model.keras")
-    tokenizer = joblib.load("tokenizer3.pkl") 
+    tokenizer = joblib.load("tokenizer.pkl") 
 
     st.markdown("### Analiza sentymentu dla recenzji użytkowników")
 
