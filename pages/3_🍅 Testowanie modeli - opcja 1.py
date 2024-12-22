@@ -16,6 +16,7 @@ from langdetect import detect
 from nltk.corpus import wordnet
 from nltk import pos_tag
 from keras.preprocessing.sequence import pad_sequences
+import gdown
 
 st.markdown(
     """
