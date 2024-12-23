@@ -216,7 +216,8 @@ if selected == "Sieć neuronowa":
         if user_review:
             with st.spinner('Analizowanie recenzji...'):
                 reviews = [user_review]
-                sequence = tokenizer.texts_to_sequences([reviews])
+                cleaned_reviews = [clean_text(review) for review in reviews]
+                sequence = tokenizer.texts_to_sequences(cleaned_reviews)
                 padded_sequence = pad_sequences(sequence, maxlen=max_length)
                 prediction = model.predict(padded_sequence)
                 sentiments = prediction.argmax(axis=-1)
