@@ -332,7 +332,11 @@ if selected == "Sieć neuronowa":
 
             if review_texts:
                 for i, review in enumerate(review_texts):
-                    sentiments = predict_sentiment([review])
+                    cleaned_review = [clean_text(review) for review in reviews]
+                    sequence = tokenizer.texts_to_sequences(cleaned_review)
+                    padded_sequence = pad_sequences(sequence, maxlen=max_length)
+                    prediction = model.predict(padded_sequence)
+                    sentiments = prediction.argmax(axis=-1)
 
                     sentiment_label = "Pozytywny" if sentiments[0] == 1 else "Negatywny"
                     sentiment_color = "green" if sentiments[0] == 1 else "red"
