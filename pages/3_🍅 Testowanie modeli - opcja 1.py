@@ -199,12 +199,12 @@ if selected == "Sieć neuronowa":
         if not os.path.exists(output_path):
             gdown.download(url, output_path, quiet=False)
 
-    model_file_id = "1Keg_zDDA8waKCer8wOWpAYtAYrnx1Xz3"
+    model_file_id = "1NGwus3PyhZRIgK-D3WyX6eCniJryUc3N"
     
-    download_from_gdrive(model_file_id, "model_fixed.keras")
+    download_from_gdrive(model_file_id, "model3.keras")
 
-    model = tf.keras.models.load_model("model_fixed.keras")
-    tokenizer = joblib.load("tokenizer.pkl") 
+    model = tf.keras.models.load_model("model3.keras")
+    tokenizer = joblib.load("tokenizer3.pkl") 
 
     st.markdown("### Analiza sentymentu dla recenzji użytkownika")
 
