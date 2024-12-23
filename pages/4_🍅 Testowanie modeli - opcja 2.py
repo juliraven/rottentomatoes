@@ -332,8 +332,8 @@ if selected == "Sieć neuronowa":
 
             if review_texts:
                 for i, review in enumerate(review_texts):
-                    cleaned_review = [clean_text(rev) for rev in review]
-                    sequence = tokenizer.texts_to_sequences(cleaned_review)
+                    cleaned_review = clean_text(review)
+                    sequence = tokenizer.texts_to_sequences([cleaned_review])
                     padded_sequence = pad_sequences(sequence, maxlen=max_length)
                     prediction = model.predict(padded_sequence)
                     sentiments = prediction.argmax(axis=-1)
