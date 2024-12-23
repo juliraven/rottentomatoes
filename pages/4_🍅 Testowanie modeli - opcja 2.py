@@ -210,8 +210,7 @@ if selected == "Naiwny klasyfikator Bayesa":
                     details_selector = 'sidebar-tv-details'
                 else:
                     None
-
-
+                    
                 if details_selector:
                     info = content.find('ul', {'data-qa': details_selector})
                     
@@ -257,8 +256,20 @@ if selected == "Sieć neuronowa":
 
     st.markdown("### Analiza sentymentu dla recenzji pobranych z Rotten Tomatoes")
     
-    model = joblib.load("naive_bayes_model.pkl") 
-    vectorizer = joblib.load("vectorizer.pkl") 
+     # Funkcja do pobierania plików z Google Drive :
+    def download_from_gdrive(file_id, output_path):
+        url = f"https://drive.google.com/uc?id={file_id}"
+        if not os.path.exists(output_path):
+            gdown.download(url, output_path, quiet=False)
+
+    model_file_id = "1NGwus3PyhZRIgK-D3WyX6eCniJryUc3N"
+    
+    download_from_gdrive(model_file_id, "model3.keras")
+
+    model = tf.keras.models.load_model("model3.keras")
+    tokenizer = joblib.load("tokenizer3.pkl") 
+
+    max_length = 30 
 
     url = st.text_input("Podaj link do recenzji na RT, np. https://www.rottentomatoes.com/tv/arcane_league_of_legends/s02/reviews:")
 
@@ -302,7 +313,6 @@ if selected == "Sieć neuronowa":
                     details_selector = 'sidebar-tv-details'
                 else:
                     None
-
 
                 if details_selector:
                     info = content.find('ul', {'data-qa': details_selector})
