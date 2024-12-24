@@ -166,7 +166,7 @@ if selected == "Naiwny klasyfikator Bayesa":
 
     st.markdown("### Analiza sentymentu dla recenzji użytkownika")
 
-    user_review = st.text_area("Wprowadź swoją recenzję tutaj:")
+    user_review = st.text_area("Wprowadź swoją recenzję w języku angielskim tutaj:")
 
     if st.button('Analizuj sentyment'):
         if user_review:
@@ -208,7 +208,9 @@ if selected == "Sieć neuronowa":
 
     st.markdown("### Analiza sentymentu dla recenzji użytkownika")
 
-    user_review = st.text_area("Wprowadź swoją recenzję tutaj:")
+    user_review = st.text_area("Wprowadź swoją recenzję w języku angielskim tutaj:")
+
+    
 
     max_length = 30 
 
