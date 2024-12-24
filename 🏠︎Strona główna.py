@@ -1,6 +1,6 @@
 import streamlit as st
 
-st.set_page_config(page_title="Analiza Sentymentu", layout="wide")
+st.set_page_config(page_title="Analiza sentymentu", layout="wide")
 
 st.markdown(
     """
