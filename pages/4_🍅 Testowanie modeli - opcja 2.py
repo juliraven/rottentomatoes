@@ -175,12 +175,27 @@ if selected == "Naiwny klasyfikator Bayesa":
     "https://www.rottentomatoes.com/tv/umbrella_academy/s03/reviews"
     ]
 
-    url_choice = st.selectbox("Podaj link do recenzji na RT lub wybierz jeden z dostępnych:", [""] + available_links)
+    # Funkcja autouzupełniania
+    def get_matching_links(user_input, available_links):
+        return [link for link in available_links if user_input.lower() in link.lower()]
 
-    if url_choice == "":
-        url = st.text_input("Podaj własny link do recenzji na RT:")
+# Umożliwiamy użytkownikowi wpisanie linku
+    user_input = st.text_input("Podaj link do recenzji na RT lub wybierz z dostępnych:", "")
+
+# Znajdujemy pasujące linki
+    matching_links = get_matching_links(user_input, available_links)
+
+# Jeśli znaleziono pasujące linki, pokażemy je użytkownikowi
+    if matching_links:
+        st.write("Dostępne pasujące linki:")
+        for link in matching_links:
+            st.write(f"- {link}")
+
+# Jeżeli użytkownik wprowadził pełny link, zapiszemy go
+    if user_input in available_links or user_input in matching_links:
+        url = user_input
     else:
-        url = url_choice
+        url = user_input  # Jeśli użytkownik wpisał pełny link, to będzie jego wybór
 
     st.markdown("""
     <style>
