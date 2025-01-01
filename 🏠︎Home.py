@@ -37,13 +37,13 @@ st.markdown('######')
 st.markdown(
     """
     <style>
-    /* Kontener dla ramki z tłem i rozmyciem */
+    /* Kontener dla ramki */
     .bordered-text-container {
         position: relative;
         border-radius: 15px; /* Zaokrąglenie rogów */
         overflow: hidden;
-        background-color: rgba(236, 3, 3, 0.1); /* Czerwone tło z przezroczystością */
         margin: 20px 0; /* Margines wokół ramki */
+        background-color: rgba(236, 3, 3, 0.4); /* Czerwone tło z przezroczystością */
     }
 
     /* Tło w kontenerze z rozmyciem */
@@ -53,7 +53,8 @@ st.markdown(
         left: 0;
         right: 0;
         bottom: 0;
-        backdrop-filter: blur(50px); /* Efekt rozmycia tła */
+        background-color: rgba(236, 3, 3, 0.7); /* Przezroczyste tło */
+        filter: blur(15px); /* Rozmycie tła */
         z-index: -1; /* Tło za tekstem */
     }
 
