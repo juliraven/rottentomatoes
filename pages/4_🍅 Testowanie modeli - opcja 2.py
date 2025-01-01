@@ -175,53 +175,20 @@ if selected == "Naiwny klasyfikator Bayesa":
     "https://www.rottentomatoes.com/tv/umbrella_academy/s03/reviews"
     ]
 
-    url_choice = st.selectbox("Podaj link do recenzji na RT lub wybierz jeden z dostępnych:", ["Wpisz własny link"] + available_links)
+    url_choice = st.selectbox("Podaj link do recenzji na RT lub wybierz jeden z dostępnych:", [""] + available_links)
 
-# CSS do ukrywania i pokazywania elementów
-    st.markdown("""
-    <style>
-    .custom-text-input {
-        display: none;
-    }
-    .custom-selectbox {
-        display: none;
-    }
-    </style>
-    """, unsafe_allow_html=True)
-
-# Pokazanie wyłącznie odpowiedniego elementu w zależności od wyboru
-    if url_choice == "Wpisz własny link":
-    # Jeśli użytkownik wybierze opcję „Wpisz własny link”, pokażemy pole tekstowe
-        st.markdown("""
-        <style>
-        .custom-text-input {
-            display: block;
-        }
-        </style>
-        """, unsafe_allow_html=True)
+    if url_choice == "":
         url = st.text_input("Podaj własny link do recenzji na RT:")
     else:
-    # Jeśli użytkownik wybierze link z listy, pokażemy tylko selectbox
+        url = url_choice
         st.markdown("""
         <style>
-        .custom-selectbox {
-            display: block;
-        }
-        </style>
-        """, unsafe_allow_html=True)
-        url = url_choice
-
-
-   
-
-    st.markdown("""
-    <style>
         .css-1v3fvcr {
             margin-top: 0px;
             margin-bottom: 0px;
         }
-    </style>
-    """, unsafe_allow_html=True)
+        </style>
+        """, unsafe_allow_html=True)
 
     number = st.slider("Wybierz liczbę recenzji do pobrania:", min_value=1, max_value=10, value=5)
 
