@@ -42,7 +42,7 @@ st.markdown(
         position: relative;
         border-radius: 15px; /* Zaokrąglenie rogów */
         overflow: hidden;
-        background-color: rgba(236, 3, 3, 0.8); /* Czerwone tło z przezroczystością */
+        background-color: rgba(236, 3, 3, 0.1); /* Czerwone tło z przezroczystością */
         margin: 20px 0; /* Margines wokół ramki */
     }
 
@@ -53,7 +53,7 @@ st.markdown(
         left: 0;
         right: 0;
         bottom: 0;
-        backdrop-filter: blur(15px); /* Efekt rozmycia tła */
+        backdrop-filter: blur(50px); /* Efekt rozmycia tła */
         z-index: -1; /* Tło za tekstem */
     }
 
