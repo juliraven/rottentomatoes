@@ -175,20 +175,12 @@ if selected == "Naiwny klasyfikator Bayesa":
     "https://www.rottentomatoes.com/tv/umbrella_academy/s03/reviews"
     ]
 
-    url_choice = st.selectbox("Podaj link do recenzji na RT lub wybierz jeden z dostępnych:", [""] + available_links)
+    url_choice = st.selectbox("Podaj link do recenzji na RT lub wybierz jeden z dostępnych:", ["własny link"] + available_links)
 
-    if url_choice == "":
+    if url_choice == "własny link":
         url = st.text_input("Podaj własny link do recenzji na RT:")
     else:
         url = url_choice
-        st.markdown("""
-        <style>
-        .css-1v3fvcr {
-            margin-top: 0px;
-            margin-bottom: 0px;
-        }
-        </style>
-        """, unsafe_allow_html=True)
 
     number = st.slider("Wybierz liczbę recenzji do pobrania:", min_value=1, max_value=10, value=5)
 
