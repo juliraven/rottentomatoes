@@ -274,8 +274,6 @@ if selected == "Sieć neuronowa":
 
     max_length = 30 
 
-    url = st.text_input("Podaj link do recenzji na RT, np. https://www.rottentomatoes.com/tv/arcane_league_of_legends/s02/reviews:")
-
     st.markdown("""
     <style>
         .css-1v3fvcr {
@@ -284,6 +282,20 @@ if selected == "Sieć neuronowa":
         }
     </style>
     """, unsafe_allow_html=True)
+
+    links = [
+    "https://www.rottentomatoes.com/tv/arcane_league_of_legends/s02/reviews",
+    "https://www.rottentomatoes.com/tv/stranger_things/s04/reviews",
+    "https://www.rottentomatoes.com/tv/the_witcher/s02/reviews",
+    "https://www.rottentomatoes.com/m/terrifier_3/reviews"
+    ] + ["własny link"]
+
+    url_choice = st.selectbox("Podaj link do recenzji na RT lub wybierz jeden z dostępnych:", links)
+
+    if url_choice == "własny link":
+        url = st.text_input("Podaj własny link do recenzji na RT:")
+    else:
+        url = url_choice
 
     number = st.slider("Wybierz liczbę recenzji do pobrania:", min_value=1, max_value=10, value=5)
 
