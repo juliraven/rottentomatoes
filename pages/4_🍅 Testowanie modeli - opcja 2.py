@@ -175,25 +175,17 @@ if selected == "Naiwny klasyfikator Bayesa":
     "https://www.rottentomatoes.com/m/terrifier_3/reviews"
     ] + ["własny link"]
 
-    url_choice = st.selectbox("Podaj link do recenzji na RT lub wybierz jeden z dostępnych:", links)
+    col1, col2, col3 = st.columns(3)
 
-    if url_choice == "własny link":
-        url = st.text_input("Podaj własny link do recenzji na RT:")
-    else:
-        url = url_choice
+    with col1:
+        url_choice = st.selectbox("Podaj link do recenzji na RT lub wybierz jeden z dostępnych:", links)
 
-    st.markdown(
-    """
-    <style>
-    .stNumberInput > div > div > input {
-        width: 25px;  /* Zmniejszenie szerokości input */
-    }
-    </style>
-    """, 
-    unsafe_allow_html=True
-    )
+        if url_choice == "własny link":
+            url = st.text_input("Podaj własny link do recenzji na RT:")
+        else:
+            url = url_choice
 
-    number = st.number_input("Wybierz liczbę recenzji do pobrania:", min_value=1, max_value=10, value=5, step=1)
+        number = st.number_input("Wybierz liczbę recenzji do pobrania:", min_value=1, max_value=10, value=5, step=1)
 
     if url:
         res = requests.get(url)
