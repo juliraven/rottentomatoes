@@ -30,7 +30,7 @@ st.markdown(
     </style>
     
     <div style="text-align: left;">
-        <h1>🍅 Testowanie modeli</h1>
+        <h1>🍅 Analiza sentymentu dla recenzji pobranych z Rotten Tomatoes</h1>
     </div>
     """, 
     unsafe_allow_html=True
@@ -162,8 +162,6 @@ selected = option_menu(
 
 if selected == "Naiwny klasyfikator Bayesa":
     st.markdown('######')
-
-    st.markdown("### Analiza sentymentu dla recenzji pobranych z Rotten Tomatoes")
     
     model = joblib.load("naive_bayes_model.pkl") 
     vectorizer = joblib.load("vectorizer.pkl") 
