@@ -44,6 +44,7 @@ st.markdown(
         overflow: hidden;
         margin: 20px 0; /* Margines wokół ramki */
         background-color: rgba(236, 3, 3, 0.4); /* Czerwone tło z przezroczystością */
+        margin-top: -20px; /* Zmniejszenie odległości pomiędzy tytułem a ramką */
     }
 
     /* Tło w kontenerze z rozmyciem */
