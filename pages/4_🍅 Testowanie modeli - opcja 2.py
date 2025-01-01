@@ -201,9 +201,11 @@ if selected == "Naiwny klasyfikator Bayesa":
 
             with col1:
                 if image_url:
-                    st.image(image_url, width=200) 
+                st.markdown("<div style='text-align: center;'>", unsafe_allow_html=True)  
+                st.image(image_url, width=200)
+                st.markdown("</div>", unsafe_allow_html=True)  
                 else:
-                    st.write("Nie znaleziono obrazka.")
+                    st.markdown("<div style='text-align: center;'>Nie znaleziono obrazka.</div>", unsafe_allow_html=True) 
 
             with col2:
                 st.markdown(f"**Tytuł:** {title}") 
