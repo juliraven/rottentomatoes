@@ -36,6 +36,8 @@ st.markdown(
     unsafe_allow_html=True
 )
 
+st.markdown('######')
+
 nltk.download('stopwords')
 nltk.download('punkt')
 nltk.download('wordnet')
@@ -158,8 +160,7 @@ selected = option_menu(
     orientation="horizontal", 
 )
 
-if selected == "Naiwny klasyfikator Bayesa":
-    st.markdown('######')
+if selected == "Naiwny klasyfikator Bayesa"):
     
     model = joblib.load("naive_bayes_model.pkl") 
     vectorizer = joblib.load("vectorizer.pkl") 
