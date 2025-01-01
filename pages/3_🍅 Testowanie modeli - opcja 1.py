@@ -167,7 +167,7 @@ if selected == "Naiwny klasyfikator Bayesa":
     st.markdown("### Analiza sentymentu dla recenzji użytkownika")
     
     user_review = st.text_area("Wprowadź swoją recenzję w języku angielskim tutaj:", 
-                               placeholder="Przykład recenzji: 'The second season’s high-octane story reveals an even deeper emotional core, painting a beautiful canvas of family and turning its initial solemn tone into one of hope, building on everything so admired about season one.'")
+                               placeholder="Przykład recenzji: The second season’s high-octane story reveals an even deeper emotional core, painting a beautiful canvas of family and turning its initial solemn tone into one of hope, building on everything so admired about season one.")
 
     if st.button('Analizuj sentyment'):
         if user_review:
@@ -210,7 +210,7 @@ if selected == "Sieć neuronowa":
     st.markdown("### Analiza sentymentu dla recenzji użytkownika")
 
     user_review = st.text_area("Wprowadź swoją recenzję w języku angielskim tutaj:", 
-                               placeholder="Przykład recenzji: 'The second season’s high-octane story reveals an even deeper emotional core, painting a beautiful canvas of family and turning its initial solemn tone into one of hope, building on everything so admired about season one.'")
+                               placeholder="Przykład recenzji: The second season’s high-octane story reveals an even deeper emotional core, painting a beautiful canvas of family and turning its initial solemn tone into one of hope, building on everything so admired about season one.")
 
 
     max_length = 30 
