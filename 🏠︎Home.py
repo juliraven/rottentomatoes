@@ -42,7 +42,7 @@ st.markdown(
         border: 3px solid #1c6429; /* Zielone obramowanie (primaryColor) */
         padding: 20px; /* Odstępy wewnętrzne */
         border-radius: 15px; /* Zaokrąglenie rogów */
-        background-color: rgba(88, 7, 7, 0.4); /* Czerwone tło z przezroczystością (0.7 oznacza 70% nieprzezroczystości) */
+        background-color: rgba(236, 3, 3, 0.4); /* Czerwone tło z przezroczystością (0.7 oznacza 70% nieprzezroczystości) */
         color: #ecdede; /* Kolor tekstu (textColor) */
         margin: 20px 0; /* Margines wokół obramowanego tekstu */
         font-size: 24px; /* Rozmiar czcionki */
