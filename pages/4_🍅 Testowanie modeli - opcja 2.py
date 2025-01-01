@@ -175,9 +175,9 @@ if selected == "Naiwny klasyfikator Bayesa":
     "https://www.rottentomatoes.com/m/terrifier_3/reviews"
     ] + ["własny link"]
 
-    col1, col2, col3 = st.columns(3)
+    c1, c2 = st.columns([1.5, 0.5])
 
-    with col1:
+    with c1:
         url_choice = st.selectbox("Podaj link do recenzji na RT lub wybierz jeden z dostępnych:", links)
 
         if url_choice == "własny link":
@@ -185,7 +185,7 @@ if selected == "Naiwny klasyfikator Bayesa":
         else:
             url = url_choice
 
-    with col3:
+    with c2:
         number = st.number_input("Wybierz liczbę recenzji do pobrania:", min_value=1, max_value=10, value=5, step=1)
 
     if url:
