@@ -160,7 +160,7 @@ selected = option_menu(
     orientation="horizontal", 
 )
 
-if selected == "Naiwny klasyfikator Bayesa"):
+if selected == "Naiwny klasyfikator Bayesa":
     
     model = joblib.load("naive_bayes_model.pkl") 
     vectorizer = joblib.load("vectorizer.pkl") 
