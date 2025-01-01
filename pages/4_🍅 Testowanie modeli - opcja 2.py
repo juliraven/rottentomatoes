@@ -315,7 +315,7 @@ if selected == "Sieć neuronowa":
 
             with col1:
                 if image_url:
-                    st.image(image_url, width=280) 
+                    st.image(image_url, width=200) 
                 else:
                     st.write("Nie znaleziono obrazka.")
 
