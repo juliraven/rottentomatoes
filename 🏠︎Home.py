@@ -25,12 +25,3 @@ st.markdown('<span style="font-size: 24px">Strona ta poświęcona jest analizie 
 st.markdown('<span style="font-size: 24px">- może wprowadzić własną recenzję i zobaczyć przewidywany sentyment</span>', unsafe_allow_html=True)
 st.markdown('<span style="font-size: 24px">- może podać link do recenzji konkretnego filmu/serialu ze strony Rotten Tomatoes i zobaczyć jaki sentymenty przewiduje dla nich model.</span>', unsafe_allow_html=True)
 
-with st.sidebar:
-    st.image('tomato.png', width=300)  # Logo w menu bocznym
-    selected = option_menu(
-        menu_title="Menu",  # Tytuł menu
-        options=["Analiza zbioru danych", "Ocena modeli", "Testowanie modeli - opcja 1", "Testowanie modeli - opcja 2"],
-        icons=["bar-chart", "check-circle", "clipboard", "clipboard-check"],  # Ikony opcji
-        menu_icon="cast",  # Ikona menu
-        default_index=0,  # Domyślna opcja
-    )
