@@ -175,7 +175,7 @@ if selected == "Naiwny klasyfikator Bayesa":
     c1, c2 = st.columns([1.5, 0.5])
 
     with c1:
-        url_choice = st.selectbox("Podaj link do recenzji na RT lub wybierz jeden z dostępnych:", links)
+        url_choice = st.selectbox("Podaj link do recenzji z RT lub wybierz jeden z dostępnych:", links)
 
         if url_choice == "własny link":
             url = st.text_input("Podaj własny link do recenzji na RT:")
@@ -255,10 +255,6 @@ if selected == "Naiwny klasyfikator Bayesa":
 
     
 if selected == "Sieć neuronowa":
-
-    st.markdown('######')
-
-    st.markdown("### Analiza sentymentu dla recenzji pobranych z Rotten Tomatoes")
     
      # Funkcja do pobierania plików z Google Drive :
     def download_from_gdrive(file_id, output_path):
@@ -291,14 +287,18 @@ if selected == "Sieć neuronowa":
     "https://www.rottentomatoes.com/m/terrifier_3/reviews"
     ] + ["własny link"]
 
-    url_choice = st.selectbox("Podaj link do recenzji na RT lub wybierz jeden z dostępnych:", links)
+    c1, c2 = st.columns([1.5, 0.5])
 
-    if url_choice == "własny link":
-        url = st.text_input("Podaj własny link do recenzji na RT:")
-    else:
-        url = url_choice
+    with c1:
+        url_choice = st.selectbox("Podaj link do recenzji z RT lub wybierz jeden z dostępnych:", links)
 
-    number = st.slider("Wybierz liczbę recenzji do pobrania:", min_value=1, max_value=10, value=5)
+        if url_choice == "własny link":
+            url = st.text_input("Podaj własny link do recenzji na RT:")
+        else:
+            url = url_choice
+
+    with c2:
+        number = st.number_input("Wybierz liczbę recenzji do pobrania:", min_value=1, max_value=10, value=5, step=1)
 
     if url:
         res = requests.get(url)
