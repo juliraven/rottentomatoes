@@ -36,8 +36,6 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-st.markdown('######')
-
 nltk.download('stopwords')
 nltk.download('punkt')
 nltk.download('wordnet')
