@@ -168,14 +168,14 @@ if selected == "Naiwny klasyfikator Bayesa":
     model = joblib.load("naive_bayes_model.pkl") 
     vectorizer = joblib.load("vectorizer.pkl") 
 
-    available_links = [
+    links = [
     "https://www.rottentomatoes.com/tv/arcane_league_of_legends/s02/reviews",
     "https://www.rottentomatoes.com/tv/stranger_things/s04/reviews",
     "https://www.rottentomatoes.com/tv/the_witcher/s02/reviews",
     "https://www.rottentomatoes.com/m/terrifier_3/reviews"
-    ]
+    ] + ["własny link"]
 
-    url_choice = st.selectbox("Podaj link do recenzji na RT lub wybierz jeden z dostępnych:", ["własny link"] + available_links)
+    url_choice = st.selectbox("Podaj link do recenzji na RT lub wybierz jeden z dostępnych:", links)
 
     if url_choice == "własny link":
         url = st.text_input("Podaj własny link do recenzji na RT:")
