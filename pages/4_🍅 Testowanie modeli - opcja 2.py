@@ -186,7 +186,7 @@ if selected == "Naiwny klasyfikator Bayesa":
     """
     <style>
     .stNumberInput > div > div > input {
-        width: 100px;  /* Zmniejszenie szerokości input */
+        width: 25px;  /* Zmniejszenie szerokości input */
     }
     </style>
     """, 
