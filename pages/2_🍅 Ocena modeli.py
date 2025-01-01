@@ -22,9 +22,15 @@ st.markdown(
 
 st.markdown('######')
 
-tab1, tab2 = st.tabs(["Naiwny klasyfikator Bayesa", "Sieć neuronowa"])
+selected = option_menu(
+    menu_title=None,  
+    options=["Naiwny klasyfikator Bayesa", "Sieć neuronowa"], 
+    menu_icon="cast", 
+    default_index=0, 
+    orientation="horizontal", 
+)
 
-with tab1:
+if selected=="Naiwny klasyfikator Bayesa":
 
     st.markdown('###')
 
@@ -73,7 +79,7 @@ with tab1:
         st.markdown(f"<p style='color:{text_color}; font-size:{font_size};'>Specyficzność : {specificity_rounded}%</p>", unsafe_allow_html=True)
         st.markdown(f"<p style='color:{text_color}; font-size:{font_size};'>Precyzja : {precision_rounded}%</p>", unsafe_allow_html=True)
 
-with tab2:
+if selected=="Sieć neuronowa":
     st.markdown('###')
 
     dane = pd.read_csv('dane_model3.csv')
