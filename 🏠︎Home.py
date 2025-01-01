@@ -41,11 +41,13 @@ st.markdown('<span style="font-size: 24px">- może podać link do recenzji konkr
 st.markdown(
     """
     <style>
+    /* Zmiana kolorów obramowania i tła */
     .bordered-text {
-        border: 2px solid #fc575e; /* Kolor obramowania */
+        border: 2px solid #1c6429; /* Zielone obramowanie (primaryColor) */
         padding: 20px; /* Odstępy wewnętrzne */
         border-radius: 10px; /* Zaokrąglenie rogów */
-        background-color: rgba(255, 255, 255, 0.2); /* Tło z przezroczystością */
+        background-color: #580707; /* Czerwone tło (secondaryBackgroundColor) */
+        color: #ecdede; /* Kolor tekstu (textColor) */
         margin: 20px 0; /* Margines wokół obramowanego tekstu */
         font-size: 20px; /* Rozmiar czcionki */
     }
