@@ -1,10 +1,6 @@
 import streamlit as st
 from streamlit_option_menu import option_menu
 
-with st.sidebar:
-    selected = option_menu("Main Menu")
-
-
 st.set_page_config(page_title="Analiza sentymentu", layout="wide")
 
 st.markdown(
