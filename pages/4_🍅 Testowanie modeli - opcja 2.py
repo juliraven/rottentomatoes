@@ -175,10 +175,10 @@ if selected == "Naiwny klasyfikator Bayesa":
     "https://www.rottentomatoes.com/tv/umbrella_academy/s03/reviews"
     ]
 
-   url_choice = st.selectbox("Podaj link do recenzji na RT lub wybierz jeden z dostępnych:", ["Wpisz własny link"] + available_links)
+    url_choice = st.selectbox("Podaj link do recenzji na RT lub wybierz jeden z dostępnych:", ["Wpisz własny link"] + available_links)
 
 # CSS do ukrywania i pokazywania elementów
-   st.markdown("""
+    st.markdown("""
     <style>
     .custom-text-input {
         display: none;
@@ -190,7 +190,7 @@ if selected == "Naiwny klasyfikator Bayesa":
     """, unsafe_allow_html=True)
 
 # Pokazanie wyłącznie odpowiedniego elementu w zależności od wyboru
-   if url_choice == "Wpisz własny link":
+    if url_choice == "Wpisz własny link":
     # Jeśli użytkownik wybierze opcję „Wpisz własny link”, pokażemy pole tekstowe
         st.markdown("""
         <style>
@@ -200,7 +200,7 @@ if selected == "Naiwny klasyfikator Bayesa":
         </style>
         """, unsafe_allow_html=True)
         url = st.text_input("Podaj własny link do recenzji na RT:")
-   else:
+    else:
     # Jeśli użytkownik wybierze link z listy, pokażemy tylko selectbox
         st.markdown("""
         <style>
@@ -210,6 +210,9 @@ if selected == "Naiwny klasyfikator Bayesa":
         </style>
         """, unsafe_allow_html=True)
         url = url_choice
+
+
+   
 
     st.markdown("""
     <style>
