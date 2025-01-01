@@ -182,7 +182,7 @@ if selected == "Naiwny klasyfikator Bayesa":
     else:
         url = url_choice
 
-    number = st.slider("Wybierz liczbę recenzji do pobrania:", min_value=1, max_value=10, value=5)
+    number = st.number_input("Wybierz liczbę recenzji do pobrania:", min_value=1, max_value=10, value=5, step=1)
 
     if url:
         res = requests.get(url)
