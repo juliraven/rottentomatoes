@@ -37,16 +37,17 @@ st.markdown('######')
 st.markdown(
     """
     <style>
-    /* Zmiana kolorów obramowania i tła z ładnymi rogami */
+    /* Zmiana kolorów obramowania i tła z efektem rozmycia */
     .bordered-text {
-        border: 3px solid #1c6429; /* Zielone obramowanie (primaryColor) */
+        border: none; 
         padding: 20px; /* Odstępy wewnętrzne */
         border-radius: 15px; /* Zaokrąglenie rogów */
-        background-color: rgba(236, 3, 3, 0.4); /* Czerwone tło z przezroczystością (0.7 oznacza 70% nieprzezroczystości) */
+        background-color: rgba(236, 3, 3, 0.4); /* Czerwone tło z przezroczystością */
         color: #ecdede; /* Kolor tekstu (textColor) */
         margin: 20px 0; /* Margines wokół obramowanego tekstu */
         font-size: 24px; /* Rozmiar czcionki */
         box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.1); /* Wewnętrzny cień obramowania */
+        backdrop-filter: blur(10px); /* Efekt rozmycia tła */
         margin-top: -20px; /* Zmniejszenie odległości pomiędzy tytułem a ramką */
     }
     
