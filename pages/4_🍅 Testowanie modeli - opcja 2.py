@@ -172,7 +172,7 @@ if selected == "Naiwny klasyfikator Bayesa":
     "https://www.rottentomatoes.com/tv/arcane_league_of_legends/s02/reviews",
     "https://www.rottentomatoes.com/tv/stranger_things/s04/reviews",
     "https://www.rottentomatoes.com/tv/the_witcher/s02/reviews",
-    "https://www.rottentomatoes.com/m/terrifier3/reviews"
+    "https://www.rottentomatoes.com/m/terrifier_3/reviews"
     ]
 
     url_choice = st.selectbox("Podaj link do recenzji na RT lub wybierz jeden z dostępnych:", ["własny link"] + available_links)
