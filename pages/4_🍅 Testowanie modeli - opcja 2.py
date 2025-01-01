@@ -182,6 +182,17 @@ if selected == "Naiwny klasyfikator Bayesa":
     else:
         url = url_choice
 
+    st.markdown(
+    """
+    <style>
+    .stNumberInput > div > div > input {
+        width: 100px;  /* Zmniejszenie szerokości input */
+    }
+    </style>
+    """, 
+    unsafe_allow_html=True
+    )
+
     number = st.number_input("Wybierz liczbę recenzji do pobrania:", min_value=1, max_value=10, value=5, step=1)
 
     if url:
