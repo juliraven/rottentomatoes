@@ -38,4 +38,21 @@ st.markdown('<span style="font-size: 24px">Strona ta poświęcona jest analizie 
 st.markdown('<span style="font-size: 24px">- może wprowadzić własną recenzję i zobaczyć przewidywany sentyment</span>', unsafe_allow_html=True)
 st.markdown('<span style="font-size: 24px">- może podać link do recenzji konkretnego filmu/serialu ze strony Rotten Tomatoes i zobaczyć jaki sentymenty przewiduje dla nich model.</span>', unsafe_allow_html=True)
 
+st.markdown(
+    """
+    <style>
+    .bordered-text {
+        border: 2px solid #fc575e; /* Kolor obramowania */
+        padding: 20px; /* Odstępy wewnętrzne */
+        border-radius: 10px; /* Zaokrąglenie rogów */
+        background-color: rgba(255, 255, 255, 0.2); /* Tło z przezroczystością */
+        margin: 20px 0; /* Margines wokół obramowanego tekstu */
+        font-size: 20px; /* Rozmiar czcionki */
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
 
+# Tekst z obramowaniem
+st.markdown('<div class="bordered-text">To jest tekst z obramowaniem. Możesz tu dodać dowolne informacje, które chcesz wyróżnić na stronie.</div>', unsafe_allow_html=True)
