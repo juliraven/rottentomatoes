@@ -34,7 +34,6 @@ st.markdown(
 
 st.sidebar.image('tomato.png', width=300)
 st.markdown('######')
-
 st.markdown(
     """
     <style>
