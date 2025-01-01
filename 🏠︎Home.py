@@ -34,27 +34,34 @@ st.markdown(
 
 st.sidebar.image('tomato.png', width=300)
 st.markdown('######')
-st.markdown('<span style="font-size: 24px">Strona ta poświęcona jest analizie sentymentu zbioru zawierającego recenzje filmów napisane przez krytyków na stronie Rotten Tomatoes. Znajdują się tutaj wizualizacje informacji zawartych w tym zbiorze, a także oceny modeli zbudowanych w oparciu o dane ze zbioru. Użytkownik ma również możliwość przetestowania działania modeli na dwa sposoby :</span>', unsafe_allow_html=True)
-st.markdown('<span style="font-size: 24px">- może wprowadzić własną recenzję i zobaczyć przewidywany sentyment</span>', unsafe_allow_html=True)
-st.markdown('<span style="font-size: 24px">- może podać link do recenzji konkretnego filmu/serialu ze strony Rotten Tomatoes i zobaczyć jaki sentymenty przewiduje dla nich model.</span>', unsafe_allow_html=True)
 
 st.markdown(
     """
     <style>
-    /* Zmiana kolorów obramowania i tła */
+    /* Zmiana kolorów obramowania i tła z ładnymi rogami */
     .bordered-text {
-        border: 2px solid #1c6429; /* Zielone obramowanie (primaryColor) */
+        border: 3px solid #1c6429; /* Zielone obramowanie (primaryColor) */
         padding: 20px; /* Odstępy wewnętrzne */
-        border-radius: 10px; /* Zaokrąglenie rogów */
+        border-radius: 15px; /* Zaokrąglenie rogów */
         background-color: #580707; /* Czerwone tło (secondaryBackgroundColor) */
         color: #ecdede; /* Kolor tekstu (textColor) */
         margin: 20px 0; /* Margines wokół obramowanego tekstu */
-        font-size: 20px; /* Rozmiar czcionki */
+        font-size: 24px; /* Rozmiar czcionki */
+        box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.1); /* Wewnętrzny cień obramowania */
+    }
+    
+    /* Zmiana wcięć w liście */
+    .list-item {
+        font-size: 24px; 
+        margin-left: 20px; /* Wcięcie w liście */
+        color: #ecdede;
     }
     </style>
     """,
     unsafe_allow_html=True
 )
 
-# Tekst z obramowaniem
-st.markdown('<div class="bordered-text">To jest tekst z obramowaniem. Możesz tu dodać dowolne informacje, które chcesz wyróżnić na stronie.</div>', unsafe_allow_html=True)
+st.markdown('<div class="bordered-text">Strona ta poświęcona jest analizie sentymentu zbioru zawierającego recenzje filmów napisane przez krytyków na stronie Rotten Tomatoes. Znajdują się tutaj wizualizacje informacji zawartych w tym zbiorze, a także oceny modeli zbudowanych w oparciu o dane ze zbioru. Użytkownik ma również możliwość przetestowania działania modeli na dwa sposoby:</div>', unsafe_allow_html=True)
+
+st.markdown('<div class="list-item">- może wprowadzić własną recenzję i zobaczyć przewidywany sentyment</div>', unsafe_allow_html=True)
+st.markdown('<div class="list-item">- może podać link do recenzji konkretnego filmu/serialu ze strony Rotten Tomatoes i zobaczyć jaki sentyment przewiduje dla nich model.</div>', unsafe_allow_html=True)
