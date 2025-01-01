@@ -197,7 +197,7 @@ if selected == "Naiwny klasyfikator Bayesa":
             image_tag = content.find('rt-img', {'data-qa': 'sidebar-poster-img'})
             image_url = image_tag['src'] if image_tag else None
 
-            col1, col2 = st.columns([2, 2]) 
+            col1, col2 = st.columns([2, 2], gap="small") 
 
             with col1:
                 if image_url:
