@@ -34,16 +34,15 @@ st.markdown(
 st.sidebar.image('tomato.png', width=300)
 st.markdown('######')
 
-# Zaktualizowany CSS do stylizacji
 st.markdown(
     """
     <style>
     /* Zmiana kolorów obramowania i tła z ładnymi rogami */
     .bordered-text {
         border: 3px solid #1c6429; /* Zielone obramowanie (primaryColor) */
-        padding: 20px; /* Odstępy wewnętrzne (zmniejszone, aby tekst był bliżej tytułu) */
+        padding: 20px; /* Odstępy wewnętrzne */
         border-radius: 15px; /* Zaokrąglenie rogów */
-        background-color: #580707; /* Czerwone tło (secondaryBackgroundColor) */
+        background-color: rgba(88, 7, 7, 0.7); /* Czerwone tło z przezroczystością (0.7 oznacza 70% nieprzezroczystości) */
         color: #ecdede; /* Kolor tekstu (textColor) */
         margin: 20px 0; /* Margines wokół obramowanego tekstu */
         font-size: 24px; /* Rozmiar czcionki */
@@ -61,7 +60,6 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-# Całość (tekst główny i lista z myślnikami) umieszczona w jednej ramce
 st.markdown('''
     <div class="bordered-text">
         Strona ta poświęcona jest analizie sentymentu zbioru zawierającego recenzje filmów napisane przez krytyków na stronie Rotten Tomatoes. Znajdują się tutaj wizualizacje informacji zawartych w tym zbiorze, a także oceny modeli zbudowanych w oparciu o dane ze zbioru. Użytkownik ma również możliwość przetestowania działania modeli na dwa sposoby:
