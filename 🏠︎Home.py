@@ -47,7 +47,7 @@ st.markdown(
         margin: 20px 0; /* Margines wokół obramowanego tekstu */
         font-size: 24px; /* Rozmiar czcionki */
         box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.1); /* Wewnętrzny cień obramowania */
-        backdrop-filter: blur(50px); /* Efekt rozmycia tła */
+        filter: blur(10px);
         margin-top: -20px; /* Zmniejszenie odległości pomiędzy tytułem a ramką */
     }
     
