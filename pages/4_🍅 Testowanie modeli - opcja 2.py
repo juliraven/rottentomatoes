@@ -30,7 +30,7 @@ st.markdown(
     </style>
     
     <div style="text-align: left;">
-        <h1>🍅 Analiza sentymentu dla recenzji pobranych z Rotten Tomatoes</h1>
+        <h1>🍅 Analiza sentymentu dla recenzji z Rotten Tomatoes</h1>
     </div>
     """, 
     unsafe_allow_html=True
