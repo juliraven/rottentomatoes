@@ -42,7 +42,7 @@ st.markdown(
         position: relative;
         border-radius: 15px; /* Zaokrąglenie rogów */
         overflow: hidden;
-        background-color: rgba(236, 3, 3, 0.4); /* Czerwone tło z przezroczystością */
+        background-color: rgba(236, 3, 3, 0.8); /* Czerwone tło z przezroczystością */
         margin: 20px 0; /* Margines wokół ramki */
     }
 
