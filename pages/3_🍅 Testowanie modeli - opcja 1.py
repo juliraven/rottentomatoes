@@ -28,7 +28,7 @@ st.markdown(
     </style>
     
     <div style="text-align: left;">
-        <h1>🍅 Testowanie modeli</h1>
+        <h1>🍅 Analiza sentymentu dla recenzji użytkownika</h1>
     </div>
     """, 
     unsafe_allow_html=True
@@ -159,12 +159,9 @@ selected = option_menu(
 )
 
 if selected == "Naiwny klasyfikator Bayesa":
-    st.markdown('######')
-
+    
     model = joblib.load("naive_bayes_model.pkl") 
     vectorizer = joblib.load("vectorizer.pkl") 
-
-    st.markdown("### Analiza sentymentu dla recenzji użytkownika")
     
     user_review = st.text_area("Wprowadź swoją recenzję w języku angielskim tutaj:", 
                                placeholder="Przykład recenzji: The second season’s high-octane story reveals an even deeper emotional core, painting a beautiful canvas of family and turning its initial solemn tone into one of hope, building on everything so admired about season one.")
@@ -192,7 +189,6 @@ if selected == "Naiwny klasyfikator Bayesa":
             st.write("Proszę wprowadzić recenzję.")
 
 if selected == "Sieć neuronowa":
-    st.markdown('######')
 
     # Funkcja do pobierania plików z Google Drive :
     def download_from_gdrive(file_id, output_path):
@@ -206,8 +202,6 @@ if selected == "Sieć neuronowa":
 
     model = tf.keras.models.load_model("model3.keras")
     tokenizer = joblib.load("tokenizer3.pkl") 
-
-    st.markdown("### Analiza sentymentu dla recenzji użytkownika")
 
     user_review = st.text_area("Wprowadź swoją recenzję w języku angielskim tutaj:", 
                                placeholder="Przykład recenzji: The second season’s high-octane story reveals an even deeper emotional core, painting a beautiful canvas of family and turning its initial solemn tone into one of hope, building on everything so admired about season one.")
