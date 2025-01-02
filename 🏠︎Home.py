@@ -10,18 +10,11 @@ page_bg_img = """
     background-image: radial-gradient(circle at center center, #b93030, #861717),
                       repeating-radial-gradient(circle at center center, #b93030, #b93030, 28px, transparent 56px, transparent 28px);
     background-blend-mode: multiply;
-    margin: 0;
-    padding: 0;
-    height: auto;
+    background-size: cover;
 }
 
 header[data-testid="stHeader"] {
-    background-color: #861717; /* Dopasowanie koloru tła */
-    background-image: radial-gradient(circle at center center, #b93030, #861717),
-                      repeating-radial-gradient(circle at center center, #b93030, #b93030, 28px, transparent 56px, transparent 28px);
-    background-blend-mode: multiply;
-    color: white; /* Kolor tekstu */
-    border-bottom: none; /* Usuń dolną krawędź (jeśli istnieje) */
+    background-color: rgba(0, 0, 0, 0);
 }
 </style>
 """
