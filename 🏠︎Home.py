@@ -5,45 +5,26 @@ st.set_page_config(page_title="Analiza sentymentu", layout="wide")
 page_bg_img = """
 <style>
 [data-testid="stAppViewContainer"] {
-    background-color: #8a1616;
-    opacity: 1;
-    background-image: repeating-radial-gradient(circle at 0 0, transparent 0, #8a1616 40px), 
-                      repeating-linear-gradient(#351b1b55, #351b1b);
-    background-blend-mode: multiply;
-    background-size: cover;
-    overflow: hidden; /* Prevent scrolling */
+    background-color: black; /* Czarne tło dla całej strony */
+    overflow: hidden; /* Ukrywa przewijanie */
 }
 
 header[data-testid="stHeader"] {
     background-color: rgba(0, 0, 0, 0);
 }
 
-.red-circle {
-    position: fixed;
-    top: 50%; /* Center vertically */
-    left: 50%; /* Center horizontally */
-    transform: translate(-50%, -50%); /* Center the circle */
-    width: 1000px; /* Circle width */
-    height: 1000px; /* Circle height */
-    background: radial-gradient(circle, rgba(255, 0, 0, 1), rgba(255, 0, 0, 0.5));
-    border-radius: 50%; /* Make it circular */
-    z-index: -1; /* Place behind other elements */
-    filter: blur(100px); /* Add blur effect */
-}
-
-/* Ensure the circle remains persistent */
 body:before {
     content: "";
     position: fixed;
-    top: 50%; /* Center vertically */
-    left: 50%; /* Center horizontally */
-    transform: translate(-50%, -50%);
-    width: 1000px;
-    height: 1000px;
+    top: 50%; /* Wyśrodkowanie w pionie */
+    left: 50%; /* Wyśrodkowanie w poziomie */
+    transform: translate(-50%, -50%); /* Wyśrodkowanie całkowite */
+    width: 1000px; /* Szerokość kółka */
+    height: 1000px; /* Wysokość kółka */
     background: radial-gradient(circle, rgba(255, 0, 0, 1), rgba(255, 0, 0, 0.5));
-    border-radius: 50%;
-    z-index: -1;
-    filter: blur(100px);
+    border-radius: 50%; /* Zaokrąglenie, aby stworzyć kółko */
+    z-index: -1; /* Wysyła element na tło */
+    filter: blur(100px); /* Efekt rozmycia */
 }
 </style>
 """
