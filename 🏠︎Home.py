@@ -4,31 +4,24 @@ st.set_page_config(page_title="Analiza sentymentu", layout="wide")
 
 page_bg_img1 = """
 <style>
-[data-testid="stAppViewContainer"] {
-    background-color: #8a1616;
-    opacity: 1;
-    background-image: repeating-radial-gradient(circle at 0 0, transparent 0, #8a1616 40px), 
-                      repeating-linear-gradient(#351b1b55, #351b1b);
-    background-blend-mode: multiply;
-    background-size: cover;
-    overflow: hidden; /* Prevent scrolling */
-}
-
-header[data-testid="stHeader"] {
-    background-color: rgba(0, 0, 0, 0);
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black; /* Tło wokół */
+    overflow: hidden; /* Ukrywa przewijanie */
 }
 
 .red-circle {
     position: fixed;
-    top: 50%; /* Center vertically */
-    left: 50%; /* Center horizontally */
-    transform: translate(-50%, -50%); /* Center the circle */
-    width: 1000px; /* Circle width */
-    height: 1000px; /* Circle height */
+    top: 50%; /* Środek w pionie */
+    left: 50%; /* Środek w poziomie */
+    transform: translate(-50%, -50%); /* Wyśrodkowanie */
+    width: 1000px; /* Szerokość kółka */
+    height: 1000px; /* Wysokość kółka */
     background: radial-gradient(circle, rgba(255, 0, 0, 1), rgba(255, 0, 0, 0.5));
-    border-radius: 50%; /* Make it circular */
-    z-index: -1; /* Place behind other elements */
-    filter: blur(100px); /* Add blur effect */
+    border-radius: 50%; /* Kształt kółka */
+    z-index: -1; /* Tło za treścią */
+    filter: blur(100px); /* Rozmycie */
 }
 </style>
 """
