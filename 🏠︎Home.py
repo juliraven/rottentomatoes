@@ -40,7 +40,7 @@ st.markdown(
     /* Kontener dla ramki */
     .bordered-text-container {
         position: relative;
-        border-radius: 15px; /* Zaokrąglenie rogów */
+        border-radius: 0px; /* Zaokrąglenie rogów */
         overflow: hidden;
         margin: 20px 0; /* Margines wokół ramki */
         background-color: rgba(85, 117, 206, 0.7); /* Czerwone tło z przezroczystością */
