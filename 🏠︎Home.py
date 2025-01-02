@@ -5,21 +5,21 @@ st.set_page_config(page_title="Analiza sentymentu", layout="wide")
 page_bg_img = """
 <style>
 [data-testid="stAppViewContainer"] {
-    background-color: black; /* Ustaw czarne tło strony */
-    overflow: hidden; /* Ukrywa przewijanie */
-    position: relative; /* Aby kółko było w relacji do kontenera */
+    background-color: black; /* Czarny kolor tła */
+    position: relative; /* Relatywne pozycjonowanie */
+    overflow: hidden; /* Ukrycie przewijania */
 }
 
 .red-circle {
     position: fixed;
     top: 50%; /* Wyśrodkowanie w pionie */
     left: 50%; /* Wyśrodkowanie w poziomie */
-    transform: translate(-50%, -50%); /* Wyśrodkowanie całkowite */
+    transform: translate(-50%, -50%); /* Całkowite wyśrodkowanie */
     width: 1000px; /* Szerokość kółka */
     height: 1000px; /* Wysokość kółka */
     background: radial-gradient(circle, rgba(255, 0, 0, 1), rgba(255, 0, 0, 0.5));
-    border-radius: 50%; /* Zaokrąglenie, aby stworzyć kółko */
-    z-index: -1; /* Wysyła element na tło */
+    border-radius: 50%; /* Zaokrąglenie */
+    z-index: -1; /* Wysyła kółko za treść */
     filter: blur(100px); /* Efekt rozmycia */
 }
 </style>
