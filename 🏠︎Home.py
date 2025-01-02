@@ -2,22 +2,6 @@ import streamlit as st
 
 st.set_page_config(page_title="Analiza sentymentu", layout="wide")
 
-page_bg_img = """
-<style>
-[data-testid="stAppViewContainer"] {
-    background-color: #8a1616;
-    opacity: 1;
-    background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #8a1616 40px ), repeating-linear-gradient( #351b1b55, #351b1b );
-    background-blend-mode: multiply;
-    background-size: cover;
-}
-
-header[data-testid="stHeader"] {
-    background-color: rgba(0, 0, 0, 0);
-}
-</style>
-"""
-
 page_bg_img1 = """
 <style>
 [data-testid="stAppViewContainer"] {
