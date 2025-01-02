@@ -16,13 +16,9 @@ page_bg_img = """
 }
 
 header[data-testid="stHeader"] {
-    background-color: #861717; /* Dopasowanie koloru tła */
-    background-image: none; /* Usuń domyślną grafikę */
+    background-image: radial-gradient(circle at center center, #b93030, #861717),
+                      repeating-radial-gradient(circle at center center, #b93030, #b93030, 28px, transparent 56px, transparent 28px);
     color: white; /* Ustaw kolor tekstu */
-}
-
-header[data-testid="stHeader"] .css-1v3fvcr {
-    display: none; /* Ukryj ikonę "Share", jeśli chcesz */
 }
 </style>
 """
