@@ -12,7 +12,7 @@ page_bg_img = """
     background-blend-mode: multiply;
     margin: 0;
     padding: 0;
-    height: 100vh;
+    height: auto;
 }
 
 header[data-testid="stHeader"] {
