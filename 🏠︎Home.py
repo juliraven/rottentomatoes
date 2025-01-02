@@ -5,10 +5,9 @@ st.set_page_config(page_title="Analiza sentymentu", layout="wide")
 page_bg_img = """
 <style>
 [data-testid="stAppViewContainer"] {
-    background-color: #861717;
-    opacity: 0.9;
-    background-image: radial-gradient(circle at center center, #b93030, #861717),
-                      repeating-radial-gradient(circle at center center, #b93030, #b93030, 28px, transparent 56px, transparent 28px);
+    background-color: #8a1616;
+    opacity: 1;
+    background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #8a1616 40px ), repeating-linear-gradient( #351b1b55, #351b1b );
     background-blend-mode: multiply;
     background-size: cover;
 }
