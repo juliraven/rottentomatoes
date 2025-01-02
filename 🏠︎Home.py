@@ -5,17 +5,10 @@ st.set_page_config(page_title="Analiza sentymentu", layout="wide")
 page_bg_img = """
 <style>
 [data-testid="stAppViewContainer"] {
-    background-color: #861717;
-    opacity: 0.9;
-    background-image: radial-gradient(circle at center center, #b93030, #861717),
-                      repeating-radial-gradient(circle at center center, #b93030, #b93030, 28px, transparent 56px, transparent 28px);
-    background-blend-mode: multiply;
-    margin: 0; /* Usunięcie marginesu */
-    padding: 0; /* Usunięcie paddingu */
-    height: 100vh; /* Ustawienie pełnej wysokości */
-}
-[data-testid="stSidebar"] {
-    background-color: transparent; /* Przezroczysty sidebar */
+background-color: #861717;
+opacity: 0.9;
+background-image: radial-gradient(circle at center center, #b93030, #861717), repeating-radial-gradient(circle at center center, #b93030, #b93030, 28px, transparent 56px, transparent 28px);
+background-blend-mode: multiply;
 }
 </style>
 """
