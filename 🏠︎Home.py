@@ -78,7 +78,6 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-# Zastosowanie kontenera z rozmyciem tła
 st.markdown('''
     <div class="bordered-text-container">
         <div class="bordered-text-background"></div>
