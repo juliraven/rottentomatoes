@@ -51,6 +51,11 @@ body:before {
 st.markdown(page_bg_img, unsafe_allow_html=True)
 
 st.markdown(
+    '<div class="red-circle"></div>',
+    unsafe_allow_html=True
+)
+
+st.markdown(
     """
     <style>
     .emoji-top {
