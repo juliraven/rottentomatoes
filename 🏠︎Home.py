@@ -60,7 +60,7 @@ st.markdown(
         border-radius: 0px; /* Zaokrąglenie rogów */
         overflow: hidden;
         margin: 20px 0; /* Margines wokół ramki */
-        background-color: rgba(88, 7, 7, 0.3); /* Tło z przezroczystością */
+        background-color: rgba(88, 7, 7, 0.2); /* Tło z przezroczystością */
         margin-top: -20px; /* Zmniejszenie odległości pomiędzy tytułem a ramką */
     }
     
@@ -71,7 +71,7 @@ st.markdown(
         left: 0;
         right: 0;
         bottom: 0;
-        background-color: rgba(88, 7, 7, 0.3); /* Przezroczyste tło */
+        background-color: rgba(88, 7, 7, 0.2); /* Przezroczyste tło */
         filter: blur(100px); /* Rozmycie tła */
         z-index: -1; /* Tło za tekstem */
     }
