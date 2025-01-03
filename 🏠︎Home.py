@@ -58,7 +58,8 @@ st.markdown(
         display: flex;
         justify-content: center; /* Wyśrodkowanie w poziomie */
         align-items: center; /* Wyśrodkowanie w pionie */
-        height: 100vh; /* Ustalamy wysokość na 100% widocznej wysokości */
+        height: 100vh; /* Wysokość na 100% widocznej wysokości ekranu */
+        margin: 0; /* Usuwamy marginesy, które mogą powodować problem */
     }
     
     /* Kontener dla ramki */
@@ -69,7 +70,6 @@ st.markdown(
         border-radius: 0px; /* Zaokrąglenie rogów */
         overflow: hidden;
         background-color: rgba(88, 7, 7, 0.2); /* Tło z przezroczystością */
-        margin-top: -20px; /* Zmniejszenie odległości pomiędzy tytułem a ramką */
     }
     
     /* Tło w kontenerze z rozmyciem */
@@ -103,8 +103,10 @@ st.markdown(
     unsafe_allow_html=True
 )
 
+# Otocz kontener w divie z klasą center-wrapper
 st.markdown('<div class="center-wrapper">', unsafe_allow_html=True)
 
+# Dodaj treść ramki
 st.markdown('''
     <div class="bordered-text-container">
         <div class="bordered-text-background"></div>
@@ -116,6 +118,5 @@ st.markdown('''
     </div>
 ''', unsafe_allow_html=True)
 
+# Zamknij kontener center-wrapper
 st.markdown('</div>', unsafe_allow_html=True)
-
-
