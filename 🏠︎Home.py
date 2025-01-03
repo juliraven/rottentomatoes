@@ -54,22 +54,14 @@ st.markdown('######')
 st.markdown(
     """
     <style>
-    .center-wrapper {
-        display: flex;
-        justify-content: center; /* Wyśrodkowanie w poziomie */
-        align-items: center; /* Wyśrodkowanie w pionie */
-        height: 100vh; /* Wysokość na 100% widocznej wysokości ekranu */
-        margin: 0; /* Usuwamy marginesy, które mogą powodować problem */
-    }
-    
     /* Kontener dla ramki */
     .bordered-text-container {
         position: relative;
-        width: 800px; /* Szerokość kontenera */
-        height: 500px; /* Wysokość kontenera */
         border-radius: 0px; /* Zaokrąglenie rogów */
         overflow: hidden;
+        margin: 20px 0; /* Margines wokół ramki */
         background-color: rgba(88, 7, 7, 0.2); /* Tło z przezroczystością */
+        margin-top: -20px; /* Zmniejszenie odległości pomiędzy tytułem a ramką */
     }
     
     /* Tło w kontenerze z rozmyciem */
@@ -86,7 +78,7 @@ st.markdown(
 
     /* Właściwy kontener na tekst */
     .bordered-text {
-        padding: 40px; /* Odstępy wewnętrzne */
+        padding: 20px; /* Odstępy wewnętrzne */
         color: #ecdede; /* Kolor tekstu */
         font-size: 24px; /* Rozmiar czcionki */
         box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.1); /* Wewnętrzny cień obramowania */
@@ -103,10 +95,6 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-# Otocz kontener w divie z klasą center-wrapper
-st.markdown('<div class="center-wrapper">', unsafe_allow_html=True)
-
-# Dodaj treść ramki
 st.markdown('''
     <div class="bordered-text-container">
         <div class="bordered-text-background"></div>
@@ -118,5 +106,4 @@ st.markdown('''
     </div>
 ''', unsafe_allow_html=True)
 
-# Zamknij kontener center-wrapper
 st.markdown('</div>', unsafe_allow_html=True)
