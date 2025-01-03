@@ -1,6 +1,6 @@
 import streamlit as st
 
-st.set_page_config(page_title=":movie_camera: Analiza sentymentu", layout="wide")
+st.set_page_config(page_title="🎥 Analiza sentymentu", layout="wide")
 
 page_bg_img = """
 <style>
