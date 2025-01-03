@@ -206,14 +206,17 @@ if selected == "Sieć neuronowa":
     st.markdown("""
     <style>
         .custom-text {
-            font-size: 10px;
+            font-size: 14px;
             color: rgba(236, 222, 222, 0.5);
-            margin-bottom: 0px; /* Zmniejszamy przestrzeń poniżej tekstu */
+            margin-bottom: 0px; /* Usuwamy przestrzeń poniżej tekstu */
+            padding-bottom: 0px; /* Usuwamy wszelkie wypełnienie poniżej tekstu */
         }
 
         .stTextArea textarea {
-            margin-top: 0px; /* Zmniejszamy przestrzeń pomiędzy tekstem a text_area */
-            margin-bottom: 0px; /* Możesz dostosować, by dostosować odległość */
+            margin-top: 0px; /* Usuwamy przestrzeń powyżej text_area */
+            margin-bottom: 0px; /* Usuwamy przestrzeń poniżej text_area */
+            padding-top: 0px; /* Usuwamy wypełnienie w górnej części text_area */
+            padding-bottom: 0px; /* Usuwamy wypełnienie w dolnej części text_area */
         }
     </style>
     """, unsafe_allow_html=True)
