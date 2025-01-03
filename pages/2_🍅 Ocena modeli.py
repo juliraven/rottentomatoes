@@ -135,7 +135,9 @@ if selected=="Sieć neuronowa":
                       font=dict(size=16),
                       margin=dict(t=70, b=0),
                       coloraxis_showscale=False,
-                      title="Macierz pomyłek", title_x=0.6, title_xanchor="center", title_font=dict(size=30, family="Arial, sans-serif", color="white"))
+                      title="Macierz pomyłek", title_x=0.6, title_xanchor="center", title_font=dict(size=30, family="Arial, sans-serif", color="white"),
+                      plot_bgcolor='rgba(0, 0, 0, 0)',  
+                      paper_bgcolor='rgba(0, 0, 0, 0)')
 
         st.plotly_chart(fig)
 
