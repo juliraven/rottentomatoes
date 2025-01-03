@@ -24,7 +24,7 @@ import tensorflow as tf
 page_bg_img = """
 <style>
 [data-testid="stAppViewContainer"] {
-    background: radial-gradient(circle at 57% 50%,rgba(0, 0, 0, 1), rgba(174, 43, 43, 1), rgba(0, 0, 0, 1));
+    background: radial-gradient(circle at 57% 50%,rgba(160,40,40,1), rgba(0, 0, 0, 1), rgba(128,33,33,1));
     background-blend-mode: multiply;
     background-size: cover;
     overflow: hidden; /* Prevent scrolling */
