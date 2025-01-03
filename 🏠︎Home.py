@@ -64,7 +64,7 @@ st.markdown(
     /* Kontener dla ramki */
     .bordered-text-container {
         position: relative;
-        width: 500px; 
+        width: 800px; 
         height: 500px;
         border-radius: 0px; /* Zaokrąglenie rogów */
         overflow: hidden;
@@ -87,7 +87,7 @@ st.markdown(
 
     /* Właściwy kontener na tekst */
     .bordered-text {
-        padding: 30px; /* Odstępy wewnętrzne */
+        padding: 40px; /* Odstępy wewnętrzne */
         color: #ecdede; /* Kolor tekstu */
         font-size: 24px; /* Rozmiar czcionki */
         box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.1); /* Wewnętrzny cień obramowania */
