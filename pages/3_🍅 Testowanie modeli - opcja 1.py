@@ -162,9 +162,28 @@ if selected == "Naiwny klasyfikator Bayesa":
     
     model = joblib.load("naive_bayes_model.pkl") 
     vectorizer = joblib.load("vectorizer.pkl")
-    
-    user_review = st.text_area("Wprowadź własną recenzję w języku angielskim tutaj:", 
-                               placeholder="Przykład recenzji: The second season’s high-octane story reveals an even deeper emotional core, painting a beautiful canvas of family and turning its initial solemn tone into one of hope, building on everything so admired about season one.")
+
+    st.markdown("""
+    <style>
+        .custom-text {
+            font-size: 14px;
+            color: rgba(236, 222, 222, 0.5);
+            margin-bottom: 0px; /* Usuwamy przestrzeń poniżej tekstu */
+            padding-bottom: 0px; /* Usuwamy wszelkie wypełnienie poniżej tekstu */
+        }
+
+        .stTextArea textarea {
+            margin-top: 0px; /* Usuwamy przestrzeń powyżej text_area */
+            margin-bottom: 0px; /* Usuwamy przestrzeń poniżej text_area */
+            padding-top: 10px; /* Usuwamy wypełnienie w górnej części text_area */
+            padding-bottom: 5px; /* Usuwamy wypełnienie w dolnej części text_area */
+        }
+    </style>
+    """, unsafe_allow_html=True)
+
+    st.write('<p class="custom-text">Wprowadź własną recenzję w języku angielskim tutaj, np.: The second season’s high-octane story reveals an even deeper emotional core, painting a beautiful canvas of family and turning its initial solemn tone into one of hope, building on everything so admired about season one.</p>', unsafe_allow_html=True)
+
+    user_review = st.text_area("", placeholder="Miejsce na recenzję")
 
     if st.button('Analizuj sentyment'):
         if user_review:
