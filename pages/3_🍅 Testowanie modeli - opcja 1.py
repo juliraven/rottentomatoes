@@ -211,14 +211,13 @@ if selected == "Sieć neuronowa":
         }
 
         .stTextArea textarea {
-            margin-top: -20px; /* Zmniejsza przestrzeń pomiędzy tekstem a text_area */
+            margin-top: -10px; /* Zmniejsza przestrzeń pomiędzy tekstem a text_area */
             margin-bottom: -10px; /* Możesz dostosować, by dostosować odległość */
         }
     </style>
     """, unsafe_allow_html=True)
 
-    st.write('<p class="custom-text">Wprowadź własną recenzję w języku angielskim tutaj,</p>', unsafe_allow_html=True)
-    st.write('<p class="custom-text">np.: The second season’s high-octane story reveals an even deeper emotional core, painting a beautiful canvas of family and turning its initial solemn tone into one of hope, building on everything so admired about season one.</p>', unsafe_allow_html=True)
+    st.write('<p class="custom-text">Wprowadź własną recenzję w języku angielskim tutaj, np.: The second season’s high-octane story reveals an even deeper emotional core, painting a beautiful canvas of family and turning its initial solemn tone into one of hope, building on everything so admired about season one.</p>', unsafe_allow_html=True)
 
     user_review = st.text_area("", placeholder="Miejsce na recenzję")
 
