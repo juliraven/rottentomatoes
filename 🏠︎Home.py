@@ -64,8 +64,8 @@ st.markdown(
     /* Kontener dla ramki */
     .bordered-text-container {
         position: relative;
-        width: 800px; 
-        height: 500px;
+        width: 800px; /* Szerokość kontenera */
+        height: 500px; /* Wysokość kontenera */
         border-radius: 0px; /* Zaokrąglenie rogów */
         overflow: hidden;
         margin: 20px 0; /* Margines wokół ramki */
@@ -107,12 +107,12 @@ st.markdown(
 st.markdown('<div class="center-wrapper"><div class="bordered-text-container">', unsafe_allow_html=True)
 
 st.markdown('''
-    <div class="bordered-text-container">
-        <div class="bordered-text-background"></div>
-        <div class="bordered-text">
-            Strona ta poświęcona jest analizie sentymentu zbioru zawierającego recenzje filmów napisane przez krytyków na stronie Rotten Tomatoes. Znajdują się tutaj wizualizacje informacji zawartych w tym zbiorze, a także oceny modeli zbudowanych w oparciu o dane ze zbioru. Użytkownik ma również możliwość przetestowania działania modeli na dwa sposoby:
-            <div class="list-item">- może wprowadzić własną recenzję i zobaczyć przewidywany sentyment</div>
-            <div class="list-item">- może podać link do recenzji konkretnego filmu/serialu ze strony Rotten Tomatoes i zobaczyć jaki sentyment przewiduje dla nich model.</div>
-        </div>
+    <div class="bordered-text-background"></div>
+    <div class="bordered-text">
+        Strona ta poświęcona jest analizie sentymentu zbioru zawierającego recenzje filmów napisane przez krytyków na stronie Rotten Tomatoes. Znajdują się tutaj wizualizacje informacji zawartych w tym zbiorze, a także oceny modeli zbudowanych w oparciu o dane ze zbioru. Użytkownik ma również możliwość przetestowania działania modeli na dwa sposoby:
+        <div class="list-item">- może wprowadzić własną recenzję i zobaczyć przewidywany sentyment</div>
+        <div class="list-item">- może podać link do recenzji konkretnego filmu/serialu ze strony Rotten Tomatoes i zobaczyć jaki sentyment przewiduje dla nich model.</div>
     </div>
+</div></div>
 ''', unsafe_allow_html=True)
+
