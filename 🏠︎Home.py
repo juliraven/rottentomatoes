@@ -17,7 +17,6 @@ header[data-testid="stHeader"] {
 </style>
 """
 
-
 st.markdown(page_bg_img, unsafe_allow_html=True)
 
 st.markdown(
