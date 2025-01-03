@@ -2,6 +2,13 @@ import streamlit as st
 
 st.set_page_config(page_title="Analiza sentymentu", page_icon="🎥", layout="wide")
 
+from st_pages import Page, Section, show_pages
+
+show_pages(
+    [   Page("🏠︎Home.py", "Strona główna")
+    ]
+)
+
 page_bg_img = """
 <style>
 [data-testid="stAppViewContainer"] {
