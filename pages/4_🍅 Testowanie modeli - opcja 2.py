@@ -175,7 +175,7 @@ if selected == "Naiwny klasyfikator Bayesa":
     c1, c2 = st.columns([1.5, 0.5])
 
     with c1:
-        url_choice = st.selectbox("Podaj link do recenzji z RT lub wybierz jeden z dostępnych:", links)
+        url_choice = st.selectbox("Podaj link do recenzji z https://www.rottentomatoes.com/ lub wybierz jeden z dostępnych:", links)
 
         if url_choice == "własny link":
             url = st.text_input("Podaj własny link do recenzji na RT:")
