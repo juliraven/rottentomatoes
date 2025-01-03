@@ -6,15 +6,17 @@ page_bg_img = """
 <style>
 [data-testid="stAppViewContainer"] {
     background: radial-gradient(circle at 57% 50%,rgba(166, 21, 52, 1), rgba(24, 103, 60, 1))
-    header[data-testid="stHeader"] {
-    background-color: rgba(0, 0, 0, 0);
-    }
     background-blend-mode: multiply;
     background-size: cover;
     overflow: hidden; /* Prevent scrolling */
 }
+
+header[data-testid="stHeader"] {
+    background-color: rgba(0, 0, 0, 0);
+}
 </style>
 """
+
 
 st.markdown(page_bg_img, unsafe_allow_html=True)
 
