@@ -7,6 +7,23 @@ import matplotlib.pyplot as plt
 import plotly.express as px
 from streamlit_option_menu import option_menu
 
+page_bg_img = """
+<style>
+[data-testid="stAppViewContainer"] {
+    background: radial-gradient(circle at 57% 50%,rgba(94, 7, 7, 1), rgba(0, 0, 0, 1), rgba(128,33,33,1));
+    background-blend-mode: multiply;
+    background-size: cover;
+    overflow: hidden; /* Prevent scrolling */
+}
+
+header[data-testid="stHeader"] {
+    background-color: rgba(0, 0, 0, 0);
+}
+</style>
+"""
+
+st.markdown(page_bg_img, unsafe_allow_html=True)
+
 st.markdown(
     """
     <style>
