@@ -235,7 +235,7 @@ if selected == "Naiwny klasyfikator Bayesa":
                 for i, review in enumerate(review_texts):
                     sentiments = predict_sentiment([review])
 
-                    sentiment_label = "Pozytywny" if sentiments[0] == 1 else "Negatywny"
+                    sentiment_label = "pozytywny" if sentiments[0] == 1 else "negatywny"
                     sentiment_color = "green" if sentiments[0] == 1 else "red"
 
                     st.markdown(f"""
@@ -354,7 +354,7 @@ if selected == "Sieć neuronowa":
                     prediction = model.predict(padded_sequence)
                     sentiments = prediction.argmax(axis=-1)
 
-                    sentiment_label = "Pozytywny" if sentiments[0] == 1 else "Negatywny"
+                    sentiment_label = "pozytywny" if sentiments[0] == 1 else "negatywny"
                     sentiment_color = "green" if sentiments[0] == 1 else "red"
 
                     st.markdown(f"""
