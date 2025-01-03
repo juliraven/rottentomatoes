@@ -112,6 +112,8 @@ if selected == "Wykresy":
              color_discrete_sequence=custom_colors2)
 
     fig2.update_traces(textfont_size=20)
+    fig2.update_layout(plot_bgcolor='rgba(0, 0, 0, 0)',  
+                      paper_bgcolor='rgba(0, 0, 0, 0)')
     st.markdown('### Podział recenzji wg sentymentu dla wybranego gatunku')
     st.plotly_chart(fig2, use_container_width=True)
 
