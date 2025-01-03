@@ -51,8 +51,6 @@ st.markdown(
 st.sidebar.image('tomato.png', width=300)
 st.markdown('######')
 
-import streamlit as st
-
 st.markdown(
     """
     <style>
@@ -83,14 +81,20 @@ st.markdown(
         box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.1); /* Wewnętrzny cień obramowania */
     }
 
-    ul {
+    /* Stylowanie tylko listy wewnątrz kontenera .bordered-text */
+    .bordered-text ul {
         list-style-type: disc; /* Kropki przy elementach listy */
         padding-left: 20px; /* Odstęp po lewej stronie listy */
     }
 
-    li {
+    .bordered-text li {
         font-size: 24px;
         color: #ecdede;
+    }
+    
+    /* Ustalamy rozmiar czcionki tytułów w sidebarze, aby nie były wpływane */
+    .sidebar .css-1d391kg {
+        font-size: 16px;  /* Przywracamy rozmiar czcionki tytułów w sidebarze */
     }
     </style>
     """,
@@ -111,4 +115,5 @@ st.markdown('''
 ''', unsafe_allow_html=True)
 
 st.markdown('</div>', unsafe_allow_html=True)
+
 
