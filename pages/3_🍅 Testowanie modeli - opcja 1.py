@@ -208,7 +208,7 @@ if selected == "Sieć neuronowa":
         .custom-text {
             font-size: 14px;
             color: rgba(236, 222, 222, 0.5);
-            margin-bottom: -5px; /* Zmniejszamy przestrzeń poniżej tekstu */
+            margin-bottom: -10px; /* Zmniejszamy przestrzeń poniżej tekstu */
         }
 
         .stTextArea textarea {
