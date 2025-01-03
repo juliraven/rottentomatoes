@@ -3,9 +3,6 @@ from st_pages import add_page_title, get_nav_from_toml
 
 st.set_page_config(page_title="Analiza sentymentu", page_icon="🎥", layout="wide")
 
-nav = get_nav_from_toml(".streamlit/pages_sections.toml")
-show_pages(nav)
-
 page_bg_img = """
 <style>
 [data-testid="stAppViewContainer"] {
