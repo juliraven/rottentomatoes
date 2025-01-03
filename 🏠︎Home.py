@@ -104,6 +104,8 @@ st.markdown(
     unsafe_allow_html=True
 )
 
+st.markdown('<div class="center-wrapper"><div class="bordered-text-container">', unsafe_allow_html=True)
+
 st.markdown('''
     <div class="bordered-text-container">
         <div class="bordered-text-background"></div>
