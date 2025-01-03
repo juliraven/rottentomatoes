@@ -1,9 +1,13 @@
 import streamlit as st
-from st_pages import add_page_title, get_nav_from_toml
+from st_pages import Page, Section, show_pages
 
 st.set_page_config(page_title="Analiza sentymentu", page_icon="🎥", layout="wide")
 
-show_pages([Page("🏠︎Home.py", "Home", "🏠")])
+show_pages(
+    [   Page("🏠︎Home.py", "🏠︎ Strona główna "),
+        Page()
+    ]
+)
 
 page_bg_img = """
 <style>
