@@ -78,7 +78,7 @@ st.markdown(
 
     /* Właściwy kontener na tekst */
     .bordered-text {
-        padding: 20px; /* Odstępy wewnętrzne */
+        padding: 40px; /* Odstępy wewnętrzne */
         color: #ecdede; /* Kolor tekstu */
         font-size: 24px; /* Rozmiar czcionki */
         box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.1); /* Wewnętrzny cień obramowania */
