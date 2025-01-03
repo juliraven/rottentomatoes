@@ -20,8 +20,6 @@ header[data-testid="stHeader"] {
 
 st.markdown(page_bg_img, unsafe_allow_html=True)
 
-st.sidebar.title("Moja aplikacja")
-
 st.markdown(
     """
     <style>
