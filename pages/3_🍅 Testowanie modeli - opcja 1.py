@@ -207,7 +207,7 @@ if selected == "Sieć neuronowa":
     <style>
         .custom-text {
             font-size: 11px;
-            color: #ecdede;
+            color: rgba(236, 222, 222, 0.5);
         }
 
         .stTextArea textarea {
