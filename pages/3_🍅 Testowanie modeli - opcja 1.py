@@ -206,7 +206,7 @@ if selected == "Sieć neuronowa":
     st.markdown("""
     <style>
         .custom-text {
-            font-size: 14px;
+            font-size: 10px;
             color: rgba(236, 222, 222, 0.5);
             margin-bottom: -10px; /* Zmniejszamy przestrzeń poniżej tekstu */
         }
