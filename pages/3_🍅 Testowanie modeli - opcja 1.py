@@ -163,7 +163,7 @@ if selected == "Naiwny klasyfikator Bayesa":
     model = joblib.load("naive_bayes_model.pkl") 
     vectorizer = joblib.load("vectorizer.pkl")
     
-    user_review = st.text_area("Wprowadź swoją recenzję w języku angielskim tutaj:", 
+    user_review = st.text_area("Wprowadź własną recenzję w języku angielskim tutaj:", 
                                placeholder="Przykład recenzji: The second season’s high-octane story reveals an even deeper emotional core, painting a beautiful canvas of family and turning its initial solemn tone into one of hope, building on everything so admired about season one.")
 
     if st.button('Analizuj sentyment'):
@@ -203,10 +203,11 @@ if selected == "Sieć neuronowa":
     model = tf.keras.models.load_model("model3.keras")
     tokenizer = joblib.load("tokenizer3.pkl") 
 
-    user_review = st.text_area("Wprowadź swoją recenzję w języku angielskim tutaj:", 
-                               placeholder="Przykład recenzji: The second season’s high-octane story reveals an even deeper emotional core, painting a beautiful canvas of family and turning its initial solemn tone into one of hope, building on everything so admired about season one.")
-
-
+    st.write("Wprowadź własną recenzję w języku angielskim tutaj:")
+    st.write("Przykład recenzji: The second season’s high-octane story reveals an even deeper emotional core, painting a beautiful canvas of family and turning its initial solemn tone into one of hope, building on everything so admired about season one.")
+    
+    user_review = st.text_area("", placeholder="Miejsce na recenzję")
+    
     max_length = 30 
 
     if st.button('Analizuj sentyment'):
