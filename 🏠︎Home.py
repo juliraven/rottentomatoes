@@ -54,7 +54,6 @@ st.markdown('######')
 st.markdown(
     """
     <style>
-    /* Kontener dla ramki */
     .bordered-text-container {
         position: relative;
         border-radius: 0px; /* Zaokrąglenie rogów */
@@ -64,7 +63,6 @@ st.markdown(
         margin-top: -20px; /* Zmniejszenie odległości pomiędzy tytułem a ramką */
     }
     
-    /* Tło w kontenerze z rozmyciem */
     .bordered-text-background {
         position: absolute;
         top: 0;
@@ -76,15 +74,13 @@ st.markdown(
         z-index: -1; /* Tło za tekstem */
     }
 
-    /* Właściwy kontener na tekst */
     .bordered-text {
-        padding: 40px; /* Odstępy wewnętrzne */
+        padding: 60px; /* Odstępy wewnętrzne */
         color: #ecdede; /* Kolor tekstu */
         font-size: 24px; /* Rozmiar czcionki */
         box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.1); /* Wewnętrzny cień obramowania */
     }
     
-    /* Styl dla listy z myślnikami */
     .list-item {
         font-size: 24px;
         margin-left: 20px; /* Wcięcie w liście */
