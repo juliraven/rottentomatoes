@@ -215,8 +215,8 @@ if selected == "Sieć neuronowa":
         .stTextArea textarea {
             margin-top: 0px; /* Usuwamy przestrzeń powyżej text_area */
             margin-bottom: 0px; /* Usuwamy przestrzeń poniżej text_area */
-            padding-top: 0px; /* Usuwamy wypełnienie w górnej części text_area */
-            padding-bottom: 0px; /* Usuwamy wypełnienie w dolnej części text_area */
+            padding-top: 5px; /* Usuwamy wypełnienie w górnej części text_area */
+            padding-bottom: 5px; /* Usuwamy wypełnienie w dolnej części text_area */
         }
     </style>
     """, unsafe_allow_html=True)
