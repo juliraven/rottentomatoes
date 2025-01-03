@@ -3,6 +3,12 @@ from st_pages import add_page_title, get_nav_from_toml
 
 st.set_page_config(page_title="Analiza sentymentu", page_icon="🎥", layout="wide")
 
+show_pages(
+    [
+        Page("🏠︎Home.py", "Home", "🏠")
+    ]
+)
+
 page_bg_img = """
 <style>
 [data-testid="stAppViewContainer"] {
