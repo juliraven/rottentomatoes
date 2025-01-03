@@ -183,7 +183,7 @@ elif selected == "Ranking filmów":
         bar_length = (value / max_value) * 100 
         return f"<div style='width: 100%; background-color: #e0e0e0;'><div style='width: {bar_length}%; background-color: {color}; height: 10px;'></div></div>"
 
-    html_table = "<table style='width:100%; border-collapse: collapse; background-color: black; color: white;'>"
+    html_table = "<table style='width:100%; border-collapse: collapse; background-color: rgba(0, 0, 0, 0.7); color: white;'>"
     html_table += "<tr><th>Tytuł filmu</th><th>Rok premiery</th><th>Ocena krytyków</th><th>Ocena widowni</th><th>Tomatometer</th><th>Audience</th></tr>"
 
     for index, row in sorted_df.iterrows():
