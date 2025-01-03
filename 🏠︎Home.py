@@ -54,6 +54,13 @@ st.markdown('######')
 st.markdown(
     """
     <style>
+    .center-wrapper {
+        display: flex;
+        justify-content: center; /* Wyśrodkowanie w poziomie */
+        align-items: center; /* Wyśrodkowanie w pionie */
+        height: 100vh; /* Ustalamy wysokość na 100% widocznej wysokości */
+    }
+    
     /* Kontener dla ramki */
     .bordered-text-container {
         position: relative;
