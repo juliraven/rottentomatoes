@@ -63,7 +63,7 @@ st.markdown(
         background-color: rgba(88, 7, 7, 0.7); /* Tło z przezroczystością */
         margin-top: -20px; /* Zmniejszenie odległości pomiędzy tytułem a ramką */
     }
-
+    
     /* Tło w kontenerze z rozmyciem */
     .bordered-text-background {
         position: absolute;
@@ -72,7 +72,7 @@ st.markdown(
         right: 0;
         bottom: 0;
         background-color: rgba(88, 7, 7, 0.7); /* Przezroczyste tło */
-        filter: blur(15px); /* Rozmycie tła */
+        filter: blur(100px); /* Rozmycie tła */
         z-index: -1; /* Tło za tekstem */
     }
 
