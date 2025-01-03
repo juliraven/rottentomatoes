@@ -64,7 +64,7 @@ st.markdown(
     /* Kontener dla ramki */
     .bordered-text-container {
         position: relative;
-        width: 300px; 
+        width: 500px; 
         height: 500px;
         border-radius: 0px; /* Zaokrąglenie rogów */
         overflow: hidden;
