@@ -21,4 +21,4 @@ dill
 urljoin
 gdown
 tensorflow
-st_pages==0.0.5 
+st_pages
