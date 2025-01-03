@@ -197,10 +197,10 @@ if selected == "Naiwny klasyfikator Bayesa":
                 sentiment_color = ""
 
                 if sentiments[0] == 1:  
-                    sentiment_label = "Pozytywny"
+                    sentiment_label = "pozytywny"
                     sentiment_color = "green"
                 elif sentiments[0] == 0: 
-                    sentiment_label = "Negatywny"
+                    sentiment_label = "negatywny"
                     sentiment_color = "red"
 
                 st.markdown(f"<h3>Przewidywany sentyment: <span style='color: {sentiment_color};'>{sentiment_label}</span></h3>",unsafe_allow_html=True)
@@ -262,10 +262,10 @@ if selected == "Sieć neuronowa":
                 sentiment_color = ""
 
                 if sentiments[0] == 1:  
-                    sentiment_label = "Pozytywny"
+                    sentiment_label = "pozytywny"
                     sentiment_color = "green"
                 elif sentiments[0] == 0: 
-                    sentiment_label = "Negatywny"
+                    sentiment_label = "negatywny"
                     sentiment_color = "red"
 
                 st.markdown(f"<h3>Przewidywany sentyment: <span style='color: {sentiment_color};'>{sentiment_label}</span></h3>",unsafe_allow_html=True)
