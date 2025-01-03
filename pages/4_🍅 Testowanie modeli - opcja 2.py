@@ -21,6 +21,23 @@ from keras.preprocessing.sequence import pad_sequences
 import gdown
 import tensorflow as tf
 
+page_bg_img = """
+<style>
+[data-testid="stAppViewContainer"] {
+    background: radial-gradient(circle at 59% 50%,#580707, rgba(54,183,112,1));
+    background-blend-mode: multiply;
+    background-size: cover;
+    overflow: hidden; /* Prevent scrolling */
+}
+
+header[data-testid="stHeader"] {
+    background-color: rgba(0, 0, 0, 0);
+}
+</style>
+"""
+
+st.markdown(page_bg_img, unsafe_allow_html=True)
+
 st.markdown(
     """
     <style>
