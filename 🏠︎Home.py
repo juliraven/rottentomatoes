@@ -5,10 +5,10 @@ st.set_page_config(page_title="Analiza sentymentu", page_icon="🎥", layout="wi
 
 show_pages(
     [   Page("🏠︎Home.py", "🏠︎ Strona główna "),
-        Page("1_🍅 Analiza zbioru danych.py"),
-        Page("2_🍅 Ocena modeli.py"),
-        Page("3_🍅 Testowanie modeli - opcja 1.py"),
-        Page("4_🍅 Testowanie modeli - opcja 2.py")
+        Page("1_🍅 Analiza zbioru danych.py", "1_🍅 Analiza zbioru danych.py"),
+        Page("2_🍅 Ocena modeli.py", "2_🍅 Ocena modeli.py"),
+        Page("3_🍅 Testowanie modeli - opcja 1.py", "3_🍅 Testowanie modeli - opcja 1.py"),
+        Page("4_🍅 Testowanie modeli - opcja 2.py", "4_🍅 Testowanie modeli - opcja 2.py")
     ]
 )
 
