@@ -21,4 +21,4 @@ dill
 urljoin
 gdown
 tensorflow
-st-pages
+st_pages
