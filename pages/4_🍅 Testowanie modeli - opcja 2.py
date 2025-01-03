@@ -165,12 +165,12 @@ if selected == "Naiwny klasyfikator Bayesa":
     model = joblib.load("naive_bayes_model.pkl") 
     vectorizer = joblib.load("vectorizer.pkl") 
 
-    links = [
-    "https://www.rottentomatoes.com/tv/arcane_league_of_legends/s02/reviews",
+    links = ["własny link"] +
+    ["https://www.rottentomatoes.com/tv/arcane_league_of_legends/s02/reviews",
     "https://www.rottentomatoes.com/tv/stranger_things/s04/reviews",
     "https://www.rottentomatoes.com/tv/the_witcher/s02/reviews",
     "https://www.rottentomatoes.com/m/terrifier_3/reviews"
-    ] + ["własny link"]
+    ]
 
     c1, c2 = st.columns([1.5, 0.5])
 
