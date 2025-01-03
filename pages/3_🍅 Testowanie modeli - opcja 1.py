@@ -206,7 +206,7 @@ if selected == "Sieć neuronowa":
     st.markdown("""
     <style>
         .custom-text {
-            font-size: 16px;
+            font-size: 18px;
             color: #ecdede;
         }
 
