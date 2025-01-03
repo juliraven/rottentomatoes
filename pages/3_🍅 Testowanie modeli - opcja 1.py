@@ -203,11 +203,25 @@ if selected == "Sieć neuronowa":
     model = tf.keras.models.load_model("model3.keras")
     tokenizer = joblib.load("tokenizer3.pkl") 
 
+    st.markdown("""
+    <style>
+        .custom-text {
+            font-size: 16px;
+            color: #ecdede;
+        }
+
+        .stTextArea textarea {
+            margin-top: -10px; /* Zmniejsza przestrzeń pomiędzy tekstem a text_area */
+            margin-bottom: -5px; /* Możesz dostosować, by dostosować odległość */
+        }
+    </style>
+    """, unsafe_allow_html=True)
+
     st.write("Wprowadź własną recenzję w języku angielskim tutaj:")
-    st.write("Przykład recenzji: The second season’s high-octane story reveals an even deeper emotional core, painting a beautiful canvas of family and turning its initial solemn tone into one of hope, building on everything so admired about season one.")
-    
+    st.write('<p class="custom-text">Przykład recenzji: The second season’s high-octane story reveals an even deeper emotional core, painting a beautiful canvas of family and turning its initial solemn tone into one of hope, building on everything so admired about season one.</p>', unsafe_allow_html=True)
+
     user_review = st.text_area("", placeholder="Miejsce na recenzję")
-    
+
     max_length = 30 
 
     if st.button('Analizuj sentyment'):
