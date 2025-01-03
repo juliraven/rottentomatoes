@@ -212,7 +212,7 @@ if selected == "Sieć neuronowa":
 
         .stTextArea textarea {
             margin-top: -10px; /* Zmniejsza przestrzeń pomiędzy tekstem a text_area */
-            margin-bottom: -5px; /* Możesz dostosować, by dostosować odległość */
+            margin-bottom: -10px; /* Możesz dostosować, by dostosować odległość */
         }
     </style>
     """, unsafe_allow_html=True)
