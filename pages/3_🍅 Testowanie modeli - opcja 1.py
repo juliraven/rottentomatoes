@@ -184,7 +184,7 @@ if selected == "Naiwny klasyfikator Bayesa":
     <style>
         .custom-text {
             font-size: 14px;
-            color: rgba(236, 222, 222, 0.5);
+            color: rgba(236, 222, 222, 0.8);
             margin-bottom: 0px; /* Usuwamy przestrzeń poniżej tekstu */
             padding-bottom: 0px; /* Usuwamy wszelkie wypełnienie poniżej tekstu */
         }
