@@ -5,7 +5,7 @@ st.set_page_config(page_title="Analiza sentymentu", layout="wide")
 page_bg_img = """
 <style>
 [data-testid="stAppViewContainer"] {
-    background: radial-gradient(circle at 67% 50%,rgba(226, 11, 58, 1), rgba(9, 217, 115, 1))
+    background: radial-gradient(circle at 67% 50%, rgba(226, 11, 58, 1), rgba(9, 217, 115, 1));
     background-blend-mode: multiply;
     background-size: cover;
     overflow: hidden; /* Prevent scrolling */
@@ -14,43 +14,10 @@ page_bg_img = """
 header[data-testid="stHeader"] {
     background-color: rgba(0, 0, 0, 0);
 }
-
-.red-circle {
-    position: fixed;
-    top: 50%; /* Center vertically */
-    left: 50%; /* Center horizontally */
-    transform: translate(-50%, -50%); /* Center the circle */
-    width: 1000px; /* Circle width */
-    height: 1000px; /* Circle height */
-    background: radial-gradient(circle, rgba(255, 0, 0, 1), rgba(255, 0, 0, 0.5));
-    border-radius: 50%; /* Make it circular */
-    z-index: -1; /* Place behind other elements */
-    filter: blur(100px); /* Add blur effect */
-}
-
-/* Ensure the circle remains persistent */
-body:before {
-    content: "";
-    position: fixed;
-    top: 50%; /* Center vertically */
-    left: 50%; /* Center horizontally */
-    transform: translate(-50%, -50%);
-    width: 1000px;
-    height: 1000px;
-    background: radial-gradient(circle, rgba(255, 0, 0, 1), rgba(255, 0, 0, 0.5));
-    border-radius: 50%;
-    z-index: -1;
-    filter: blur(100px);
-}
 </style>
 """
 
 st.markdown(page_bg_img, unsafe_allow_html=True)
-
-st.markdown(
-    '<div class="red-circle"></div>',
-    unsafe_allow_html=True
-)
 
 st.markdown(
     """
