@@ -32,6 +32,12 @@ st.sidebar.markdown(
         /* Ustawienia tytułów stron */
         .stApp .stPage .stTitle {
             margin-top: 10px;  /* Przesuń tytuły stron, by nie nachodziły na logo */
+
+        /* Zmiana stylu tytułów stron w pasku bocznym */
+        .stSidebar .stTitle {
+            margin-top: 20px;  /* Dodanie odstępu między logo a tytułem */
+        }
+
         }
     </style>
     """,
