@@ -8,10 +8,11 @@ add_logo('logo.png', height=500)
 st.sidebar.markdown(
     """
     <style>
-        [data-testid="stSidebar"]::before {
-            margin-top: -50px;
-            margin: -5px auto;  
-            margin-left: -20px;
+        [data-testid="stSidebar"] img { /* Stylowanie logo jako obraz */
+            margin-top: -50px;  /* Zmniejszenie odstępu między górą sidebaru a logo */
+            margin-left: auto;  /* Wyrównanie logo do środka */
+            margin-right: auto; /* Wyrównanie logo do środka */
+            display: block;     /* Zapewnienie poprawnego wyrównania */
         }
 
         [data-testid="stSidebar"] {
