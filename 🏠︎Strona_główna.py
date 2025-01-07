@@ -15,9 +15,7 @@ st.sidebar.markdown(
             font-size: 18px;
         }
 
-        [data-testid="stSidebarNav"] {
-            padding-top: 20px;  /* Odstęp, aby elementy nawigacyjne nie nachodziły na logo */
-        }
+       
 
     </style>
     """,
