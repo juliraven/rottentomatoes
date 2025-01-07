@@ -6,6 +6,7 @@ import plotly.graph_objects as go
 import matplotlib.pyplot as plt
 import plotly.express as px
 from streamlit_option_menu import option_menu
+from streamlit_extras.app_logo import add_logo
 
 page_bg_img = """
 <style>
