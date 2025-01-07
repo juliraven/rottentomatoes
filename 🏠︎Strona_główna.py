@@ -20,12 +20,12 @@ st.sidebar.markdown(
             display: block;
             background-image: url(https://www.canva.com/design/DAGbjS9-BAc/jABpevgH8yfN5-d_v2N5Gg/edit?utm_content=DAGbjS9-BAc&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton);  /* Ścieżka do logo */
             background-repeat: no-repeat;
-            padding-top: 120px;
             background-size: contain;  /* Dopasowanie logo */
             height: 50px;  /* Ustawienie wysokości logo */
             width: 100px;   /* Ustawienie szerokości logo */
-            margin-bottom: 5px;  /* Odstęp między logo a resztą treści */
-            background-position: top;
+            background-position: top;  /* Pozycjonowanie logo na górze */
+            margin-bottom: 0px;  /* Usunięcie odstępu między logo a resztą treści */
+            padding-top: 0px;
         }
 
         /* Zmiana tła dla nawigacji w pasku bocznym */
