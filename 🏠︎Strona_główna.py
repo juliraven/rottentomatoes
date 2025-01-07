@@ -12,7 +12,7 @@ st.sidebar.markdown(
         [data-testid="stSidebar"] {
             padding: 20px;
             font-family: sans-serif;
-            font-size: 16px;
+            font-size: 14px;
         }
 
         /* Przesunięcie stron, aby logo było nad nimi */
