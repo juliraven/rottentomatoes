@@ -8,7 +8,7 @@ def add_logo():
         """
         <style>
             [data-testid="stSidebarNav"] {
-                background-image: 'tomato.png';
+                background-image: tomato.png;
                 background-repeat: no-repeat;
                 padding-top: 120px;
                 background-position: 20px 20px;
