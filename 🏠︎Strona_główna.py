@@ -20,6 +20,7 @@ st.sidebar.markdown(
             display: block;
             background-image: url(https://www.canva.com/design/DAGbjS9-BAc/jABpevgH8yfN5-d_v2N5Gg/edit?utm_content=DAGbjS9-BAc&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton);  /* Ścieżka do logo */
             background-repeat: no-repeat;
+            padding-top: 120px;
             background-size: contain;  /* Dopasowanie logo */
             height: 100px;  /* Ustawienie wysokości logo */
             width: 120px;   /* Ustawienie szerokości logo */
