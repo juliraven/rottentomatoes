@@ -9,7 +9,7 @@ st.sidebar.markdown(
     <style>
         /* Ustawienia paska bocznego */
         [data-testid="stSidebar"] {
-            padding: 10px;
+            padding: 0px;
             font-family: sans-serif;
             font-size: 16px;
         }
