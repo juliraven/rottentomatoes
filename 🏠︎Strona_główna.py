@@ -14,6 +14,15 @@ st.sidebar.markdown(
             font-family: sans-serif;
             font-size: 18px;
         }
+
+        [data-testid="stSidebarHeader"] {
+            height: 30px; /* Ustaw pożądaną wysokość */
+            padding: 5px 10px; /* Zmniejsz wewnętrzne odstępy */
+            margin: 0; /* Usuń dodatkowe marginesy, jeśli występują */
+            display: flex; /* Użyj flexboxa, aby treść dobrze się dopasowała */
+            align-items: center; /* Wyrównanie treści w pionie */
+            justify-content: center; /* Wyrównanie treści w poziomie */
+        }
     </style>
     """,
     unsafe_allow_html=True,
