@@ -67,7 +67,7 @@ st.markdown(
     """
     <style>
     .emoji-top {
-        margin-top: -10px; /* Zmniejszenie marginesu górnego */
+        margin-top: -5px; /* Zmniejszenie marginesu górnego */
     }
     </style>
     
