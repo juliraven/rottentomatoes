@@ -13,7 +13,7 @@ st.sidebar.markdown(
         }
 
         [data-testid="stSidebar"] {
-            padding: 20px;
+            padding: 10px;
             font-family: sans-serif;
             font-size: 18px;
         }
