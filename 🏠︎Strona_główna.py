@@ -28,7 +28,18 @@ st.sidebar.markdown(
     unsafe_allow_html=True,
 )
 
-
+st.markdown(
+    """
+    <style>
+    [data-testid="stSidebar"] {
+        width: 350px;  /* Ustaw stałą szerokość */
+        min-width: 350px;  /* Minimalna szerokość */
+        max-width: 350px;  /* Maksymalna szerokość */
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
 
 page_bg_img = """
 <style>
@@ -60,19 +71,6 @@ st.markdown(
         <h2>Analiza sentymentu na podstawie recenzji użytkowników strony <br>Rotten Tomatoes</h2>
     </div>
     """, 
-    unsafe_allow_html=True
-)
-
-st.markdown(
-    """
-    <style>
-    [data-testid="stSidebar"] {
-        width: 350px;  /* Ustaw stałą szerokość */
-        min-width: 350px;  /* Minimalna szerokość */
-        max-width: 350px;  /* Maksymalna szerokość */
-    }
-    </style>
-    """,
     unsafe_allow_html=True
 )
 
