@@ -14,9 +14,6 @@ st.sidebar.markdown(
             font-family: sans-serif;
             font-size: 18px;
         }
-
-       
-
     </style>
     """,
     unsafe_allow_html=True,
