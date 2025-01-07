@@ -20,7 +20,7 @@ st.sidebar.markdown(
         [data-testid="stSidebar"]::before {
             content: "";
             display: block;
-            background-image: url('logo.png');  /* Ścieżka do lokalnego pliku logo */
+            background-image: url(https://www.canva.com/design/DAGbjS9-BAc/jABpevgH8yfN5-d_v2N5Gg/edit?utm_content=DAGbjS9-BAc&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton);  /* Ścieżka do lokalnego pliku logo */
             background-repeat: no-repeat;
             background-size: contain; /* Dopasuj logo do rozmiaru */
             height: 150px;  /* Ustal wysokość logo */
