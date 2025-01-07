@@ -8,7 +8,7 @@ add_logo('logo.png', height=400)
 st.sidebar.markdown(
     """
     <style>
-        [data-testid="stSidebar"] img { /* Stylowanie logo jako obraz */
+        [data-testid="stSidebar"]::before {
             margin-top: 0px auto
         }
 
