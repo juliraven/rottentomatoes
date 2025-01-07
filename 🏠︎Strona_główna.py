@@ -16,12 +16,12 @@ st.sidebar.markdown(
         }
 
         [data-testid="stSidebarHeader"] {
-            height: 30px; /* Ustaw pożądaną wysokość */
-            padding: 5px 10px; /* Zmniejsz wewnętrzne odstępy */
-            margin: 0; /* Usuń dodatkowe marginesy, jeśli występują */
-            display: flex; /* Użyj flexboxa, aby treść dobrze się dopasowała */
-            align-items: center; /* Wyrównanie treści w pionie */
-            justify-content: center; /* Wyrównanie treści w poziomie */
+            height: 30px;
+            padding: 5px 10px; 
+            margin: 0; 
+            display: flex; 
+            align-items: center;
+            justify-content: center; 
         }
     </style>
     """,
