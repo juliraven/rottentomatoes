@@ -3,39 +3,7 @@ from streamlit_extras.app_logo import add_logo
 
 st.set_page_config(page_title="Analiza sentymentu", page_icon="🎥", layout="wide")
 
-add_logo('logo.png', height=200)
-st.sidebar.markdown(
-    """
-    <style>
-        /* Ustawienia paska bocznego */
-        [data-testid="stSidebar"] {
-            padding: 20px;
-            font-family: sans-serif;
-            font-size: 16px;
-        }
-
-        /* Wstawienie logo do paska bocznego */
-        [data-testid="stSidebar"]::before {
-            content: "";
-            display: block;
-            background-image: url(https://www.canva.com/design/DAGbjS9-BAc/jABpevgH8yfN5-d_v2N5Gg/edit?utm_content=DAGbjS9-BAc&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton);  /* Ścieżka do logo */
-            background-repeat: no-repeat;
-            background-size: contain;  /* Dopasowanie logo */
-            height: 50px;  /* Ustawienie wysokości logo */
-            width: 100px;   /* Ustawienie szerokości logo */
-            background-position: top;  /* Pozycjonowanie logo na górze */
-            margin-bottom: 0px;  /* Usunięcie odstępu między logo a resztą treści */
-            padding-top: 0px;
-        }
-
-        /* Zmiana tła dla nawigacji w pasku bocznym */
-        .stSidebarNav {
-            background-color: #f1f1f1;
-        }
-    </style>
-    """,
-    unsafe_allow_html=True
-)
+add_logo('logo.png', height=500)
 
 page_bg_img = """
 <style>
