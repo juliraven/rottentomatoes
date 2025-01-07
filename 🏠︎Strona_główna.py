@@ -10,8 +10,8 @@ st.sidebar.markdown(
         border: 1px solid red
         padding: 20px;
         border-radius: 10px;
-        font-size: 18px; /* Zmiana rozmiaru czcionki */
-        font-family: Arial, sans-serif; /* Opcjonalnie zmiana rodzaju czcionki */
+        font-size: 18px; 
+        font-family: sans-serif; 
     }
     </style>
     """,
