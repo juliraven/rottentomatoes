@@ -5,7 +5,7 @@ st.set_page_config(page_title="Analiza sentymentu", page_icon="🎥", layout="wi
 page_bg_img = """
 <style>
 [data-testid="stAppViewContainer"] {
-    background: radial-gradient(circle at 57% 50%,rgba(139, 0, 0, 1), rgba(26, 101, 60, 1), rgba(235, 0, 0, 1));
+    background: radial-gradient(circle at 59% 45%,rgba(139, 0, 0, 1), rgba(26, 101, 60, 1), rgba(235, 0, 0, 1));
     background-blend-mode: multiply;
     background-size: cover;
     overflow: hidden; /* Prevent scrolling */
