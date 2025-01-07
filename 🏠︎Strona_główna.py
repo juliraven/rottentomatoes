@@ -14,10 +14,13 @@ st.markdown(
             font-size: 18px;
         }
         [data-testid="stSidebarNav"] {
-                background-image: url(https://www.canva.com/design/DAGbjS9-BAc/jABpevgH8yfN5-d_v2N5Gg/edit?utm_content=DAGbjS9-BAc&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton);
-                background-repeat: no-repeat;
-                padding-top: 120px;
-                background-position: 20px 20px;
+            background-image: url(https://www.canva.com/design/DAGbjS9-BAc/jABpevgH8yfN5-d_v2N5Gg/edit?utm_content=DAGbjS9-BAc&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton);
+            background-repeat: no-repeat;
+            background-size: contain;  /* Dopasowanie logo */
+            height: 120px;  /* Wysokość logo */
+            width: 120px;   /* Szerokość logo */
+            margin-bottom: 20px;  /* Odstęp między logo a resztą treści */
+            background-position: center;
         }
         </style>
         """,
