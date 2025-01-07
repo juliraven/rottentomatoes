@@ -9,7 +9,7 @@ st.sidebar.markdown(
     """
     <style>
         [data-testid="stSidebar"]::before {
-            margin: 0 auto;  
+            margin: -5px auto;  
         }
 
         [data-testid="stSidebar"] {
