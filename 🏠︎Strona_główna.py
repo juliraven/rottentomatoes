@@ -21,7 +21,7 @@ st.sidebar.markdown(
             background-image: url(https://www.canva.com/design/DAGbjS9-BAc/jABpevgH8yfN5-d_v2N5Gg/edit?utm_content=DAGbjS9-BAc&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton);  /* Ścieżka do logo */
             background-repeat: no-repeat;
             background-size: contain;  /* Dopasowanie logo */
-            height: 120px;  /* Ustawienie wysokości logo */
+            height: 220px;  /* Ustawienie wysokości logo */
             width: 120px;   /* Ustawienie szerokości logo */
             margin-bottom: 20px;  /* Odstęp między logo a resztą treści */
             background-position: center;
