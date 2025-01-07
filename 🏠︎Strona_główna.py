@@ -8,12 +8,17 @@ add_logo('logo.png', height=200)
 st.markdown(
         """
         <style>
-            [data-testid="stSidebarNav"] {
+        [data-testid="stSidebar"] {
+            padding: 20px;
+            font-family: sans-serif;
+            font-size: 18px;
+        }
+        [data-testid="stSidebarNav"] {
                 background-image: url(https://www.canva.com/design/DAGbjS9-BAc/jABpevgH8yfN5-d_v2N5Gg/edit?utm_content=DAGbjS9-BAc&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton);
                 background-repeat: no-repeat;
                 padding-top: 120px;
                 background-position: 20px 20px;
-            }
+        }
         </style>
         """,
         unsafe_allow_html=True,
