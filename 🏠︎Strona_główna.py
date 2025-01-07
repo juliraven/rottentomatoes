@@ -3,7 +3,7 @@ from streamlit_extras.app_logo import add_logo
 
 st.set_page_config(page_title="Analiza sentymentu", page_icon="🎥", layout="wide")
 
-st.logo("tomato.png", size="small")
+st.logo("tomato.png", size="large")
 st.sidebar.image('tomato.png', width=300)
 
 page_bg_img = """
