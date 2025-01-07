@@ -58,9 +58,9 @@ st.markdown(
     """
     <style>
     [data-testid="stSidebar"] {
-        width: 300px;  /* Ustaw stałą szerokość */
-        min-width: 300px;  /* Minimalna szerokość */
-        max-width: 300px;  /* Maksymalna szerokość */
+        width: 500px;  /* Ustaw stałą szerokość */
+        min-width: 500px;  /* Minimalna szerokość */
+        max-width: 500px;  /* Maksymalna szerokość */
     }
     </style>
     """,
