@@ -38,7 +38,7 @@ st.sidebar.markdown(
         }
 
         [data-testid="stSidebarHeader"] {
-            height: 30px;
+            height: 20px;
             padding: 5px 10px; 
             margin: 0; 
             display: flex; 
