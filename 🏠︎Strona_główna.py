@@ -25,7 +25,7 @@ st.sidebar.markdown(
             height: 50px;  /* Ustawienie wysokości logo */
             width: 100px;   /* Ustawienie szerokości logo */
             margin-bottom: 5px;  /* Odstęp między logo a resztą treści */
-            background-position: center;
+            background-position: top;
         }
 
         /* Zmiana tła dla nawigacji w pasku bocznym */
