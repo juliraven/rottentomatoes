@@ -9,13 +9,10 @@ st.sidebar.markdown(
     """
     <style>
         [data-testid="stSidebar"] {
+            padding-top: -10px;
             padding: 10px;
             font-family: sans-serif;
             font-size: 18px;
-        }
-
-        img {
-            margin-top: -20px; /* Ustawienie ujemnego marginesu, aby przesunąć logo wyżej */
         }
 
         [data-testid="stSidebarNav"] {
