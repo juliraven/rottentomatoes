@@ -9,7 +9,7 @@ st.sidebar.markdown(
     """
     <style>
         [data-testid="stSidebar"] {
-            padding-top: -10px;
+            padding-top: 0px;
             padding: 10px;
             font-family: sans-serif;
             font-size: 18px;
