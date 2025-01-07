@@ -5,6 +5,7 @@ import pandas as pd
 import plotly.graph_objects as go
 import plotly.express as px
 from sklearn.metrics import confusion_matrix, accuracy_score, classification_report
+from streamlit_extras.app_logo import add_logo
 
 page_bg_img = """
 <style>
@@ -22,6 +23,44 @@ header[data-testid="stHeader"] {
 """
 
 st.markdown(page_bg_img, unsafe_allow_html=True)
+
+add_logo('logo.png', height=350)
+
+st.sidebar.markdown(
+    """
+    <style>
+        [data-testid="stSidebar"] {
+            padding-top: 0px;
+            padding: 10px;
+            font-family: sans-serif;
+            font-size: 18px;
+        }
+
+        [data-testid="stSidebarHeader"] {
+            height: 20px;
+            padding: 5px 10px; 
+            margin: 0; 
+            display: flex; 
+            align-items: center;
+            justify-content: center; 
+        }
+    </style>
+    """,
+    unsafe_allow_html=True,
+)
+
+st.markdown(
+    """
+    <style>
+    [data-testid="stSidebar"] {
+        width: 350px;  /* Ustaw stałą szerokość */
+        min-width: 350px;  /* Minimalna szerokość */
+        max-width: 350px;  /* Maksymalna szerokość */
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
 
 st.markdown(
     """
