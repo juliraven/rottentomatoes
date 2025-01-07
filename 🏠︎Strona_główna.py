@@ -9,14 +9,14 @@ st.sidebar.markdown(
     """
     <style>
         /* Stylowanie paska bocznego */
-        [data-testid="stSidebar"] {
+        [data-testid="stSidebarNav"] {
             padding: 20px;
             font-family: sans-serif;
             font-size: 18px;
         }
 
         /* Wstawienie logo na górze paska bocznego */
-        [data-testid="stSidebar"]::before {
+        [data-testid="stSidebarNavr"]::before {
             content: "";
             display: block;
             background-image: url('https://www.canva.com/design/DAGbjS9-BAc/jABpevgH8yfN5-d_v2N5Gg/edit?utm_content=DAGbjS9-BAc&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton');  /* Ścieżka do logo */
