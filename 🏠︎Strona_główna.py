@@ -9,10 +9,7 @@ st.sidebar.markdown(
     """
     <style>
         [data-testid="stSidebar"] {
-            margin-top: 0px auto
-        }
-
-        [data-testid="stSidebar"] {
+            margin-top: 10px;
             padding: 10px;
             font-family: sans-serif;
             font-size: 18px;
