@@ -23,7 +23,7 @@ st.sidebar.markdown(
             background-size: contain;  /* Dopasowanie logo */
             height: 100px;  /* Ustawienie wysokości logo */
             width: 120px;   /* Ustawienie szerokości logo */
-            margin-bottom: 20px;  /* Odstęp między logo a resztą treści */
+            margin-bottom: 50px;  /* Odstęp między logo a resztą treści */
             background-position: center;
         }
 
