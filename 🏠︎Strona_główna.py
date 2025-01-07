@@ -14,6 +14,10 @@ st.sidebar.markdown(
             font-size: 18px;
         }
 
+        img {
+            margin-top: -20px; /* Ustawienie ujemnego marginesu, aby przesunąć logo wyżej */
+        }
+
         [data-testid="stSidebarNav"] {
             padding-top: 20px;  /* Odstęp, aby elementy nawigacyjne nie nachodziły na logo */
         }
