@@ -22,3 +22,4 @@ urljoin
 gdown
 tensorflow
 st_pages
+streamlit-extras
