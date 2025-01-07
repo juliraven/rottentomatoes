@@ -9,10 +9,7 @@ st.sidebar.markdown(
     """
     <style>
         [data-testid="stSidebar"] img { /* Stylowanie logo jako obraz */
-            margin-top: -50px;  /* Zmniejszenie odstępu między górą sidebaru a logo */
-            margin-left: auto;  /* Wyrównanie logo do środka */
-            margin-right: auto; /* Wyrównanie logo do środka */
-            display: block;     /* Zapewnienie poprawnego wyrównania */
+            margin: 0 auto
         }
 
         [data-testid="stSidebar"] {
