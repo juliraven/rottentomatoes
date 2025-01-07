@@ -10,6 +10,7 @@ st.sidebar.markdown(
     <style>
         [data-testid="stSidebar"]::before {
             margin: -5px auto;  
+            margin-left: -20px;
         }
 
         [data-testid="stSidebar"] {
