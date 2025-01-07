@@ -7,8 +7,8 @@ st.sidebar.markdown(
     """
     <style>
     [data-testid="stSidebar"] {
-        border: 1px solid red
-        padding: 30px;
+        border: 2px solid red
+        padding: 40px;
         border-radius: 10px;
         font-size: 18px; 
         font-family: sans-serif; 
