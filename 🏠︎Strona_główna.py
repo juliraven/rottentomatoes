@@ -7,7 +7,6 @@ st.sidebar.markdown(
     """
     <style>
     [data-testid="stSidebar"] {
-        background-color: #f4f4f4;
         padding: 20px;
         border-radius: 10px;
         border: 1px solid #ccc;
