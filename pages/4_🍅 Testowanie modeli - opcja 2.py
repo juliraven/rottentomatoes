@@ -20,6 +20,7 @@ from bs4 import BeautifulSoup
 from keras.preprocessing.sequence import pad_sequences
 import gdown
 import tensorflow as tf
+from streamlit_extras.app_logo import add_logo
 
 page_bg_img = """
 <style>
@@ -37,6 +38,7 @@ header[data-testid="stHeader"] {
 """
 
 st.markdown(page_bg_img, unsafe_allow_html=True)
+
 
 st.markdown(
     """
