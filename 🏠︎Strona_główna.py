@@ -27,11 +27,6 @@ st.sidebar.markdown(
             background-position: center;
         }
 
-        /* Zmiana stylu tytułów stron w pasku bocznym */
-        .stSidebar .stTitle {
-            margin-top: 20px;  /* Dodanie odstępu między logo a tytułem */
-        }
-
         /* Zmiana tła dla nawigacji w pasku bocznym */
         .stSidebarNav {
             background-color: #f1f1f1;
