@@ -18,7 +18,7 @@ st.sidebar.markdown(
     unsafe_allow_html=True
 )
 
-add_logo('logo.png', height=10)
+st.image('logo.png', height=10)
 
 page_bg_img = """
 <style>
