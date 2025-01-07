@@ -9,7 +9,7 @@ st.sidebar.markdown(
     """
     <style>
         [data-testid="stSidebar"] img { /* Stylowanie logo jako obraz */
-            margin: 0 auto
+            margin: 0px auto
         }
 
         [data-testid="stSidebar"] {
