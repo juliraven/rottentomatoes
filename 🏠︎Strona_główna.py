@@ -36,6 +36,8 @@ st.sidebar.markdown(
     unsafe_allow_html=True,
 )
 
+st.sidebar.image('logo.png', width=200)
+
 page_bg_img = """
 <style>
 [data-testid="stAppViewContainer"] {
