@@ -17,7 +17,7 @@ st.sidebar.markdown(
         }
 
         /* Wstawienie logo jako obrazek */
-        [data-testid="stSidebar"]::before {
+        [data-testid="stSidebarNav"]::before {
             content: "";
             display: block;
             background-image: url(https://www.canva.com/design/DAGbjS9-BAc/jABpevgH8yfN5-d_v2N5Gg/edit?utm_content=DAGbjS9-BAc&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton);  /* Ścieżka do lokalnego pliku logo */
