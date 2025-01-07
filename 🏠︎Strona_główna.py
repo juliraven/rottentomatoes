@@ -3,28 +3,6 @@ from streamlit_extras.app_logo import add_logo
 
 st.set_page_config(page_title="Analiza sentymentu", page_icon="🎥", layout="wide")
 
-st.sidebar.image('logo.png', width=200) 
-
-st.sidebar.markdown(
-    """
-    <style>
-        /* Zmiany w pasku bocznym */
-        [data-testid="stSidebar"] {
-            border: 2px solid red;
-            padding: 40px;
-            border-radius: 10px;
-            font-size: 18px;
-            font-family: sans-serif;
-        }
-        /* Dostosuj tytuły stron, by nie nachodziły na logo */
-        .stApp .stPage .stTitle {
-            margin-top: 10px;
-        }
-    </style>
-    """,
-    unsafe_allow_html=True,
-)
-
 st.sidebar.markdown(
     """
     <style>
