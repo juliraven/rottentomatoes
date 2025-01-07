@@ -15,28 +15,6 @@ st.sidebar.markdown(
             font-size: 18px;
         }
 
-        /* Wstawienie logo na górze paska bocznego */
-        [data-testid="stSidebar"]::before {
-            content: "";
-            display: block;
-            background-repeat: no-repeat;
-            background-size: contain;  /* Dopasowanie logo */
-            height: 120px;  /* Wysokość logo */
-            width: 120px;   /* Szerokość logo */
-            margin-bottom: 20px;  /* Odstęp między logo a resztą treści */
-            background-position: center;
-        }
-
-        /* Ustawienia tytułów stron w pasku bocznym */
-        .stSidebar .stTitle {
-            margin-top: 20px;  /* Dodanie odstępu między logo a tytułem */
-        }
-
-        /* Stylowanie tła nawigacji w pasku bocznym */
-        .stSidebarNav {
-            background-color: #f1f1f1;  /* Tło nawigacji */
-        }
-
         /* Przesunięcie stron, aby logo było nad nimi */
         [data-testid="stSidebarNav"] {
             padding-top: 20px;  /* Odstęp, aby elementy nawigacyjne nie nachodziły na logo */
