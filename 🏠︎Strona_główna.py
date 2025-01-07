@@ -12,7 +12,7 @@ st.sidebar.markdown(
         [data-testid="stSidebar"] {
             padding: 20px;
             font-family: sans-serif;
-            font-size: 14px;
+            font-size: 18px;
         }
 
         /* Przesunięcie stron, aby logo było nad nimi */
@@ -62,9 +62,9 @@ st.markdown(
     """
     <style>
     [data-testid="stSidebar"] {
-        width: 300px;  /* Ustaw stałą szerokość */
-        min-width: 300px;  /* Minimalna szerokość */
-        max-width: 300px;  /* Maksymalna szerokość */
+        width: 320px;  /* Ustaw stałą szerokość */
+        min-width: 320px;  /* Minimalna szerokość */
+        max-width: 320px;  /* Maksymalna szerokość */
     }
     </style>
     """,
