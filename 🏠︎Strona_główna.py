@@ -8,14 +8,16 @@ add_logo('nowe-logo.jpg', height=300)
 st.sidebar.markdown(
     """
     <style>
-        /* Stylowanie paska bocznego */
+        [data-testid="stSidebar"]::before {
+            margin: 0 auto;  
+        }
+
         [data-testid="stSidebar"] {
             padding: 20px;
             font-family: sans-serif;
             font-size: 18px;
         }
 
-        /* Przesunięcie stron, aby logo było nad nimi */
         [data-testid="stSidebarNav"] {
             padding-top: 20px;  /* Odstęp, aby elementy nawigacyjne nie nachodziły na logo */
         }
@@ -24,6 +26,8 @@ st.sidebar.markdown(
     """,
     unsafe_allow_html=True,
 )
+
+
 
 page_bg_img = """
 <style>
