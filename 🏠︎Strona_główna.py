@@ -8,37 +8,41 @@ add_logo('logo.png', height=200)
 st.sidebar.markdown(
     """
     <style>
+        /* Stylowanie paska bocznego */
         [data-testid="stSidebar"] {
-            border: 2px solid red;
-            padding: 40px;
-            border-radius: 10px;
-            font-size: 18px;
+            padding: 20px;
             font-family: sans-serif;
+            font-size: 18px;
         }
 
-        /* Wstawienie logo jako obrazek */
-        [data-testid="stSidebarNav"]::before {
+        /* Wstawienie logo na górze paska bocznego */
+        [data-testid="stSidebar"]::before {
             content: "";
             display: block;
-            background-image: url(https://www.canva.com/design/DAGbjS9-BAc/jABpevgH8yfN5-d_v2N5Gg/edit?utm_content=DAGbjS9-BAc&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton);  /* Ścieżka do lokalnego pliku logo */
+            background-image: url('https://www.canva.com/design/DAGbjS9-BAc/jABpevgH8yfN5-d_v2N5Gg/edit?utm_content=DAGbjS9-BAc&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton');  /* Ścieżka do logo */
             background-repeat: no-repeat;
-            background-size: contain; /* Dopasuj logo do rozmiaru */
-            height: 150px;  /* Ustal wysokość logo */
-            width: 150px;   /* Ustal szerokość logo */
-            margin-bottom: 20px;  /* Dystans do innych elementów */
+            background-size: contain;  /* Dopasowanie logo */
+            height: 120px;  /* Wysokość logo */
+            width: 120px;   /* Szerokość logo */
+            margin-bottom: 20px;  /* Odstęp między logo a resztą treści */
             background-position: center;
         }
 
-        /* Ustawienia tytułów stron */
-        .stApp .stPage .stTitle {
-            margin-top: 10px;  /* Przesuń tytuły stron, by nie nachodziły na logo */
-
-        /* Zmiana stylu tytułów stron w pasku bocznym */
+        /* Ustawienia tytułów stron w pasku bocznym */
         .stSidebar .stTitle {
             margin-top: 20px;  /* Dodanie odstępu między logo a tytułem */
         }
 
+        /* Stylowanie tła nawigacji w pasku bocznym */
+        .stSidebarNav {
+            background-color: #f1f1f1;  /* Tło nawigacji */
         }
+
+        /* Przesunięcie stron, aby logo było nad nimi */
+        [data-testid="stSidebarNav"] {
+            padding-top: 20px;  /* Odstęp, aby elementy nawigacyjne nie nachodziły na logo */
+        }
+
     </style>
     """,
     unsafe_allow_html=True,
