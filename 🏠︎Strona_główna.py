@@ -18,7 +18,7 @@ st.sidebar.markdown(
     unsafe_allow_html=True
 )
 
-st.logo('tomato.png', size='large')
+st.logo('logo.png', size='large')
 st.sidebar.image('tomato.png', width=300)
 
 page_bg_img = """
