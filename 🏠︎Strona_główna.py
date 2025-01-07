@@ -3,6 +3,8 @@ from streamlit_extras.app_logo import add_logo
 
 st.set_page_config(page_title="Analiza sentymentu", page_icon="🎥", layout="wide")
 
+st.sidebar.title("Menu")
+
 st.sidebar.markdown(
     """
     <style>
