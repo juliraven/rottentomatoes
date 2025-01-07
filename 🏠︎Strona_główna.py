@@ -1,6 +1,10 @@
 import streamlit as st
+from streamlit_extras.app_logo import add_logo
 
 st.set_page_config(page_title="Analiza sentymentu", page_icon="🎥", layout="wide")
+
+add_logo("tomato.png", height=200)
+st.sidebar.image('tomato.png', width=300)
 
 page_bg_img = """
 <style>
@@ -48,7 +52,6 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-st.sidebar.image('tomato.png', width=300)
 st.markdown('######')
 
 st.markdown(
