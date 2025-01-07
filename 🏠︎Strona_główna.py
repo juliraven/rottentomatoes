@@ -6,19 +6,35 @@ st.set_page_config(page_title="Analiza sentymentu", page_icon="🎥", layout="wi
 st.sidebar.markdown(
     """
     <style>
-    [data-testid="stSidebar"] {
-        border: 2px solid red
-        padding: 40px;
-        border-radius: 10px;
-        font-size: 18px; 
-        font-family: sans-serif; 
-    }
+        [data-testid="stSidebar"] {
+            border: 2px solid red;
+            padding: 40px;
+            border-radius: 10px;
+            font-size: 18px;
+            font-family: sans-serif;
+        }
+
+        /* Wstawienie logo jako obrazek */
+        [data-testid="stSidebar"]::before {
+            content: "";
+            display: block;
+            background-image: url('logo.png');  /* Ścieżka do lokalnego pliku logo */
+            background-repeat: no-repeat;
+            background-size: contain; /* Dopasuj logo do rozmiaru */
+            height: 150px;  /* Ustal wysokość logo */
+            width: 150px;   /* Ustal szerokość logo */
+            margin-bottom: 20px;  /* Dystans do innych elementów */
+            background-position: center;
+        }
+
+        /* Ustawienia tytułów stron */
+        .stApp .stPage .stTitle {
+            margin-top: 10px;  /* Przesuń tytuły stron, by nie nachodziły na logo */
+        }
     </style>
     """,
-    unsafe_allow_html=True
+    unsafe_allow_html=True,
 )
-
-add_logo('logo.png')
 
 page_bg_img = """
 <style>
