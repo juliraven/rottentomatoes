@@ -7,6 +7,7 @@ import matplotlib.pyplot as plt
 import plotly.express as px
 from streamlit_option_menu import option_menu
 from streamlit_extras.app_logo import add_logo
+from pdf2image import convert_from_path
 
 page_bg_img = """
 <style>
@@ -95,7 +96,7 @@ if selected == "Wykresy":
     
     st.markdown('### Chmury słów dla recenzji o danym sentymencie')
     c1, c2 = st.columns((3,3))
-    c1.image("negatywne.png", caption="Chmura słów dla recenzji o negatywnym sentymencie")
+    c1.image(convert_from_path("negatywne1.pdf")[0], caption="Chmura słów dla recenzji o negatywnym sentymencie")
     c2.image("pozytywne.png", caption="Chmura słów dla recenzji o pozytywnym sentymencie")
 
     st.markdown('######')
