@@ -327,12 +327,12 @@ if selected == "Sieć neuronowa":
         if not os.path.exists(output_path):
             gdown.download(url, output_path, quiet=False)
 
-    model_file_id = "1sg57qSrYzV9tSlpLP7Qox74DOrFzCGgJ"
+    model_file_id = "1JBYEUcMQd0EBl28hKiggF5WbgKJd0tTq"
     
-    download_from_gdrive(model_file_id, "model_siec.keras")
+    download_from_gdrive(model_file_id, "model3.keras")
 
-    model = tf.keras.models.load_model("model_siec.keras")
-    tokenizer = joblib.load("tokenizer.pkl") 
+    model = tf.keras.models.load_model("model3.keras")
+    tokenizer = joblib.load("tokenizer3.pkl") 
 
     max_length = 30 
 
