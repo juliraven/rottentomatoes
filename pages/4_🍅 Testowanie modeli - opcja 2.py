@@ -327,12 +327,12 @@ if selected == "Sieć neuronowa":
         if not os.path.exists(output_path):
             gdown.download(url, output_path, quiet=False)
 
-    model_file_id = "1JBYEUcMQd0EBl28hKiggF5WbgKJd0tTq"
+    model_file_id = "1sg57qSrYzV9tSlpLP7Qox74DOrFzCGgJ"
     
-    download_from_gdrive(model_file_id, "model3.keras")
+    download_from_gdrive(model_file_id, "model_siec.keras")
 
-    model = tf.keras.models.load_model("model3.keras")
-    tokenizer = joblib.load("tokenizer3.pkl") 
+    model = tf.keras.models.load_model("model_siec.keras")
+    tokenizer = joblib.load("tokenizer.pkl") 
 
     max_length = 30 
 
@@ -416,7 +416,7 @@ if selected == "Sieć neuronowa":
                     cleaned_review = clean_text(review)
                     sequence = tokenizer.texts_to_sequences([cleaned_review])
                     padded_sequence = pad_sequences(sequence, maxlen=max_length)
-                    prediction = model.predict(padded_sequence)
+                    prediction = model.predict(padded_sequence, maxlen=max_length, padding='post', truncating='post')
                     sentiments = prediction.argmax(axis=-1)
 
                     sentiment_label = "pozytywny" if sentiments[0] == 1 else "negatywny"
