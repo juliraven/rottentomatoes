@@ -120,7 +120,7 @@ if selected == "Wykresy":
     barmode='group',  
     xaxis_title='Rok',
     yaxis_title='Liczba recenzji',
-    legend_title='Sentiment',
+    legend_title='Sentyment',
     template='plotly',
     margin=dict(t=20),
     plot_bgcolor='rgba(0, 0, 0, 0)',  
@@ -188,23 +188,20 @@ elif selected == "Ranking filmów":
 
     sentiment_filter = st.sidebar.multiselect('Wybierz sentyment :', options=df['sentiment'].unique(), default=df['sentiment'].unique())
 
-
     filtered_df = df[
     (df['original_release_date'].between(date_filter[0], date_filter[1])) &
     (df['tomatometer_rating'].between(tomatometer_filter[0], tomatometer_filter[1])) &
     (df['audience_rating'].between(audience_filter[0], audience_filter[1])) &
     (df['sentiment'].isin(sentiment_filter))]
 
-
-    aggregated_df = filtered_df.groupby('movie_title').agg(
+    agg = filtered_df.groupby('movie_title').agg(
     {
-        'original_release_date': 'first',  # Zachowujemy datę premiery
-        'tomatometer_rating': 'mean',       # Średnia ocena krytyków
-        'audience_rating': 'mean'         # Średnia ocena widowni
+        'original_release_date': 'first',  
+        'tomatometer_rating': 'mean',      
+        'audience_rating': 'mean'        
         }).reset_index()
 
-
-    sorted_df = aggregated_df.sort_values(by=['audience_rating', 'tomatometer_rating'], ascending=False)
+    sorted_df = agg.sort_values(by=['audience_rating', 'tomatometer_rating'], ascending=False)
     sorted_df['original_release_date']=sorted_df['original_release_date'].astype(str).str[:10]
     sorted_df = sorted_df.rename(columns={
     'movie_title': 'Tytuł filmu',
