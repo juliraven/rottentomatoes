@@ -285,7 +285,7 @@ if selected == "Sieć neuronowa":
     download_from_gdrive(model_file_id, "model3.keras")
 
     model = tf.keras.models.load_model("model3.keras")
-    tokenizer = joblib.load("tokenizer3.pkl") 
+    tokenizer = joblib.load("tokenizer.pkl") 
 
     st.markdown("""
     <style>
