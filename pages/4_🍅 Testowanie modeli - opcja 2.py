@@ -417,7 +417,7 @@ if selected == "Sieć neuronowa":
                     sequence = tokenizer.texts_to_sequences([cleaned_review])
                     padded_sequence = pad_sequences(sequence, maxlen=max_length, padding='post', truncating='post')
                     prediction = model.predict(padded_sequence)
-                    sentiments = prediction.argmax(axis=-1)
+                    sentiments = (prediction > 0.5).astype(int).flatten() 
 
                     sentiment_label = "pozytywny" if sentiments[0] == 1 else "negatywny"
                     sentiment_color = "green" if sentiments[0] == 1 else "red"
