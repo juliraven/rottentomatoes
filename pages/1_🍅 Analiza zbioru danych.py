@@ -96,7 +96,7 @@ if selected == "Wykresy":
     
     st.markdown('### Chmury słów dla recenzji o danym sentymencie')
     c1, c2 = st.columns((3,3))
-    c1.image(convert_from_path("negatywne1.pdf")[0], caption="Chmura słów dla recenzji o negatywnym sentymencie")
+    c1.image("negatywne.png", caption="Chmura słów dla recenzji o negatywnym sentymencie")
     c2.image("pozytywne.png", caption="Chmura słów dla recenzji o pozytywnym sentymencie")
 
     st.markdown('######')
