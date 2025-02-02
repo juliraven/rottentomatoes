@@ -11,7 +11,6 @@ beautifulsoup4
 joblib
 scikit-learn
 nltk==3.8.1
-seleniumbase
 webdriver-manager
 emoji
 langdetect
