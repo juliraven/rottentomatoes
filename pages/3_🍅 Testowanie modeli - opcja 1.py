@@ -250,27 +250,39 @@ if selected == "Naiwny klasyfikator Bayesa":
 
     user_review = st.text_area("", placeholder="Miejsce na recenzję")
 
+
+    def is_english(text):
+        try:
+            language = detect(text)
+            return language == 'en'
+        except Exception as e:
+            return False
+
     if st.button('Analizuj sentyment'):
         if user_review:
-            with st.spinner('Analizowanie recenzji...'):
-                reviews = [user_review]
-                sentiments = predict_sentiment(reviews)  
+            if not is_english(user_review):
+                st.error("Recenzja musi być napisana języku angielskim.")
 
-                st.write(f"**Twoja recenzja:** {user_review}")
+            else:
+                with st.spinner('Analizowanie recenzji...'):
+                    reviews = [user_review]
+                    sentiments = predict_sentiment(reviews)  
+
+                    st.write(f"**Twoja recenzja:** {user_review}")
                 
-                sentiment_label = ""
-                sentiment_color = ""
+                    sentiment_label = ""
+                    sentiment_color = ""
 
-                if sentiments[0] == 1:  
-                    sentiment_label = "pozytywny"
-                    sentiment_color = "green"
-                elif sentiments[0] == 0: 
-                    sentiment_label = "negatywny"
-                    sentiment_color = "red"
+                    if sentiments[0] == 1:  
+                        sentiment_label = "pozytywny"
+                        sentiment_color = "green"
+                    elif sentiments[0] == 0: 
+                        sentiment_label = "negatywny"
+                        sentiment_color = "red"
 
-                st.markdown(f"<h3>Przewidywany sentyment: <span style='color: {sentiment_color};'>{sentiment_label}</span></h3>",unsafe_allow_html=True)
+                    st.markdown(f"<h3>Przewidywany sentyment: <span style='color: {sentiment_color};'>{sentiment_label}</span></h3>",unsafe_allow_html=True)
         else:
-            st.write("Proszę wprowadzić recenzję.")
+            st.error("Proszę wprowadzić recenzję.")
 
 if selected == "Sieć neuronowa":
 
@@ -311,31 +323,41 @@ if selected == "Sieć neuronowa":
 
     max_length = 30 
 
+    def is_english(text):
+        try:
+            language = detect(text)
+            return language == 'en'
+        except Exception as e:
+            return False
+
     if st.button('Analizuj sentyment'):
         if user_review:
-            with st.spinner('Analizowanie recenzji...'):
-                reviews = [user_review]
-                cleaned_reviews = [clean_text(review) for review in reviews]
-                sequence = tokenizer.texts_to_sequences(cleaned_reviews)
-                padded_sequence = pad_sequences(sequence, maxlen=max_length, padding='post', truncating='post')
-                prediction = model.predict(padded_sequence)
-                sentiments = (prediction > 0.5).astype(int).flatten()
+            if not is_english(user_review):
+                st.error("Recenzja musi być napisana w języku angielskim.")
+            else: 
+                with st.spinner('Analizowanie recenzji...'):
+                    reviews = [user_review]
+                    cleaned_reviews = [clean_text(review) for review in reviews]
+                    sequence = tokenizer.texts_to_sequences(cleaned_reviews)
+                    padded_sequence = pad_sequences(sequence, maxlen=max_length, padding='post', truncating='post')
+                    prediction = model.predict(padded_sequence)
+                    sentiments = (prediction > 0.5).astype(int).flatten()
 
-                st.write(f"**Twoja recenzja:** {user_review}")
+                    st.write(f"**Twoja recenzja:** {user_review}")
                 
-                sentiment_label = ""
-                sentiment_color = ""
+                    sentiment_label = ""
+                    sentiment_color = ""
 
-                if sentiments[0] == 1:  
-                    sentiment_label = "pozytywny"
-                    sentiment_color = "green"
-                elif sentiments[0] == 0: 
-                    sentiment_label = "negatywny"
-                    sentiment_color = "red"
+                    if sentiments[0] == 1:  
+                        sentiment_label = "pozytywny"
+                        sentiment_color = "green"
+                    elif sentiments[0] == 0: 
+                        sentiment_label = "negatywny"
+                        sentiment_color = "red"
 
-                st.markdown(f"<h3>Przewidywany sentyment: <span style='color: {sentiment_color};'>{sentiment_label}</span></h3>",unsafe_allow_html=True)
+                    st.markdown(f"<h3>Przewidywany sentyment: <span style='color: {sentiment_color};'>{sentiment_label}</span></h3>",unsafe_allow_html=True)
         else:
-            st.write("Proszę wprowadzić recenzję.")
+            st.error("Proszę wprowadzić recenzję.")
 
 
     
