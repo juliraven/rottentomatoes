@@ -24,3 +24,5 @@ tensorflow
 st_pages
 streamlit-extras
 pdf2image
+urllib3
+six
