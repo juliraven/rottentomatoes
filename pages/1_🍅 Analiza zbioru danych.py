@@ -102,7 +102,7 @@ if selected == "Wykresy":
     st.markdown('######')
     st.markdown('### Rozkład liczby recenzji w czasie w podziale na sentyment')
 
-    dane = pd.read_csv('dane_c.csv')
+    dane = pd.read_csv('data/dane_c.csv')
 
     colors = {0: 'indianred', 1: 'lightgreen'}
 
@@ -139,7 +139,7 @@ if selected == "Wykresy":
     st.plotly_chart(fig)
     
     st.markdown('######')
-    dane1 = pd.read_csv('dane_g.csv')
+    dane1 = pd.read_csv('data/dane_g.csv')
     gatunki = dane1['genres'].unique()
     wybierz_gatunek = st.selectbox('Wybierz gatunek :', gatunki)
     filtered_df = dane1[dane1['genres'] == wybierz_gatunek]
@@ -162,7 +162,7 @@ elif selected == "Ranking filmów":
     st.markdown('######')
     st.markdown('### Ranking filmów')
 
-    df = pd.read_csv('dane_r.csv')
+    df = pd.read_csv('data/dane_r.csv')
     df['original_release_date'] = pd.to_datetime(df['original_release_date'])
     df['original_release_date'] = df['original_release_date'].dt.year
     df['original_release_date'] = df['original_release_date'].astype(int)
