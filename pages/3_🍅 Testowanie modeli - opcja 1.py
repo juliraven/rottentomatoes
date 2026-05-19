@@ -37,7 +37,7 @@ header[data-testid="stHeader"] {
 
 st.markdown(page_bg_img, unsafe_allow_html=True)
 
-add_logo('logo.png', height=350)
+add_logo('files/logo.png', height=350)
 
 st.sidebar.markdown(
     """
