@@ -255,7 +255,7 @@ if selected == "Naiwny klasyfikator Bayesa":
         if res.status_code == 200:
             content = BeautifulSoup(res.content, 'html.parser')
             
-            title_tag = content.find("rt-link")
+            title_tag = content.find("rt-link", attrs={"context": "label"})
             if title_tag:
                 title = title_tag.get_text(strip=True)
             
