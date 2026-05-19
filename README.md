@@ -30,4 +30,4 @@ rottentomatoes/
 ```
 
 ![Dashboard](files/d1.png)
-[Watch demo](files/d2.png)
+![Dashboard](files/d2.png)
