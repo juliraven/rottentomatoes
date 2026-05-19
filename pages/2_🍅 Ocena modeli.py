@@ -24,7 +24,7 @@ header[data-testid="stHeader"] {
 
 st.markdown(page_bg_img, unsafe_allow_html=True)
 
-add_logo('logo.png', height=350)
+add_logo('files/logo.png', height=350)
 
 st.sidebar.markdown(
     """
@@ -91,7 +91,7 @@ if selected=="Naiwny klasyfikator Bayesa":
 
     st.markdown('###')
 
-    dane = pd.read_csv('dane_model1.csv')
+    dane = pd.read_csv('data/dane_model1.csv')
 
     trafnosc = accuracy_score(dane['y_test'], dane['y_pred'])
     cm = confusion_matrix(dane['y_test'], dane['y_pred'], labels=[0, 1])
@@ -141,7 +141,7 @@ if selected=="Naiwny klasyfikator Bayesa":
 if selected=="Sieć neuronowa":
     st.markdown('###')
 
-    dane = pd.read_csv('dane_model3.csv')
+    dane = pd.read_csv('data/dane_model3.csv')
 
     trafnosc = accuracy_score(dane['y_test'], dane['y_pred'])
     cm = confusion_matrix(dane['y_test'], dane['y_pred'], labels=[0, 1])
