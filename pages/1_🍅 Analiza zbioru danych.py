@@ -195,7 +195,7 @@ elif selected == "Ranking filmów":
     (df['audience_rating'].between(audience_filter[0], audience_filter[1])) &
     (df['sentiment'].isin(sentiment_filter))]
 
-    agg = filtered_df.groupby('movie_title').agg(
+    agg = filtered_df.groupby('data/movie_title').agg(
     {
         'original_release_date': 'first',  
         'tomatometer_rating': 'mean',      
