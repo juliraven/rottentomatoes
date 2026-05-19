@@ -28,3 +28,6 @@ rottentomatoes/
 ├── packages.txt        # biblioteki
 └── README.md
 ```
+
+![Dashboard](files/d1.png)
+![Dashboard](files/d2.png)
