@@ -130,11 +130,7 @@ st.markdown('''
     <div class="bordered-text-container">
         <div class="bordered-text-background"></div>
         <div class="bordered-text">
-            Strona ta poświęcona jest analizie sentymentu zbioru zawierającego recenzje filmów napisane przez krytyków na stronie Rotten Tomatoes. Znajdują się tutaj wizualizacje informacji zawartych w tym zbiorze, a także oceny modeli zbudowanych w oparciu o dane ze zbioru. Użytkownik ma również możliwość przetestowania działania modeli na dwa sposoby:
-            <ul>
-                <li>może wprowadzić własną recenzję i zobaczyć przewidywany sentyment</li>
-                <li>może podać link do recenzji konkretnego filmu/serialu ze strony Rotten Tomatoes i zobaczyć jaki sentyment przewiduje dla nich model.</li>
-            </ul>
+            Strona ta poświęcona jest analizie sentymentu zbioru zawierającego recenzje filmów napisane przez krytyków na stronie Rotten Tomatoes. Znajdują się tutaj wizualizacje informacji zawartych w tym zbiorze, a także oceny modeli zbudowanych w oparciu o dane ze zbioru. Użytkownik ma również możliwość przetestowania działania modeli: może wprowadzić własną recenzję i zobaczyć przewidywany sentyment.
         </div>
     </div>
 ''', unsafe_allow_html=True)
