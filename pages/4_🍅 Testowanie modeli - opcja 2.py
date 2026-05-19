@@ -257,7 +257,7 @@ if selected == "Naiwny klasyfikator Bayesa":
             
             title_tag = content.find("rt-link")
             if title_tag:
-                print(f"Tytuł: {title_tag.get_text(strip=True)}")
+                title = title_tag.get_text(strip=True)
             
             image_tag = content.find('rt-img', {'data-qa': 'sidebar-poster-img'})
             image_url = image_tag['src'] if image_tag else None
