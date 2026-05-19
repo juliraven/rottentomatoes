@@ -26,7 +26,7 @@ header[data-testid="stHeader"] {
 
 st.markdown(page_bg_img, unsafe_allow_html=True)
 
-add_logo('logo.png', height=350)
+add_logo('files/logo.png', height=350)
 
 st.sidebar.markdown(
     """
@@ -96,8 +96,8 @@ if selected == "Wykresy":
     
     st.markdown('### Chmury słów dla recenzji o danym sentymencie')
     c1, c2 = st.columns((3,3))
-    c1.image("negatywne.png", caption="Chmura słów dla recenzji o negatywnym sentymencie")
-    c2.image("pozytywne.png", caption="Chmura słów dla recenzji o pozytywnym sentymencie")
+    c1.image("files/negatywne.png", caption="Chmura słów dla recenzji o negatywnym sentymencie")
+    c2.image("files/pozytywne.png", caption="Chmura słów dla recenzji o pozytywnym sentymencie")
 
     st.markdown('######')
     st.markdown('### Rozkład liczby recenzji w czasie w podziale na sentyment')
