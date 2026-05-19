@@ -225,7 +225,7 @@ selected = option_menu(
 if selected == "Naiwny klasyfikator Bayesa":
     
     model = joblib.load("models/naive_bayes_model.pkl") 
-    vectorizer = joblib.load("moddels/vectorizer.pkl")
+    vectorizer = joblib.load("models/vectorizer.pkl")
 
     st.markdown("""
     <style>
