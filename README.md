@@ -8,23 +8,23 @@ sentymentu z wykorzystaniem jednego z dwóch algorytmów.
 ## Link do aplikacji  
 [https://sentiment-analysis-rotten-tomatoes.streamlit.app/](https://sentiment-analysis-rotten-tomatoes.streamlit.app/)
 
-## Użyte technologie
-- Python
-- Streamlit
-- Pandas
-- Plotly
-- Seaborn
-- NLP 
+## Użyte biblioteki
+- streamlit
+- pandas
+- plotly
+- seaborn
+- nltk
+- tensorflow
 
 ## Struktura projektu
 ```text
-people-dashboard/
+rottentomatoes/
 │
 ├── 🏠︎Strona_główna.py  # główny plik aplikacji
 ├── data/               # dane
 ├── models/             # wyeksportowane wcześniej modele
 ├── files/              # obrazy i grafiki
 ├── requirements.txt    # biblioteki
-├── packages.txt         # biblioteki
+├── packages.txt        # biblioteki
 └── README.md
 ```
