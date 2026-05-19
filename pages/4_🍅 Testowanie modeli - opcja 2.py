@@ -254,10 +254,19 @@ if selected == "Naiwny klasyfikator Bayesa":
 
         if res.status_code == 200:
             content = BeautifulSoup(res.content, 'html.parser')
+
+            def clean_title(text: str) -> str:
+                return text.split("|")[0].strip()
             
-            title_tag = content.find("rt-link", attrs={"context": "label"})
-            if title_tag:
-                title = title_tag.get_text(strip=True)
+            title = None
+
+            og = content.find("meta", property="og:title")
+            if og and og.get("content"):
+                title = clean_title(og["content"])
+            else:
+                title_tag = content.find("rt-link", attrs={"context": "label"})
+                if title_tag:
+                    title = clean_title(title_tag.get_text(strip=True))
             
             image_tag = content.find('rt-img', {'data-qa': 'sidebar-poster-img'})
             image_url = image_tag['src'] if image_tag else None
