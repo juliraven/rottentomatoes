@@ -255,7 +255,7 @@ if selected == "Naiwny klasyfikator Bayesa":
         if res.status_code == 200:
             content = BeautifulSoup(res.content, 'html.parser')
 
-            title_tag = content.select_one("rt-link[context='label']")
+            title_tag = page.locator("rt-link[context='label']").inner_text()
             title = title_tag.get_text(strip=True) if title_tag else "Nie znaleziono tytułu"
             
             image_tag = content.find('rt-img', {'data-qa': 'sidebar-poster-img'})
