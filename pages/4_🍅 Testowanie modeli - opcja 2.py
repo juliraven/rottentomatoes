@@ -292,7 +292,7 @@ if selected == "Naiwny klasyfikator Bayesa":
                 else:
                     st.write("Nie rozpoznano typu strony (film/TV).")
 
-            reviews = content.find_all('p', class_='review-text')
+            reviews = content.find_all('div', attrs={'slot': 'review'})
             review_texts = [review.get_text(strip=True) for review in reviews[:number]]
 
             if review_texts:
