@@ -134,7 +134,6 @@ sk = { "ain't": "is not","aren't": "are not","can't": "cannot","'cause": "becaus
 "y'all'd": "you all would","y'all'd've": "you all would have","y'all're": "you all are","y'all've": "you all have",
 "you'd": "you would","you'd've": "you would have","you'll": "you will","you'll've": "you will have","you're": "you are","you've": "you have"}
 
-
 # Funkcja rozwijająca skróty :
 def expand_contractions(text, sk):
     return ' '.join([sk.get(word, word) for word in text.split()])
@@ -227,8 +226,8 @@ selected = option_menu(
 
 if selected == "Naiwny klasyfikator Bayesa":
     
-    model = joblib.load("naive_bayes_model.pkl") 
-    vectorizer = joblib.load("vectorizer.pkl") 
+    model = joblib.load("models/naive_bayes_model.pkl") 
+    vectorizer = joblib.load("models/vectorizer.pkl") 
 
     links = ["własny link"] + [
     "https://www.rottentomatoes.com/tv/arcane_league_of_legends/s02/reviews",
@@ -317,7 +316,6 @@ if selected == "Naiwny klasyfikator Bayesa":
         else:
             st.write("Nie udało się pobrać strony. Sprawdź, czy adres URL jest poprawny.")
 
-
     
 if selected == "Sieć neuronowa":
     
@@ -332,7 +330,7 @@ if selected == "Sieć neuronowa":
     download_from_gdrive(model_file_id, "model_siec.keras")
 
     model = tf.keras.models.load_model("model_siec.keras")
-    tokenizer = joblib.load("tokenizer.pkl") 
+    tokenizer = joblib.load("models/tokenizer.pkl") 
 
     max_length = 30 
 
